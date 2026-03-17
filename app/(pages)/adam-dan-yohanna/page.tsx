@@ -1,0 +1,32 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import Header from '@/app/components/adam-dan-yohanna/Header'
+import Hero from '@/app/components/adam-dan-yohanna/Hero'
+import Profile from '@/app/components/adam-dan-yohanna/Profile'
+import CountingDown from '@/app/components/adam-dan-yohanna/CountingDown'
+
+export default function Page() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    if (!isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto'
+    }
+  }, [isOpen])
+
+  return (
+    <>
+      <Header isOpen={isOpen} />
+      <Hero isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Profile />
+      <CountingDown />
+    </>
+  );
+}
