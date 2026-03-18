@@ -9,3 +9,19 @@
 .counting-down {
   background-image: url(/images/adam-dan-yohanna/bg-counting-down-mobile.png);
 }
+
+.location {
+  background-image: url(/images/adam-dan-yohanna/bg-location-mobile.png);
+}
+
+.gallery {
+  background-image: url(/images/adam-dan-yohanna/bg-gallery-mobile.png);
+}
+
+.reservation {
+  background-image: url(/images/adam-dan-yohanna/bg-rsvp-mobile.png);
+}
+
+.wedding-gift {
+  background-image: url(/images/adam-dan-yohanna/bg-wedding-gift-mobile.png);
+}

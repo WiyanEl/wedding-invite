@@ -39,7 +39,7 @@ export default function Header({ isOpen }: {isOpen: boolean}) {
           <Link href="#hero" className="text-base font-figtree uppercase hover:text-gray-500" onClick={handleScrollDown}>home</Link>
           <Link href="#profile" className="text-base font-figtree uppercase hover:text-gray-500" onClick={handleScrollDown}>profile</Link>
           <Link href="#counting-down" className="text-base font-figtree uppercase hover:text-gray-500" onClick={handleScrollDown}>counting down</Link>
-          <Link href="#wedding-gift" className="text-base font-figtree uppercase hover:text-gray-500" onClick={handleScrollDown}>wedding gift</Link>
+          <Link href="#location" className="text-base font-figtree uppercase hover:text-gray-500" onClick={handleScrollDown}>wedding gift</Link>
           <Link href="#gallery" className="text-base font-figtree uppercase hover:text-gray-500" onClick={handleScrollDown}>gallery</Link>
           <Link href="#dresscode" className="text-base font-figtree uppercase hover:text-gray-500" onClick={handleScrollDown}>dresscode</Link>
           <Link href="#wedding-gift" className="text-base font-figtree uppercase hover:text-gray-500" onClick={handleScrollDown}>wedding gift</Link>
@@ -60,7 +60,7 @@ export default function Header({ isOpen }: {isOpen: boolean}) {
               <Link href="#hero" className="font-figtree text-xs leading-none text-white text-medium uppercase" onClick={handleScrollDown}>home</Link>
               <Link href="#profile" className="font-figtree text-xs leading-none text-white text-medium uppercase" onClick={handleScrollDown}>profile</Link>
               <Link href="#counting-down" className="font-figtree text-xs leading-none text-white text-medium uppercase" onClick={handleScrollDown}>counting down</Link>
-              <Link href="#wedding-gift" className="font-figtree text-xs leading-none text-white text-medium uppercase" onClick={handleScrollDown}>wedding gift</Link>
+              <Link href="#location" className="font-figtree text-xs leading-none text-white text-medium uppercase" onClick={handleScrollDown}>wedding gift</Link>
               <Link href="#gallery" className="font-figtree text-xs leading-none text-white text-medium uppercase" onClick={handleScrollDown}>gallery</Link>
               <Link href="#dresscode" className="font-figtree text-xs leading-none text-white text-medium uppercase" onClick={handleScrollDown}>dresscode</Link>
               <Link href="#wedding-gift" className="font-figtree text-xs leading-none text-white text-medium uppercase" onClick={handleScrollDown}>wedding gift</Link>
