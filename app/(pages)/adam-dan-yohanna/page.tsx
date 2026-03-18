@@ -10,6 +10,8 @@ import Gallery from '@/app/components/adam-dan-yohanna/Gallery'
 import Dresscode from '@/app/components/adam-dan-yohanna/Dresscode'
 import Reservation from '@/app/components/adam-dan-yohanna/Reservation'
 import WeddingGift from '@/app/components/adam-dan-yohanna/WeddingGift'
+import Wishes from '@/app/components/adam-dan-yohanna/Wishes'
+import Footer from '@/app/components/adam-dan-yohanna/Footer'
 
 export default function Page() {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,6 +28,14 @@ export default function Page() {
     }
   }, [isOpen])
 
+  useEffect(() => {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual'
+    }
+
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <Header isOpen={isOpen} />
@@ -37,6 +47,8 @@ export default function Page() {
       <Dresscode />
       <Reservation />
       <WeddingGift />
+      <Wishes />
+      <Footer />
     </>
   );
 }

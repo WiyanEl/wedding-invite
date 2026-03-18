@@ -6,7 +6,7 @@ export default function Reservation() {
   const [attendance, setAttendance] = useState('attend')
 
   return (
-    <section id="reservation" className="reservation profile relative w-full min-h-min bg-cover bg-center">
+    <section id="reservation" className="reservation relative w-full min-h-min bg-cover bg-center">
       <div className="absolute inset-0 bg-[#B95F38] opacity-[0.12] mix-blend-multiply" />
       <img src="/images/adam-dan-yohanna/img-bl-reservation.png" className="absolute pointer-events-none bottom-0 w-[175]" alt="" />
       <div className="relative z-10 flex flex-col items-center pt-[77px] pb-[198px] h-full text-[#635953] text-center">

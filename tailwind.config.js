@@ -13,6 +13,7 @@ module.exports = {
         cormorant: ['var(--font-cormorant)'],
         figtree: ['var(--font-figtree)'],
         ibm: ['var(--font-ibm-plex-sans)'],
+        cinzel: ['var(--font-cinzel)']
       }
     },
     keyframes: {
