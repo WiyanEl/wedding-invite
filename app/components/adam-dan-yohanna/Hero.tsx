@@ -11,7 +11,7 @@ export default function Hero({ isOpen, setIsOpen }: HeroProps) {
       <div className={`relative z-10 flex ${isOpen ? 'items-end pb-[85px]' : 'items-center'} justify-center h-full`}>
 
         {!isOpen && (
-          <div className="text-center rounded-2xl bg-[#9A3929] text-[#FEFBF0] w-[290px] h-[340px] opacity-70 pt-[57px] animate-fade-in">
+          <div className="text-center rounded-2xl bg-[#9A3929B3] text-[#FEFBF0] w-[290px] h-[340px] pt-[57px] animate-zoom-in">
             <p className="font-figtree font-medium text-[10px] uppercase">
               we invite you to celebrate
             </p>

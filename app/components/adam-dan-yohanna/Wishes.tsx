@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useInView } from '@/app/hooks/useInView'
 
 type Wish = {
   name: string
@@ -43,6 +44,7 @@ const DEFAULT_WISHES: Wish[] = [
 ]
 
 export default function Wishes() {
+  const { ref, isVisible } = useInView()
   const [name, setName] = useState('')
   const [message, setMessage] = useState('')
   const [wishes, setWishes] = useState<Wish[]>([])
@@ -89,18 +91,18 @@ export default function Wishes() {
       <img src="/images/adam-dan-yohanna/img-br-wishes.png" className="absolute pointer-events-none bottom-0 right-0 w-[233]" alt="" />
       {!seeAllMessages ? (
         <div className="relative z-10 flex flex-col items-center py-[82px] h-full text-[#4B2B15] text-center">
-          <h3 className="font-cormorant font-normal text-[28px] leading-[18px] uppercase animate-fade-up">
+          <h3 ref={ref} className={`font-cormorant font-normal text-[28px] leading-[18px] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
             your wishes
           </h3>
           <form onSubmit={save} className="flex flex-col items-center">
-            <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="mt-[40px] w-[283px] h-[26px] rounded-[5px] border-[0.49px] border-[#9A7B45] animate-fade-up bg-transparent px-1 py-3 text-xs leading-[140%] text-[#311704]" />
-            <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="mt-[20px] w-[283px] h-[60px] rounded-[5px] border-[0.49px] border-[#9A7B45] animate-fade-up bg-transparent px-1 py-2 text-xs leading-[140%] text-[#311704]"></textarea>
-            <button type="submit" className="mt-[20px] flex gap-2 justify-center items-center w-[283px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase animate-fade-up">
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} ref={ref} className={`mt-[40px] w-[283px] h-[26px] rounded-[5px] border-[0.49px] border-[#9A7B45] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'} bg-transparent px-1 py-3 text-xs leading-[140%] text-[#311704]`} />
+            <textarea value={message} onChange={(e) => setMessage(e.target.value)} ref={ref} className={`mt-[20px] w-[283px] h-[60px] rounded-[5px] border-[0.49px] border-[#9A7B45] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'} bg-transparent px-1 py-2 text-xs leading-[140%] text-[#311704]`}></textarea>
+            <button type="submit" ref={ref} className={`mt-[20px] flex gap-2 justify-center items-center w-[283px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
               <img src="/images/adam-dan-yohanna/icon-send.png" alt="Icon maps" className="w-[15px] h-[19px]" />
               <span>send</span>
             </button>
           </form>
-          <div className="mt-[20px] w-[284px] h-[320px] px-[13px] py-[18px] overflow-y-auto scroll-smooth rounded-[10.75px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] animate-fade-up">
+          <div ref={ref} className={`mt-[20px] w-[284px] h-[320px] px-[13px] py-[18px] overflow-y-auto scroll-smooth rounded-[10.75px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
             {wishes.length === 0 ? (
               <p className="text-center text-xs text-[#FEFBF0]">
                 No message yet
@@ -121,7 +123,7 @@ export default function Wishes() {
               ))
             )}
           </div>
-          <button type="button" onClick={() => setSeeAllMessages(true)} className="mt-[20px] flex gap-2 justify-center items-center w-[283px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase animate-fade-up">
+          <button type="button" onClick={() => setSeeAllMessages(true)} ref={ref} className={`mt-[20px] flex gap-2 justify-center items-center w-[283px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
             <img src="/images/adam-dan-yohanna/icon-message.png" alt="Icon maps" className="w-[18px] h-[22px]" />
             <span>see all message</span>
           </button>
@@ -129,20 +131,21 @@ export default function Wishes() {
       ) : (
         <div className="relative z-10 flex flex-col items-center pb-[82px] h-full text-[#4B2B15] text-center">
           <img src="/images/adam-dan-yohanna/img-top-wishes.png" className="w-full" alt="" />
-          <div className="relative w-[340px] mt-[20px]">
+          <div ref={ref} className={`relative w-[340px] mt-[20px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
             <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className="w-full h-[26px] rounded-[5px] pl-[14px] border-[0.49px] border-[#9D7A49] bg-transparent font-figtree font-normal text-xs leading-[140%] text-[#311704]" placeholder="Search" />
             <img src="/images/adam-dan-yohanna/icon-search.png" className="absolute right-3 top-1 w-[16px] h-[20px] opacity-50" />
           </div>
           <div className="grid grid-cols-2 gap-5 mt-[20px] w-[340px] h-[459.87px] overflow-y-auto">
             {filtered.length === 0 ? (
-              <p className="col-span-2 text-center text-sm text-[#9A7B45]">
+              <p ref={ref} className={`col-span-2 text-center text-sm text-[#9A7B45] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
                 No message found
               </p>
             ) : (
               filtered.map((wish, i) => (
                 <div
                   key={i}
-                  className="relative w-[160px] h-[140.87px] rounded-[9.57px] bg-[#FEFBF0] border-[0.87px] border-[#9D7A49] shadow-[5.22px_7.83px_9.74px_2.61px_#0000000F] cursor-pointer"
+                  ref={ref}
+                  className={`relative w-[160px] h-[140.87px] rounded-[9.57px] bg-[#FEFBF0] border-[0.87px] border-[#9D7A49] shadow-[5.22px_7.83px_9.74px_2.61px_#0000000F] cursor-pointer ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}
                   onClick={() => setSelectedWish(wish)}
                 >
                   <div className="w-full relative px-[9px]">
@@ -162,7 +165,7 @@ export default function Wishes() {
               ))
             )}
           </div>
-          <button onClick={() => setSeeAllMessages(false)} className="mt-[38px] flex justify-center items-center w-[340px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase animate-fade-up">
+          <button onClick={() => setSeeAllMessages(false)} ref={ref} className={`mt-[38px] flex justify-center items-center w-[340px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
             back
           </button>
         </div>
