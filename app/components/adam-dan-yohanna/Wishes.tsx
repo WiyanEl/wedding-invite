@@ -95,9 +95,9 @@ export default function Wishes() {
             your wishes
           </h3>
           <form onSubmit={save} className="flex flex-col items-center">
-            <input type="text" value={name} onChange={(e) => setName(e.target.value)} ref={ref} className={`mt-[40px] w-[283px] h-[26px] rounded-[5px] border-[0.49px] border-[#9A7B45] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'} bg-transparent px-1 py-3 text-xs leading-[140%] text-[#311704]`} />
-            <textarea value={message} onChange={(e) => setMessage(e.target.value)} ref={ref} className={`mt-[20px] w-[283px] h-[60px] rounded-[5px] border-[0.49px] border-[#9A7B45] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'} bg-transparent px-1 py-2 text-xs leading-[140%] text-[#311704]`}></textarea>
-            <button type="submit" ref={ref} className={`mt-[20px] flex gap-2 justify-center items-center w-[283px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} className={`mt-[40px] w-[283px] h-[26px] rounded-[5px] border-[0.49px] border-[#9A7B45] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'} bg-transparent px-1 py-3 text-xs leading-[140%] text-[#311704]`} />
+            <textarea value={message} onChange={(e) => setMessage(e.target.value)} className={`mt-[20px] w-[283px] h-[60px] rounded-[5px] border-[0.49px] border-[#9A7B45] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'} bg-transparent px-1 py-2 text-xs leading-[140%] text-[#311704]`}></textarea>
+            <button type="submit" className={`mt-[20px] flex gap-2 justify-center items-center w-[283px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
               <img src="/images/adam-dan-yohanna/icon-send.png" alt="Icon maps" className="w-[15px] h-[19px]" />
               <span>send</span>
             </button>
@@ -123,7 +123,7 @@ export default function Wishes() {
               ))
             )}
           </div>
-          <button type="button" onClick={() => setSeeAllMessages(true)} ref={ref} className={`mt-[20px] flex gap-2 justify-center items-center w-[283px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+          <button type="button" onClick={() => setSeeAllMessages(true)} className={`mt-[20px] flex gap-2 justify-center items-center w-[283px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
             <img src="/images/adam-dan-yohanna/icon-message.png" alt="Icon maps" className="w-[18px] h-[22px]" />
             <span>see all message</span>
           </button>
@@ -165,7 +165,7 @@ export default function Wishes() {
               ))
             )}
           </div>
-          <button onClick={() => setSeeAllMessages(false)} ref={ref} className={`mt-[38px] flex justify-center items-center w-[340px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+          <button onClick={() => setSeeAllMessages(false)} className={`mt-[38px] flex justify-center items-center w-[340px] h-[26px] rounded-[5px] bg-[#9D7A49] border-[0.49px] border-[#9D7A49] font-figtree font-normal text-sx leading-[140%] text-[#FEFBF0] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
             back
           </button>
         </div>

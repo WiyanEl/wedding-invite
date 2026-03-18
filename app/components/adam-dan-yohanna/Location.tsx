@@ -15,21 +15,21 @@ export default function Location() {
           saturday, <br />
           02 may 2026
         </h3>
-        <img src="/images/adam-dan-yohanna/tea-location-mobile.png" alt="Tea" ref={ref} className={`w-[190px] mt-[6px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`} />
+        <img src="/images/adam-dan-yohanna/tea-location-mobile.png" alt="Tea" className={`w-[190px] mt-[6px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`} />
         <h3 ref={ref} className={`font-cormorant font-normal text-2xl leading-[32px] uppercase mt-[11px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           teapai
         </h3>
         <p ref={ref} className={`font-figtree font-medium text-xs leading-[12px] mt-[21px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           14.00 at The One
         </p>
-        <img src="/images/adam-dan-yohanna/cincin-location-mobile.png" alt="Cincin" ref={ref} className={`w-[158px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`} />
+        <img src="/images/adam-dan-yohanna/cincin-location-mobile.png" alt="Cincin" className={`w-[158px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`} />
         <h3 ref={ref} className={`font-cormorant font-normal text-2xl leading-[32px] uppercase mt-[16px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           holy matrimony
         </h3>
         <p ref={ref} className={`font-figtree font-medium text-xs leading-[12px] mt-[21px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           15.30 WITA at The One
         </p>
-        <img src="/images/adam-dan-yohanna/table-dinner-location-mobile.png" alt="Table Dinner" ref={ref} className={`w-[219px] mt-[32px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`} />
+        <img src="/images/adam-dan-yohanna/table-dinner-location-mobile.png" alt="Table Dinner" className={`w-[219px] mt-[32px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`} />
         <h3 ref={ref} className={`font-cormorant font-normal text-2xl leading-[32px] uppercase mt-[11px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           dinner reception
         </h3>
@@ -45,7 +45,7 @@ export default function Location() {
         <p ref={ref} className={`font-figtree font-light text-xs leading-[16px] mt-[10px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           Jl. Goa Lempeh, Pecatu, Bali
         </p>
-        <Link href="https://maps.app.goo.gl/B9Z97vQr4nnv9o998" target="_blank" ref={ref} className={`bg-[#9B3A29] w-[160px] h-[29px] flex gap-2 items-center justify-center rounded-[5px] text-xs text-[#FEFBF0] uppercase mt-[24px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+        <Link href="https://maps.app.goo.gl/B9Z97vQr4nnv9o998" target="_blank" className={`bg-[#9B3A29] w-[160px] h-[29px] flex gap-2 items-center justify-center rounded-[5px] text-xs text-[#FEFBF0] uppercase mt-[24px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           <img src="/images/adam-dan-yohanna/icon-location.png" alt="Icon maps" className="w-[16px] h-[20px]" />
           <span>google maps</span>
         </Link>

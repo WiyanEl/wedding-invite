@@ -46,13 +46,13 @@ export default function Reservation() {
         <p ref={ref} className={`font-figtree font-normal text-xs leading-[14.96px] mt-[37px] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           are you sure?
         </p>
-        <button ref={ref} type="button" className={`w-[240px] h-[26px] cursor-pointer rounded-[5px] flex justify-center items-center border font-figtree font-semibold text-xs uppercase bg-[#889061] border-[#889061] text-white mt-[37px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+        <button type="button" className={`w-[240px] h-[26px] cursor-pointer rounded-[5px] flex justify-center items-center border font-figtree font-semibold text-xs uppercase bg-[#889061] border-[#889061] text-white mt-[37px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           confirm not attend
         </button>
         <p ref={ref} className={`font-figtree font-normal text-[11px] leading-[14.96px] mt-[47px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           Having trouble with RSVP?
         </p>
-        <button type="button" ref={ref} className={`w-[240px] h-[26px] cursor-pointer rounded-[5px] flex gap-2 justify-center items-center border font-figtree font-semibold text-xs uppercase bg-[#889061] border-[#889061] text-white mt-[22px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+        <button type="button" className={`w-[240px] h-[26px] cursor-pointer rounded-[5px] flex gap-2 justify-center items-center border font-figtree font-semibold text-xs uppercase bg-[#889061] border-[#889061] text-white mt-[22px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           <img src="/images/adam-dan-yohanna/icon-cs.png" alt="Icon CS" className="w-[18px] h-[23px]" />
           <span>chat helpdesk team</span>
         </button>
