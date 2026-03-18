@@ -5,6 +5,11 @@ import Header from '@/app/components/adam-dan-yohanna/Header'
 import Hero from '@/app/components/adam-dan-yohanna/Hero'
 import Profile from '@/app/components/adam-dan-yohanna/Profile'
 import CountingDown from '@/app/components/adam-dan-yohanna/CountingDown'
+import Location from '@/app/components/adam-dan-yohanna/Location'
+import Gallery from '@/app/components/adam-dan-yohanna/Gallery'
+import Dresscode from '@/app/components/adam-dan-yohanna/Dresscode'
+import Reservation from '@/app/components/adam-dan-yohanna/Reservation'
+import WeddingGift from '@/app/components/adam-dan-yohanna/WeddingGift'
 
 export default function Page() {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,6 +32,11 @@ export default function Page() {
       <Hero isOpen={isOpen} setIsOpen={setIsOpen} />
       <Profile />
       <CountingDown />
+      <Location />
+      <Gallery />
+      <Dresscode />
+      <Reservation />
+      <WeddingGift />
     </>
   );
 }
