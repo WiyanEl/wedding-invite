@@ -40,7 +40,7 @@ export default function Location() {
           Canapés & Cocktail Party at 17.00 WITA
         </p>
         <h3 ref={ref} className={`font-cormorant font-semibold text-2xl leading-[32px] uppercase mt-[34px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
-          dinner reception
+          the edge bali
         </h3>
         <p ref={ref} className={`font-figtree font-light text-xs leading-[16px] mt-[10px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           Jl. Goa Lempeh, Pecatu, Bali
