@@ -1,6 +1,7 @@
 'use client'
 
 import { useInView } from '@/app/hooks/useInView'
+import Link from 'next/link'
 
 export default function Profile() {
   const { ref, isVisible } = useInView()
@@ -24,11 +25,13 @@ export default function Profile() {
           Mr. Selamat Hardiman and <br />
           Mrs. Annie Hardiman
         </p>
-        <div ref={ref} className={`flex gap-2 mt-[14px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
-          <img src="/images/adam-dan-yohanna/icon-ig.png" alt="Icon Instagram" className="w-[13px]" />
-          <p className="font-figtree font-normal text-xs leading-[16px]">
-            adamhardiman
-          </p>
+        <div ref={ref} className={`mt-[14px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+          <Link href="https://instagram.com/adamhardiman" target="_blank" className="flex gap-2 cursor-pointer hover:text-[#FEFBF0]">
+            <img src="/images/adam-dan-yohanna/icon-ig.png" alt="Icon Instagram" className="w-[13px]" />
+            <p className="font-figtree font-normal text-xs leading-[16px]">
+              adamhardiman
+            </p>
+          </Link>
         </div>
         <h3 ref={ref} className={`font-cormorant font-bold text-[28px] leading-none uppercase mt-[33px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           &
@@ -43,11 +46,13 @@ export default function Profile() {
           Mr. Fransiscus Usman and <br />
           Mrs. Fransisca Meylinda
         </p>
-        <div ref={ref} className={`flex gap-2 mt-[14px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
-          <img src="/images/adam-dan-yohanna/icon-ig.png" alt="Icon Instagram" className="w-[13px]" />
-          <p className="font-figtree font-normal text-xs leading-[16px]">
-            yohannayu
-          </p>
+        <div ref={ref} className={`mt-[14px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+          <Link href="https://instagram.com/yohannayu" target="_blank" className="flex gap-2 cursor-pointer hover:text-[#FEFBF0]">
+            <img src="/images/adam-dan-yohanna/icon-ig.png" alt="Icon Instagram" className="w-[13px]" />
+            <p className="font-figtree font-normal text-xs leading-[16px]">
+              yohannayu
+            </p>
+          </Link>
         </div>
         <p ref={ref} className={`font-figtree font-normal text-xs leading-[18px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'} mt-[45px]`}>
           Your presence and blessings <br />
