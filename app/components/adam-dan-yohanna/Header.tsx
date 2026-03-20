@@ -38,24 +38,6 @@ export default function Header({ isOpen }: {isOpen: boolean}) {
     }, 500)
   }
 
-  const AnimatedText = ({ text, delay = 0 }) => {
-    return (
-      <span className="inline-block">
-        {text.split('').map((char, i) => (
-          <span
-            key={i}
-            className="inline-block animate-letter"
-            style={{
-              animationDelay: `${delay + i * 0.04}s`,
-            }}
-          >
-            {char === ' ' ? '\u00A0' : char}
-          </span>
-        ))}
-      </span>
-    )
-  }
-
   return (
     <header
       className={`fixed md:top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-500
