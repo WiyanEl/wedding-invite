@@ -104,28 +104,47 @@ module.exports = {
       },
       'item-menu-in': {
         '0%': {
+          transform: 'translate(-20px, 30px)',
           opacity: '0',
-          transform: 'scaleY(0)',
-          transformOrigin: '0% 100%',
+        },
+        '70%': {
+          transform: 'skew(-25deg)'
         },
         '100%': {
+          transform: 'translate(0, 0) skew(0)',
           opacity: '1',
-          transform: 'scaleY(1)',
-          transformOrigin: '0% 100%',
         },
       },
       'item-in': {
         '0%': {
           opacity: '0',
-          transform: 'scaleY(0)',
-          transformOrigin: '0% 100%',
+          transform: 'translateY(100%)'
         },
         '100%': {
           opacity: '1',
-          transform: 'scaleY(1)',
-          transformOrigin: '0% 100%',
+          transform: 'translateY(0)',
         },
       },
+      'item-menu-out': {
+        '0%': {
+          opacity: '1'
+        },
+        '100%': {
+          opacity: '0'
+        }
+      },
+      'close-menu-out': {
+        '0%': {
+          opacity: '1',
+          transform: 'scaleY(1)',
+          transformOrigin: '100% 0%',
+        },
+        '100%': {
+          opacity: '0',
+          transform: 'scaleY(0)',
+          transformOrigin: '100% 0%',
+        }
+      }
     },
     animation: {
       'fade-in': 'fade-in 0.5s ease-out forwards',
@@ -134,11 +153,13 @@ module.exports = {
       'fade-left': 'fade-left 0.8s ease-out forwards',
       'fade-right': 'fade-right 0.8s ease-out forwards',
       'zoom-in': 'zoom-in 0.5s ease-out forwards',
-      'menu-in': 'menu-in 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards',
-      'menu-out': 'menu-out 0.5s ease-in forwards',
-      'close-menu-in': 'close-menu-in 1s ease 0s 1 normal forwards',
-      'item-menu-in': 'item-menu-in 1s ease 0s 1 normal forwards',
-      'item-in': 'item-in 1s ease 0s 1 normal forwards'
+      'menu-in': 'menu-in 0.25s ease-in forwards',
+      'menu-out': 'menu-out 0.25s ease-in forwards',
+      'close-menu-in': 'close-menu-in 0.5s ease 0s 1 normal forwards',
+      'item-menu-in': 'item-menu-in 0.8s ease-out forwards',
+      'item-in': 'item-in 0.25s ease-out 0s 1 normal forwards',
+      'close-menu-out': 'close-menu-out 0.5s ease 0s 1 normal forwards',
+      'item-menu-out': 'item-menu-out 0.1s ease-out forwards',
     },
   },
   plugins: [],

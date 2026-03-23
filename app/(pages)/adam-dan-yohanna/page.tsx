@@ -38,17 +38,33 @@ export default function Page() {
 
   return (
     <>
-      <Header isOpen={isOpen} />
-      <Hero isOpen={isOpen} setIsOpen={setIsOpen} />
-      <Profile />
-      <CountingDown />
-      <Location />
-      <Gallery />
-      <Dresscode />
-      <Reservation />
-      <WeddingGift />
-      <Wishes />
-      <Footer />
+      <div className="md:flex">
+        <div className="hidden md:block fixed left-0 top-0 h-screen w-[calc(100%-390px)]">
+          <div className="w-full h-full relative bg-cover" style={{ backgroundImage: "url('/images/adam-dan-yohanna/bg-hero.png')" }}>
+            <div className="absolute left-[64px] bottom-[67px] text-[#4B2B15] flex flex-col gap-1">
+              <p className="font-figtree font-medium text-[18px] leading-none uppercase">
+                the wedding of
+              </p>
+              <h1 className="font-cormorant font-normal text-[64px] leading-none uppercase">
+                adam & yohanna
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div className={`w-full ${isOpen ? 'md:w-[390px] md:ml-auto' : ''}`}>
+          <Header isOpen={isOpen} />
+          <Hero isOpen={isOpen} setIsOpen={setIsOpen} />
+          <Profile />
+          <CountingDown />
+          <Location />
+          <Gallery />
+          <Dresscode />
+          <Reservation />
+          <WeddingGift />
+          <Wishes />
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }
