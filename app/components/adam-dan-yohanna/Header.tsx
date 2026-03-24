@@ -108,9 +108,7 @@ export default function Header({ isOpen }: {isOpen: boolean}) {
               </div>
               <div className="overflow-hidden">
                 <p className="font-figtree text-[8px] font-light leading-[106%] text-white mt-[13px] opacity-0 animate-item-in" style={{ animationDelay: '0.65s' }}>
-                  Please click one of the menu <br />
-                  options above to navigate directly <br />
-                  to your desired page.
+                  Explore the section above.
                 </p>
               </div>
             </div>
