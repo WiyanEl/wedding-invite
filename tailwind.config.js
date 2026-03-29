@@ -13,7 +13,12 @@ module.exports = {
         cormorant: ['var(--font-cormorant)'],
         figtree: ['var(--font-figtree)'],
         ibm: ['var(--font-ibm-plex-sans)'],
-        cinzel: ['var(--font-cinzel)']
+        cinzel: ['var(--font-cinzel)'],
+        outfit: ['var(--font-outfit)'],
+        cloudy: ['var(--font-cloudy)'],
+        noto: ['var(--font-noto)'],
+        canela: ['var(--font-canela)'],
+        signature: ['var(--font-the-signature)']
       }
     },
     keyframes: {
@@ -65,6 +70,16 @@ module.exports = {
         '0%': {
           opacity: '0',
           transform: 'scale(0.95)',
+        },
+        '100%': {
+          opacity: '1',
+          transform: 'scale(1)',
+        },
+      },
+      'scale-in': {
+        '0%': {
+          opacity: '0',
+          transform: 'scale(0)',
         },
         '100%': {
           opacity: '1',
@@ -152,7 +167,7 @@ module.exports = {
       'fade-down': 'fade-down 0.8s ease-out forwards',
       'fade-left': 'fade-left 0.8s ease-out forwards',
       'fade-right': 'fade-right 0.8s ease-out forwards',
-      'zoom-in': 'zoom-in 0.5s ease-out forwards',
+      'scale-in': 'scale-in 0.5s ease-out forwards',
       'menu-in': 'menu-in 0.25s ease-in forwards',
       'menu-out': 'menu-out 0.25s ease-in forwards',
       'close-menu-in': 'close-menu-in 0.5s ease 0s 1 normal forwards',
