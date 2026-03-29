@@ -13,7 +13,7 @@ export default function OurStory() {
             <img src="/images/cornel-dan-tiara/img-our-story-1.png" alt="Image Our Story" className={`w-[154px] ${isVisible ? 'animate-fade-left opacity-100' : 'opacity-0 translate-y-5'}`} />
             <img src="/images/cornel-dan-tiara/img-our-story-2.png" alt="Image Our Story" className={`w-[154px] ${isVisible ? 'animate-fade-right opacity-100' : 'opacity-0 translate-y-5'}`} />
           </div>
-          <h3 className={`relative -top-3 text-left font-canela text-[32px] leading-[26px] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+          <h3 className={`relative top-[-12px] text-left font-canela text-[32px] leading-[26px] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
             Our Story
           </h3>
           <h3 className={`text-left font-signature text-[36px] leading-[31px] mt-[21px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
