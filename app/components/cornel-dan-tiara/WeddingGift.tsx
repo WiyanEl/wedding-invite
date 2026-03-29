@@ -10,7 +10,7 @@ export default function WeddingGift() {
       <div className="flex flex-col items-center py-[80px] h-full text-white font-outfit font-normal text-xs leading-[16px]">
         <div ref={ref}>
           <img src="/images/cornel-dan-tiara/img-wedding-gift-mobile.png" alt="Image Wedding Gift" className={`w-[340px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`} />
-          <div className="relative -top-4 text-left px-[15px]">
+          <div className="relative top-[-12px] text-left px-[15px]">
             <h3 className={`font-canela text-[32px] leading-[26px] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
               wedding gift
             </h3>
