@@ -48,7 +48,7 @@ export default function Profile() {
         </p>
         <p className={`text-xs leading-[20px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           Mr. Billy Purnomo and <br />
-          MAngelina Paskahwati 
+          Angelina Paskahwati 
         </p>
         <div ref={ref} className={`mt-[30px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           <Link href="https://instagram.com/tiatiaraaprilia" target="_blank" className="flex gap-2 items-center justify-center cursor-pointer w-[160px] h-[30px] bg-[#D9D9D9]">
