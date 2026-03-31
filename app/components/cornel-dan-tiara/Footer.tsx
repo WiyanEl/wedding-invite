@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="flex flex-col items-center pt-[80px] h-full text-white font-outfit font-normal text-xs leading-[16px]">
         <div className="w-[280px] min-h-min flex flex-col items-center" ref={ref}>
           <img src="/images/cornel-dan-tiara/img-footer.png" alt="Image Footer" className={`w-full ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`} />
-          <h3 className={`font-canela font-thin text-2xl leading-[22px] uppercase mt-[34px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+          <h3 className={`font-thin text-2xl leading-[22px] uppercase mt-[34px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
             thank you
           </h3>
           <p className={`mt-[29px] text-center ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
