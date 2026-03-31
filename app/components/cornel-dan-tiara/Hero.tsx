@@ -49,15 +49,17 @@ export default function Hero({ isOpen, setIsOpen }: HeroProps) {
         )}
 
         {isOpen && (
-          <div className="font-outfit text-center text-white text-xs leading-none uppercase animate-fade-up">
-            <p className="font-light">
-              save the date <br />
+          <div className="font-outfit text-center text-white text-xs leading-none tracking-normal uppercase animate-fade-up">
+            <p className="font-extralight">
+              save the date
+            </p>
+            <p className="font-extralight mt-1">
               the wedding of
             </p>
             <h2 className="font-cloudy font-normal text-[28px] leading-[31px] mt-[17px]">
               cornel & tiara
             </h2>
-            <p className="font-light mt-[11px]">
+            <p className="font-extralight mt-[11px]">
               saturday, 02 may 2026
             </p>
           </div>

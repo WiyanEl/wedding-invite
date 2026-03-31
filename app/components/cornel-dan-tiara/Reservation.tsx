@@ -10,7 +10,7 @@ export default function Reservation() {
 
   return (
     <>
-      <section id="reservation" className="reservation relative w-full min-h-min bg-[#FEFBF0]">
+      <section id="reservation" className="reservation relative w-full min-h-min bg-[#F6F6F4]">
         <div className="flex flex-col items-center py-[80px] h-full text-[#3B3B3B] text-center font-outfit font-normal text-xs leading-[18px]" ref={ref}>
           <h3 className={`font-canela font-thin text-2xl leading-[22px] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
             rsvp

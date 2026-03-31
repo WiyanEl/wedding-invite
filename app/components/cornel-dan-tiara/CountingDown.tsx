@@ -54,7 +54,7 @@ export default function CountingDown() {
           <TimeBox value={timeLeft.minutes} label="minutes" />
           <TimeBox value={timeLeft.seconds} label="seconds" />
         </div>
-        <Link href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding%20Adam%20%26%20Yohanna&dates=20260502T020000Z/20260502T050000Z&details=Join%20our%20wedding&location=Jakarta" target="_blank" className={`bg-[#605C5C82] hover:bg-[#FEFBF0] w-[160px] h-[29px] flex items-center justify-center font-outfit font-normal text-xs text-[#FEFBF0] hover:text-[#605C5C82] uppercase mt-[48px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+        <Link href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding%20Adam%20%26%20Yohanna&dates=20260502T020000Z/20260502T050000Z&details=Join%20our%20wedding&location=Jakarta" target="_blank" className={`bg-[#605C5C82] hover:bg-[#FEFBF0] w-[160px] h-[29px] flex items-center justify-center font-outfit font-extralight text-xs text-[#FEFBF0] hover:text-[#605C5C82] uppercase mt-[48px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           mark your calender
         </Link>
       </div>

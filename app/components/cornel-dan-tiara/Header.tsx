@@ -48,14 +48,14 @@ export default function Header({ isOpen }: {isOpen: boolean}) {
       <div className="w-[92vw] max-w-6xl">
         {!open && (
           <div className="flex items-center justify-start text-white">
-            <button onClick={() => setOpen(!open)} className="relative top-[30px] left-[25px] w-[34px]">
+            <button onClick={() => setOpen(!open)} className="relative top-[22px] left-[22px] w-[34px]">
               <img src="/images/cornel-dan-tiara/icon-menu-toggle.png" className="w-[25px]" alt="" />
             </button>
           </div>
         )}
 
         {(open || isClosing) && (
-          <div className={`relative top-[12px] left-[22px] w-[255px] bg-[#FEFBF052] flex gap-2 pt-[16px] pb-[27px] ps-[9px] ${isClosing ? 'animate-menu-out' : 'animate-menu-in'}`} style={{ transformOrigin: 'top left' }}>
+          <div className={`relative top-[12px] left-[22px] w-[255px] bg-[#FEFBF052] flex gap-2 pt-[10px] pb-[27px] ps-[8px] ${isClosing ? 'animate-menu-out' : 'animate-menu-in'}`} style={{ transformOrigin: 'top left' }}>
             <div>
               <button className={`font-ibm text-2xl leading-none text-white uppercase opacity-0 ${isClosing ? 'animate-close-menu-out' : 'animate-close-menu-in'}`} onClick={() => handleClose()}>x</button>
             </div>

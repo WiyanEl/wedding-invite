@@ -29,7 +29,7 @@ const cinzel = Cinzel_Decorative({
 
 export const outfit = Outfit({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
   variable: '--font-outfit',
 })
 
@@ -53,10 +53,10 @@ export const notoSans = Noto_Sans({
 export const canelaTrial = localFont({
   src: [
     {
-      path: '../public/fonts/CanelaDeck-Regular-Trial.otf',
-      weight: '400',
+      path: '../public/fonts/Canela-Thin-Trial.otf',
+      weight: '100',
       style: 'normal',
-    },
+    }
   ],
   variable: '--font-canela',
 })

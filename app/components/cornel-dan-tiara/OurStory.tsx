@@ -6,7 +6,7 @@ export default function OurStory() {
   const { ref, isVisible } = useInView()
 
   return (
-    <section id="our-story" className="our-story relative w-full min-h-min bg-[#FEFBF0]">
+    <section id="our-story" className="our-story relative w-full min-h-min bg-[#F6F6F4]">
       <div className="flex flex-col items-center py-[80px] h-full text-[#3B3B3B] text-center font-outfit font-normal text-xs leading-[18px]">
         <div ref={ref}> 
           <div className="grid grid-cols-2 gap-[7px]">

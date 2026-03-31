@@ -24,7 +24,7 @@ export default function Location() {
         <p className={`text-xs leading-[18px] mt-5 ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           Jl. Merdeka No.14,
         </p>
-        <Link href="https://maps.app.goo.gl/dMwDJQinAL1TNmXu5" target="_blank" className={`flex items-center justify-center w-[160px] h-[30px] bg-[#FFFFFF17] hover:bg-[#9B3A29] mt-5 font-semibold text-[#FEFBF0] leading-[17.26px] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+        <Link href="https://maps.app.goo.gl/dMwDJQinAL1TNmXu5" target="_blank" className={`flex items-center justify-center w-[160px] h-[30px] bg-[#FFFFFF17] hover:bg-[#9B3A29] mt-5 text-xs font-medium text-[#FEFBF0] leading-[17.26px] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           google maps
         </Link>
         <img src="/images/cornel-dan-tiara/icon-dot.png" alt="Icon dot" className={`w-[12px] mt-[65px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`} />
@@ -38,7 +38,7 @@ export default function Location() {
         <p className={`text-xs leading-[18px] mt-[19px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           Jl. Jend. Sudirman No.232A, Bandung
         </p>
-        <Link href="https://maps.app.goo.gl/F384zTLVA8bEhr138" target="_blank" className={`flex items-center justify-center w-[160px] h-[30px] bg-[#FFFFFF17] hover:bg-[#9B3A29] mt-5 font-semibold text-[#FEFBF0] leading-[17.26px] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
+        <Link href="https://maps.app.goo.gl/F384zTLVA8bEhr138" target="_blank" className={`flex items-center justify-center w-[160px] h-[30px] bg-[#FFFFFF17] hover:bg-[#9B3A29] mt-5  text-xs font-medium text-[#FEFBF0] leading-[17.26px] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
           google maps
         </Link>
       </div>
