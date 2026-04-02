@@ -1,0 +1,95 @@
+.counting-down {
+  background-image: url(/images/cornel-dan-tiara/bg-counting-down-mobile.png);
+}
+
+.location {
+  background-image: url(/images/cornel-dan-tiara/bg-location-mobile.png);
+}
+
+/* Animate */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate {
+  opacity: 0;
+}
+
+.animate.show {
+  opacity: 1;
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease forwards;
+}
+
+.scale-in {
+  animation: zoomIn 0.5s ease forwards;
+}
+
+.fade-up {
+  animation: fadeUp 1.5s ease forwards;
+}
+
+.fade-down {
+  animation: fadeDown 1.5s ease forwards;
+}
+
+.fade-right {
+  animation: fadeRight 1.5s ease forwards;
+}
+
+.fade-left {
+  animation: fadeLeft 1.5s ease forwards;
+}

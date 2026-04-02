@@ -2,10 +2,13 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { useInView } from '@/app/hooks/useInView'
 
-export default function CountingDown() {
-  const { ref, isVisible } = useInView()
+type Props = {
+  isOpen: boolean
+  isMobile: boolean
+}
+
+export default function CountingDown({ isOpen, isMobile }: Props) {
   const targetDate = new Date('2026-05-02T00:00:00')
 
   const [timeLeft, setTimeLeft] = useState({
@@ -42,23 +45,29 @@ export default function CountingDown() {
   }, [])
 
   return (
-    <section id="counting-down" className="counting-down relative w-full h-[640px] bg-cover bg-center">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#00000033] to-transparent pointer-events-none" />
-      <div className="relative z-10 flex flex-col items-center h-full py-[80px] text-[#FDFDFD] text-center">
-        <h3 ref={ref} className={`font-canela font-thin text-2xl leading-[26px] uppercase ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
-          Counting Down
-        </h3>
-        <div ref={ref} className={`flex gap-[33px] mt-[34px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
-          <TimeBox value={timeLeft.days} label="days" />
-          <TimeBox value={timeLeft.hours} label="hours" />
-          <TimeBox value={timeLeft.minutes} label="minutes" />
-          <TimeBox value={timeLeft.seconds} label="seconds" />
-        </div>
-        <Link href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding%20Adam%20%26%20Yohanna&dates=20260502T020000Z/20260502T050000Z&details=Join%20our%20wedding&location=Jakarta" target="_blank" className={`bg-[#605C5C82] hover:bg-[#FEFBF0] w-[160px] h-[29px] flex items-center justify-center font-outfit font-extralight text-xs text-[#FEFBF0] hover:text-[#605C5C82] uppercase mt-[48px] ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0 translate-y-5'}`}>
-          mark your calender
-        </Link>
-      </div>
-    </section>
+    <>
+      {isOpen ? (
+        <section id="counting-down" className="counting-down relative w-full h-[640px] bg-cover bg-center">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#00000033] to-transparent pointer-events-none" />
+          <div className="relative z-10 flex flex-col items-center h-full py-[80px] text-[#FDFDFD] text-center">
+            <h3 className="font-canela font-thin text-2xl leading-[26px] uppercase animate" data-animate="zoom-in">
+              Counting Down
+            </h3>
+            <div className="flex gap-[33px] mt-[34px] animate" data-animate="zoom-in">
+              <TimeBox value={timeLeft.days} label="days" />
+              <TimeBox value={timeLeft.hours} label="hours" />
+              <TimeBox value={timeLeft.minutes} label="minutes" />
+              <TimeBox value={timeLeft.seconds} label="seconds" />
+            </div>
+            <span className="animate" data-animate="zoom-in">
+              <Link href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding%20Adam%20%26%20Yohanna&dates=20260502T020000Z/20260502T050000Z&details=Join%20our%20wedding&location=Jakarta" target="_blank" className={`bg-[#605C5C82] hover:bg-[#FEFBF0] w-[160px] h-[29px] flex items-center justify-center font-outfit font-extralight text-xs text-[#FEFBF0] hover:text-[#605C5C82] uppercase mt-[48px]`}>
+                mark your calender
+              </Link>
+            </span>
+          </div>
+        </section>
+      ) : null}
+    </>
   )
 }
 
