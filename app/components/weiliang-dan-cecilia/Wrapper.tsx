@@ -5,6 +5,12 @@ import Hero from '@/app/components/weiliang-dan-cecilia/Hero'
 import Profile from '@/app/components/weiliang-dan-cecilia/Profile'
 import CountingDown from '@/app/components/weiliang-dan-cecilia/CountingDown'
 import Location from '@/app/components/weiliang-dan-cecilia/Location'
+import Gallery from '@/app/components/weiliang-dan-cecilia/Gallery'
+import Dresscode from '@/app/components/weiliang-dan-cecilia/Dresscode'
+import WeddingGift from '@/app/components/weiliang-dan-cecilia/WeddingGift'
+import Reservation from '@/app/components/weiliang-dan-cecilia/Reservation'
+import Wishes from '@/app/components/weiliang-dan-cecilia/Wishes'
+import Footer from '@/app/components/weiliang-dan-cecilia/Footer'
 
 export default function Wrapper({ params }: { params: string }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -76,6 +82,12 @@ export default function Wrapper({ params }: { params: string }) {
           <Profile isOpen={isOpen} isMobile={isMobile} />
           <CountingDown isOpen={isOpen} isMobile={isMobile} />
           <Location isOpen={isOpen} isMobile={isMobile} />
+          <Gallery isOpen={isOpen} isMobile={isMobile} />
+          <Dresscode isOpen={isOpen} isMobile={isMobile} />
+          <WeddingGift isOpen={isOpen} isMobile={isMobile} />
+          <Reservation params={params} isOpen={isOpen} isMobile={isMobile} />
+          <Wishes isOpen={isOpen} isMobile={isMobile} />
+          <Footer isOpen={isOpen} isMobile={isMobile} />
         </div>
       </div>
     </>

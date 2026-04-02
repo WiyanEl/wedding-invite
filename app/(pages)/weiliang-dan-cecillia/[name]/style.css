@@ -78,6 +78,17 @@
   }
 }
 
+@keyframes fadeRightPengantin {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .animate {
   opacity: 0;
 }
@@ -109,6 +120,11 @@
 .fade-up-butterfly {
   animation: fadeUpButterfly 1.5s ease forwards;
 }
+
 .fade-left-jek {
   animation: fadeLeftJek 1.5s ease forwards;
+}
+
+.fade-right-pengantin {
+  animation: fadeRightPengantin 1.5s ease forwards;
 }

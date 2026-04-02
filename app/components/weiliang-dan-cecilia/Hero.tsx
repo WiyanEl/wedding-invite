@@ -26,7 +26,7 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
             <Image src="/images/weiliang-dan-cecillia/img-altar-hero.png" alt="Altar" width={339} height={241} className="absolute bottom-[202px] right-0 opacity-0 fade-up" style={{ animationDelay: '1.2s' }} />
             <Image src="/images/weiliang-dan-cecillia/img-taman-hero.png" alt="Taman" width={510} height={363} className="absolute bottom-[42px] opacity-0 fade-up" style={{ animationDelay: '1.5s' }} />
             <Image src="/images/weiliang-dan-cecillia/img-taman-bawah-hero.png" alt="Taman Bawah" width={480} height={239} className="absolute bottom-0 opacity-0 fade-up" style={{ animationDelay: '1.8s' }} />
-            <Image src="/images/weiliang-dan-cecillia/img-pengantin-hero.png" alt="Pengantin" width={196} height={139} className="absolute bottom-[36px] left-0 opacity-0 fade-right" style={{ animationDelay: '2.5s' }} />
+            <Image src="/images/weiliang-dan-cecillia/img-pengantin-hero.png" alt="Pengantin" width={196} height={139} className="absolute bottom-[36px] left-0 opacity-0 fade-right-pengantin" style={{ animationDelay: '2.5s' }} />
               {!isOpen ? (
                 <>
                   <div className={`opacity-0 absolute inset-0 bg-[#F9D6D6C4] blur-[100px] zoom-in`} style={{ animationDelay: '2.8s' }} />
@@ -90,7 +90,7 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
                 <Image src="/images/weiliang-dan-cecillia/img-altar-hero.png" alt="Altar" width={339} height={241} className="absolute bottom-[202px] right-0 opacity-0 fade-up" style={{ animationDelay: '1.2s' }} />
                 <Image src="/images/weiliang-dan-cecillia/img-taman-hero.png" alt="Taman" width={510} height={363} className="absolute bottom-[42px] opacity-0 fade-up" style={{ animationDelay: '1.5s' }} />
                 <Image src="/images/weiliang-dan-cecillia/img-taman-bawah-hero.png" alt="Taman Bawah" width={480} height={239} className="absolute bottom-0 opacity-0 fade-up" style={{ animationDelay: '1.8s' }} />
-                <Image src="/images/weiliang-dan-cecillia/img-pengantin-hero.png" alt="Pengantin" width={196} height={139} className="absolute bottom-[36px] left-0 opacity-0 fade-right" style={{ animationDelay: '2.5s' }} />
+                <Image src="/images/weiliang-dan-cecillia/img-pengantin-hero.png" alt="Pengantin" width={196} height={139} className="absolute bottom-[36px] left-0 opacity-0 fade-right-pengantin" style={{ animationDelay: '2.5s' }} />
                 <div className="text-center font-perpetua font-normal text-[#724232] pt-[306px]">
                   <h6 className="text-base md:text-lg leading-none opacity-0 zoom-in" style={{ animationDelay: '2.8s' }}>The Wedding of</h6>
                   <h3 className="font-channe text-[28px] leading-none mt-[10.78px] md:mt-[20.78px] opacity-0 zoom-in" style={{ animationDelay: '2.8s' }}>Wei Liang & Cecillia</h3>
