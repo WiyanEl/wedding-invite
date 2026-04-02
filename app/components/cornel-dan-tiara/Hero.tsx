@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 type HeroProps = {
   isOpen: boolean
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>,
 }
 
 export default function Hero({ isOpen, setIsOpen }: HeroProps) {

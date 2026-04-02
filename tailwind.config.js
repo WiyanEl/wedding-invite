@@ -18,7 +18,9 @@ module.exports = {
         cloudy: ['var(--font-cloudy)'],
         noto: ['var(--font-noto)'],
         canela: ['var(--font-canela)'],
-        signature: ['var(--font-the-signature)']
+        signature: ['var(--font-the-signature)'],
+        channe: ['var(--font-channe)'],
+        perpetua: ['var(--font-perpetua)'],
       }
     },
     keyframes: {
