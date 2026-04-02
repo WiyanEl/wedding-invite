@@ -43,8 +43,8 @@ export default function Wrapper({ params }: { params: string }) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const el = entry.target;
-          const animation = el.dataset.animate;
+          const el = entry.target as HTMLElement;
+          const animation = el.dataset?.animate;
 
           if (animation) {
             el.classList.add(animation);
