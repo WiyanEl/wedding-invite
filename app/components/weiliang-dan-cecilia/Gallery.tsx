@@ -32,7 +32,7 @@ export default function Gallery({ isOpen, isMobile }: Props) {
               <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-gallery.png" alt="Tumbuhan Atas" width={414} height={294} className={`absolute w-full top-[-120px] left-0 animate`} data-animate="fade-down" />
               <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kanan-atas-gallery.png" alt="Tumbuhan Kanan Atas" width={93} height={151} className={`absolute w-[67px] top-[77px] right-0 animate`} data-animate="fade-left" />
               <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kiri-gallery.png" alt="Tumbuhan Kiri" width={242} height={420} className={`absolute w-[142px] bottom-[67px] left-0 animate`} data-animate="fade-right" />
-              <Image src="/images/weiliang-dan-cecillia/img-alter-gallery.png" alt="Tumbuhan Kiri" width={330} height={235} className={`absolute w-[230px] bottom-0 right-0 animate`} data-animate="fade-left" />
+              <Image src="/images/weiliang-dan-cecillia/img-alter-gallery.png" alt="Tumbuhan Kiri" width={330} height={235} className={`absolute w-[230px] bottom-[-15px] right-0 animate`} data-animate="fade-left" />
               <div className="flex flex-col items-center text-center h-full pt-[126px] pb-[352px]">
                 <h3 className="font-channe text-2xl leading-[26px] text-[#724232] uppercase animate" data-animate="zoom-in">our moments</h3>
                 <Image src="/images/weiliang-dan-cecillia/img-gallery-1.png" alt="Gambar Gallery" width={100} height={100} className="mt-[38px] w-[340px] h-[180px] animate" data-animate="fade-up" onClick={() => setActiveIndex(0)} />

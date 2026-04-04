@@ -20,7 +20,7 @@ export default function Location({ isOpen, isMobile }: Props) {
           <Image src="/images/weiliang-dan-cecillia/img-alter-location.png" alt="Alter" width={380} height={270} className={`absolute bottom-[-20px] left-[15px] animate`} data-animate="fade-up" />
           <Image src="/images/weiliang-dan-cecillia/img-awan-bawah-kiri-location.png" alt="Awan Bawah Kiri Location" width={100} height={100} className={`absolute bottom-[25px] left-0 animate`} data-animate="fade-right" />
           <Image src="/images/weiliang-dan-cecillia/img-awan-kanan-bawah-location.png" alt="Awan Bawah Kanan Location" width={100} height={100} className={`absolute bottom-[35px] right-0 animate`} data-animate="fade-left" />
-          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-bawah-location.png" alt="Taman Bawah" width={100} height={100} className={`absolute w-full bottom-0 animate`} data-animate="fade-up" />
+          <Image src="/images/weiliang-dan-cecillia/img-tb-location.png" alt="Taman Bawah" width={437} height={51} className={`absolute w-full bottom-0 animate`} data-animate="fade-up" />
           <div className="flex flex-col items-center text-center h-full font-perpetua font-normal text-[#724232] pt-[135px] md:pt-[219px] pb-[248px] md:pb-[380px]">
             <h3 className="font-channe text-2xl leading-[26px] uppercase animate" data-animate="zoom-in">the wedding <br /> celebration</h3>
             <h6 className="text-lg leading-[32.22px] uppercase mt-[32px] md:mt-[28px] animate" data-animate="zoom-in">holy matrimony</h6>

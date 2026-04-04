@@ -21,7 +21,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
     <>
       {isOpen ? (
         <>
-          <section id="reservation" className="reservation relative w-full bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+          <section id="reservation" className="reservation relative w-full bg-cover bg-center top-[-20px]" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
             <div className="relative overflow-hidden">
               <Image src="/images/weiliang-dan-cecillia/img-tanaman-kanan-reservation.png" alt="Tanaman Kanan" width={149} height={484} className={`absolute top-[95px] right-0 animate`} data-animate="fade-left" />
               <Image src="/images/weiliang-dan-cecillia/img-tanaman-kiri-reservation.png" alt="Tanaman Kiri" width={146} height={196} className={`absolute top-[96px] left-0 animate`} data-animate="fade-right" />
@@ -88,7 +88,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
                 <p className="relative z-20 text-xs md:text-[14px] leading-[15px] mt-[20px] animate" data-animate="zoom-in">Having trouble with RSVP?</p>
                 <div className="animate" data-animate="zoom-in">
                   <button type="button" className="w-[200px] h-[26px] flex gap-[13px] items-center justify-center border-[0.5px] border-[#AB6A7C] hover:bg-[#AB6A7C] hover:text-[#E6D8DC] text-xs md:text-[14px] leading-[14.96px] mt-[19px]">
-                    <Image src="/images/weiliang-dan-cecillia/img-altar-reservation.png" alt="Gambar Altar" width={14} height={17} />
+                    <Image src="/images/weiliang-dan-cecillia/icon-cs.png" alt="Gambar Altar" width={14} height={17} />
                     <span>Chat Helpdesk Team</span>
                   </button>
                 </div>
