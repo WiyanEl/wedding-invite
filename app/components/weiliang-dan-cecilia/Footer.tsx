@@ -14,7 +14,7 @@ export default function Footer({ isOpen, isMobile }: Props) {
 
   return (
     <>
-      ${isOpen ? (
+      {isOpen ? (
         <footer id="footer" className="footer relative w-full bg-cover bg-center overflow-hidden mt-[-50px] md:mt-[-120px]" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
           <Image src="/images/weiliang-dan-cecillia/img-bunga-atas-footer.png" alt="Tanaman Atas" width={518} height={369} className={`absolute top-[-90px] md:top-0 left-0 animate`} data-animate="fade-down" />
           <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-footer.png" alt="Tanaman Atas" width={165} height={287} className={`absolute bottom-[10px] left-0 animate`} data-animate="fade-right" />

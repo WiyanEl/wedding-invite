@@ -56,13 +56,21 @@
 
 @keyframes fadeUpButterfly {
   from {
-    transform: translateY(100px);
+    transform: translateY(1000px);
     opacity: 0;
   }
   to {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+@keyframes butterflyFlap {
+  0%   { transform: translateY(0) rotate(0deg); }
+  25%  { transform: translateY(-2px) rotate(2deg); }
+  50%  { transform: translateY(0) rotate(0deg); }
+  75%  { transform: translateY(2px) rotate(-2deg); }
+  100% { transform: translateY(0) rotate(0deg); }
 }
 
 @keyframes fadeLeftJek {
@@ -118,7 +126,11 @@
 }
 
 .fade-up-butterfly {
-  animation: fadeUpButterfly 1.5s ease forwards;
+  animation: fadeUpButterfly 6s ease forwards;
+}
+
+.butterfly-flap {
+  animation: butterflyFlap 1s ease-in-out infinite;
 }
 
 .fade-left-jek {
