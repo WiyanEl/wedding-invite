@@ -25,10 +25,10 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
             <div className="relative overflow-hidden">
               <Image src="/images/weiliang-dan-cecillia/img-tanaman-kanan-reservation.png" alt="Tanaman Kanan" width={149} height={484} className={`absolute top-[95px] right-0 animate`} data-animate="fade-left" />
               <Image src="/images/weiliang-dan-cecillia/img-tanaman-kiri-reservation.png" alt="Tanaman Kiri" width={146} height={196} className={`absolute top-[96px] left-0 animate`} data-animate="fade-right" />
-              <div className="flex flex-col items-center text-center h-full pt-[39px] pb-[89px] md:pt-[126px] md:pb-[233px] font-perpetua font-normal text-[#724232]">
+              <div className="flex flex-col items-center text-center h-full pt-[89px] pb-[89px] md:pt-[126px] md:pb-[233px] font-perpetua font-normal text-[#724232]">
                 <Image src="/images/weiliang-dan-cecillia/img-altar-reservation.png" alt="Gambar Altar" width={224} height={160} className="animate" data-animate="zoom-in" />
                 <h3 className="font-channe text-2xl leading-[26px] uppercase md:mt-[21px] animate" data-animate="zoom-in">rsvp</h3>
-                <p className="text-xs md:text-[14px] leading-[15px] mt-[36px] animate" data-animate="zoom-in">
+                <p className="text-xs leading-[15px] mt-[36px] animate" data-animate="zoom-in">
                   <span>Dear Mr. /Mrs. / Ms.</span> <br />
                   <span className="capitalize">{params ?? '........'}</span> <br />
                   <span>Kindly confirm your attendance before</span> <br />
@@ -38,21 +38,21 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
                   <button type="button"  onClick={() => {
                     setAttendance('attend')
                     setShowModal(true)
-                    }} className={`w-[70px] h-[26px] cursor-pointer flex justify-center items-center text-xs md:text-[14px] leading-[14.96px] uppercase
+                    }} className={`w-[70px] h-[26px] cursor-pointer flex justify-center items-center text-xs leading-[14.96px] uppercase
                     ${attendance === 'attend'
                       ? 'bg-[#AB6A7C] text-[#E6D8DC] border-[0.5px] border-[#AB6A7C]'
                       : 'bg-[#E6D8DC] border-[0.5px] border-[#F9D6D6] text-[#AB6A7C]'}`}
                     >
                       attend
                   </button>
-                  <button type="button"  onClick={() => setAttendance('not')} className={`w-[90px] h-[26px] cursor-pointer flex justify-center items-center text-xs md:text-[14px] leading-[14.96px] uppercase
+                  <button type="button"  onClick={() => setAttendance('not')} className={`w-[90px] h-[26px] cursor-pointer flex justify-center items-center text-xs leading-[14.96px] uppercase
                     ${attendance === 'attend'
                       ? 'bg-[#E6D8DC] border-[0.5px] border-[#F9D6D6] text-[#AB6A7C]'
                       : 'bg-[#AB6A7C] text-[#E6D8DC] border-[0.5px] border-[#AB6A7C]'}`}>
                       not attend
                   </button>
                 </div>
-                <p className="relative z-20 text-xs md:text-[14px] leading-[15px] mt-[18px] animate" data-animate="zoom-in">Chosee event session to attend</p>
+                <p className="relative z-20 text-xs leading-[15px] mt-[18px] animate" data-animate="zoom-in">Chosee event session to attend</p>
                 <div className="animate" data-animate="zoom-in">
                   <div
                     onClick={() => setSelectedMatrimony(!selectedMatrimony)}
@@ -63,7 +63,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
                         <div className="w-[7px] h-[7px] bg-[#AB6A7C]" />
                       )}
                     </div>
-                    <span className="absolute inset-0 flex items-center justify-center text-xs md:text-[14px] text-[#E6D8DC] uppercase pointer-events-none">
+                    <span className="absolute inset-0 flex items-center justify-center font-perpetua text-xs text-[#E6D8DC] uppercase pointer-events-none">
                       holy matrimony
                     </span>
                   </div>
@@ -76,18 +76,18 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
                         <div className="w-[7px] h-[7px] bg-[#AB6A7C]" />
                       )}
                     </div>
-                    <span className="absolute inset-0 flex items-center justify-center text-xs md:text-[14px] text-[#E6D8DC] uppercase pointer-events-none">
+                    <span className="absolute inset-0 flex items-center justify-center font-perpetua text-xs text-[#E6D8DC] uppercase pointer-events-none">
                       CANAPÉ & COCKTAIL PARTY
                     </span>
                   </div>
                 </div>
-                <p className="relative z-20 text-xs md:text-[14px] leading-[15px] mt-[19px] animate" data-animate="zoom-in">Confirm Attendance</p>
+                <p className="relative z-20 text-xs leading-[15px] mt-[19px] animate" data-animate="zoom-in">Confirm Attendance</p>
                 <div className="animate" data-animate="zoom-in">
-                  <button type="button" className="w-[200px] h-[26px] flex items-center justify-center border-[0.5px] border-[#AB6A7C] hover:bg-[#AB6A7C] hover:text-[#E6D8DC] text-xs md:text-[14px] leading-[14.96px] mt-[19px]">Yes</button>
+                  <button type="button" className="w-[200px] h-[26px] flex items-center justify-center border-[0.5px] border-[#AB6A7C] hover:bg-[#AB6A7C] hover:text-[#E6D8DC] text-xs leading-[14.96px] mt-[19px]">Yes</button>
                 </div>
-                <p className="relative z-20 text-xs md:text-[14px] leading-[15px] mt-[20px] animate" data-animate="zoom-in">Having trouble with RSVP?</p>
+                <p className="relative z-20 text-xs leading-[15px] mt-[20px] animate" data-animate="zoom-in">Having trouble with RSVP?</p>
                 <div className="animate" data-animate="zoom-in">
-                  <button type="button" className="w-[200px] h-[26px] flex gap-[13px] items-center justify-center border-[0.5px] border-[#AB6A7C] hover:bg-[#AB6A7C] hover:text-[#E6D8DC] text-xs md:text-[14px] leading-[14.96px] mt-[19px]">
+                  <button type="button" className="w-[200px] h-[26px] flex gap-[13px] items-center justify-center border-[0.5px] border-[#AB6A7C] hover:bg-[#AB6A7C] hover:text-[#E6D8DC] text-xs leading-[14.96px] mt-[19px]">
                     <Image src="/images/weiliang-dan-cecillia/icon-cs.png" alt="Gambar Altar" width={14} height={17} />
                     <span>Chat Helpdesk Team</span>
                   </button>
@@ -113,17 +113,17 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
                 <h3 className="font-extrabold text-base uppercase">
                   RSVP CLOSED
                 </h3>
-                <p className="text-xs md:text-[14px] mt-[18px] leading-[16px]">
+                <p className="text-xs mt-[18px] leading-[16px]">
                   Reservasi telah ditutup. <br />
                   Untuk bantuan atau reservasi manual, <br />
                   silahkan hubungi tim kami.
                 </p>
-                <p className="text-xs md:text-[14px] mt-[18px] leading-[16px]">
+                <p className="text-xs mt-[18px] leading-[16px]">
                   Reservations are now closed. <br />
                   For assistance or manual reservations, <br />
                   please contact our team.
                 </p>
-                <button type="button" className={`w-[200px] h-[30px] rounded-[10px] cursor-pointer flex gap-2 justify-center items-center border font-figtree font-semibold text-xs md:text-[14px] uppercase bg-transparent border-[#AB6A7C] text-[#AB6A7C] mt-[22px]`}>
+                <button type="button" className={`w-[200px] h-[30px] rounded-[10px] cursor-pointer flex gap-2 justify-center items-center border font-figtree font-semibold text-xs uppercase bg-transparent border-[#AB6A7C] text-[#AB6A7C] mt-[22px]`}>
                   <img src="/images/weiliang-dan-cecillia/icon-cs.png" alt="Icon CS" className="w-[18px] h-[23px]" />
                   <span>chat helpdesk team</span>
                 </button>
