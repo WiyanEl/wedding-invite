@@ -15,8 +15,8 @@ export default function Footer({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <footer id="footer" className="footer relative w-full bg-cover bg-center overflow-hidden mt-[-50px] md:mt-[-120px]" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-          <Image src="/images/weiliang-dan-cecillia/img-bunga-atas-footer.png" alt="Tanaman Atas" width={518} height={369} className={`absolute top-[-90px] md:top-0 left-0 animate`} data-animate="fade-down" />
+        <footer id="footer" className="footer relative w-full bg-cover bg-center overflow-hidden" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+          <Image src="/images/weiliang-dan-cecillia/img-bunga-atas-footer.png" alt="Tanaman Atas" width={518} height={369} className={`absolute top-[-90px] left-0 animate`} data-animate="fade-down" />
           <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-footer.png" alt="Tanaman Atas" width={135} height={287} className={`absolute bottom-[10px] left-0 animate`} data-animate="fade-right" />
           <Image src="/images/weiliang-dan-cecillia/img-altar-footer.png" alt="Tanaman Atas" width={286} height={203} className={`absolute bottom-[10px] left-[51px] animate`} data-animate="fade-up" />
           <Image src="/images/weiliang-dan-cecillia/img-awan-footer.png" alt="Tanaman Atas" width={173} height={123} className={`absolute bottom-0 left-[79px] animate`} data-animate="fade-up" />
@@ -25,10 +25,10 @@ export default function Footer({ isOpen, isMobile }: Props) {
           <Image src="/images/weiliang-dan-cecillia/img-tiang-kanan-footer.png" alt="Tanaman Atas" width={139} height={293} className={`absolute bottom-[10px] right-0 animate`} data-animate="fade-left" />
           <div className="flex flex-col items-center text-center h-full pt-[255px] md:pt-[369px] pb-[331px] md:pb-[361] font-normal text-[#724232]">
             <h3 className="font-channe text-[28px] leading-none animate" data-animate="zoom-in">Thank You</h3>
-            <p className="text-xs md:text-[14px] leading-[15px] animate mt-[11px]" data-animate="zoom-in">
+            <p className="font-perpetua text-xs md:text-[14px] leading-[15px] animate mt-[11px]" data-animate="zoom-in">
               It would be a joy and honor for us to <br /> have you join our celebration and <br /> share your blessings.
             </p>
-            <p className="text-[14px] leading-[15px] animate mt-[17px]" data-animate="zoom-in">
+            <p className="font-perpetua text-[14px] leading-[15px] animate mt-[17px]" data-animate="zoom-in">
               #cecifoundherwei
             </p>
           </div>

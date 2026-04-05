@@ -35,19 +35,19 @@ export default function Gallery({ isOpen, isMobile }: Props) {
               <Image src="/images/weiliang-dan-cecillia/img-alter-gallery.png" alt="Tumbuhan Kiri" width={330} height={235} className={`absolute w-[230px] bottom-[-15px] right-0 animate`} data-animate="fade-left" />
               <div className="flex flex-col items-center text-center h-full pt-[126px] pb-[352px]">
                 <h3 className="font-channe text-2xl leading-[26px] text-[#724232] uppercase animate" data-animate="zoom-in">our moments</h3>
-                <Image src="/images/weiliang-dan-cecillia/img-gallery-1.png" alt="Gambar Gallery" width={100} height={100} className="mt-[38px] w-[340px] h-[180px] animate" data-animate="fade-up" onClick={() => setActiveIndex(0)} />
+                <Image src="/images/weiliang-dan-cecillia/img-gallery-1.png" alt="Gambar Gallery" width={340} height={180} className="mt-[38px] animate" data-animate="fade-up" onClick={() => setActiveIndex(0)} />
                 <div className="w-[340px] flex gap-[7px] mt-[7px]">
-                  <Image src="/images/weiliang-dan-cecillia/img-gallery-2.png" alt="Gambar Gallery" width={100} height={100} className="w-[103px] h-[113px] animate" data-animate="fade-right" onClick={() => setActiveIndex(1)} />
-                  <Image src="/images/weiliang-dan-cecillia/img-gallery-3.png" alt="Gambar Gallery" width={100} height={100} className="w-[104px] h-[113px] animate" data-animate="fade-up" onClick={() => setActiveIndex(2)} />
-                  <Image src="/images/weiliang-dan-cecillia/img-gallery-4.png" alt="Gambar Gallery" width={100} height={100} className="w-[119px] h-[113px] animate" data-animate="fade-left" onClick={() => setActiveIndex(3)} />
+                  <Image src="/images/weiliang-dan-cecillia/img-gallery-2.png" alt="Gambar Gallery" width={103} height={113} className="animate" data-animate="fade-right" onClick={() => setActiveIndex(1)} />
+                  <Image src="/images/weiliang-dan-cecillia/img-gallery-3.png" alt="Gambar Gallery" width={104} height={113} className="animate" data-animate="fade-up" onClick={() => setActiveIndex(2)} />
+                  <Image src="/images/weiliang-dan-cecillia/img-gallery-4.png" alt="Gambar Gallery" width={119} height={113} className="animate" data-animate="fade-left" onClick={() => setActiveIndex(3)} />
                 </div>
                 <div className="w-[340px] flex gap-[7px] mt-[7px]">
-                  <Image src="/images/weiliang-dan-cecillia/img-gallery-5.png" alt="Gambar Gallery" width={100} height={100} className="w-[243px] h-[153px] animate" data-animate="fade-right" onClick={() => setActiveIndex(4)} />
-                  <Image src="/images/weiliang-dan-cecillia/img-gallery-6.png" alt="Gambar Gallery" width={100} height={100} className="w-[90px] h-[153px] animate" data-animate="fade-left" onClick={() => setActiveIndex(5)} />
+                  <Image src="/images/weiliang-dan-cecillia/img-gallery-5.png" alt="Gambar Gallery" width={243} height={153} className="animate" data-animate="fade-right" onClick={() => setActiveIndex(4)} />
+                  <Image src="/images/weiliang-dan-cecillia/img-gallery-6.png" alt="Gambar Gallery" width={90} height={153} className="animate" data-animate="fade-left" onClick={() => setActiveIndex(5)} />
                 </div>
                 <div className="w-[340px] flex gap-[7px] mt-[7px]">
-                  <Image src="/images/weiliang-dan-cecillia/img-gallery-7.png" alt="Gambar Gallery" width={100} height={100} className="w-[160px] h-[153px] animate" data-animate="fade-right" onClick={() => setActiveIndex(6)} />
-                  <Image src="/images/weiliang-dan-cecillia/img-gallery-8.png" alt="Gambar Gallery" width={100} height={100} className="w-[173px] h-[153px] animate" data-animate="fade-left" onClick={() => setActiveIndex(7)} />
+                  <Image src="/images/weiliang-dan-cecillia/img-gallery-7.png" alt="Gambar Gallery" width={160} height={153} className="animate" data-animate="fade-right" onClick={() => setActiveIndex(6)} />
+                  <Image src="/images/weiliang-dan-cecillia/img-gallery-8.png" alt="Gambar Gallery" width={173} height={153} className="animate" data-animate="fade-left" onClick={() => setActiveIndex(7)} />
                 </div>
               </div>
             </div>

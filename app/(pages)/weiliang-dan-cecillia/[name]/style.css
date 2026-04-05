@@ -65,6 +65,28 @@
   }
 }
 
+@keyframes fadeLeftButterfly {
+  from {
+    transform: translateX(500px);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeRightButterfly {
+  from {
+    transform: translateX(-500px);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes butterflyFlap {
   0% {
     transform: rotateZ(-20deg) rotateY(0deg);
@@ -136,7 +158,15 @@
 }
 
 .fade-up-butterfly {
-  animation: fadeUpButterfly 10s ease forwards;
+  animation: fadeUpButterfly 7s ease forwards;
+}
+
+.fade-left-butterfly {
+  animation: fadeLeftButterfly 7s ease forwards;
+}
+
+.fade-right-butterfly {
+  animation: fadeRightButterfly 7s ease forwards;
 }
 
 .butterfly-flap {
