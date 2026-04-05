@@ -17,7 +17,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
       {isOpen ? (
         <section id="profile" className="profile relative w-full min-h-min bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
           <div className="relative overflow-hidden">
-            <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-profile.png" alt="Tumbuhan Atas" width={473} height={294} className={`absolute top-[-50px] animate`} data-animate="fade-down" />
+            <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-profile.png" alt="Tumbuhan Atas" width={473} height={294} className={`absolute top-[-85px] animate`} data-animate="fade-down" />
             <div className="absolute top-[121px] md:top-[128px] right-0 animate" data-animate="fade-left-butterfly">
               <Image src="/images/weiliang-dan-cecillia/img-butterfly-kanan-profile.png" alt="Butterfly Kanan" width={65} height={46} className={`${isOpen ? 'butterfly-flap' : ''}`} />
             </div>
@@ -25,8 +25,10 @@ export default function Profile({ isOpen, isMobile }: Props) {
               <Image src="/images/weiliang-dan-cecillia/img-butterfly-kiri-profile.png" alt="Butterfly Kiri" width={61} height={44 } className={`${isOpen ? 'butterfly-flap' : ''}`} />
             </div>
             <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-profile.png" alt="Tiang Kiri" width={196} height={513} className={`absolute bottom-[-5px] left-[0] animate`} data-animate="fade-right" />
-            <Image src="/images/weiliang-dan-cecillia/img-tiang-kanan-profile.png" alt="Tiang Kanan" width={196} height={513} className={`absolute bottom-[-10px] right-[0] animate`} data-animate="fade-left" />
-
+            <Image src="/images/weiliang-dan-cecillia/img-tiang-right-profile.png" alt="Tiang Kanan" width={156} height={513} className={`absolute bottom-[-10px] right-[0] animate`} data-animate="fade-left" />
+            <div className="absolute bottom-[206px] right-0 animate" data-animate="fade-left-butterfly">
+              <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-profile-3.png" alt="Butterfly Kanan" width={76} height={54} className={`${isOpen ? 'butterfly-flap' : ''}`} />
+            </div>
             <div className="flex flex-col items-center text-center h-full pt-[136px] md:pt-[212px] pb-[112px] md:pb-[225px] font-perpetua font-normal text-[#724232]">
               <p className={`text-xs md:text-[14px] leading-[15px] animate`} data-animate="zoom-in">
                 By the grace and blessing of God, <br />
