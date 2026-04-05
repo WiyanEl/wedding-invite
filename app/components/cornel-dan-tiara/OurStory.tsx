@@ -19,7 +19,7 @@ export default function OurStory({ isOpen, isMobile }: Props) {
               <h3 className="relative top-[-12px] text-left font-canela text-[32px] leading-[26px] uppercase animate" data-animate="fade-up">
                 Our Story
               </h3>
-              <h3 className="text-left font-signature text-[36px] leading-[31px] mt-[21px] animate" data-animate="fade-up">
+              <h3 className="text-left font-signature text-[36px] leading-[31px] mt-[12px] animate" data-animate="fade-up">
                 Cornel & Tiara
               </h3>
               <div className="mt-[13px] flex flex-col gap-4">
