@@ -129,6 +129,22 @@
   }
 }
 
+@keyframes sway-left {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes sway-right {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+
 .animate {
   opacity: 0;
 }
@@ -179,4 +195,14 @@
 
 .fade-right-pengantin {
   animation: fadeRightPengantin 1.5s ease forwards;
+}
+
+.sway-left {
+  transform-origin: left center;
+  animation: sway-left 3s ease-in-out infinite;
+}
+
+.sway-right {
+  transform-origin: right center;
+  animation: sway-right 3s ease-in-out infinite;
 }

@@ -18,8 +18,12 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
       {isMobile ? (
         <section id="hero" className={`block md:hidden hero relative w-full h-screen bg-cover bg-center md:bg-top`} style={{ backgroundImage: `url('/images/weiliang-dan-cecillia/bg-hero-mobile.png')` }}>
           <div className={`relative z-10 flex ${isOpen ? '' : 'items-center'} justify-center h-full overflow-hidden`}>
-            <Image src="/images/weiliang-dan-cecillia/img-tl-pohon-hero.png" alt="Pohon Kiri" width={263} height={187} className="absolute top-0 left-[-33px] w-[63%] opacity-0 fade-right" />
-            <Image src="/images/weiliang-dan-cecillia/img-tr-pohon-hero.png" alt="Pohon Kanan" width={229} height={163} className="absolute top-0 right-0 w-[55%] opacity-0 fade-left" />
+            <div className="absolute top-0 left-[-33px] w-[63%] opacity-0 fade-right">
+              <Image src="/images/weiliang-dan-cecillia/img-tl-pohon-hero.png" alt="Pohon Kiri" width={263} height={187} className={`${isOpen ? 'sway-left' : ''}`} style={{ animationDelay: '0.5s' }} />
+            </div>
+            <div className="absolute top-0 right-0 w-[55%] opacity-0 fade-left">
+              <Image src="/images/weiliang-dan-cecillia/img-tr-pohon-hero.png" alt="Pohon Kanan" width={229} height={163} className={`${isOpen ? 'sway-right' : ''}`} style={{ animationDelay: '0.5s' }} />
+            </div>
             <Image src="/images/weiliang-dan-cecillia/img-bunga-kiri-hero.png" alt="Bunga Kiri" width={129} height={92} className="absolute top-[131px] left-0 opacity-0 fade-right" style={{ animationDelay: '0.3s' }} />
             <Image src="/images/weiliang-dan-cecillia/img-taman-belakang-hero.png" alt="Taman Belakang" width={368} height={258} className="absolute bottom-[130px] right-0 w-[92%] opacity-0 fade-up" style={{ animationDelay: '0.6s' }} />
             <Image src="/images/weiliang-dan-cecillia/img-altar-hero.png" alt="Altar" width={339} height={241} className="absolute bottom-[170px] right-0 w-[70%] opacity-0 fade-up" style={{ animationDelay: '0.9s' }} />
@@ -93,8 +97,12 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
               </div>
             ) : (
               <>
-                <Image src="/images/weiliang-dan-cecillia/img-tl-pohon-hero.png" alt="Pohon Kiri" width={263} height={187} className="absolute top-0 left-[-33px] w-[63%] opacity-0 fade-right" />
-                <Image src="/images/weiliang-dan-cecillia/img-tr-pohon-hero.png" alt="Pohon Kanan" width={229} height={163} className="absolute top-0 right-0 w-[55%] opacity-0 fade-left" />
+                <div className="absolute top-0 left-[-33px] w-[63%] opacity-0 fade-right">
+                  <Image src="/images/weiliang-dan-cecillia/img-tl-pohon-hero.png" alt="Pohon Kiri" width={263} height={187} className={`${isOpen ? 'sway-left' : ''}`} style={{ animationDelay: '0.5s' }} />
+                </div>
+                <div className="absolute top-0 right-0 w-[55%] opacity-0 fade-left">
+                  <Image src="/images/weiliang-dan-cecillia/img-tr-pohon-hero.png" alt="Pohon Kanan" width={229} height={163} className={`${isOpen ? 'sway-right' : ''}`} style={{ animationDelay: '0.5s' }} />
+                </div>
                 <Image src="/images/weiliang-dan-cecillia/img-bunga-kiri-hero.png" alt="Bunga Kiri" width={129} height={92} className="absolute top-[131px] left-0 opacity-0 fade-right" style={{ animationDelay: '0.3s' }} />
                 <Image src="/images/weiliang-dan-cecillia/img-taman-belakang-hero.png" alt="Taman Belakang" width={368} height={258} className="absolute bottom-[154px] right-0 w-[92%] opacity-0 fade-up" style={{ animationDelay: '0.6s' }} />
                 <Image src="/images/weiliang-dan-cecillia/img-altar-hero.png" alt="Altar" width={339} height={241} className="absolute bottom-[189px] right-0 w-[70%] opacity-0 fade-up" style={{ animationDelay: '0.9s' }} />
