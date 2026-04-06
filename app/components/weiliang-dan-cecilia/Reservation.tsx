@@ -94,7 +94,8 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
                 </div>
               </div>
             </div>
-            <Image src="/images/weiliang-dan-cecillia/img-tanaman-tengah-reservation.png" alt="Tumbuhan Bawah" width={468} height={185} className={`absolute z-10 w-full bottom-[-210px] md:bottom-[-210px] right-0 animate`} data-animate="fade-up" />
+            <Image src="/images/weiliang-dan-cecillia/img-tanaman-tengah-reservation-mobile.png" alt="Tumbuhan Bawah" width={498} height={286} className={`md:hidden absolute z-10 bottom-[-210px] animate`} data-animate="fade-up" />
+            <Image src="/images/weiliang-dan-cecillia/img-tanaman-tengah-reservation-dekstop.png" alt="Tumbuhan Bawah" width={498} height={286} className={`hidden md:block absolute z-10 bottom-[-150px] animate`} data-animate="fade-up" />
           </section>
 
           {showModal && (
