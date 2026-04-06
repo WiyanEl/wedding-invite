@@ -17,16 +17,16 @@ export default function Profile({ isOpen, isMobile }: Props) {
       {isOpen ? (
         <section id="profile" className="profile relative w-full min-h-min bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
           <div className="relative overflow-hidden">
-            <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-profile.png" alt="Tumbuhan Atas" width={473} height={294} className={`absolute top-[-85px] animate`} data-animate="fade-down" />
+            <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-profile.png" alt="Tumbuhan Atas" width={414} height={294} className={`absolute w-[414px] h-[294] top-[-75px] left-[-7px] animate`} data-animate="fade-down" />
             <div className="absolute top-[121px] md:top-[128px] right-0 animate" data-animate="fade-left-butterfly">
-              <Image src="/images/weiliang-dan-cecillia/img-butterfly-kanan-profile.png" alt="Butterfly Kanan" width={65} height={46} className={`${isOpen ? 'butterfly-flap' : ''}`} />
+              <Image src="/images/weiliang-dan-cecillia/img-butterfly-kanan-profile.png" alt="Butterfly Kanan" width={65} height={46} className={`w-[65px] h-[46px] ${isOpen ? 'butterfly-flap' : ''}`} />
             </div>
             <div className="absolute top-[194px] md:top-[201px] left-[15px] animate" data-animate="fade-right-butterfly">
-              <Image src="/images/weiliang-dan-cecillia/img-butterfly-kiri-profile.png" alt="Butterfly Kiri" width={61} height={44 } className={`${isOpen ? 'butterfly-flap' : ''}`} />
+              <Image src="/images/weiliang-dan-cecillia/img-butterfly-kiri-profile.png" alt="Butterfly Kiri" width={61} height={44} className={`w-[61px] h-[44] ${isOpen ? 'butterfly-flap' : ''}`} />
             </div>
-            <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-profile.png" alt="Tiang Kiri" width={196} height={513} className={`absolute bottom-[-5px] left-[0] animate`} data-animate="fade-right" />
-            <Image src="/images/weiliang-dan-cecillia/img-tiang-right-profile.png" alt="Tiang Kanan" width={156} height={513} className={`absolute bottom-[-10px] right-[0] animate`} data-animate="fade-left" />
-            <div className="absolute bottom-[206px] right-0 animate" data-animate="fade-left-butterfly">
+            <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-profile.png" alt="Tiang Kiri" width={335} height={581} className={`absolute z-20 w-[205px] top-[100px] md:top-[350px] left-0 animate`} data-animate="fade-right" />
+            <Image src="/images/weiliang-dan-cecillia/img-tiang-right-profile.png" alt="Tiang Kanan" width={176} height={473} className={`absolute z-20 w-[156px] top-[193px] md:top-[435px] right-0 animate`} data-animate="fade-left" />
+            <div className="absolute z-20 bottom-[206px] right-0 animate" data-animate="fade-left-butterfly">
               <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-profile-3.png" alt="Butterfly Kanan" width={76} height={54} className={`${isOpen ? 'butterfly-flap' : ''}`} />
             </div>
             <div className="flex flex-col items-center text-center h-full pt-[136px] md:pt-[212px] pb-[112px] md:pb-[225px] font-perpetua font-normal text-[#724232]">
@@ -41,7 +41,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
                 Mr. Tan Mok Koon and & Mrs. Chang Siew Muay
               </p>
               <Link href="https://instagram.com/wl7130" target="_blank" className={`flex gap-2 text-xs md:text-[14px] leading-[16px] mt-[11px] animate`} data-animate="zoom-in">
-                <img src="/images/cornel-dan-tiara/icon-ig.png" alt="Icon Instagram" className="w-[13px]" />
+                <img src="/images/weiliang-dan-cecillia/icon-ig.png" alt="Icon Instagram" className="w-[13px]" />
                 <span>wl7130</span>
               </Link>
               <h3 className={`font-channe text-2xl md:text-4xl leading-none mt-[21px] md:mt-[33px] animate`} data-animate="zoom-in">&</h3>
@@ -54,7 +54,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
                 Mr. Tan Mok Koon and & Mrs. Chang Siew Muay
               </p>
               <Link href="https://instagram.com/cizzy_cecilia" target="_blank" className={`flex gap-2 text-xs md:text-[14px] leading-[16px] mt-2.5 animate`} data-animate="zoom-in">
-                <img src="/images/cornel-dan-tiara/icon-ig.png" alt="Icon Instagram" className="w-[13px]" />
+                <img src="/images/weiliang-dan-cecillia/icon-ig.png" alt="Icon Instagram" className="w-[13px]" />
                 <span>cizzy_cecilia</span>
               </Link>
               <p className={`text-xs md:text-[14px] leading-[16px] mt-[22px] md:mt-[33.3px] animate`} data-animate="zoom-in">

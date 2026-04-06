@@ -96,9 +96,9 @@ export default function Wishes({ isOpen, isMobile }: Props) {
       {isOpen ? (
         <section id="wishes" className="wishes relative w-full bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
           <div className="relative overflow-hidden">
-            <Image src="/images/weiliang-dan-cecillia/img-tiang-kanan-wishes.png" alt="Tiang Kanan" width={154} height={319} className={`absolute bottom-[-18px] right-0 animate`} data-animate="fade-left" />
-            <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-wishes.png" alt="Tiang Kiri" width={154} height={319} className={`absolute bottom-[-18px] left-0 animate`} data-animate="fade-right" />
-            <Image src="/images/weiliang-dan-cecillia/img-pengantin-wishes.png" alt="Tiang Kiri" width={154} height={319} className={`absolute z-20 bottom-[10px] left-[129px] animate`} data-animate="fade-right-pengantin" style={{ animationDelay: '1s' }} />
+            <Image src="/images/weiliang-dan-cecillia/img-tiang-kanan-wishes.png" alt="Tiang Kanan" width={184} height={319} className={`absolute w-[154px] bottom-[-18px] right-0 animate`} data-animate="fade-left" />
+            <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-wishes.png" alt="Tiang Kiri" width={194} height={319} className={`absolute w-[154px] bottom-[-18px] left-0 animate`} data-animate="fade-right" />
+            <Image src="/images/weiliang-dan-cecillia/img-pengantin-wishes.png" alt="Pengantin" width={180} height={128} className={`absolute z-20 bottom-0 left-[128px] animate`} data-animate="fade-right-pengantin" style={{ animationDelay: '1s' }} />
             {!seeAllMessages ? (
               <div className="relative z-10 flex flex-col items-center pt-[82px] md:pt-[161px] pb-[182px] md:pb-[367px] h-full text-[#724232] text-center">
                 <h3 className="font-channe text-2xl leading-[26px] uppercase animate" data-animate="zoom-in">your wishes</h3>
@@ -195,7 +195,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
               </div>
             )}
           </div>
-          <Image src="/images/weiliang-dan-cecillia/img-tanaman-bawah-wishes.png" alt="Tumbuhan Bawah" width={419} height={298} className={`absolute z-10 w-full bottom-[-140px] right-0 animate`} data-animate="fade-up" />
+          <Image src="/images/weiliang-dan-cecillia/img-tanaman-bawah-wishes.png" alt="Tumbuhan Bawah" width={419} height={298} className={`absolute z-10 w-full bottom-[-130px] right-0 animate`} data-animate="fade-up" />
         </section>
       ) : null}
     </>

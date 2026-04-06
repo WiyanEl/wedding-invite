@@ -50,14 +50,14 @@ export default function CountingDown({ isOpen, isMobile }: Props) {
     <>
       {isOpen ? (
         <section id="counting-down" className="counting-down relative w-full min-h-min bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kecil-kanan-counting-down.png" alt="Tumbuhan Kanan" width={100} height={100} className={`absolute top-[44px] right-0 animate`} data-animate="fade-left" />
-          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kecil-kiri-counting-down.png" alt="Tumbuhan Kiri" width={100} height={100} className={`absolute top-[209px] left-0 animate`} data-animate="fade-right" />
-          <Image src="/images/weiliang-dan-cecillia/img-gapura-counting-down.png" alt="Gapura" width={227} height={161} className={`absolute bottom-[7px] right-0 animate`} data-animate="fade-up" />
+          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kecil-kanan-counting-down.png" alt="Tumbuhan Kanan" width={144} height={102} className={`absolute w-[104px] top-[44px] md:top-[278px] right-0 animate`} data-animate="fade-left" />
+          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kecil-kiri-counting-down.png" alt="Tumbuhan Kiri" width={179} height={127} className={`absolute w-[139px] top-[209px] md:top-[443] left-0 animate`} data-animate="fade-right" />
+          <Image src="/images/weiliang-dan-cecillia/img-gapura-counting-down.png" alt="Gapura" width={227} height={161} className={`absolute w-[227px] bottom-[7px] right-0 animate`} data-animate="fade-up" />
           <Image src="/images/weiliang-dan-cecillia/img-awan-counting-down.png" alt="Awan" width={249} height={177} className={`absolute bottom-[-90px] left-[-50px] animate`} data-animate="fade-up" />
-          <Image src="/images/weiliang-dan-cecillia/img-air-mancur-counting-down.png" alt="Air Mancur" width={131} height={186} className={`absolute bottom-0 left-0 animate`} data-animate="fade-right" />
-          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kanan-counting-down.png" alt="Tumbuhan Kanan" width={161} height={186} className={`absolute bottom-0 right-0 animate`} data-animate="fade-left" />
-          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-bawah-counting-down.png" alt="Tumbuhan Bawah" width={456} height={130} className={`absolute z-10 bottom-[-70px] left-0 animate`} data-animate="fade-up" />
-          <div className="flex flex-col items-center text-center h-full text-[#724232] pt-[155px] md:pt-[242px] pb-[210px] md:pb-[238px]">
+          <Image src="/images/weiliang-dan-cecillia/img-air-mancur-counting-down.png" alt="Air Mancur" width={261} height={186} className={`absolute w-[131px] bottom-0 left-0 animate`} data-animate="fade-right" />
+          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kanan-counting-down.png" alt="Tumbuhan Kanan" width={391} height={278} className={`absolute w-[171px] bottom-[-20px] right-0 animate`} data-animate="fade-left" />
+          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-bawah-counting-down.png" alt="Tumbuhan Bawah" width={456} height={130} className={`absolute z-10 w-[456px] bottom-[-70px] animate`} data-animate="fade-up" />
+          <div className="flex flex-col items-center text-center h-full text-[#724232] pt-[155px] md:pt-[252px] pb-[210px] md:pb-[338px]">
             <h3 className="font-channe text-2xl leading-[26px] uppercase animate" data-animate="zoom-in">
               the beginning of <br />
               forever

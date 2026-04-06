@@ -15,8 +15,8 @@ export default function Footer({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <footer id="footer" className="footer relative w-full bg-cover bg-center overflow-hidden" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-          <Image src="/images/weiliang-dan-cecillia/img-bunga-atas-footer.png" alt="Tanaman Atas" width={518} height={369} className={`absolute top-[-90px] left-0 animate`} data-animate="fade-down" />
+        <footer id="footer" className="footer relative w-full h-screen bg-cover bg-center overflow-hidden" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+          <Image src="/images/weiliang-dan-cecillia/img-bunga-atas-footer.png" alt="Tanaman Atas" width={518} height={369} className={`absolute top-[-100px] left-0 animate`} data-animate="fade-down" />
           <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-footer.png" alt="Tanaman Atas" width={135} height={287} className={`absolute bottom-[10px] left-0 animate`} data-animate="fade-right" />
           <Image src="/images/weiliang-dan-cecillia/img-altar-footer.png" alt="Tanaman Atas" width={286} height={203} className={`absolute bottom-[10px] left-[51px] animate`} data-animate="fade-up" />
           <Image src="/images/weiliang-dan-cecillia/img-awan-footer.png" alt="Tanaman Atas" width={173} height={123} className={`absolute bottom-0 left-[79px] animate`} data-animate="fade-up" />

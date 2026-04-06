@@ -29,11 +29,11 @@ export default function Gallery({ isOpen, isMobile }: Props) {
         <>
           <section id="gallery" className="gallery relative w-full bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
             <div className="relative overflow-hidden">
-              <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-gallery.png" alt="Tumbuhan Atas" width={414} height={294} className={`absolute w-full top-[-120px] left-0 animate`} data-animate="fade-down" />
-              <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kanan-atas-gallery.png" alt="Tumbuhan Kanan Atas" width={93} height={151} className={`absolute w-[67px] top-[77px] right-0 animate`} data-animate="fade-left" />
-              <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kiri-gallery.png" alt="Tumbuhan Kiri" width={242} height={420} className={`absolute w-[142px] bottom-[67px] left-0 animate`} data-animate="fade-right" />
-              <Image src="/images/weiliang-dan-cecillia/img-alter-gallery.png" alt="Tumbuhan Kiri" width={330} height={235} className={`absolute w-[230px] bottom-[-15px] right-0 animate`} data-animate="fade-left" />
-              <div className="flex flex-col items-center text-center h-full pt-[126px] pb-[352px]">
+              <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-gallery.png" alt="Tumbuhan Atas" width={414} height={294} className={`absolute w-[414px] top-[-120px] animate`} data-animate="fade-down" />
+              <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kanan-atas-gallery.png" alt="Tumbuhan Kanan Atas" width={103} height={171} className={`absolute w-[63] top-[77px] right-0 animate`} data-animate="fade-left" />
+              <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kiri-gallery.png" alt="Tumbuhan Kiri" width={242} height={420} className={`absolute w-[172px] bottom-[67px] left-0 animate`} data-animate="fade-right" />
+              <Image src="/images/weiliang-dan-cecillia/img-alter-gallery.png" alt="Tumbuhan Kiri" width={330} height={235} className={`absolute w-[230px] bottom-0 right-0 animate`} data-animate="fade-left" />
+              <div className="flex flex-col items-center text-center h-full pt-[126px] pb-[262px]">
                 <h3 className="font-channe text-2xl leading-[26px] text-[#724232] uppercase animate" data-animate="zoom-in">our moments</h3>
                 <Image src="/images/weiliang-dan-cecillia/img-gallery-1.png" alt="Gambar Gallery" width={340} height={180} className="mt-[38px] animate" data-animate="fade-up" onClick={() => setActiveIndex(0)} />
                 <div className="w-[340px] flex gap-[7px] mt-[7px]">
@@ -51,7 +51,7 @@ export default function Gallery({ isOpen, isMobile }: Props) {
                 </div>
               </div>
             </div>
-            <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-bawah-gallery.png" alt="Tumbuhan Bawah" width={477} height={158} className={`absolute z-10 w-full bottom-[-110px] right-0 animate`} data-animate="fade-up" />
+            <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-bawah-gallery.png" alt="Tumbuhan Bawah" width={477} height={158} className={`absolute w-[477] z-10 bottom-[-100px] animate`} data-animate="fade-up" />
           </section>
 
           {activeIndex !== null && (

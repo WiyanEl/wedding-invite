@@ -16,12 +16,12 @@ export default function Location({ isOpen, isMobile }: Props) {
     <>
       {isOpen ? (
         <section id="location" className="location relative w-full bg-cover bg-center overflow-hidden" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-location.png" alt="Tumbuhan Atas" width={414} height={120} className={`absolute w-full top-[-5px] left-0 animate`} data-animate="fade-down" />
-          <Image src="/images/weiliang-dan-cecillia/img-alter-location.png" alt="Alter" width={380} height={270} className={`absolute bottom-[-20px] left-[15px] animate`} data-animate="fade-up" />
-          <Image src="/images/weiliang-dan-cecillia/img-awan-bawah-kiri-location.png" alt="Awan Bawah Kiri Location" width={100} height={100} className={`absolute bottom-[25px] left-0 animate`} data-animate="fade-right" />
-          <Image src="/images/weiliang-dan-cecillia/img-awan-kanan-bawah-location.png" alt="Awan Bawah Kanan Location" width={100} height={100} className={`absolute bottom-[35px] right-0 animate`} data-animate="fade-left" />
+          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-location.png" alt="Tumbuhan Atas" width={414} height={120} className={`absolute w-[414px] top-0 left-0 animate`} data-animate="fade-down" />
+          <Image src="/images/weiliang-dan-cecillia/img-alter-location.png" alt="Alter" width={380} height={270} className={`absolute w-[380px] bottom-[-20px] left-[15px] animate`} data-animate="fade-up" />
+          <Image src="/images/weiliang-dan-cecillia/img-awan-bawah-kiri-location.png" alt="Awan Bawah Kiri Location" width={234} height={166} className={`absolute w-[114px] bottom-[5px] left-0 animate`} data-animate="fade-right" />
+          <Image src="/images/weiliang-dan-cecillia/img-awan-kanan-bawah-location.png" alt="Awan Bawah Kanan Location" width={191} height={136} className={`absolute w-[91px] bottom-[19px] right-0 animate`} data-animate="fade-left" />
           <Image src="/images/weiliang-dan-cecillia/img-tb-location.png" alt="Taman Bawah" width={437} height={51} className={`absolute w-full bottom-0 animate`} data-animate="fade-up" />
-          <div className="flex flex-col items-center text-center h-full font-perpetua font-normal text-[#724232] pt-[135px] md:pt-[219px] pb-[248px] md:pb-[380px]">
+          <div className="flex flex-col items-center text-center h-full font-perpetua font-normal text-[#724232] pt-[135px] md:pt-[219px] pb-[225px] md:pb-[380px]">
             <h3 className="font-channe text-2xl leading-[26px] uppercase animate" data-animate="zoom-in">the wedding <br /> celebration</h3>
             <h6 className="text-lg leading-[32.22px] uppercase mt-[32px] md:mt-[28px] animate" data-animate="zoom-in">holy matrimony</h6>
             <p className="text-xs md:text-[14px] leading-[12px] mt-[16px] uppercase animate" data-animate="zoom-in">16:00 wita (gmt +8)</p>
