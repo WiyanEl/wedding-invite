@@ -59,47 +59,47 @@ export default function Header({ isOpen }: {isOpen: boolean}) {
             <div>
               <button className={`font-ibm text-2xl leading-none text-white uppercase opacity-0 mt-[6px] ${isClosing ? 'animate-close-menu-out' : 'animate-close-menu-in'}`} onClick={() => handleClose()}>x</button>
             </div>
-            <div className={`flex flex-col gap-[9px] font-noto text-xs leading-none text-white mt-[36px] mb-[32px] ${isClosing ? 'animate-close-menu-out' : ''}`}>
+            <div className={`flex flex-col gap-[9px] font-noto text-white mt-[36px] mb-[32px] ${isClosing ? 'animate-close-menu-out' : ''}`}>
               <div className="overflow-hidden">
                 <Link href="#hero" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown}>
                   <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
-                  <span className="font-medium">home</span>
+                  <span className="text-xs leading-none font-medium">home</span>
                 </Link>
               </div>
               <div className="overflow-hidden">
                 <Link href="#profile" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.05s' }}>
                   <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
-                  <span className="font-medium">profile</span>
+                  <span className="text-xs leading-none font-medium">profile</span>
                 </Link>
               </div>
               <div className="overflow-hidden">
                 <Link href="#counting-down" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.25s' }}>
                   <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
-                  <span className="font-medium">counting down</span>
+                  <span className="text-xs leading-none font-medium">counting down</span>
                 </Link>
               </div>
               <div className="overflow-hidden">
                 <Link href="#gallery" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.45s' }}>
                   <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
-                  <span className="font-medium">gallery</span>
+                  <span className="text-xs leading-none font-medium">gallery</span>
                 </Link>
               </div>
               <div className="overflow-hidden">
                 <Link href="#dresscode" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.45s' }}>
                   <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
-                  <span className="font-medium">Dresscode</span>
+                  <span className="text-xs leading-none font-medium">Dresscode</span>
                 </Link>
               </div>
               <div className="overflow-hidden">
                 <Link href="#wedding-gift" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.55s' }}>
                   <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
-                  <span className="font-medium">wedding gift</span>
+                  <span className="text-xs leading-none font-medium">wedding gift</span>
                 </Link>
               </div>
               <div className="overflow-hidden">
                 <Link href="#reservation" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.45s' }}>
                   <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
-                  <span className="font-medium">rsvp</span>
+                  <span className="text-xs leading-none font-medium">rsvp</span>
                 </Link>
               </div>
               <div className="overflow-hidden">
