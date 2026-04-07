@@ -31,7 +31,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
                 <p className="text-xs leading-[15px] mt-[36px] animate" data-animate="zoom-in">
                   <span>Dear Mr. /Mrs. / Ms.</span> <br />
                   <span className="capitalize">{params ?? '........'}</span> <br />
-                  <span>Kindly confirm your attendance before</span> <br />
+                  <span className="block mt-[36px]">Kindly confirm your attendance before</span>
                   <span>10 January 2000</span>
                 </p>
                 <div className={`relative z-20 flex gap-5 mt-[32px] animate`} data-animate="zoom-in">

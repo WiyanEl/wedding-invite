@@ -94,13 +94,13 @@ export default function Wishes({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <section id="wishes" className="wishes relative w-full bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+        <section id="wishes" className="wishes relative w-full bg-cover bg-center pt-[50px]" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
           <div className="relative overflow-hidden">
             <Image src="/images/weiliang-dan-cecillia/img-tiang-kanan-wishes.png" alt="Tiang Kanan" width={184} height={319} className={`absolute w-[154px] bottom-[-18px] right-0 animate`} data-animate="fade-left" />
             <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-wishes.png" alt="Tiang Kiri" width={194} height={319} className={`absolute w-[154px] bottom-[-18px] left-0 animate`} data-animate="fade-right" />
-            <Image src="/images/weiliang-dan-cecillia/img-pengantin-wishes.png" alt="Pengantin" width={180} height={128} className={`absolute z-20 bottom-0 left-[128px] animate`} data-animate="fade-right-pengantin" style={{ animationDelay: '1s' }} />
+            <Image src="/images/weiliang-dan-cecillia/img-pengantin-wishes.png" alt="Pengantin" width={180} height={128} className={`absolute z-20 bottom-0 left-[106px] animate`} data-animate="fade-right-pengantin" style={{ animationDelay: '1s' }} />
             {!seeAllMessages ? (
-              <div className="relative z-10 flex flex-col items-center pt-[82px] md:pt-[201px] pb-[182px] md:pb-[367px] h-full text-[#724232] text-center">
+              <div className="relative z-10 flex flex-col items-center pt-[82px] md:pt-[161px] pb-[182px] md:pb-[367px] h-full text-[#724232] text-center">
                 <h3 className="font-channe text-2xl leading-[26px] uppercase animate" data-animate="zoom-in">your wishes</h3>
                 <form onSubmit={save} className="flex flex-col items-center">
                   <input type="text" value={name} onChange={(e) => setName(e.target.value)} className={`mt-[38px] w-[283px] h-[26px] border-[0.49px] border-[#AB6A7C] bg-transparent px-1 py-3 font-perpetua text-xs leading-[140%] text-[#724232]`} placeholder="Isi Nama Lengkap" />
