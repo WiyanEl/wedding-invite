@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Header from '@/app/components/weiliang-dan-cecilia/Header'
 import Hero from '@/app/components/weiliang-dan-cecilia/Hero'
 import Profile from '@/app/components/weiliang-dan-cecilia/Profile'
 import CountingDown from '@/app/components/weiliang-dan-cecilia/CountingDown'
@@ -78,6 +79,7 @@ export default function Wrapper({ params }: { params: string }) {
           </div>
         </div>
         <div className={`w-full ${isOpen ? 'md:w-[390px] md:ml-auto' : ''}`}>
+          <Header isOpen={isOpen} />
           <Hero params={params} isOpen={isOpen} setIsOpen={setIsOpen} isMobile={isMobile} />
           <Profile isOpen={isOpen} isMobile={isMobile} />
           <CountingDown isOpen={isOpen} isMobile={isMobile} />
