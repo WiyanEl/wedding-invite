@@ -15,8 +15,8 @@ export default function Dresscode({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <section id="dresscode" className="dresscode relative w-full bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-          <div className="relative overflow-hidden">
+        <section id="dresscode" className="dresscode relative w-full md:h-screen bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+          <div className="relative overflow-hidden h-full">
             <Image src="/images/weiliang-dan-cecillia/img-tanaman-kanan-dresscode.png" alt="Tumbuhan Kanan" width={295} height={512} className={`absolute w-[156px] top-[46px] md:top-[207px] right-0 animate`} data-animate="fade-left" />
             <Image src="/images/weiliang-dan-cecillia/img-tanaman-kiri-dresscode.png" alt="Tumbuhan Kiri" width={236} height={410} className={`absolute w-[136px] top-[77px] md:top-[257px] left-0 animate`} data-animate="fade-right" />
             <Image src="/images/weiliang-dan-cecillia/img-gapura-dresscode.png" alt="Gapura" width={245} height={274} className={`absolute w-[205px] bottom-0 right-0 animate`} data-animate="fade-left" />

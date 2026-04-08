@@ -22,7 +22,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
       {isOpen ? (
         <>
           <section id="reservation" className="reservation relative w-full md:h-screen bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden h-full">
               <Image src="/images/weiliang-dan-cecillia/img-tanaman-kanan-reservation.png" alt="Tanaman Kanan" width={149} height={484} className={`absolute top-[95px] right-0 animate`} data-animate="fade-left" />
               <Image src="/images/weiliang-dan-cecillia/img-tanaman-kiri-reservation.png" alt="Tanaman Kiri" width={146} height={196} className={`absolute top-[96px] left-0 animate`} data-animate="fade-right" />
               <div className="flex flex-col items-center text-center h-full pt-[89px] pb-[89px] md:pt-[126px] md:pb-[233px] font-perpetua font-normal text-[#724232]">

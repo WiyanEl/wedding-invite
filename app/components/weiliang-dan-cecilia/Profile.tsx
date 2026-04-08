@@ -15,8 +15,8 @@ export default function Profile({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <section id="profile" className="profile relative w-full min-h-min bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-          <div className="relative overflow-hidden">
+        <section id="profile" className="profile relative w-full md:h-screen bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+          <div className="relative overflow-hidden h-full">
             <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-profile.png" alt="Tumbuhan Atas" width={414} height={294} className={`absolute w-[414px] h-[294] top-[-75px] left-[-7px] animate`} data-animate="fade-down" />
             <div className="absolute top-[121px] md:top-[128px] right-0 animate" data-animate="fade-left-butterfly">
               <Image src="/images/weiliang-dan-cecillia/img-butterfly-kanan-profile.png" alt="Butterfly Kanan" width={65} height={46} className={`w-[65px] h-[46px] ${isOpen ? 'butterfly-flap' : ''}`} />
@@ -24,8 +24,8 @@ export default function Profile({ isOpen, isMobile }: Props) {
             <div className="absolute top-[194px] md:top-[201px] left-[15px] animate" data-animate="fade-right-butterfly">
               <Image src="/images/weiliang-dan-cecillia/img-butterfly-kiri-profile.png" alt="Butterfly Kiri" width={61} height={44} className={`w-[61px] h-[44] ${isOpen ? 'butterfly-flap' : ''}`} />
             </div>
-            <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-profile.png" alt="Tiang Kiri" width={335} height={581} className={`absolute z-20 w-[205px] top-[100px] md:top-[350px] left-0 animate`} data-animate="fade-right" />
-            <Image src="/images/weiliang-dan-cecillia/img-tiang-right-profile.png" alt="Tiang Kanan" width={176} height={473} className={`absolute z-20 w-[156px] top-[193px] md:top-[435px] right-0 animate`} data-animate="fade-left" />
+            <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-profile.png" alt="Tiang Kiri" width={335} height={581} className={`absolute z-20 w-[205px] bottom-0 left-0 animate`} data-animate="fade-right" />
+            <Image src="/images/weiliang-dan-cecillia/img-tiang-right-profile.png" alt="Tiang Kanan" width={176} height={473} className={`absolute z-20 w-[156px] bottom-0 right-0 animate`} data-animate="fade-left" />
             <div className="absolute z-20 bottom-[206px] right-0 animate" data-animate="fade-left-butterfly">
               <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-profile-3.png" alt="Butterfly Kanan" width={76} height={54} className={`${isOpen ? 'butterfly-flap' : ''}`} />
             </div>

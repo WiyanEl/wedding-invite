@@ -15,7 +15,7 @@ export default function Location({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <section id="location" className="location relative w-full bg-cover bg-center overflow-hidden" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+        <section id="location" className="location relative w-full md:h-screen bg-cover bg-center overflow-hidden" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
           <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-location.png" alt="Tumbuhan Atas" width={414} height={120} className={`absolute w-[414px] top-0 left-0 animate`} data-animate="fade-down" />
           <Image src="/images/weiliang-dan-cecillia/img-alter-location.png" alt="Alter" width={380} height={270} className={`absolute w-[380px] bottom-[-20px] left-[15px] animate`} data-animate="fade-up" />
           <Image src="/images/weiliang-dan-cecillia/img-awan-bawah-kiri-location.png" alt="Awan Bawah Kiri Location" width={234} height={166} className={`absolute w-[114px] bottom-[5px] left-0 animate`} data-animate="fade-right" />

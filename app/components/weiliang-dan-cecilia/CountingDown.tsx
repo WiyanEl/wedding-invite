@@ -49,7 +49,7 @@ export default function CountingDown({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <section id="counting-down" className="counting-down relative w-full min-h-min bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+        <section id="counting-down" className="counting-down relative w-full md:h-screen bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
           <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kecil-kanan-counting-down.png" alt="Tumbuhan Kanan" width={144} height={102} className={`absolute w-[104px] top-[44px] md:top-[278px] right-0 animate`} data-animate="fade-left" />
           <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kecil-kiri-counting-down.png" alt="Tumbuhan Kiri" width={179} height={127} className={`absolute w-[139px] top-[209px] md:top-[443] left-0 animate`} data-animate="fade-right" />
           <Image src="/images/weiliang-dan-cecillia/img-gapura-counting-down.png" alt="Gapura" width={227} height={161} className={`absolute w-[227px] bottom-[7px] right-0 animate`} data-animate="fade-up" />

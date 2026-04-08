@@ -15,8 +15,8 @@ export default function WeddingGift({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <section id="wedding-gift" className="wedding-gift relative w-full bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-          <div className="relative overflow-hidden">
+        <section id="wedding-gift" className="wedding-gift relative w-full md:h-screen bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+          <div className="relative overflow-hidden h-full">
             <Image src="/images/weiliang-dan-cecillia/img-tanaman-wedding-gift.png" alt="Tanaman Atas" width={379} height={270} className={`absolute w-[279px] top-[-50px] left-0 animate`} data-animate="fade-down" />
             <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kanan-wedding-gift.png" alt="Tanaman Kanan" width={106} height={184} className={`absolute w-[86px] top-[50px] right-0 animate`} data-animate="fade-left" />
             <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kiri-wedding-gift.png" alt="Tanaman Kiri" width={65} height={122} className={`absolute w-[45px] bottom-[108px] left-0 animate`} data-animate="fade-right" />

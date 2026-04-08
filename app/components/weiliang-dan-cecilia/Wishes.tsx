@@ -95,7 +95,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
     <>
       {isOpen ? (
         <section id="wishes" className="wishes relative w-full md:h-screen bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden h-full">
             <Image src="/images/weiliang-dan-cecillia/img-tiang-kanan-wishes.png" alt="Tiang Kanan" width={184} height={319} className={`absolute w-[154px] bottom-[-18px] right-0 animate`} data-animate="fade-left" />
             <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-wishes.png" alt="Tiang Kiri" width={194} height={319} className={`absolute w-[154px] bottom-[-18px] left-0 animate`} data-animate="fade-right" />
             <Image src="/images/weiliang-dan-cecillia/img-pengantin-wishes.png" alt="Pengantin" width={180} height={128} className={`absolute z-20 bottom-0 left-[106px] animate`} data-animate="fade-right-pengantin" style={{ animationDelay: '1s' }} />
