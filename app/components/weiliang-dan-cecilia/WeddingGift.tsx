@@ -11,6 +11,16 @@ type Props = {
 
 export default function WeddingGift({ isOpen, isMobile }: Props) {
   const bgImage = !isOpen ? isMobile ? "/images/weiliang-dan-cecillia/bg-wedding-gift-mobile.png" : "/images/weiliang-dan-cecillia/bg-wedding-gift.png" : "/images/weiliang-dan-cecillia/bg-wedding-gift-mobile.png"
+  const [copied, setCopied] = useState(false)
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText('2713234683');
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  };
 
   return (
     <>
@@ -38,12 +48,10 @@ export default function WeddingGift({ isOpen, isMobile }: Props) {
                   Cecilia Widjojo <br />
                 </p>
                 <button
-                    onClick={() => {
-                      navigator.clipboard.writeText('2713234683')
-                    }}
-                    className="w-[99px] h-[20px] md:h-[23px] flex items-center justify-center bg-[#AB6A7C] text-xs md:text-[14px] leading-[11.82px] text-[#E6D8DC] animate" data-animate="fade-left">
-                    Copy Number
-                  </button>
+                  onClick={handleCopy}
+                  className="w-[99px] h-[20px] md:h-[23px] flex items-center justify-center bg-[#AB6A7C] text-xs md:text-[14px] leading-[11.82px] text-[#E6D8DC] animate" data-animate="fade-left">
+                  {copied ? "Copied" : "Copy Number"}
+                </button>
               </div>
             </div>
           </div>

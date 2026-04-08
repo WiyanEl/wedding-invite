@@ -40,8 +40,8 @@ export default function Profile({ isOpen, isMobile }: Props) {
                 Son of <br />
                 Mr. Tan Mok Koon and & Mrs. Chang Siew Muay
               </p>
-              <Link href="https://instagram.com/wl7130" target="_blank" className={`flex gap-2 text-xs md:text-[14px] leading-[16px] mt-[11px] animate`} data-animate="zoom-in">
-                <img src="/images/weiliang-dan-cecillia/icon-ig.png" alt="Icon Instagram" className="w-[13px]" />
+              <Link href="https://instagram.com/wl7130" target="_blank" className={`flex gap-2 items-center justify-center h-[29px] text-xs md:text-[14px] leading-[16px] mt-[11px] animate`} data-animate="zoom-in">
+                <Image src="/images/weiliang-dan-cecillia/icon-ig.png" alt="Icon Instagram" width={13} height={16} className="w-[13px] h-[16px]" />
                 <span>wl7130</span>
               </Link>
               <h3 className={`font-channe text-2xl md:text-4xl leading-none mt-[21px] md:mt-[33px] animate`} data-animate="zoom-in">&</h3>
@@ -53,8 +53,8 @@ export default function Profile({ isOpen, isMobile }: Props) {
                 Son of <br />
                 Mr. Tan Mok Koon and & Mrs. Chang Siew Muay
               </p>
-              <Link href="https://instagram.com/cizzy_cecilia" target="_blank" className={`flex gap-2 text-xs md:text-[14px] leading-[16px] mt-2.5 animate`} data-animate="zoom-in">
-                <img src="/images/weiliang-dan-cecillia/icon-ig.png" alt="Icon Instagram" className="w-[13px]" />
+              <Link href="https://instagram.com/cizzy_cecilia" target="_blank" className={`flex items-center justify-center gap-2 h-[29px] text-xs md:text-[14px] leading-[16px] mt-2.5 animate`} data-animate="zoom-in">
+                <Image src="/images/weiliang-dan-cecillia/icon-ig.png" alt="Icon Instagram" width={13} height={16} className="w-[13px] h-[16px]" />
                 <span>cizzy_cecilia</span>
               </Link>
               <p className={`text-xs md:text-[14px] leading-[16px] mt-[22px] md:mt-[33.3px] animate`} data-animate="zoom-in">
