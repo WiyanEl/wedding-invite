@@ -50,8 +50,8 @@ export default function Profile({ isOpen, isMobile }: Props) {
                 widjojo
               </h3>
               <p className={`text-xs md:text-[14px] leading-[16px] mt-[20px] animate`} data-animate="zoom-in">
-                Son of <br />
-                Mr. Tan Mok Koon and & Mrs. Chang Siew Muay
+                Daughter of <br />
+                Mr. Oscar Widjojo and & Mrs. Yenni Hadiyati
               </p>
               <Link href="https://instagram.com/cizzy_cecilia" target="_blank" className={`flex items-center justify-center gap-2 h-[29px] text-xs md:text-[14px] leading-[16px] mt-2.5 animate`} data-animate="zoom-in">
                 <Image src="/images/weiliang-dan-cecillia/icon-ig.png" alt="Icon Instagram" width={13} height={16} className="w-[13px] h-[16px]" />
