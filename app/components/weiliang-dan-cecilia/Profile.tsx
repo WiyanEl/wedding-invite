@@ -26,6 +26,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
             </div>
             <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-profile.png" alt="Tiang Kiri" width={335} height={581} className={`absolute z-20 w-[205px] bottom-0 left-0 animate`} data-animate="fade-right" />
             <Image src="/images/weiliang-dan-cecillia/img-tiang-right-profile.png" alt="Tiang Kanan" width={176} height={473} className={`absolute z-20 w-[156px] bottom-0 right-0 animate`} data-animate="fade-left" />
+            <img src="/images/weiliang-dan-cecillia/mini-waterfall.gif" alt="animasi air terjun" className="absolute z-30 w-[166px] bottom-0 right-0 animate" data-animate="fade-left" />
             <div className="absolute z-20 bottom-[206px] right-0 animate" data-animate="fade-left-butterfly">
               <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-profile-3.png" alt="Butterfly Kanan" width={76} height={54} className={`${isOpen ? 'butterfly-flap' : ''}`} />
             </div>

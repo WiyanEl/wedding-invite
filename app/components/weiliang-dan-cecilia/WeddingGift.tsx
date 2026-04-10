@@ -31,6 +31,7 @@ export default function WeddingGift({ isOpen, isMobile }: Props) {
             <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kanan-wedding-gift.png" alt="Tanaman Kanan" width={106} height={184} className={`absolute w-[86px] top-[50px] right-0 animate`} data-animate="fade-left" />
             <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-kiri-wedding-gift.png" alt="Tanaman Kiri" width={65} height={122} className={`absolute w-[45px] bottom-[108px] left-0 animate`} data-animate="fade-right" />
             <Image src="/images/weiliang-dan-cecillia/img-tiang-kanan-wedding-gift.png" alt="Tiang Kanan" width={257} height={446} className={`hidden w-[157px] md:block absolute bottom-[18px] right-0 animate`} data-animate="fade-left" />
+            <img src="/images/weiliang-dan-cecillia/mini-waterfall.gif" alt="animasi air terjun" className="hidden md:block absolute z-30 w-[125px] bottom-[20px] right-[-10px] animate" data-animate="fade-left" />
             <Image src="/images/weiliang-dan-cecillia/img-air-mancur-wedding-gift.png" alt="Air Mancur Kiri" width={242} height={446} className={`hidden w-[107px] md:block absolute bottom-[37px] left-0 animate`} data-animate="fade-right" />
             <div className="flex flex-col items-center text-center h-full pt-[154px] md:pt-[180px] pb-[141px] md:pb-[338px] font-perpetua font-normal text-[#724232]">
               <Image src="/images/weiliang-dan-cecillia/img-pengantin-wedding-gift.png" alt="Gambar Pengantin" width={210} height={150} className="animate" data-animate="zoom-in" />
