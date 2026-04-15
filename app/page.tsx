@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation'
 
 export default function Home() {
-  return redirect('/cornel-dan-tiara/sela')
+  return redirect('/weiliang-dan-cecillia/sela')
 }

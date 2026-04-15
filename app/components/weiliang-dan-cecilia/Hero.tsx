@@ -19,10 +19,10 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
         <section id="hero" className={`block md:hidden hero relative w-full h-screen bg-cover bg-center md:bg-top`} style={{ backgroundImage: `url('/images/weiliang-dan-cecillia/bg-hero-mobile.png')` }}>
           <div className={`relative z-10 flex ${isOpen ? '' : 'items-center'} justify-center h-full overflow-hidden`}>
             <div className="absolute top-[-6px] left-[-33px] opacity-0 fade-right">
-              <Image src="/images/weiliang-dan-cecillia/img-tl-pohon-hero.png" alt="Pohon Kiri" width={263} height={187} className={`w-[263px] h-[187px] ${isOpen ? 'sway-left' : ''}`} style={{ animationDelay: '0.5s' }} />
+              <Image src="/images/weiliang-dan-cecillia/img-tl-pohon-hero.png" alt="Pohon Kiri" width={263} height={187} className={`w-[263px] h-[187px] ${isOpen ? 'sway-stretch-right' : ''}`} style={{ animationDelay: '0.5s' }} />
             </div>
             <div className="absolute top-[-37px] left-[196px] opacity-0 fade-left">
-              <Image src="/images/weiliang-dan-cecillia/img-tr-pohon-hero.png" alt="Pohon Kanan" width={229} height={163} className={`w-[229px] h-[163px] ${isOpen ? 'sway-right' : ''}`} style={{ animationDelay: '0.5s' }} />
+              <Image src="/images/weiliang-dan-cecillia/img-tr-pohon-hero.png" alt="Pohon Kanan" width={229} height={163} className={`w-[229px] h-[163px] ${isOpen ? 'sway-stretch' : ''}`} style={{ animationDelay: '0.5s' }} />
             </div>
             <Image src="/images/weiliang-dan-cecillia/img-bunga-kiri-hero.png" alt="Bunga Kiri" width={129} height={92} className="absolute w-[129px] top-[131px] left-0 opacity-0 fade-right" style={{ animationDelay: '0.3s' }} />
             <Image src="/images/weiliang-dan-cecillia/img-taman-belakang-hero.png" alt="Taman Belakang" width={363} height={258} className="absolute w-[363px] h-[258px] bottom-[154px] left-[27px] opacity-0 fade-up" style={{ animationDelay: '0.6s' }} />
@@ -30,17 +30,12 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
             <Image src="/images/weiliang-dan-cecillia/img-taman-hero.png" alt="Taman" width={510} height={363} className="absolute w-[510px] h-[363px] bottom-[40px] opacity-0 fade-up" style={{ animationDelay: '1.2s' }} />
             <Image src="/images/weiliang-dan-cecillia/img-taman-bawah-hero.png" alt="Taman Bawah" width={480} height={239} className="absolute w-[480px] h-[239px] bottom-0 opacity-0 fade-up" style={{ animationDelay: '1.5s' }} />
             <Image src="/images/weiliang-dan-cecillia/img-pengantin-hero.png" alt="Pengantin" width={196} height={139} className="absolute w-[166px] bottom-[36px] left-0 opacity-0 fade-right-pengantin" style={{ animationDelay: '2.3s' }} />
-            <div className={`absolute top-[22px] left-[314px] opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`}>
-              <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-4-hero.png" alt="Kupu-kupu" width={72} height={75} className={`w-[72px] h-[75px] ${isOpen ? 'butterfly-flap' : ''}`} />
-            </div>
-            <div className={`absolute top-[213px] left-0 opacity-0 ${isOpen ? 'fade-right-butterfly' : ''}`}>
-              <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-1-hero.png" alt="Kupu-kupu" width={73} height={57} className={`w-[73px] h-[57px] ${isOpen ? 'butterfly-flap' : ''}`} />
-            </div>
-            <div className={`absolute top-[76px] left-[189px] opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`}>
-              <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-2-hero.png" alt="Kupu-kupu" width={66} height={65} className={`w-[66px] h-[65px] ${isOpen ? 'butterfly-flap' : ''}`} />
-            </div>
-            <div className={`absolute top-[163px] left-[325px] opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`}>
-              <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-3-hero.png" alt="Kupu-kupu" width={61} height={60} className={`w-[61px] h-[60px] ${isOpen ? 'butterfly-flap' : ''}`} />
+
+            <Image src="/images/weiliang-dan-cecillia/kupu-kupu-1.gif" alt="Kupu-kupu" width={73} height={57} className={`absolute top-[203px] left-0 opacity-0 w-[73px] ${isOpen ? 'fade-right-butterfly' : ''}`} />
+            <Image src="/images/weiliang-dan-cecillia/kupu-kupu-2.gif" alt="Kupu-kupu" width={66} height={65} className={`absolute w-[66px] top-[76px] left-[189px] opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`} />
+            <Image src="/images/weiliang-dan-cecillia/kupu-kupu-2.gif" alt="Kupu-kupu" width={46} height={45} className={`absolute w-[46px] top-[42px] left-[314px] opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`} />
+            <div className={`absolute w-[61px] top-[163px] left-[325px] -rotate-45`}>
+              <Image src="/images/weiliang-dan-cecillia/kupu-kupu-1.gif" alt="Kupu-kupu" width={61} height={60} className={`opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`} />
             </div>
             {!isOpen ? (
               <>
@@ -98,10 +93,10 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
             ) : (
               <>
                 <div className="absolute top-[-6px] left-[-33px] opacity-0 fade-right">
-                  <Image src="/images/weiliang-dan-cecillia/img-tl-pohon-hero.png" alt="Pohon Kiri" width={263} height={187} className={`w-[263px] h-[187px] ${isOpen ? 'sway-left' : ''}`} style={{ animationDelay: '0.5s' }} />
+                  <Image src="/images/weiliang-dan-cecillia/img-tl-pohon-hero.png" alt="Pohon Kiri" width={263} height={187} className={`w-[263px] h-[187px] ${isOpen ? 'sway-stretch-right' : ''}`} style={{ animationDelay: '0.5s' }} />
                 </div>
                 <div className="absolute top-[-37px] left-[196px] opacity-0 fade-left">
-                  <Image src="/images/weiliang-dan-cecillia/img-tr-pohon-hero.png" alt="Pohon Kanan" width={229} height={163} className={`w-[229px] h-[163px] ${isOpen ? 'sway-right' : ''}`} style={{ animationDelay: '0.5s' }} />
+                  <Image src="/images/weiliang-dan-cecillia/img-tr-pohon-hero.png" alt="Pohon Kanan" width={229} height={163} className={`w-[229px] h-[163px] ${isOpen ? 'sway-stretch' : ''}`} style={{ animationDelay: '0.5s' }} />
                 </div>
                 <Image src="/images/weiliang-dan-cecillia/img-bunga-kiri-hero.png" alt="Bunga Kiri" width={129} height={92} className="absolute w-[129px] top-[131px] left-0 opacity-0 fade-right" style={{ animationDelay: '0.3s' }} />
                 <Image src="/images/weiliang-dan-cecillia/img-taman-belakang-hero.png" alt="Taman Belakang" width={363} height={258} className="absolute w-[363px] h-[258px] bottom-[154px] left-[27px] opacity-0 fade-up" style={{ animationDelay: '0.6s' }} />
@@ -109,17 +104,11 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
                 <Image src="/images/weiliang-dan-cecillia/img-taman-hero.png" alt="Taman" width={510} height={363} className="absolute w-[510px] h-[363px] bottom-[40px] opacity-0 fade-up" style={{ animationDelay: '1.2s' }} />
                 <Image src="/images/weiliang-dan-cecillia/img-taman-bawah-hero.png" alt="Taman Bawah" width={480} height={239} className="absolute w-[480px] h-[239px] bottom-0 opacity-0 fade-up" style={{ animationDelay: '1.5s' }} />
                 <Image src="/images/weiliang-dan-cecillia/img-pengantin-hero.png" alt="Pengantin" width={196} height={139} className="absolute w-[166px] bottom-[36px] left-0 opacity-0 fade-right-pengantin" style={{ animationDelay: '2.3s' }} />
-                <div className={`absolute top-[72px] left-[314px] opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`}>
-                  <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-4-hero.png" alt="Kupu-kupu" width={72} height={75} className={`w-[72px] h-[75px] ${isOpen ? 'butterfly-flap' : ''}`} />
-                </div>
-                <div className={`absolute top-[263px] left-0 opacity-0 ${isOpen ? 'fade-right-butterfly' : ''}`}>
-                  <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-1-hero.png" alt="Kupu-kupu" width={73} height={57} className={`w-[73px] h-[57px] ${isOpen ? 'butterfly-flap' : ''}`} />
-                </div>
-                <div className={`absolute top-[126px] left-[189px] opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`}>
-                  <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-2-hero.png" alt="Kupu-kupu" width={66} height={65} className={`w-[66px] h-[65px] ${isOpen ? 'butterfly-flap' : ''}`} />
-                </div>
-                <div className={`absolute top-[213px] left-[325px] opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`}>
-                  <Image src="/images/weiliang-dan-cecillia/img-kupu-kupu-3-hero.png" alt="Kupu-kupu" width={61} height={60} className={`w-[61px] h-[60px] ${isOpen ? 'butterfly-flap' : ''}`} />
+                <Image src="/images/weiliang-dan-cecillia/kupu-kupu-1.gif" alt="Kupu-kupu" width={73} height={57} className={`absolute top-[203px] left-0 opacity-0 w-[73px] ${isOpen ? 'fade-right-butterfly' : ''}`} />
+                <Image src="/images/weiliang-dan-cecillia/kupu-kupu-2.gif" alt="Kupu-kupu" width={66} height={65} className={`absolute w-[66px] top-[76px] left-[189px] opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`} />
+                <Image src="/images/weiliang-dan-cecillia/kupu-kupu-2.gif" alt="Kupu-kupu" width={46} height={45} className={`absolute w-[46px] top-[42px] left-[314px] opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`} />
+                <div className={`absolute w-[61px] top-[163px] left-[325px] -rotate-45`}>
+                  <Image src="/images/weiliang-dan-cecillia/kupu-kupu-1.gif" alt="Kupu-kupu" width={61} height={60} className={`opacity-0 ${isOpen ? 'fade-left-butterfly' : ''}`} />
                 </div>
                 <div className="text-center font-perpetua font-normal text-[#724232] pt-[299px]">
                   <h6 className="text-base md:text-lg leading-none opacity-0 zoom-in" style={{ animationDelay: '2.8s' }}>The Wedding of</h6>

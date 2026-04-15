@@ -100,7 +100,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
             <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-wishes.png" alt="Tiang Kiri" width={194} height={319} className={`absolute w-[154px] bottom-[-18px] left-0 animate`} data-animate="fade-right" />
             <Image src="/images/weiliang-dan-cecillia/img-pengantin-wishes.png" alt="Pengantin" width={180} height={128} className={`absolute z-20 bottom-0 left-[106px] animate`} data-animate="fade-right-pengantin" style={{ animationDelay: '1s' }} />
             {!seeAllMessages ? (
-              <div className="relative z-10 flex flex-col items-center pt-[82px] md:pt-[161px] pb-[182px] md:pb-[367px] h-full text-[#724232] text-center">
+              <div className="relative z-10 flex flex-col items-center pt-[82px] md:pt-[161px] pb-[182px] h-full text-[#724232] text-center">
                 <h3 className="font-channe text-2xl leading-[26px] uppercase animate" data-animate="zoom-in">your wishes</h3>
                 <form onSubmit={save} className="flex flex-col items-center">
                   <input type="text" value={name} onChange={(e) => setName(e.target.value)} className={`mt-[38px] w-[283px] h-[26px] border-[0.49px] border-[#AB6A7C] bg-transparent px-1 py-3 font-perpetua text-xs leading-[140%] text-[#724232]`} placeholder="Isi Nama Lengkap" />
@@ -109,7 +109,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
                     Send Message
                   </button>
                 </form>
-                <div className={`mt-[20px] w-[284px] h-[160px] px-[13px] py-[18px] overflow-y-auto scroll-smooth bg-[#AB6A7CBA] border-[0.49px] border-[#AB6A7C]`}>
+                <div className={`mt-[20px] w-[284px] h-[320px] px-[13px] py-[18px] overflow-y-auto scroll-smooth bg-[#AB6A7CBA] border-[0.49px] border-[#AB6A7C]`}>
                   {wishes.length === 0 ? (
                     <p className="text-center text-xs text-[#FEFBF0]">
                       No message yet
