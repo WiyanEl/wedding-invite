@@ -87,6 +87,17 @@
   }
 }
 
+@keyframes fadeRightButterflyWithRotateY {
+  from {
+    transform: translateX(-500px);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(0) rotateY(180deg);
+    opacity: 1;
+  }
+}
+
 @keyframes butterflyFlap {
   0% {
     transform: rotateZ(-20deg) rotateY(0deg);
@@ -209,6 +220,10 @@
 
 .fade-right-butterfly {
   animation: fadeRightButterfly 5s ease forwards;
+}
+
+.fade-right-butterfly-with-rotate-y {
+  animation: fadeRightButterflyWithRotateY 5s ease forwards;
 }
 
 .butterfly-flap {

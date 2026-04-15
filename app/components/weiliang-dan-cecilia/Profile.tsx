@@ -17,8 +17,9 @@ export default function Profile({ isOpen, isMobile }: Props) {
       {isOpen ? (
         <section id="profile" className="profile relative w-full md:h-screen bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
           <div className="relative overflow-hidden h-full">
-            <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-profile.png" alt="Tumbuhan Atas" width={414} height={294} className={`absolute w-[414px] h-[294] top-[-75px] left-[-7px] animate`} data-animate="fade-down" />
-
+            <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-kiri-profile.png" alt="Tumbuhan Atas Kiri" width={217} height={201} className={`absolute w-[207px] h-[201px] top-0 left-0 animate`} data-animate="fade-down" />
+            <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-atas-kanan-profile.png" alt="Tumbuhan Atas Kanan" width={177} height={294} className={`absolute w-[177px] h-[294px] top-[-70px] right-0 animate`} data-animate="fade-down" />
+            <Image src="/images/weiliang-dan-cecillia/kupu-kupu-2.gif" alt="Kupu-kupu" width={30} height={22} className={`absolute w-[30px] top-[51px] left-[185px] animate`} data-animate="fade-right-butterfly-with-rotate-y" />
             <Image src="/images/weiliang-dan-cecillia/kupu-kupu-2.gif" alt="Butterfly Kanan" width={75} height={56} className={`absolute top-[121px] md:top-[128px] right-0 animate w-[75px] h-[56px]`} data-animate="fade-left-butterfly" />
             <Image src="/images/weiliang-dan-cecillia/kupu-kupu-1.gif" alt="Butterfly Kiri" width={71} height={54} className={`absolute top-[194px] md:top-[201px] left-[15px] animate w-[71px] h-[54px]`} data-animate="fade-right-butterfly" />
             <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-profile.png" alt="Tiang Kiri" width={335} height={581} className={`absolute z-10 w-[205px] bottom-0 left-0 animate`} data-animate="fade-right" />
