@@ -21,7 +21,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
 
             <Image src="/images/weiliang-dan-cecillia/kupu-kupu-2.gif" alt="Butterfly Kanan" width={75} height={56} className={`absolute top-[121px] md:top-[128px] right-0 animate w-[75px] h-[56px]`} data-animate="fade-left-butterfly" />
             <Image src="/images/weiliang-dan-cecillia/kupu-kupu-1.gif" alt="Butterfly Kiri" width={71} height={54} className={`absolute top-[194px] md:top-[201px] left-[15px] animate w-[71px] h-[54px]`} data-animate="fade-right-butterfly" />
-            <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-profile.png" alt="Tiang Kiri" width={335} height={581} className={`absolute z-20 w-[205px] bottom-0 left-0 animate`} data-animate="fade-right" />
+            <Image src="/images/weiliang-dan-cecillia/img-tiang-kiri-profile.png" alt="Tiang Kiri" width={335} height={581} className={`absolute z-10 w-[205px] bottom-0 left-0 animate`} data-animate="fade-right" />
             <Image src="/images/weiliang-dan-cecillia/img-tiang-kanan-profile.png" alt="Tiang Kanan" width={176} height={473} className={`absolute z-20 w-[156px] bottom-[67px] right-0 animate`} data-animate="fade-left" />
             <Image src="/images/weiliang-dan-cecillia/mini-waterfall.gif" alt="Air Terjun" width={156} height={123} className="absolute z-30 w-[156px] bottom-0 right-[-10px] animate" data-animate="fade-left" />
             <Image src="/images/weiliang-dan-cecillia/kupu-kupu-4.gif" alt="Butterfly Kanan" width={76} height={54} className={`absolute z-20 bottom-[206px] right-[-10px] animate`} data-animate="fade-left-butterfly" />
@@ -60,8 +60,8 @@ export default function Profile({ isOpen, isMobile }: Props) {
               </p>
             </div>
           </div>
-          <Image src="/images/weiliang-dan-cecillia/img-awan-profile.png" alt="Awan" width={314} height={223} className={`absolute z-10 bottom-[-100px] left-2 animate`} data-animate="fade-up" />
-          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-bawah-profile.png" alt="Tumbuhan Bawah" width={473} height={336} className={`absolute z-10 bottom-[-220px] animate`} data-animate="fade-up" />
+          <Image src="/images/weiliang-dan-cecillia/img-awan-profile.png" alt="Awan" width={314} height={223} className={`absolute bottom-[-80px] left-2 animate`} data-animate="fade-up" />
+          <Image src="/images/weiliang-dan-cecillia/img-tumbuhan-bawah-profile.png" alt="Tumbuhan Bawah" width={473} height={336} className={`absolute z-10 bottom-[-190px] animate`} data-animate="fade-up" />
         </section>
       ) : null}
     </> 
