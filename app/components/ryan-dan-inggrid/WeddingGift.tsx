@@ -25,7 +25,7 @@ export default function WeddingGift({ isOpen, isMobile }: Props) {
       {isOpen ? (
         <section id="wedding-gift" className="wedding-gift relative w-full min-h-min" style={{backgroundImage: "url('/images/ryan-dan-inggrid/bg-wishes-mobile.png')"}}>
           <div className="relative text-center pt-[95px] md:pt-[287px] pb-[74px] md:pb-[131px] font-lora text-[#FEFBF0]">
-            <h2 className="font-kunstler text-[64px] md:text-[96px] font-normal leading-[22px] md:leading-[22px] animate fade-up" data-animate="fade-up">Wedding Gift</h2>
+            <h2 className="font-kunstler text-[64px] md:text-[96px] font-normal leading-[22px] md:leading-[22px] ml-[-25px] animate fade-up" data-animate="fade-up">Wedding Gift</h2>
             <h6 className="text-xs md:text-lg font-medium leading-[20px] md:leading-[26px] uppercase mt-[57px] md:mt-[79px] animate" data-animate="fade-up">
               <span className="md:hidden">your prayers and presence will be the</span> <br />
               <span className="md:hidden">greatest blessing for us.</span>
