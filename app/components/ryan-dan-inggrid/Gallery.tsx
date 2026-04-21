@@ -31,7 +31,7 @@ export default function Gallery({ isOpen, isMobile }: Props) {
                   alt={`gallery-${index}`}
                   width={1512}
                   height={945}
-                  className="w-full h-full"
+                  className="w-full h-full object-cover object-[55%_center]"
                 />
               </div>
             ))}
