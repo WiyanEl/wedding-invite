@@ -68,7 +68,7 @@ export default function Wrapper({ params }: { params: string }) {
 
   return (
     <>
-      <Header isOpen={isOpen} className="md:hidden" />
+      <Header isOpen={isOpen} />
       <Hero params={params} isOpen={isOpen} setIsOpen={setIsOpen} isMobile={isMobile} />
       <Profile isOpen={isOpen} isMobile={isMobile} />
       <CountingDown isOpen={isOpen} isMobile={isMobile} />
