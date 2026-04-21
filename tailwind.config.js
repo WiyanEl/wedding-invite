@@ -21,6 +21,8 @@ module.exports = {
         signature: ['var(--font-the-signature)'],
         channe: ['var(--font-channe)'],
         perpetua: ['var(--font-perpetua)'],
+        lora: ['var(--font-lora)'],
+        kunstler: ['var(--font-kunstler)'],
       }
     },
     keyframes: {
