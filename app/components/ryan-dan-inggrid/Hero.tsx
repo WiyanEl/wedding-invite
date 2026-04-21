@@ -20,15 +20,7 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
 
         {!isOpen ? (
           <>
-            <div
-              className="md:hidden absolute inset-0 bg-cover bg-center z-[1]"
-              style={{
-                backgroundImage:
-                  "linear-gradient(rgba(0,0,0,0.54), rgba(0,0,0,0.54)), url('/images/ryan-dan-inggrid/bg-gradasi-hero.png')",
-              }}
-            />
-
-            <div className="hidden md:block absolute inset-0 z-[1] bg-black/40 backdrop-blur-[22px]" />
+            <div className="absolute inset-0 z-[1] bg-black/40 backdrop-blur-[22px]" />
           </>
         ) : (
           <div className="absolute inset-0 z-[1] bg-black/60" />
@@ -39,14 +31,14 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
             <div className="text-center w-[290px] md:w-[416px] h-[440px] md:min-h-min md:pb-[40px] rounded-[15px] bg-[#635953] text-white font-lora zoom-in">
               <Image src="/images/ryan-dan-inggrid/img-hero.png" alt="Picture of open invitation" width={290} height={180} className="w-full md:h-[220px]" />
               <h6 className="text-xs md:text-[14px] font-normal md:font-medium leading-none mt-[23px] md:mt-[25px] uppercase">the wedding of</h6>
-              <h1 className="md:hidden font-kunstler text-5xl font-normal leading-none mt-0.5">Ryan & Inggrid</h1>
-              <p className="text-[11px] md:text-[14px] font-medium md:font-medium leading-[25px] md:leading-[31px] mt-0.5 md:mt-[71px]">
+              <h1 className="font-kunstler text-5xl font-normal leading-none mt-0.5 md:mt-[9px]">Ryan & Inggrid</h1>
+              <p className="text-[11px] md:text-[14px] font-medium md:font-medium leading-[25px] md:leading-[31px] mt-0.5 md:mt-4">
                 <span>Dear Mr. /Mrs. / Ms.</span> <br />
                 <span className="capitalize">{params ?? '........'}</span>
               </p>
               <p className="text-[9px] md:text-xs font-normal leading-none md:leading-[16px] mt-3 md:mt-[23px]">
                 <span>We sincerely apologize</span> <br />
-                <span>for any misspelling of names or titles.</span>
+                <span className="inline-block mt-1">for any misspelling of names or titles.</span>
               </p>
               <button onClick={() => setIsOpen(true)} className="mx-auto text-xs md:text-lg font-normal md:font-medium leading-none text-[#635953] uppercase w-[184px] md:w-[288px] h-[30px] md:h-[40px] rounded-[41px] md:rounded-[35px] bg-white flex items-center justify-center mt-2.5 md:mt-[23px]">open invitation</button>
             </div>
@@ -62,7 +54,7 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
             <div className="absolute bottom-[84px] md:bottom-[110px] text-center w-full">
               <p className="text-xs md:text-lg font-normal leading-none md:leading-[28px] zoom-in">
                 <span>“So they are no longer two, but one flesh.</span> <br />
-                <span>What therefore God has joined together, let no one separate.”</span>
+                <span className="inline-block mt-1">What therefore God has joined together, let no one separate.”</span>
               </p>
               <p className="text-xs md:text-lg font-medium leading-none mt-[15px] md:mt-[27px] zoom-in">
                 Matthew 19:6

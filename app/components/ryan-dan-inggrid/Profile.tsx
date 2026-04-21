@@ -14,8 +14,8 @@ export default function Profile({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <section id="profile" className="profile relative w-full min-h-screen" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-          <div className="absolute inset-0 bg-[#EAE4DC] opacity-[0.35] mix-blend-multiply" />
+        <section id="profile" className="profile relative w-full min-h-screen bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+          <div className="absolute inset-0 bg-[#EDE7DC]/60" />
           <div className="text-center h-full pt-[72px] md:pt-[109px] pb-[74px] md:pb-[113px] font-lora text-[#1B1C1D]">
             <Image src="/images/ryan-dan-inggrid/img-logo-ri-dark.png" alt="Picture of Ryan dan Inggrid" width={100} height={67} className="mx-auto md:w-[130px] md:h-[86px] animate" data-animate="fade-up" />
             <p className="text-xs md:text-lg font-normal leading-[20px] md:leading-[28px] mt-[33px] md:mt-[58px] animate" data-animate="fade-up">

@@ -11,7 +11,7 @@ type Props = {
 }
 
 export default function Reservation({ isOpen, isMobile, params }: Props) {
-  const bgImage = !isOpen ? isMobile ? "/images/ryan-dan-inggrid/bg-rsvp-mobile.png" : "/images/ryan-dan-inggrid/bg-rsvp.png" : "/images/ryan-dan-inggrid/bg-rsvp-mobile.png"
+  const bgImage = !isOpen ? isMobile ? "/images/ryan-dan-inggrid/bg-profile-mobile.png" : "/images/ryan-dan-inggrid/bg-profile.png" : "/images/ryan-dan-inggrid/bg-profile-mobile.png"
   const [attendance, setAttendance] = useState('attend')
   const [showModal, setShowModal] = useState(false)
 
@@ -22,11 +22,10 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
           <section id="reservation" className="reservation relative w-full h-min-screen md:h-screen">
             <div className="flex flex-col md:flex-row h-full">
               <div className="flex-1">
-                <Image src="/images/ryan-dan-inggrid/img-rsvp-mobile.png"  alt="Picture of Image Reservation" width={392} height={577} className="md:hidden w-full h-full" />
-                <Image src="/images/ryan-dan-inggrid/img-rsvp.png"  alt="Picture of Image Reservation" width={392} height={577} className="hidden md:block w-full h-full" />
+                <Image src="/images/ryan-dan-inggrid/img-rsvp-2.png"  alt="Picture of Image Reservation" width={392} height={577} className="w-full h-full" />
               </div>
-              <div className="flex-1 relative text-center font-lora text-[#1B1C1D] pt-[68px] md:pt-[142px] pb-[86px] bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-                <div className="absolute inset-0 bg-[#EAE4DC] opacity-[0.35] mix-blend-multiply" />
+              <div className="flex-1 relative text-center font-lora text-[#1B1C1D] pt-[68px] md:pt-[142px] pb-[68px] bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+                <div className="absolute inset-0 bg-[#EDE7DC]/60" />
                 <h2 className="font-kunstler text-[64px] md:text-[96px] font-normal leading-[22px] md:leading-[18px] animate" data-animate="fade-up">Rsvp</h2>
                 <h6 className="text-xs md:text-lg font-normal leading-[15px] mt-[73px] md:mt-[59px] animate" data-animate="fade-up">
                   Dear Mr. /Mrs. / Ms.
@@ -60,7 +59,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
                 <h6 className="text-[11px] md:text-lg font-normal leading-[14.96px] uppercase mt-[43px] md:mt-[81px] animate" data-animate="fade-up">Having trouble with RSVP?</h6>
                 <div className="mt-[22px] md:mt-[44px] animate" data-animate="fade-up">
                   <button type="button" className="flex justify-center items-center w-[219px] md:w-[368px] h-[30px] md:h-[40px] rounded-[71px] md:rounded-[38px] bg-[#1B1C1D] mx-auto">
-                    <Image src="/images/ryan-dan-inggrid/icon-helpdesk.png"  alt="Picture of Icon Helpdesk" width={18} height={23} className="md:w-[28px] md:h-[34px]" />
+                    <Image src="/images/ryan-dan-inggrid/icon-helpdesk.png"  alt="Picture of Icon Helpdesk" width={18} height={23} className="md:w-[28px] md:h-[34px] mr-2" />
                     <span className="text-xs md:text-lg font-semibold md:font-medium leading-[14.96px] text-white uppercase">chat helpdesk team</span>
                   </button>
                 </div>

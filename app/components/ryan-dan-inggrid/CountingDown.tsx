@@ -67,11 +67,11 @@ export default function CountingDown({ isOpen, isMobile }: Props) {
 
 function TimeBox({ value, label }: { value: string; label: string }) {
   return (
-    <div className="flex flex-col gap-[2px] justify-center items-center w-[49px] md:w-[125.27px] h-[48px] md:h-[120.26px] rounded-[10px] md:rounded-[25.05px] bg-[#63595391] border md:border-[2.51px] border-[#FFFFFF91] shadow-[0.47px_1.89px_4.27px_0.94px_rgba(0,0,0,0.15)]">
-      <p className="font-normal text-[28px] md:text-[70.15px] leading-[104%]">
+    <div className="flex flex-col gap-[2px] items-center w-[49px] md:w-[125.27px] h-[48px] md:h-[120.26px] rounded-[10px] md:rounded-[25.05px] bg-[#63595391] border md:border-[2.51px] border-[#FFFFFF91] shadow-[0.47px_1.89px_4.27px_0.94px_rgba(0,0,0,0.15)]">
+      <p className="font-normal text-[28px] md:text-[70.15px] leading-[104%] mt-1 md:mt-2.5">
         {value}
       </p>
-      <p className="font-normal text-[5.56px] md:text-[14.17px] leading-none mt-1">
+      <p className="font-normal text-[5.56px] md:text-[14.17px] leading-none">
         {label}
       </p>
     </div>

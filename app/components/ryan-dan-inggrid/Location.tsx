@@ -16,7 +16,8 @@ export default function Location({ isOpen, isMobile }: Props) {
     <>
       {isOpen ? (
         <section id="location" className="location relative w-full h-min-screen bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
-          <div className="text-center h-full pt-[84px] md:pt-[118px] pb-[82px] md:pb-[114px] font-lora text-white">
+          <div className="absolute inset-0 bg-[#1B1C1D]/30 z-[1]" />
+          <div className="relative z-[1] text-center h-full pt-[84px] md:pt-[118px] pb-[82px] md:pb-[114px] font-lora text-white">
             <h5 className="text-[14px] md:text-[32px] font-normal leading-[18px] uppercase animate" data-animate="fade-up">celebrate our special day</h5>
             <h2 className="font-kunstler text-[64px] md:text-8xl font-normal leading-[18px] mt-[43px] md:mt-[96px] animate" data-animate="fade-up">Our Venues</h2>
             <div className="w-full md:max-w-[1140px] flex flex-col md:flex-row md:justify-between mt-[61px] md:mt-[102px] mx-auto">

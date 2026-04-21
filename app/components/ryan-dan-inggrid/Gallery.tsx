@@ -11,23 +11,15 @@ type Props = {
 
 
 export default function Gallery({ isOpen, isMobile }: Props) {
-  let images = []
+  let images = [
+    '/images/ryan-dan-inggrid/img-gallery-1.png'
+  ]
   const [current, setCurrent] = useState(0)
-
-  if (isMobile) {
-    images = [
-      '/images/ryan-dan-inggrid/gallery-mobile-1.png'
-    ]
-  } else {
-    images = [
-      '/images/ryan-dan-inggrid/gallery-1.png'
-    ]
-  }
 
   return (
     <>
       {isOpen ? (
-        <section id="gallery" className="gallery relative w-full h-full overflow-hidden">
+        <section id="gallery" className="gallery relative w-full h-screen overflow-hidden">
           <div
             className="flex h-full transition-transform duration-700"
             style={{ transform: `translateX(-${current * 100}%)` }}
@@ -37,9 +29,9 @@ export default function Gallery({ isOpen, isMobile }: Props) {
                 <Image
                   src={src}
                   alt={`gallery-${index}`}
-                  width={392}
-                  height={573}
-                  className="w-full"
+                  width={1512}
+                  height={945}
+                  className="w-full h-full"
                 />
               </div>
             ))}

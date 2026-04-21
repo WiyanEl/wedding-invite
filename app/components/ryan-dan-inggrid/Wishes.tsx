@@ -96,34 +96,36 @@ export default function Wishes({ isOpen, isMobile }: Props) {
           {!seeAllMessages ? (
             <div className="relative text-center pt-[90px] md:pt-[150px] font-lora text-[#FEFBF0]">
               <h2 className="font-kunstler text-[64px] md:text-[96px] font-normal leading-[22px] md:leading-[22px] animate fade-up" data-animate="fade-up">Your Wishes</h2>
-              <form onSubmit={save} className="mx-auto mt-[60px] md:mt-[54px] animate fade-up" data-animate="fade-up">
-                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="block w-[284px] md:w-[564px] h-[30px] md:h-[40px] rounded-[10px] md:rounded-[64px] border-[0.49px] border-[#FEFBF0] bg-transparent px-2 py-1 font-lora text-xs md:text-lg leading-[140%] text-[#FEFBF0] placeholder:text-[#FEFBF080] mx-auto" placeholder="Desy (Tester)" />
-                <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="block w-[284px] md:w-[564px] h-[106px] md:h-[261px] rounded-[10px] md:rounded-[20px] border-[0.49px] border-[#FEFBF0] bg-transparent px-2 py-1 font-lora text-xs md:text-lg leading-[140%] text-[#FEFBF0] mx-auto mt-4"></textarea>
+              <form onSubmit={save} className="mx-auto mt-[73px] md:mt-[59px] animate fade-up" data-animate="fade-up">
+                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="block w-[284px] md:w-[564px] h-[30px] md:h-[40px] rounded-[10px] md:rounded-[64px] border-[0.49px] border-[#FEFBF0] bg-transparent px-[13px] md:px-[23px] py-1 font-lora text-xs md:text-lg leading-[140%] text-[#FEFBF0] placeholder:text-[#FEFBF080] mx-auto" placeholder="Desy (Tester)" />
+                <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="block w-[284px] md:w-[564px] h-[106px] md:h-[261px] rounded-[10px] md:rounded-[20px] border-[0.49px] border-[#FEFBF0] bg-transparent px-[13px] md:px-[23px] py-1 font-lora text-xs md:text-lg leading-[140%] text-[#FEFBF0] mx-auto mt-4"></textarea>
                 <button type="submit" className="flex justify-center items-center w-[284px] md:w-[564px] h-[30px] md:h-[40px] bg-[#FEFBF0] rounded-[10px] border-[0.49px] border-[#FEFBF0] mx-auto mt-4">
                   <Image src="/images/ryan-dan-inggrid/icon-send.png" alt="Picture of Icon Send" width={25} height={31} className="hidden md:block mr-2" />
                   <span className="text-xs md:text-lg text-[#1B1C1D] font-normal leading-[140%] uppercase">send</span>
                 </button>
               </form>
-              <div className="w-[284px] md:w-[564px] h-[320px] md:h-[526px] rounded-[10px] md:rounded-[20px] bg-[#FEFBF0] border-[0.49px] border-[#FEFBF0] py-[18px] md:py-[39px] px-[13px] md:px-[23px] overflow-y-auto scroll-smooth mx-auto mt-4 md:mt-[40px] animate fade-up" data-animate="fade-up">
-                {wishes.length === 0 ? (
-                  <p className="text-center text-xs md:text-lg text-[#FEFBF0]">
-                    No message yet
-                  </p>
-                ) : (
-                  wishes.map((wish, i) => (
-                    <div
-                      key={i}
-                      className="w-full pb-[13px] border-b-[0.49px] border-b-[#1B1C1D] font-lora text-left text-[#1B1C1D] mb-[7px]"
-                    >
-                      <p className="font-semibold md:font-bold text-xs md:text-lg leading-[140%]">
-                        {wish.name}
-                      </p>
-                      <p className="font-normal text-xs md:text-lg leading-[140%] mt-[7px]">
-                        {wish.message}
-                      </p>
-                    </div>
-                  ))
-                )}
+              <div className="w-[284px] md:w-[564px] h-[320px] md:h-[526px] rounded-[10px] md:rounded-[20px] bg-[#FEFBF0] border-[0.49px] border-[#FEFBF0] py-[18px] md:py-[39px] px-[13px] md:px-[23px] mx-auto mt-4 md:mt-[40px] animate fade-up" data-animate="fade-up">
+                <div className="w-full h-full overflow-y-auto scroll-smooth">
+                  {wishes.length === 0 ? (
+                    <p className="text-center text-xs md:text-lg text-[#FEFBF0]">
+                      No message yet
+                    </p>
+                  ) : (
+                    wishes.map((wish, i) => (
+                      <div
+                        key={i}
+                        className="w-full pb-[13px] border-b-[0.49px] border-b-[#1B1C1D] font-lora text-left text-[#1B1C1D] mb-[7px]"
+                      >
+                        <p className="font-semibold md:font-bold text-xs md:text-lg leading-[140%]">
+                          {wish.name}
+                        </p>
+                        <p className="font-normal text-xs md:text-lg leading-[140%] mt-[7px]">
+                          {wish.message}
+                        </p>
+                      </div>
+                    ))
+                  )}
+                </div>
               </div>
               <button type="button" onClick={() => setSeeAllMessages(true)} className="flex justify-center items-center w-[284px] md:w-[564px] h-[30px] md:h-[40px] bg-[#FEFBF0] rounded-[10px] border-[0.49px] border-[#FEFBF0] mx-auto mt-4 animate fade-up" data-animate="fade-up">
                   <Image src="/images/ryan-dan-inggrid/icon-message.png" alt="Picture of Icon Send" width={23} height={28} className="hidden md:block mr-2" />
