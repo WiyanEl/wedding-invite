@@ -26,7 +26,7 @@ export default function Location({ isOpen, isMobile }: Props) {
                 <Image src="/images/ryan-dan-inggrid/img-holy-matrimony.png"  alt="Picture of Holy Matrimony" width={235} height={201} className="md:w-[300px] md:h-[257px] mx-auto mt-3 animate" data-animate="fade-up" />
               </div>
               <div className="order-2 md:order-3">
-                <h6 className="md:hidden text-xs font-semibold leading-[20px] uppercase mt-5 md:mt-0 animate" data-animate="fade-up">11.00 wib</h6>
+                <h6 className="text-xs md:text-lg font-semibold leading-[20px] uppercase mt-5 md:mt-0 animate" data-animate="fade-up">11.00 wib</h6>
                 <h2 className="font-kunstler text-[48px] md:text-[64px] font-normal leading-[81%] mt-[15px] md:mt-0 animate" data-animate="fade-up">at</h2>
                 <h6 className="text-xs md:text-lg font-semibold leading-[20px] uppercase mt-5 animate" data-animate="fade-up">abipraya cahya kawaluyan chapel</h6>
                 <p className="text-xs md:text-lg font-normal leading-[20px] mt-[14px] animate" data-animate="fade-up">
@@ -42,11 +42,11 @@ export default function Location({ isOpen, isMobile }: Props) {
                 </Link>
               </div>
               <div className="order-3 md:order-2">
-                <h5 className="text-[14px] md:text-xl font-semibold leading-[18px] uppercase animate" data-animate="fade-up">reception</h5>
-                <Image src="/images/ryan-dan-inggrid/img-reception-new.png"  alt="Picture of Reception" width={313} height={199} className="md:w-[418px] md:h-[266px] mx-auto mt-3 md:mt-[35px] animate" data-animate="fade-up" />
+                <h5 className="text-[14px] md:text-xl mt-[46px] md:mt-0 font-semibold leading-[18px] uppercase animate" data-animate="fade-up">reception</h5>
+                <Image src="/images/ryan-dan-inggrid/img-reception.png"  alt="Picture of Reception" width={313} height={199} className="md:w-[418px] md:h-[266px] mx-auto mt-3 md:mt-[35px] animate" data-animate="fade-up" />
               </div>
               <div className="order-4 md:order-4">
-                <h6 className="md:hidden text-xs font-semibold leading-[20px] uppercase mt-5 animate" data-animate="fade-up">18.00 wib</h6>
+                <h6 className="text-xs md:text-lg font-semibold leading-[20px] uppercase mt-5 md:mt-0 animate" data-animate="fade-up">18.00 wib</h6>
                 <h2 className="font-kunstler text-[48px] md:text-[64px] font-normal leading-[81%] mt-[15px] md:mt-0 animate" data-animate="fade-up">at</h2>
                 <h6 className="text-xs md:text-lg font-semibold leading-[20px] uppercase mt-5 animate" data-animate="fade-up">ubud mason pine hotel</h6>
                 <p className="text-xs md:text-lg font-normal leading-[20px] mt-[14px] animate" data-animate="fade-up">
@@ -55,7 +55,7 @@ export default function Location({ isOpen, isMobile }: Props) {
                 </p>
                 <h6 className="text-xs md:text-lg font-normal leading-[20px] mt-[14px] animate" data-animate="fade-up">
                   <span>DRESS CODE :</span> <br />
-                  <span>Friends - All Black</span>
+                  <span>All Black</span>
                 </h6>
                 <Link href="https://maps.app.goo.gl/wjmp9nCR98i7io91A" target="_blank" className="md:hidden w-[160px] h-[30px] flex justify-center items-center rounded-[73px] bg-white cursor-pointer mx-auto mt-[30px] animate" data-animate="fade-up">
                   <span className="text-xs font-semibold leading-[17.16px] text-black uppercase">goggle maps</span>

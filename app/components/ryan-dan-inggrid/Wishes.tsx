@@ -102,7 +102,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <div style={{backgroundImage: "url('/images/ryan-dan-inggrid/bg-wishes-mobile.png')"}}>
+        <div className="bg-cover bg-center" style={{backgroundImage: "url('/images/ryan-dan-inggrid/bg-wishes-mobile.png')"}}>
           <section id="wishes" className="wishes relative w-full min-h-min">
             {!seeAllMessages ? (
               <div className="relative text-center pt-[90px] md:pt-[150px] font-lora text-[#FEFBF0]">
