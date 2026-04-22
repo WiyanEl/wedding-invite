@@ -21,10 +21,11 @@ export default function Footer({ isOpen, isMobile }: Props) {
               <span>happily ever after with you!</span>
             </p>
             <h6 className="text-xs md:text-lg font-normal leading-[20px] md:leading-[26px] mt-2.5 md:mt-[22px] animate" data-animate="fade-up">#oureverlastINGstoRY</h6>
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
+            <div className="absolute bottom-[38px] md:bottom-[85px] mb-4 md:mb-[38px] left-1/2 -translate-x-1/2">
               <Image src="/images/ryan-dan-inggrid/img-logo-ri.png" alt="Picture of Logo RI" width={79} height={51} className="md:w-[132px] md:h-[84px]" />
-              <Image src="/images/ryan-dan-inggrid/logo-provite.png" alt="Picture of Logo Profite" width={89} height={65} className="md:hidden mt-4" />
-              <Image src="/images/ryan-dan-inggrid/logo-provite-md.png" alt="Picture of Logo Profite" width={149} height={187} className="hidden md:block" />
+            </div>
+            <div className="absolute bottom-0 w-full h-[38px] md:h-[85px] flex justify-center items-center bg-[#1B1C1D] mt-4">
+              <Image src="/images/ryan-dan-inggrid/logo-provite-new.png" alt="Picture of Logo Profite" width={89} height={65} className="md:w-[149px]" />
             </div>
           </div>
         </footer>

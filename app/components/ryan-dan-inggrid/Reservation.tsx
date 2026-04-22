@@ -46,21 +46,25 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
                   </button>
                   <button type="button" onClick={() => {
                     setAttendance('not')
+                    setShowModal(true)
                     }} className={`w-[109px] md:w-[172px] h-[30px] md:h-[40px] rounded-[71px] md:rounded-[38px] flex justify-center items-center ${attendance == 'attend' ? 'bg-transparent border-[0.5px] border-[#1B1C1D]' : 'bg-[#1B1C1D]'}`}>
                       <span className={`text-xs md:text-lg font-semibold md:font-medium leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[#1B1C1D]' : 'text-[#FEFBF0]'}`}>not attend</span>
                   </button>
                 </div>
                 <h6 className="text-xs md:text-lg font-normal leading-[14.96px] uppercase mt-[43px] animate" data-animate="fade-up">are you sure?</h6>
                 <div className="mt-[43px] md:mt-[42px] animate" data-animate="fade-up">
-                  <button type="button" className="flex justify-center items-center w-[219px] md:w-[368px] h-[30px] md:h-[40px] rounded-[71px] md:rounded-[38px] bg-[#1B1C1D] mx-auto">
+                  <button onClick={() => {
+                    setAttendance('not')
+                    setShowModal(true)
+                  }} type="button" className="flex justify-center items-center w-[219px] md:w-[368px] h-[30px] md:h-[40px] rounded-[71px] md:rounded-[38px] bg-[#1B1C1D] mx-auto">
                     <span className="text-xs md:text-lg font-semibold md:font-medium leading-[14.96px] text-white uppercase">confirm not attend</span>
                   </button>
                 </div>
                 <h6 className="text-[11px] md:text-lg font-normal leading-[14.96px] uppercase mt-[43px] md:mt-[81px] animate" data-animate="fade-up">Having trouble with RSVP?</h6>
                 <div className="mt-[22px] md:mt-[44px] animate" data-animate="fade-up">
-                  <button type="button" className="flex justify-center items-center w-[219px] md:w-[368px] h-[30px] md:h-[40px] rounded-[71px] md:rounded-[38px] bg-[#1B1C1D] mx-auto">
-                    <Image src="/images/ryan-dan-inggrid/icon-helpdesk.png"  alt="Picture of Icon Helpdesk" width={18} height={23} className="md:w-[28px] md:h-[34px] mr-2" />
-                    <span className="text-xs md:text-lg font-semibold md:font-medium leading-[14.96px] text-white uppercase">chat helpdesk team</span>
+                  <button type="button" className="flex justify-center items-center w-[160px] md:w-[212px] h-[30px] md:h-[40px] rounded-[55px] bg-[#12877B] mx-auto">
+                    <Image src="/images/ryan-dan-inggrid/logo-whatsapp.png"  alt="Picture of Icon WhatsApp" width={16} height={16} className="mr-2" />
+                    <span className="text-xs md:text-lg font-semibold md:font-medium leading-[14.96px] text-white uppercase">chat support</span>
                   </button>
                 </div>
               </div>
@@ -70,33 +74,46 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
           {showModal && (
             <div className="fixed inset-0 z-50 flex items-center justify-center">
               <div
-                className="absolute inset-0 bg-[#000000A6]"
+                className="absolute inset-0 bg-[#E9E9E9A8] backdrop-blur-[6.8px]"
                 onClick={() => setShowModal(false)}
               />
-              <div className="relative flex flex-col items-center text-center z-10 w-[290px] md:w-[410px] py-[39px] bg-[#FEFBF0] rounded-[10px] font-lora font-medium text-[#3B3B3B] animate-scale-in">
-                <button
-                  onClick={() => setShowModal(false)}
-                  className="absolute top-2 left-3 font-ibm font-medium text-xl md:text-3xl leading-none"
-                >
-                  x
-                </button>
-                <h3 className="font-extrabold text-base md:text-xl uppercase">
-                  RSVP CLOSED
-                </h3>
-                <p className="text-xs md:text-lg mt-[18px] leading-[16px]">
-                  Reservasi telah ditutup. <br />
-                  Untuk bantuan atau reservasi manual, <br />
-                  silahkan hubungi tim kami.
-                </p>
-                <p className="text-xs md:text-lg mt-[18px] leading-[16px]">
-                  Reservations are now closed. <br />
-                  For assistance or manual reservations, <br />
-                  please contact our team.
-                </p>
-                <button type="button" className={`w-[200px] md:w-[268px] h-[30px] md:h-[40px] rounded-[10px] md:rounded-[34px] cursor-pointer flex gap-2 justify-center items-center border font-figtree font-semibold text-xs uppercase bg-transparent border-[#1B1C1D] text-[#1B1C1D] mt-[22px]`}>
-                  <span>chat helpdesk team</span>
-                </button>
-              </div>
+              {attendance == 'attend' ? (
+                <div className="relative flex flex-col items-center text-center z-10 w-[322px] md:w-[486] h-[360px] md:h-[543px] bg-white rounded-[10px] pt-[38px] md:pt-[57px] border border-[#605F5E33] text-[#605F5E] animate-scale-in">
+                  <Image src="/images/ryan-dan-inggrid/icon-checked.png"  alt="Picture of Icon Checked" width={42} height={42} className="md:w-[64px] md:h-[64px]" />
+                  <h6 className="font-noto font-extrabold text-base md:text-[24.13px] leading-none uppercase mt-[18px] md:mt-[22px]">rsvp confirmed</h6>
+                  <p className="font-noto font-medium text-xs md:text-lg leading-[16px] mt-[18px] md:mt-[26px]">
+                    <span>Konfirmasi kehadiran Anda telah kami terima,</span> <br />
+                    <span>kami menantikan kehadiran Anda. Terima kasih</span> <br />
+                    <span>atas konfirmasi Anda.</span>
+                  </p>
+                  <p className="font-noto font-medium text-xs md:text-lg leading-[16px] mt-[18px] md:mt-[26px]">
+                    <span>Your attendance has been confirmed, we look</span> <br />
+                    <span>forward to welcoming you. Thank you for your</span> <br />
+                    <span>confirmation.</span>
+                  </p>
+                  <div onClick={() => setShowModal(false)} className="absolute bottom-0 flex justify-center items-center w-full h-[52px] md:h-[78px] border-t border-[#605F5E33] cursor-pointer">
+                    <span className="font-noto text-[14px] md:text-[21px] font-normal leading-[16px] md:leading-[24px]">Close</span>
+                  </div>
+                </div>
+              ) : (
+                <div className="relative flex flex-col items-center text-center z-10 w-[322px] md:w-[486] h-[360px] md:h-[543px] bg-white rounded-[10px] pt-[38px] border border-[#605F5E33] text-[#605F5E] animate-scale-in">
+                  <Image src="/images/ryan-dan-inggrid/icon-checked-fill.png"  alt="Picture of Icon Checked" width={42} height={42} className="md:w-[64px] md:h-[64px]" />
+                  <h6 className="font-noto font-extrabold text-base md:text-[24.13px] leading-none uppercase mt-[18px] md:mt-[22px]">rsvp confirmed</h6>
+                  <p className="font-noto font-medium text-xs md:text-lg leading-[16px] mt-[18px] md:mt-[26px]">
+                    <span>Konfirmasi ketidakhadiran Anda telah kami</span> <br />
+                    <span>terima, terima kasih atas respon Anda. Kami</span> <br />
+                    <span>menghargai pemberitahuan Anda.</span>
+                  </p>
+                  <p className="font-noto font-medium text-xs md:text-lg leading-[16px] mt-[18px] md:mt-[26px]">
+                    <span>Your response has been received, thank you for</span> <br />
+                    <span>your confirmation. We appreciate your</span> <br />
+                    <span>response.</span>
+                  </p>
+                  <div onClick={() => setShowModal(false)} className="absolute bottom-0 flex justify-center items-center w-full h-[52px] md:h-[78px] border-t border-[#605F5E33] cursor-pointer">
+                    <span className="font-noto text-[14px] md:text-[21px] font-normal leading-[16px] md:leading-[24px]">Close</span>
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </>

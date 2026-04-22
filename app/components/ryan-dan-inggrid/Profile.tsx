@@ -37,7 +37,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
                 </h6>
                 <Link href="https://instagram.com/ryanrahmadi" target="_blank" className="relative z-10 flex items-center justify-center gap-2 w-[160px] md:w-[190px] h-[30px] md:h-[40px] bg-[#1B1C1D] rounded-[52px] mx-auto mt-[19px] md:mt-[52px] cursor-pointer animate" data-animate="fade-up">
                   <Image src="/images/ryan-dan-inggrid/icon-instagram.png" alt="Picture of Icon Instagram" width={13} height={16}  />
-                  <span className="text-xs text-white leading-16px font-normal">ryanrahmadi</span>
+                  <span className="text-xs md:text-lg text-white leading-16px font-normal">ryanrahmadi</span>
                 </Link>
               </div>
               <div className="mt-[60px] md:mt-0">
@@ -53,7 +53,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
                 </h6>
                 <Link href="https://instagram.com/levinainggrid" target="_blank" className="relative z-10 flex items-center justify-center gap-2 w-[160px] md:w-[190px] h-[30px] md:h-[40px] bg-[#1B1C1D] rounded-[52px] mx-auto mt-[19px] md:mt-[52px] cursor-pointer animate" data-animate="fade-up">
                   <Image src="/images/ryan-dan-inggrid/icon-instagram.png" alt="Picture of Icon Instagram" width={13} height={16}  />
-                  <span className="text-xs text-white leading-16px font-normal">levinainggrid</span>
+                  <span className="text-xs md:text-lg text-white leading-16px font-normal">levinainggrid</span>
                 </Link>
               </div>
             </div>

@@ -46,7 +46,7 @@ export const cloudyAurora = localFont({
 
 export const notoSans = Noto_Sans({
   subsets: ['latin'],
-  weight: ['300' ,'400', '500', '600', '700'],
+  weight: ['300' ,'400', '500', '600', '700', '800'],
   variable: '--font-noto',
 })
 
