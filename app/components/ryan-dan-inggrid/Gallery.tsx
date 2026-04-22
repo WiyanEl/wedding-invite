@@ -19,35 +19,40 @@ export default function Gallery({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <section id="gallery" className="gallery relative w-full h-screen overflow-hidden">
-          <div
-            className="flex h-full transition-transform duration-700"
-            style={{ transform: `translateX(-${current * 100}%)` }}
-          >
-            {images.map((src, index) => (
-              <div key={index} className="w-full h-full flex-shrink-0 relative">
-                <Image
-                  src={src}
-                  alt={`gallery-${index}`}
-                  width={1512}
-                  height={945}
-                  className="w-full h-full object-cover object-[55%_center]"
+        <section id="gallery" className="gallery">
+          <div className="relative w-full h-screen overflow-hidden">
+            <div
+              className="flex h-full transition-transform duration-700"
+              style={{ transform: `translateX(-${current * 100}%)` }}
+            >
+              {images.map((src, index) => (
+                <div key={index} className="w-full h-full flex-shrink-0 relative">
+                  <Image
+                    src={src}
+                    alt={`gallery-${index}`}
+                    width={1512}
+                    height={945}
+                    className="w-full h-full object-cover object-[55%_center]"
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-[2] flex gap-2">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrent(index)}
+                  className={`w-2.5 h-2.5 rounded-full transition-all ${
+                    current === index
+                      ? 'bg-white scale-110'
+                      : 'bg-white/50'
+                  }`}
                 />
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-[2] flex gap-2">
-            {images.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrent(index)}
-                className={`w-2.5 h-2.5 rounded-full transition-all ${
-                  current === index
-                    ? 'bg-white scale-110'
-                    : 'bg-white/50'
-                }`}
-              />
-            ))}
+          <div className="w-full h-[38px] md:h-[85px] flex justify-center items-center bg-[#FEFBF0]">
+            <p className="font-lora md:font-lora font-light md:font-normal text-[9px] md:text-base leading-[20px] md:leading-[44px]">Photo & Video by Emery Picture</p>
           </div>
         </section>
       ) : null}
