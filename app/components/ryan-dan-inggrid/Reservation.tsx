@@ -11,7 +11,7 @@ type Props = {
 }
 
 export default function Reservation({ isOpen, isMobile, params }: Props) {
-  const bgImage = !isOpen ? isMobile ? "/images/ryan-dan-inggrid/bg-profile-mobile.png" : "/images/ryan-dan-inggrid/bg-profile.png" : "/images/ryan-dan-inggrid/bg-profile-mobile.png"
+  const bgImage = isMobile ? "/images/ryan-dan-inggrid/bg-profile-mobile.png" : "/images/ryan-dan-inggrid/bg-profile.png"
   const [attendance, setAttendance] = useState('attend')
   const [showModal, setShowModal] = useState(false)
 
@@ -21,10 +21,11 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
         <>
           <section id="reservation" className="reservation relative w-full h-min-screen md:h-screen">
             <div className="flex flex-col md:flex-row h-full">
-              <div className="flex-1">
-                <Image src="/images/ryan-dan-inggrid/img-rsvp-2.png"  alt="Picture of Image Reservation" width={392} height={577} className="w-full h-full" />
+              <div className="w-full">
+                <Image src="/images/ryan-dan-inggrid/img-rsvp-2.png"  alt="Picture of Image Reservation" width={392} height={577} className="md:hidden w-full h-full" />
+                <Image src="/images/ryan-dan-inggrid/img-rsvp-new.png"  alt="Picture of Image Reservation" width={744} height={960} className="hidden md:block w-full h-full" />
               </div>
-              <div className="flex-1 relative text-center font-lora text-[#1B1C1D] pt-[68px] md:pt-[142px] pb-[68px] bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
+              <div className="w-full relative text-center font-lora text-[#1B1C1D] pt-[68px] md:pt-[142px] pb-[68px] bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
                 <div className="absolute inset-0 bg-[#EDE7DC]/60" />
                 <h2 className="font-kunstler text-[64px] md:text-[96px] font-normal leading-[22px] md:leading-[18px] animate" data-animate="fade-up">Rsvp</h2>
                 <h6 className="text-xs md:text-lg font-normal leading-[15px] mt-[73px] md:mt-[59px] animate" data-animate="fade-up">

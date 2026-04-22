@@ -57,55 +57,55 @@ export default function Header({ isOpen }: {isOpen: boolean}) {
         {(open || isClosing) && (
           <>
             <div onClick={handleClose} className="w-screen h-screen fixed inset-0 z-40" />
-            <div className={`relative z-50 top-[12px] md:top-[24px] left-[22px] md:left-[41px] w-[255px] md:w-[424px] h-[254px] md:h-[442px] bg-[#FEFBF052] flex gap-2 ps-[6px] ${isClosing ? 'animate-menu-out' : 'animate-menu-in'}`} style={{ transformOrigin: 'top left' }}>
+            <div className={`relative z-50 top-[12px] md:top-[24px] left-[22px] md:left-[41px] w-[255px] md:w-[424px] h-[254px] md:h-[442px] bg-[#1B1C1D]/60 flex gap-2 ps-[6px] ${isClosing ? 'animate-menu-out' : 'animate-menu-in'}`} style={{ transformOrigin: 'top left' }}>
               <div>
                 <button className={`font-ibm text-2xl md:text-[54px] font-light leading-none text-white uppercase opacity-0 mt-[6px] md:mt-[12px] md:ml-[13px] ${isClosing ? 'animate-close-menu-out' : 'animate-close-menu-in'}`} onClick={() => handleClose()}>x</button>
               </div>
-              <div className={`flex flex-col gap-[12px] font-noto text-white mt-[36px] md:mt-[75px] mb-[32px] ${isClosing ? 'animate-close-menu-out' : ''}`}>
+              <div className={`flex flex-col font-noto text-white mt-[36px] md:mt-[75px] mb-[32px] ${isClosing ? 'animate-close-menu-out' : ''}`}>
                 <div className="overflow-hidden">
                   <Link href="#hero" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown}>
                     <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
                     <span className="text-xs md:text-lg leading-none font-medium">home</span>
                   </Link>
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden mt-3">
                   <Link href="#profile" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.05s' }}>
                     <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
                     <span className="text-xs md:text-lg leading-none font-medium">profile</span>
                   </Link>
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden mt-3">
                   <Link href="#counting-down" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.25s' }}>
                     <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
                     <span className="text-xs md:text-lg leading-none font-medium">counting down</span>
                   </Link>
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden mt-3">
                   <Link href="#location" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.45s' }}>
                     <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
                     <span className="text-xs md:text-lg leading-none font-medium">our venues</span>
                   </Link>
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden mt-3">
                   <Link href="#reservation" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.45s' }}>
                     <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
                     <span className="text-xs md:text-lg leading-none font-medium">rsvp</span>
                   </Link>
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden mt-3">
                   <Link href="#gallery" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.55s' }}>
                     <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
                     <span className="text-xs md:text-lg leading-none font-medium">gallery</span>
                   </Link>
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden mt-3">
                   <Link href="#wedding-gift" className="flex items-center gap-1 relative left-[-18px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.45s' }}>
                     <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px]" alt="" />
                     <span className="text-xs md:text-lg leading-none font-medium">wedding gift</span>
                   </Link>
                 </div>
-                <div className="overflow-hidden">
-                  <p className="text-[8px] md:text-[14px] font-light leading-[106%] mt-[16px] opacity-0 animate-item-in" style={{ animationDelay: '0.65s' }}>
+                <div className="overflow-hidden mt-[16px]">
+                  <p className="text-[8px] md:text-[14px] font-light leading-[106%] opacity-0 animate-item-in" style={{ animationDelay: '0.65s' }}>
                     Select a section above to continue
                   </p>
                 </div>

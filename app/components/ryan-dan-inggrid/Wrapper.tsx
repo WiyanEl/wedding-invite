@@ -9,7 +9,6 @@ import Location from '@/app/components/ryan-dan-inggrid/Location'
 import Reservation from '@/app/components/ryan-dan-inggrid/Reservation'
 import Gallery from '@/app/components/ryan-dan-inggrid/Gallery'
 import Wishes from '@/app/components/ryan-dan-inggrid/Wishes'
-import WeddingGift from '@/app/components/ryan-dan-inggrid/WeddingGift'
 import Footer from '@/app/components/ryan-dan-inggrid/Footer'
 
 export default function Wrapper({ params }: { params: string }) {
@@ -76,7 +75,6 @@ export default function Wrapper({ params }: { params: string }) {
       <Reservation isOpen={isOpen} isMobile={isMobile} params={params} />
       <Gallery isOpen={isOpen} isMobile={isMobile} />
       <Wishes isOpen={isOpen} isMobile={isMobile} />
-      <WeddingGift isOpen={isOpen} isMobile={isMobile} />
       <Footer isOpen={isOpen} isMobile={isMobile} />
     </>
   )

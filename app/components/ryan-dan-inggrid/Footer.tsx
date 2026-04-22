@@ -16,7 +16,7 @@ export default function Footer({ isOpen, isMobile }: Props) {
             <h2 className="font-kunstler text-[64px] md:text-[96px] font-normal leading-[22px] md:leading-[22px] animate fade-up" data-animate="fade-up">Thank You</h2>
             <p className="text-xs md:text-lg font-normal leading-[20px] md:leading-[26px] mt-[33px] md:mt-[70px] animate" data-animate="fade-up">
               <span>For being part of our journey.</span> <br />
-              <span>we look forward to</span> <br className="md:hidden" />
+              <span>We look forward to</span> <br className="md:hidden" />
               <span>celebrating love, laughter, and</span> <br />
               <span>happily ever after with you!</span>
             </p>
