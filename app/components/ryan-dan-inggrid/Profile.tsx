@@ -45,7 +45,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
                   <div className="absolute inset-0 bg-[#00000059]" />
                   <Image src="/images/ryan-dan-inggrid/img-pengantin-wanita.png" alt="Picture of Ryan" width={200} height={200} className="md:w-[270px] md:h-[280px]" />
                 </div>
-                <h2 className="font-kunstler text-5xl md:text-[64px] font-normal leading-none mt-5 md:mt-[26px] animate" data-animate="fade-up">Beatrix Levina Inggrid</h2>
+                <h2 className="font-kunstler text-5xl md:text-[64px] font-normal leading-none mt-5 md:mt-[26px] ml-[-15px] animate" data-animate="fade-up">Beatrix Levina Inggrid</h2>
                 <h6 className="text-xs md:text-lg font-medium leading-[20px] mt-[13px] md:mt-5 animate" data-animate="fade-up">The first daughter of two siblings</h6>
                 <h6 className="text-xs md:text-lg font-normal leading-[16px] md:leading-[26px] mt-[13px] md:mt-5 animate" data-animate="fade-up">
                   <span>Mr. Heri Prasetyo</span> <br />

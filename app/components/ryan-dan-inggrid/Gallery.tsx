@@ -1,8 +1,22 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper/modules'
+
+import LightGallery from 'lightgallery/react'
+import lgZoom from 'lightgallery/plugins/zoom'
+import lgThumbnail from 'lightgallery/plugins/thumbnail'
+
+import 'swiper/css'
+import 'swiper/css/pagination'
+
+import 'lightgallery/css/lightgallery.css'
+import 'lightgallery/css/lg-zoom.css'
+import 'lightgallery/css/lg-thumbnail.css'
 
 type Props = {
   isOpen: boolean
@@ -11,10 +25,34 @@ type Props = {
 
 
 export default function Gallery({ isOpen, isMobile }: Props) {
-  let images = [
-    '/images/ryan-dan-inggrid/img-gallery-1.png'
+  const galleryRef = useRef<any>(null)
+
+  const images = [
+    {
+      src: '/images/ryan-dan-inggrid/img-gallery-1.png',
+      thumb: '/images/ryan-dan-inggrid/img-gallery-1.png'
+    },
+    {
+      src: '/images/ryan-dan-inggrid/img-gallery-2.png',
+      thumb: '/images/ryan-dan-inggrid/img-gallery-2.png'
+    },
+    {
+      src: '/images/ryan-dan-inggrid/img-gallery-3.png',
+      thumb: '/images/ryan-dan-inggrid/img-gallery-3.png'
+    },
+    {
+      src: '/images/ryan-dan-inggrid/img-gallery-4.png',
+      thumb: '/images/ryan-dan-inggrid/img-gallery-4.png'
+    },
+    {
+      src: '/images/ryan-dan-inggrid/img-gallery-5.png',
+      thumb: '/images/ryan-dan-inggrid/img-gallery-5.png'
+    }
   ]
-  const [current, setCurrent] = useState(0)
+
+  const openGallery = (index: number) => {
+    galleryRef.current?.openGallery(index)
+  }
 
   return (
     <>
@@ -22,33 +60,34 @@ export default function Gallery({ isOpen, isMobile }: Props) {
         <section id="gallery" className="gallery">
           <div className="relative w-full h-screen overflow-hidden">
             <div
-              className="flex h-full transition-transform duration-700"
-              style={{ transform: `translateX(-${current * 100}%)` }}
+              className="flex h-full"
             >
-              {images.map((src, index) => (
-                <div key={index} className="w-full h-full flex-shrink-0 relative">
-                  <Image
-                    src={src}
-                    alt={`gallery-${index}`}
-                    width={1512}
-                    height={945}
-                    className="w-full h-full object-cover object-[55%_center]"
-                  />
-                </div>
-              ))}
-            </div>
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-[2] flex gap-2">
-              {images.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrent(index)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all ${
-                    current === index
-                      ? 'bg-white scale-110'
-                      : 'bg-white/50'
-                  }`}
-                />
-              ))}
+              <Swiper
+                pagination={{ dynamicBullets: true, clickable: true }}
+                modules={[Pagination]}
+              >
+                {images.map((img, i) => (
+                  <SwiperSlide key={i}>
+                    <div className="cursor-pointer" onClick={() => openGallery(i)}>
+                      <Image
+                        src={img.src}
+                        alt={`Gallery ${i}`}
+                        width={1512}
+                        height={945}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
+              <LightGallery
+                onInit={(ref) => (galleryRef.current = ref.instance)}
+                dynamic
+                dynamicEl={images}
+                plugins={[lgZoom, lgThumbnail]}
+                speed={500}
+              />
             </div>
           </div>
           <div className="w-full h-[38px] md:h-[85px] flex justify-center items-center bg-[#FEFBF0]">

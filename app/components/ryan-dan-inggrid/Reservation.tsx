@@ -12,6 +12,7 @@ type Props = {
 
 export default function Reservation({ isOpen, isMobile, params }: Props) {
   const bgImage = isMobile ? "/images/ryan-dan-inggrid/bg-profile-mobile.png" : "/images/ryan-dan-inggrid/bg-profile.png"
+  const bgImgLeft = isMobile ? "/images/ryan-dan-inggrid/img-rsvp-2.png" : "/images/ryan-dan-inggrid/img-rsvp-new.png"
   const [attendance, setAttendance] = useState('attend')
   const [showModal, setShowModal] = useState(false)
 
@@ -20,10 +21,8 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
       {isOpen ? (
         <>
           <section id="reservation" className="reservation relative w-full h-min-screen md:h-screen">
-            <div className="flex flex-col md:flex-row h-full">
-              <div className="w-full">
-                <Image src="/images/ryan-dan-inggrid/img-rsvp-2.png"  alt="Picture of Image Reservation" width={392} height={577} className="md:hidden w-full h-full" />
-                <Image src="/images/ryan-dan-inggrid/img-rsvp-new.png"  alt="Picture of Image Reservation" width={744} height={960} className="hidden md:block w-full h-full" />
+            <div className="grid grid-cols-1 gap-0 w-full h-full sm:grid-cols-2">
+              <div className="min-h-[700px] bg-center bg-cover bg-no-repeat" style={{ backgroundImage: bgImgLeft ? `url('${bgImgLeft}')` : 'none' }}>
               </div>
               <div className="w-full relative text-center font-lora text-[#1B1C1D] pt-[68px] md:pt-[142px] pb-[68px] bg-cover bg-center" style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}>
                 <div className="absolute inset-0 bg-[#EDE7DC]/60" />
@@ -63,10 +62,10 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
                 </div>
                 <h6 className="text-[11px] md:text-lg font-normal leading-[14.96px] uppercase mt-[43px] md:mt-[81px] animate" data-animate="fade-up">Having trouble with RSVP?</h6>
                 <div className="mt-[22px] md:mt-[44px] animate" data-animate="fade-up">
-                  <button type="button" className="flex justify-center items-center w-[160px] md:w-[212px] h-[30px] md:h-[40px] rounded-[55px] bg-[#12877B] mx-auto">
+                  <Link href="https://wa.me/6289671650843" target="_blank" className="flex justify-center items-center w-[160px] md:w-[212px] h-[30px] md:h-[40px] rounded-[55px] bg-[#12877B] mx-auto">
                     <Image src="/images/ryan-dan-inggrid/logo-whatsapp.png"  alt="Picture of Icon WhatsApp" width={16} height={16} className="mr-2" />
                     <span className="text-xs md:text-lg font-semibold md:font-medium leading-[14.96px] text-white uppercase">chat support</span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

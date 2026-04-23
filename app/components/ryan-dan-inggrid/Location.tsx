@@ -35,7 +35,7 @@ export default function Location({ isOpen, isMobile }: Props) {
                 </p>
                 <h6 className="text-xs md:text-lg font-semibold leading-[20px] mt-5 animate" data-animate="fade-up">
                   <span className="uppercase">dress code :</span> <br />
-                  <span className="uppercase md:lowercase">batik</span>
+                  <span>Batik</span>
                 </h6>
                 <Link href="https://maps.app.goo.gl/t8BwfCTntmefNDtc8" target="_blank" className="md:hidden w-[160px] h-[30px] flex justify-center items-center rounded-[73px] bg-white cursor-pointer mx-auto mt-[30px] animate" data-animate="fade-up">
                   <span className="text-xs font-semibold leading-[17.16px] text-black uppercase">goggle maps</span>

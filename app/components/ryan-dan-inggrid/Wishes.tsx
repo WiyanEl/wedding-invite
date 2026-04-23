@@ -108,8 +108,8 @@ export default function Wishes({ isOpen, isMobile }: Props) {
               <div className="relative text-center pt-[90px] md:pt-[150px] font-lora text-[#FEFBF0]">
                 <h2 className="font-kunstler text-[64px] md:text-[96px] font-normal leading-[22px] md:leading-[22px] animate fade-up" data-animate="fade-up">Your Wishes</h2>
                 <form onSubmit={save} className="mx-auto mt-[73px] md:mt-[89px] animate fade-up" data-animate="fade-up">
-                  <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="block w-[284px] md:w-[564px] h-[30px] md:h-[40px] rounded-[10px] md:rounded-[64px] border-[0.49px] border-[#FEFBF0] bg-transparent px-[13px] md:px-[23px] py-1 font-lora text-xs md:text-lg leading-[140%] text-[#FEFBF0] placeholder:text-[#FEFBF080] mx-auto" placeholder="Desy (Tester)" />
-                  <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="block w-[284px] md:w-[564px] h-[106px] md:h-[261px] rounded-[10px] md:rounded-[20px] border-[0.49px] border-[#FEFBF0] bg-transparent px-[13px] md:px-[23px] py-1 font-lora text-xs md:text-lg leading-[140%] text-[#FEFBF0] mx-auto mt-4"></textarea>
+                  <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="block w-[284px] md:w-[564px] h-[30px] md:h-[40px] rounded-[10px] md:rounded-[64px] border-[0.49px] border-[#FEFBF0] border-l-0 bg-transparent px-[13px] md:px-[23px] py-1 font-lora text-xs md:text-lg leading-[140%] text-[#FEFBF0] placeholder:text-[#FEFBF080] mx-auto" placeholder="Desy (Tester)" />
+                  <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="block w-[284px] md:w-[564px] h-[106px] md:h-[261px] rounded-[10px] md:rounded-[20px] border-[0.49px] border-[#FEFBF0] border-l-0 bg-transparent px-[13px] md:px-[23px] py-1 font-lora text-xs md:text-lg leading-[140%] text-[#FEFBF0] mx-auto mt-4"></textarea>
                   <button type="submit" className="flex justify-center items-center w-[284px] md:w-[564px] h-[30px] md:h-[40px] bg-[#FEFBF0] rounded-[10px] border-[0.49px] border-[#FEFBF0] mx-auto mt-4">
                     <Image src="/images/ryan-dan-inggrid/icon-send.png" alt="Picture of Icon Send" width={25} height={31} className="hidden md:block mr-2" />
                     <span className="text-xs md:text-lg text-[#1B1C1D] font-normal leading-[140%] uppercase">send</span>
@@ -224,14 +224,14 @@ export default function Wishes({ isOpen, isMobile }: Props) {
               </h6>
               <Image src="/images/ryan-dan-inggrid/logo-bca.png" alt="Picture of Logo BCA" width="64" height={23} className="md:w-[88px] md:h-[31px] mx-auto mt-[57px] animate" data-animate="fade-up" />
               <div className="flex gap-[25px] md:gap-[49px] justify-center items-center mt-[22px] animate" data-animate="fade-up">
-                <span className="text-xs md:text-lg font-normal leading-[20px] md:leading-[26px]">1234567891011</span>
+                <span className="text-xs md:text-lg font-normal leading-[20px] md:leading-[26px]">0080609213</span>
                 <button
                   onClick={handleCopy}
                   className="w-[57px] md:w-[110px] h-[30px] md:h-[40px] flex items-center justify-center bg-[#FEFBF0] rounded-[51px] animate" data-animate="fade-up">
                     <span className="text-xs md:text-lg font-normal leading-[81%] md:leading-[26px] text-[#1B1C1D]">{copied ? "Copied" : "Copy"}</span>
                 </button>
               </div>
-              <p className="text-xs md:text-lg font-normal leading-[20px] md:leading-[26px] mt-[15px] md:mt-[18px] animate" data-animate="fade-up">Bank BCA - PROVITE</p>
+              <p className="text-xs md:text-lg font-normal leading-[20px] md:leading-[26px] mt-[15px] md:mt-[18px] animate" data-animate="fade-up">Bank BCA - Ryan Rahmadi</p>
             </div>
           </section>
         </div>
