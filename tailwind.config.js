@@ -23,6 +23,8 @@ module.exports = {
         perpetua: ['var(--font-perpetua)'],
         lora: ['var(--font-lora)'],
         kunstler: ['var(--font-kunstler)'],
+        bellmt: ['var(--font-bell-mt)'],
+        bickham: ['var(--font-bickham-script)'],
       }
     },
     keyframes: {
