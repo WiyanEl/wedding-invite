@@ -37,8 +37,8 @@ export default function Location({ isOpen, isMobile }: Props) {
                   <span className="uppercase">dress code :</span> <br />
                   <span className="uppercase">Batik</span>
                 </h6>
-                <Link href="https://maps.app.goo.gl/t8BwfCTntmefNDtc8" target="_blank" className="md:hidden w-[160px] h-[30px] flex justify-center items-center rounded-[73px] bg-white cursor-pointer mx-auto mt-[30px] animate" data-animate="fade-up">
-                  <span className="text-xs font-semibold leading-[17.16px] text-black uppercase">google maps</span>
+                <Link href="https://maps.app.goo.gl/t8BwfCTntmefNDtc8" target="_blank" className="w-[160px] md:w-[190px] h-[30px] md:h-[40px] flex justify-center items-center rounded-[73px] bg-white cursor-pointer mx-auto mt-[30px] md:mt-[27px] animate" data-animate="fade-up">
+                  <span className="text-xs md:text-lg font-semibold md:font-medium leading-[17.16px] md:leading-[26px] text-black uppercase">google maps</span>
                 </Link>
               </div>
               <div className="order-3 md:order-2">
@@ -57,8 +57,8 @@ export default function Location({ isOpen, isMobile }: Props) {
                   <span>DRESS CODE :</span> <br />
                   <span className="uppercase">All Black</span>
                 </h6>
-                <Link href="https://maps.app.goo.gl/wjmp9nCR98i7io91A" target="_blank" className="md:hidden w-[160px] h-[30px] flex justify-center items-center rounded-[73px] bg-white cursor-pointer mx-auto mt-[30px] animate" data-animate="fade-up">
-                  <span className="text-xs font-semibold leading-[17.16px] text-black uppercase">google maps</span>
+                  <Link href="https://maps.app.goo.gl/wjmp9nCR98i7io91A" target="_blank" className="w-[160px] md:w-[190px] h-[30px] md:h-[40px] flex justify-center items-center rounded-[73px] bg-white cursor-pointer mx-auto mt-[30px] md:mt-[27px] animate" data-animate="fade-up">
+                    <span className="text-xs md:text-lg font-semibold md:font-medium leading-[17.16px] md:leading-[26px] text-black uppercase">google maps</span>
                 </Link>
               </div>
             </div>
