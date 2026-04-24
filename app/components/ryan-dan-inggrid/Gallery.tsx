@@ -27,28 +27,55 @@ type Props = {
 export default function Gallery({ isOpen, isMobile }: Props) {
   const galleryRef = useRef<any>(null)
 
-  const images = [
-    {
-      src: '/images/ryan-dan-inggrid/img-gallery-1.png',
-      thumb: '/images/ryan-dan-inggrid/img-gallery-1.png'
-    },
-    {
-      src: '/images/ryan-dan-inggrid/img-gallery-2.png',
-      thumb: '/images/ryan-dan-inggrid/img-gallery-2.png'
-    },
-    {
-      src: '/images/ryan-dan-inggrid/img-gallery-3.png',
-      thumb: '/images/ryan-dan-inggrid/img-gallery-3.png'
-    },
-    {
-      src: '/images/ryan-dan-inggrid/img-gallery-4.png',
-      thumb: '/images/ryan-dan-inggrid/img-gallery-4.png'
-    },
-    {
-      src: '/images/ryan-dan-inggrid/img-gallery-5.png',
-      thumb: '/images/ryan-dan-inggrid/img-gallery-5.png'
-    }
-  ]
+  let images = []
+
+  if (isMobile) {
+    images = [
+      {
+        src: '/images/ryan-dan-inggrid/gallery-mobile-1.png',
+        thumb: '/images/ryan-dan-inggrid/gallery-mobile-1.png'
+      },
+      {
+        src: '/images/ryan-dan-inggrid/img-gallery-2.png',
+        thumb: '/images/ryan-dan-inggrid/img-gallery-2.png'
+      },
+      {
+        src: '/images/ryan-dan-inggrid/img-gallery-3.png',
+        thumb: '/images/ryan-dan-inggrid/img-gallery-3.png'
+      },
+      {
+        src: '/images/ryan-dan-inggrid/img-gallery-4.png',
+        thumb: '/images/ryan-dan-inggrid/img-gallery-4.png'
+      },
+      {
+        src: '/images/ryan-dan-inggrid/img-gallery-5.png',
+        thumb: '/images/ryan-dan-inggrid/img-gallery-5.png'
+      }
+    ]
+  } else {
+    images = [
+      {
+        src: '/images/ryan-dan-inggrid/img-gallery-1.png',
+        thumb: '/images/ryan-dan-inggrid/img-gallery-1.png'
+      },
+      {
+        src: '/images/ryan-dan-inggrid/img-gallery-2.png',
+        thumb: '/images/ryan-dan-inggrid/img-gallery-2.png'
+      },
+      {
+        src: '/images/ryan-dan-inggrid/img-gallery-3.png',
+        thumb: '/images/ryan-dan-inggrid/img-gallery-3.png'
+      },
+      {
+        src: '/images/ryan-dan-inggrid/img-gallery-4.png',
+        thumb: '/images/ryan-dan-inggrid/img-gallery-4.png'
+      },
+      {
+        src: '/images/ryan-dan-inggrid/img-gallery-5.png',
+        thumb: '/images/ryan-dan-inggrid/img-gallery-5.png'
+      }
+    ]
+  }
 
   const openGallery = (index: number) => {
     galleryRef.current?.openGallery(index)
@@ -58,7 +85,7 @@ export default function Gallery({ isOpen, isMobile }: Props) {
     <>
       {isOpen ? (
         <section id="gallery" className="gallery">
-          <div className="relative w-full h-screen overflow-hidden">
+          <div className="relative w-full overflow-hidden">
             <div
               className="flex h-full"
             >
@@ -74,7 +101,7 @@ export default function Gallery({ isOpen, isMobile }: Props) {
                         alt={`Gallery ${i}`}
                         width={1512}
                         height={945}
-                        className="w-full h-full object-cover"
+                        className="w-[391px] h-[573px] md:w-full md:h-[933px] object-cover"
                       />
                     </div>
                   </SwiperSlide>
