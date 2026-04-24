@@ -35,10 +35,10 @@ export default function Location({ isOpen, isMobile }: Props) {
                 </p>
                 <h6 className="text-xs md:text-lg font-semibold leading-[20px] mt-5 animate" data-animate="fade-up">
                   <span className="uppercase">dress code :</span> <br />
-                  <span>Batik</span>
+                  <span className="uppercase">Batik</span>
                 </h6>
                 <Link href="https://maps.app.goo.gl/t8BwfCTntmefNDtc8" target="_blank" className="md:hidden w-[160px] h-[30px] flex justify-center items-center rounded-[73px] bg-white cursor-pointer mx-auto mt-[30px] animate" data-animate="fade-up">
-                  <span className="text-xs font-semibold leading-[17.16px] text-black uppercase">goggle maps</span>
+                  <span className="text-xs font-semibold leading-[17.16px] text-black uppercase">google maps</span>
                 </Link>
               </div>
               <div className="order-3 md:order-2">
@@ -55,10 +55,10 @@ export default function Location({ isOpen, isMobile }: Props) {
                 </p>
                 <h6 className="text-xs md:text-lg font-normal leading-[20px] mt-[14px] animate" data-animate="fade-up">
                   <span>DRESS CODE :</span> <br />
-                  <span>All Black</span>
+                  <span className="uppercase">All Black</span>
                 </h6>
                 <Link href="https://maps.app.goo.gl/wjmp9nCR98i7io91A" target="_blank" className="md:hidden w-[160px] h-[30px] flex justify-center items-center rounded-[73px] bg-white cursor-pointer mx-auto mt-[30px] animate" data-animate="fade-up">
-                  <span className="text-xs font-semibold leading-[17.16px] text-black uppercase">goggle maps</span>
+                  <span className="text-xs font-semibold leading-[17.16px] text-black uppercase">google maps</span>
                 </Link>
               </div>
             </div>
