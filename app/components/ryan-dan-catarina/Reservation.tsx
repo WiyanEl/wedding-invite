@@ -21,7 +21,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
           <section id="reservation" className="reservation relative w-full h-min-screen">
             <div className="grid grid-cols-1 gap-0 w-full h-full sm:grid-cols-2">
               <div className="hidden md:block min-h-[700px] bg-center bg-cover bg-no-repeat bg-[url('/images/ryan-dan-catarina/img-reservation-left.png')]"></div>
-              <div className="w-full relative text-center font-bellmt text-[#60564D] pt-[90px] md:pt-[142px] pb-[90px] bg-[#DADAD9]">
+              <div className="w-full relative text-center font-bellmt text-[#60564D] pt-[90px] md:pt-[142px] pb-[90px] md:pb-[142px] bg-[#DADAD9]">
                 <Image src="/images/ryan-dan-catarina/img-bunga-kanan-atas-rsvp.png" alt="Picture of Bunga Kanan Atas" width={866} height={866} className="absolute top-[-75px] right-0 w-[558px] h-[558px] md:w-full md:h-full" />
                 <h2 className="font-bickham text-[40px] md:text-[64px] font-bold leading-[22px] md:leading-[18px] animate" data-animate="fade-up">Rsvp</h2>
                 <Image src="/images/ryan-dan-catarina/line-location.png" alt="Picture of Line Location" width={180} height={37} className="w-[118px] h-[10px] md:w-[180px] md:h-[37px] mx-auto mt-[35px] animate" data-animate="fade-up" />
