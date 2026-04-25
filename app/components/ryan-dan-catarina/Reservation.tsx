@@ -18,7 +18,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
     <>
       {isOpen ? (
         <>
-          <section id="reservation" className="reservation relative w-full h-min-screen md:h-screen">
+          <section id="reservation" className="reservation relative w-full h-min-screen">
             <div className="grid grid-cols-1 gap-0 w-full h-full sm:grid-cols-2">
               <div className="hidden md:block min-h-[700px] bg-center bg-cover bg-no-repeat bg-[url('/images/ryan-dan-catarina/img-reservation-left.png')]"></div>
               <div className="w-full relative text-center font-bellmt text-[#60564D] pt-[90px] md:pt-[142px] pb-[90px] bg-[#DADAD9]">
@@ -26,7 +26,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
                 <h2 className="font-bickham text-[40px] md:text-[96px] font-normal leading-[22px] md:leading-[18px] animate" data-animate="fade-up">Rsvp</h2>
                 <Image src="/images/ryan-dan-catarina/line-location.png" alt="Picture of Line Location" width={180} height={37} className="w-[118px] h-[10px] md:w-[180px] md:h-[37px] mx-auto mt-[35px] animate" data-animate="fade-up" />
                 <h6 className="text-xs md:text-lg font-normal leading-[15px] mt-[53px] md:mt-[59px] animate" data-animate="fade-up">
-                  Dear,
+                  Dear, Mr./Mrs./Ms.
                 </h6>
                 <h6 className="text-[14px] md:text-lg font-normal leading-[15px] capitalize mt-[14px] md:mt-[39px] animate" data-animate="fade-up">
                   {params ?? '........'}

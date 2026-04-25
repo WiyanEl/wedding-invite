@@ -27,7 +27,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
                   <Image src="/images/ryan-dan-catarina/img-pengantin-pria.png" alt="Picture of Ryan" width={200} height={200} className="md:w-[270px] md:h-[280px]" />
                 </div>
                 <h2 className="font-bickham md:font-kunstler text-5xl md:text-[64px] font-normal leading-none mt-[21px] md:mt-[27px] animate" data-animate="fade-up">Ryan Febrian</h2>
-                <h6 className="text-[14px] md:text-[20px] font-medium leading-[20px] italic mt-[13px] md:mt-5 animate" data-animate="fade-up">The first son of three siblings</h6>
+                <h6 className="text-[14px] md:text-[20px] font-medium leading-[20px] italic mt-[21px] md:mt-5 animate" data-animate="fade-up">The first son of three siblings</h6>
                 <h6 className="text-[14px] md:text-[20px] font-normal leading-[24px] md:leading-[26px] mt-[6px] md:mt-5 animate" data-animate="fade-up">
                   <span>MR. WERIANTO WIRANATA and</span> <br />
                   <span>MRS. JUNY</span>
@@ -43,7 +43,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
                   <Image src="/images/ryan-dan-catarina/img-pengantin-wanita.png" alt="Picture of Ryan" width={200} height={200} className="md:w-[270px] md:h-[280px]" />
                 </div>
                 <h2 className="font-bickham md:font-kunstler text-5xl md:text-[64px] font-normal leading-none mt-[21px] md:mt-[27px] animate" data-animate="fade-up">Catarina Christy Natalia</h2>
-                <h6 className="text-[14px] md:text-[20px] font-medium leading-[20px] italic mt-[13px] md:mt-5 animate" data-animate="fade-up">The second daughter of three siblings</h6>
+                <h6 className="text-[14px] md:text-[20px] font-medium leading-[20px] italic mt-[21px] md:mt-5 animate" data-animate="fade-up">The second daughter of three siblings</h6>
                 <h6 className="text-[14px] md:text-[20px] font-normal leading-[24px] md:leading-[26px] mt-[6px] md:mt-5 animate" data-animate="fade-up">
                   <span>MR. NASIB SIANTURI and</span> <br />
                   <span>MRS. JANARIA SARADINA SEMBIRING</span>

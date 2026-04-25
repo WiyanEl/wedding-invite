@@ -59,9 +59,9 @@ export default function Header({ isOpen }: {isOpen: boolean}) {
             <div onClick={handleClose} className="w-screen h-screen fixed inset-0 z-40" />
             <div className={`relative z-50 top-[12px] md:top-[24px] left-[22px] md:left-[41px] w-[255px] md:w-[424px] h-[254px] md:h-[442px] bg-[#7B7B7B]/80 flex gap-2 ps-[6px] ${isClosing ? 'animate-menu-out' : 'animate-menu-in'}`} style={{ transformOrigin: 'top left' }}>
               <div>
-                <button className={`font-ibm text-2xl md:text-[54px] font-light leading-none text-white uppercase opacity-0 mt-[6px] md:mt-[12px] md:ml-[13px] ${isClosing ? 'animate-close-menu-out' : 'animate-close-menu-in'}`} onClick={() => handleClose()}>x</button>
+                <button className={`font-ibm text-2xl md:text-[34px] font-light leading-none text-white uppercase opacity-0 mt-[6px] md:mt-[18px] md:ml-[13px] ${isClosing ? 'animate-close-menu-out' : 'animate-close-menu-in'}`} onClick={() => handleClose()}>x</button>
               </div>
-              <div className={`flex flex-col font-noto text-white mt-[36px] md:mt-[75px] mb-[32px] ${isClosing ? 'animate-close-menu-out' : ''}`}>
+              <div className={`flex flex-col font-noto text-white mt-[36px] md:mt-[55px] mb-[32px] ${isClosing ? 'animate-close-menu-out' : ''}`}>
                 <div className="overflow-hidden">
                   <Link href="#hero" className="flex items-center gap-1 relative left-[-18px] md:left-[-25px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown}>
                     <img src="/images/adam-dan-yohanna/arrow-right.png" className="w-[15px] md:w-[20px]" alt="" />

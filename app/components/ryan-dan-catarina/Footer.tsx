@@ -11,7 +11,7 @@ export default function Footer({ isOpen, isMobile }: Props) {
   return (
     <>
       {isOpen ? (
-        <footer id="footer" className="footer relative w-full min-h-screen bg-bottom bg-cover bg-[url('/images/ryan-dan-catarina/bg-footer-mobile-rev.png')] md:bg-[url('/images/ryan-dan-catarina/bg-footer.png')]">
+        <footer id="footer" className="footer relative w-full min-h-screen bg-center bg-cover bg-[url('/images/ryan-dan-catarina/bg-footer-mobile-rev.png')] md:bg-[url('/images/ryan-dan-catarina/bg-footer.png')]">
           <div className="relative h-screen text-center pt-[92px] md:pt-[140px] font-bellmt text-white">
             <h2 className="font-bickham text-[40px] md:text-[96px] font-bold leading-[22px] animate" data-animate="fade-up">Thank You</h2>
             <p className="text-xs md:text-[20px] font-normal leading-[20px] md:leading-[26px] mt-5 md:mt-[53px] animate" data-animate="fade-up">
