@@ -29,8 +29,9 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
         {!isOpen && (
           <div className="relative z-10 flex items-center justify-center h-full">
             <div className="text-center w-[290px] md:w-[416px] h-[440px] md:min-h-min md:pb-[40px] rounded-[15px] bg-center bg-cover bg-no-repeat bg-[url('/images/ryan-dan-catarina/white-paper-texture.png')] shadow-[0px_8px_11.6px_0px_#0000008A] md:shadow-none text-[#60564D] font-lora zoom-in">
-              <Image src="/images/ryan-dan-catarina/img-hero-mobile.png" alt="Picture of open invitation" width={290} height={180} className="md:hidden w-full md:h-[220px]" />
-              <Image src="/images/ryan-dan-catarina/img-hero.png" alt="Picture of open invitation" width={416} height={211} className="hidden md:block w-full md:h-[211px]" />
+              <div className="md:hidden h-[180px] bg-center bg-cover bg-no-repeat bg-[url('/images/ryan-dan-catarina/img-hero-mobile.png')]"></div>
+              <div className="hidden md:block h-[211px] bg-center bg-cover bg-no-repeat bg-[url('/images/ryan-dan-catarina/img-hero.png')]"></div>
+              <div className=""></div>
               <h6 className="md:font-bellmt text-xs md:text-[14px] font-normal md:font-medium leading-none tracking-[15%] md:tracking-normal mt-[24px] md:mt-[34px] uppercase">the wedding of</h6>
               <h1 className="font-bickham text-5xl font-normal md:font-bold leading-none mt-2.5 md:mt-[9px]">Ryan & Catarina</h1>
               <p className="md:font-bellmt md:text-[14px] font-medium md:font-medium leading-[25px] md:leading-[31px] md:mt-[22px]">

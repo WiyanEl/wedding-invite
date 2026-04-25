@@ -20,7 +20,7 @@ export default function Location({ isOpen, isMobile }: Props) {
             <Image src="/images/ryan-dan-catarina/line-location.png" alt="Picture of Line Location" width={180} height={37} className="w-[116px] h-[24px] md:w-[180px] md:h-[37px] mx-auto mt-2.5 animate" data-animate="fade-up" />
             <div className="text-center mt-[48px] md:mt-[63px]">
               <h3 className="text-[20px] md:text-2xl font-bold leading-[18px] animate" data-animate="fade-up">Holy Matrimony</h3>
-              <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[40px] animate" data-animate="fade-up">13.00 WIB</p>
+              <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[35px] animate" data-animate="fade-up">13.00 WIB</p>
               <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[40px] uppercase animate" data-animate="fade-up">abipraya cahya kawaluyan chapel</p>
               <p className="text-xs md:text-lg font-reguler leading-[20px] mt-1 md:mt-2.5 animate" data-animate="fade-up">
                 <span>Jl. Parahyangan Km 3, Kota Baru Parahyangan,</span> <br />
@@ -30,7 +30,7 @@ export default function Location({ isOpen, isMobile }: Props) {
             </div>
             <div className="text-center mt-[55px] md:mt-[64px]">
               <h3 className="text-[20px] md:text-2xl font-bold leading-[18px] animate" data-animate="fade-up">Mangulosi</h3>
-              <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[40px] animate" data-animate="fade-up">14.30 WIB</p>
+              <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[35px] animate" data-animate="fade-up">14.30 WIB</p>
               <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[40px] uppercase animate" data-animate="fade-up">abipraya cahya kawaluyan chapel</p>
               <p className="text-xs md:text-lg font-reguler leading-[20px] mt-1 md:mt-2.5 animate" data-animate="fade-up">
                 <span>Jl. Parahyangan Km 3, Kota Baru Parahyangan,</span> <br />
@@ -40,7 +40,7 @@ export default function Location({ isOpen, isMobile }: Props) {
             </div>
             <div className="text-center mt-[55px] md:mt-[64px]">
               <h3 className="text-[20px] md:text-2xl font-bold leading-[18px] animate" data-animate="fade-up">Tea Pai</h3>
-              <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[40px] animate" data-animate="fade-up">16.00 WIB</p>
+              <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[35px] animate" data-animate="fade-up">16.00 WIB</p>
               <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[40px] uppercase animate" data-animate="fade-up">
                 <span>pine ballroom</span> <br />
                 <span>mason pine hotel</span>
@@ -53,7 +53,7 @@ export default function Location({ isOpen, isMobile }: Props) {
             </div>
             <div className="text-center mt-[55px] md:mt-[64px]">
               <h3 className="text-[20px] md:text-2xl font-bold leading-[18px] animate" data-animate="fade-up">Dinner Reception</h3>
-              <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[40px] animate" data-animate="fade-up">18.00 WIB</p>
+              <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[35px] animate" data-animate="fade-up">18.00 WIB</p>
               <p className="text-[14px] md:text-[20px] font-bold leading-[20px] mt-5 md:mt-[40px] uppercase animate" data-animate="fade-up">
                 <span>pine ballroom</span> <br />
                 <span>mason pine hotel</span>
