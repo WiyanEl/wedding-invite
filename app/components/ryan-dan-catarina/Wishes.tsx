@@ -97,7 +97,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
           <Image src="/images/ryan-dan-catarina/img-bunga-kanan-bawah-wishes.png" alt="Picture of Bunga Kanan Bawah" width={866} height={866} className="md:hidden absolute bottom-[-290px] right-0 w-[509px] h-[509px] md:w-[1173.8106631826397] md:h-[1173.8106631826397]" />
           {!seeAllMessages ? (
             <div className="relative text-center pt-[90px] md:pt-[150px] pb-[97px] font-lora text-[#60564D]">
-              <h2 className="font-bickham text-[64px] md:text-[64px] font-bold leading-[22px] md:leading-[22px] animate fade-up" data-animate="fade-up">Share Your Wishes</h2>
+              <h2 className="font-bickham text-[40px] md:text-[64px] font-bold leading-[22px] md:leading-[22px] animate fade-up" data-animate="fade-up">Share Your Wishes</h2>
               <Image src="/images/ryan-dan-catarina/line-location.png" alt="Picture of Line" width={180} height={37} className="w-[116px] h-[24px] md:w-[180px] md:h-[37px] mx-auto mt-[36px] animate fade-up" data-animate="fade-up" />
               <form onSubmit={save} className="mx-auto mt-[55px] animate fade-up" data-animate="fade-up">
                 <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="relative z-10 block w-[284px] md:w-[564px] h-[30px] md:h-[40px] rounded-[33px] md:rounded-[64px] border-[0.49px] border-[#60564D] bg-transparent px-[13px] md:px-[23px] py-1 font-lora text-xs md:text-lg leading-[140%] text-[#60564D] placeholder:text-[#60564D80] mx-auto" placeholder="Desy (Tester)" />
