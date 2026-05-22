@@ -23,7 +23,6 @@ type Props = {
   isMobile: boolean
 }
 
-
 export default function Gallery({ isOpen, isMobile }: Props) {
   const galleryRef = useRef<any>(null)
 

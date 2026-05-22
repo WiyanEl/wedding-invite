@@ -25,6 +25,9 @@ module.exports = {
         kunstler: ['var(--font-kunstler)'],
         bellmt: ['var(--font-bell-mt)'],
         bickham: ['var(--font-bickham-script)'],
+        sorts: ['var(--font-sorts-mill)'],
+        romantic: ['var(--font-romantic-lovely)'],
+        trajan: ['var(--font-trajan-pro)'],
       }
     },
     keyframes: {
