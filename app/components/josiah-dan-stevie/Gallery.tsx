@@ -98,12 +98,12 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
   } else {
     images = [
       {
-        src: '/images/josiah-dan-stevie/img-gallery-1.jpg',
-        thumb: '/images/josiah-dan-stevie/img-gallery-1.jpg'
+        src: '/images/josiah-dan-stevie/img-gallery-d-1.png',
+        thumb: '/images/josiah-dan-stevie/img-gallery-d-1.png'
       },
       {
-        src: '/images/josiah-dan-stevie/img-gallery-2.jpg',
-        thumb: '/images/josiah-dan-stevie/img-gallery-2.jpg'
+        src: '/images/josiah-dan-stevie/img-gallery-d-1.png',
+        thumb: '/images/josiah-dan-stevie/img-gallery-d-1.png'
       }
     ]
   }
@@ -161,9 +161,9 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
   return (
     <> 
       <div className="relative z-10 w-full min-h-screen">
-        <section id="gallery" className="gallery bg-cover -mt-[75px] bg-top bg-no-repeat bg-[url('/images/josiah-dan-stevie/bg-gallery-mobile.png')]">
+        <section id="gallery" className="gallery -mt-[75px] bg-[url('/images/josiah-dan-stevie/bg-gallery-mobile.png')] md:bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
           <div className="w-full h-full pt-[142px]">
-            <div className="w-[340px] h-[460px] mx-auto shadow-[0px_7px_16.9px_0px_#0000008F] overflow-hidden">
+            <div className="w-[340px] md:w-[1149px] h-[460px] md:h-[875px] mx-auto shadow-[0px_7px_16.9px_0px_#0000008F] overflow-hidden">
               <Swiper
                 navigation
                 modules={[Navigation]}
@@ -179,7 +179,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
                         alt={`Gallery ${i}`}
                         width={340}
                         height={460}
-                        className="w-[340px] h-[460px] object-cover object-top"
+                        className="w-[340px] md:w-[1149px] h-[460px] md:h-[875px] object-cover object-top"
                         quality={100}
                       />
                     </div>
@@ -198,52 +198,63 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           </div>
         </section>
 
-        <section id="reservation" className="reservation relative w-full min-h-min bg-cover bg-top bg-no-repeat bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
-          <div className="relative z-20 text-center h-full pt-[110.04px] pb-[10px] font-sorts text-[#22352F] overflow-hidden">
-            <h3 className="font-romantic font-normal text-[32px] leading-[22px] animate" data-animate="fade-up">Rsvp</h3>
-            <h6 className="text-xs font-medium leading-[15px] mt-[49px] animate" data-animate="fade-up">Dear</h6>
-            <h6 className="text-xs font-medium leading-[15px] capitalize mt-[26px] animate" data-animate="fade-up">{params ?? '.......'}</h6>
-            <p className="text-xs font-medium leading-[20px] mt-[24px] animate" data-animate="fade-up">Kindly confirm your attendance before</p>
-            <p className="text-xs font-medium leading-[20px] mt-1 animate" data-animate="fade-up">04 July 2026</p>
-            <div className="flex justify-between w-[314px] mx-auto mt-[34px] animate" data-animate="fade-up">
+        <section id="reservation" className="reservation relative w-full min-h-min bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
+          <div className="relative z-20 text-center h-full pt-[110.04px] md:pt-[113px] pb-[10px] font-sorts text-[#22352F] overflow-hidden">
+            <h3 className="font-romantic font-normal text-[32px] md:text-[48px] leading-[22px] animate" data-animate="fade-up">Rsvp</h3>
+            <h6 className="text-xs md:text-lg font-medium leading-[15px] mt-[49px] md:mt-[25px] animate" data-animate="fade-up">Dear Mr. /Mrs. / Ms.</h6>
+            <h6 className="text-xs md:text-lg font-medium leading-[15px] capitalize mt-[26px] md:mt-[48px] animate" data-animate="fade-up">{params ?? '.......'}</h6>
+            <p className="text-xs md:text-lg font-medium leading-[20px] mt-[24px] md:mt-[48px] animate" data-animate="fade-up">Kindly confirm your attendance before</p>
+            <p className="text-xs md:text-lg font-medium leading-[20px] mt-1 animate" data-animate="fade-up">04 July 2026</p>
+            <div className="flex justify-between w-[314px] md:w-[368px] mx-auto mt-[34px] md:mt-[47px] animate" data-animate="fade-up">
               <button type="button" onClick={() => {
                 setAttendance('attend')
                 setShowModal(true)
-                }} className={`w-[146px] h-[33px] rounded-[71px] flex justify-center items-center pt-1 ${attendance == 'attend' ? 'bg-[#22352F]' : 'bg-transparent border-[0.5px] border-[#22352F]'}`}>
-                  <span className={`text-xs font-medium leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[#FEF8EF]' : 'text-[#22352F]'}`}>attend</span>
+                }} className={`w-[146px] md:w-[172px] h-[33px] md:h-[40px] rounded-[71px] md:rounded-[38px] flex justify-center items-center pt-1 ${attendance == 'attend' ? 'bg-[#22352F]' : 'bg-transparent border-[0.5px] border-[#22352F]'}`}>
+                  <span className={`text-xs md:text-lg font-medium leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[#FEF8EF]' : 'text-[#22352F]'}`}>attend</span>
               </button>
               <button type="button" onClick={() => {
                 setAttendance('not')
                 setShowModal(true)
-                }} className={`w-[148px] h-[33px] rounded-[71px] flex justify-center items-center pt-1 ${attendance == 'attend' ? 'bg-transparent border-[0.5px] border-[#22352F]' : 'bg-[#22352F]'}`}>
+                }} className={`md:hidden w-[148px] md:w-[172px] h-[33px] md:h-[40px] rounded-[71px] md:rounded-[38px] flex justify-center items-center pt-1 ${attendance == 'attend' ? 'bg-transparent border-[0.5px] border-[#22352F]' : 'bg-[#22352F]'}`}>
                   {isMobile ? (
-                    <span className={`text-xs font-medium leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[#22352F]' : 'text-[#FEF8EF]'}`}>unable to attend</span>
+                    <span className={`text-xs md:text-lg font-medium leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[#22352F]' : 'text-[#FEF8EF]'}`}>unable to attend</span>
                   ) : (
-                    <span className={`text-xs font-medium leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[#22352F]' : 'text-[#FEF8EF]'}`}>unable to attend</span>
+                    <span className={`text-xs md:text-lg font-medium leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[#22352F]' : 'text-[#FEF8EF]'}`}>unable to attend</span>
+                  )}
+              </button>
+              <button type="button" onClick={() => {
+                setAttendance('not')
+                setShowModal(true)
+                }} className={`hidden md:flex w-[148px] md:w-[172px] h-[33px] md:h-[40px] rounded-[71px] md:rounded-[38px] justify-center items-center pt-1 ${attendance == 'attend' ? 'bg-transparent border-[0.5px] border-[#22352F]' : 'bg-[#22352F]'}`}>
+                  {isMobile ? (
+                    <span className={`text-xs md:text-lg font-medium leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[#22352F]' : 'text-[#FEF8EF]'}`}>not attend</span>
+                  ) : (
+                    <span className={`text-xs md:text-lg font-medium leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[#22352F]' : 'text-[#FEF8EF]'}`}>not attend</span>
                   )}
               </button>
             </div>
-            <p className="text-xs font-medium leading-[12.96px] mt-[37px] animate" data-animate="fade-up">Confirm your selection?</p>
+            <p className="text-xs md:text-lg font-medium leading-[12.96px] mt-[37px] md:mt-[54px] animate" data-animate="fade-up">Confirm your selection?</p>
             <div className="mt-[43px] animate" data-animate="fade-up">
               <button onClick={() => {
                 setAttendance('not')
                 setShowModal(true)
-              }} type="button" className="flex justify-center items-center w-[222px] h-[33px] rounded-[71px] bg-[#22352F] pt-1 mx-auto">
-                <span className="text-xs font-medium leading-[14.96px] text-[#FEF8EF] uppercase">confirm not attend</span>
+              }} type="button" className="flex justify-center items-center w-[222px] md:w-[368px] h-[33px] md:h-[40px] rounded-[71px] md:rounded-[38px] bg-[#22352F] pt-1 mx-auto">
+                <span className="text-xs md:text-lg font-medium leading-[14.96px] text-[#FEF8EF] uppercase">confirm not attend</span>
               </button>
             </div>
-            <p className="text-[10px] font-medium leading-[16px] mt-[54px] animate" data-animate="fade-up">If you need assistance with your RSVP,</p>
-            <p className="text-[10px] font-medium leading-[16px] mt-1 animate" data-animate="fade-up">please contact our support team.</p>
-            <div className="mt-[24px] animate" data-animate="fade-up">
-              <Link href="https://wa.me/6289671650843" target="_blank" className="flex justify-center items-center w-[160px] h-[33px] rounded-[55px] bg-[#12877B] mx-auto">
+            <p className="md:hidden text-[10px] font-medium leading-[16px] mt-[54px] animate" data-animate="fade-up">If you need assistance with your RSVP,</p>
+            <p className="md:hidden text-[10px] font-medium leading-[16px] mt-1 animate" data-animate="fade-up">please contact our support team.</p>
+            <p className="hidden md:block text-lg font-medium leading-[14.96px] mt-[96px] animate" data-animate="fade-up">Having trouble with RSVP?</p>
+            <div className="mt-[24px] md:mt-[44px] animate" data-animate="fade-up">
+              <Link href="https://wa.me/6289671650843" target="_blank" className="flex justify-center items-center w-[160px] md:w-[212px] h-[33px] md:h-[40px] rounded-[55px] bg-[#12877B] mx-auto">
                 <Image src="/images/josiah-dan-stevie/logo-whatsapp.png"  alt="Picture of Icon WhatsApp" width={16} height={16} className="mr-2" />
-                <span className="font-trajan text-xs font-semibold leading-[14.96px] text-[#FEF8EF] mt-1 uppercase">chat support</span>
+                <span className="font-trajan text-xs md:text-lg font-semibold leading-[14.96px] md:leading-[26px] text-[#FEF8EF] mt-1 uppercase">chat support</span>
               </Link>
             </div>
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-rsvp-new.png" alt="Picture of Tanaman Kiri" width={632} height={632} className="absolute -top-[50px] -left-[20px] w-[236px] animate" data-animate="fade-right" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-rsvp-new.png" alt="Picture of Tanaman Kiri" width={632} height={632} className="absolute -top-[50px] -left-[20px] w-[236px] md:w-[432px] animate" data-animate="fade-right" />
           <Image src="/images/josiah-dan-stevie/img-bercak-kanan-rsvp.png" alt="Picture of Bercak Kanan" width={604} height={604} className="absolute z-10 -bottom-[300px] right-0" />
         </section>
 
@@ -293,7 +304,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           </div>
         )}
 
-        <section id="weeding-gift" className="relative w-full min-h-min overflow-hidden bg-cover bg-top bg-no-repeat bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
+        <section id="weeding-gift" className="relative w-full min-h-min overflow-hidden bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
           <div className="relative z-10 text-center h-full pt-[140px] pb-[10px] font-sorts text-[#22352F] overflow-hidden">
             <h3 className="font-romantic font-normal text-[32px] leading-[22px] animate" data-animate="fade-up">Wedding Gift</h3>
             <p className="text-xs font-medium leading-[20px] mt-[40px] animate" data-animate="fade-up">Whether celebrating with us in person or from afar,</p>
@@ -327,7 +338,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           <Image src="/images/josiah-dan-stevie/img-tanaman-kanan-wedding-gift-new.png" alt="Picture of Tanaman Kanan" width={799} height={799} className="absolute z-20 -top-[170px] -right-[45px] w-[250px] animate" data-animate="fade-left" />
         </section>
 
-        <section id="wishes" className="relative overflow-y-hidden w-full min-h-screen overflow-hidden bg-cover bg-top bg-no-repeat bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
+        <section id="wishes" className="relative overflow-y-hidden w-full min-h-screen overflow-hidden bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
           {!seeAllMessages ? (
             <div className="relative z-20 text-center pt-[162px] md:pt-[150px] pb-[97px] font-sorts text-[#22352F]">
               <h3 className="font-romantic font-normal text-[32px] leading-[22px] animate fade-up" data-animate="fade-up">Share Your Wishes</h3>
