@@ -161,7 +161,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
   return (
     <> 
       <div className="relative z-10 w-full min-h-screen">
-        <section id="gallery" className="gallery bg-cover -mt-[65px] bg-top bg-no-repeat bg-[url('/images/josiah-dan-stevie/bg-gallery-rev-3.png')]">
+        <section id="gallery" className="gallery bg-cover -mt-[75px] bg-top bg-no-repeat bg-[url('/images/josiah-dan-stevie/bg-gallery-mobile.png')]">
           <div className="w-full h-full pt-[142px]">
             <div className="w-[340px] h-[460px] mx-auto shadow-[0px_7px_16.9px_0px_#0000008F] overflow-hidden">
               <Swiper
@@ -335,8 +335,8 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
                 <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="relative z-10 block w-[284px] md:w-[564px] h-[30px] md:h-[40px] rounded-[33px] md:rounded-[64px] border-[0.49px] border-[#22352F80] bg-transparent px-[13px] md:px-[23px] py-1 font-sorts text-xs md:text-lg leading-[140%] text-[#22352F] placeholder:text-[#22352F80] mx-auto" placeholder="Desy (Tester)" />
                 <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="relative z-10 block w-[284px] md:w-[564px] h-[60px] md:h-[261px] rounded-[15px] md:rounded-[20px] border-[0.49px] border-[#22352F80] bg-transparent px-[13px] md:px-[23px] py-1 font-sorts text-xs md:text-lg leading-[140%] text-[#22352F] mx-auto mt-4"></textarea>
                 <button type="submit" className="flex justify-center items-center w-[284px] md:w-[564px] h-[33px] md:h-[40px] bg-[#22352F] rounded-[37px] border-[0.49px] border-[#22352F] mx-auto mt-4">
-                  <Image src="/images/josiah-dan-stevie/icon-send.png" alt="Picture of Icon Send" width={12} height={17} className="md:w-[24px] md:h-[30px] mr-2" />
-                  <span className="text-xs md:text-lg text-[#DADAD9] font-normal leading-[140%] uppercase">send</span>
+                  <Image src="/images/josiah-dan-stevie/icon-send.png" alt="Picture of Icon Send" width={15} height={19} className="md:w-[24px] md:h-[30px] mr-2" />
+                  <span className="inline-block mt-1 text-xs md:text-lg text-[#DADAD9] font-normal leading-[140%] uppercase">send</span>
                 </button>
               </form>
               <div className="w-[284px] md:w-[564px] h-[334px] md:h-[526px] rounded-[15px] md:rounded-[20px] bg-[#22352F] border-[0.49px] border-[#22352F] py-[18px] md:py-[39px] px-[13px] md:px-[23px] mx-auto mt-4 md:mt-[40px] animate fade-up" data-animate="fade-up">
@@ -364,7 +364,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
               </div>
               <button type="button" onClick={() => setSeeAllMessages(true)} className="flex justify-center items-center w-[284px] md:w-[564px] h-[33px] md:h-[40px] bg-[#22352F] rounded-[33px] border-[0.49px] border-[#22352F] mx-auto mt-4 animate fade-up" data-animate="fade-up">
                   <Image src="/images/josiah-dan-stevie/icon-message.png" alt="Picture of Icon Send" width={18} height={22} className="md:w-[20px] md:h-[25px] mr-2" />
-                  <span className="text-xs md:text-lg text-[#DADAD9] font-normal leading-[140%] uppercase">view all message</span>
+                  <span className="inline-block mt-1 text-xs md:text-lg text-[#DADAD9] font-normal leading-[140%] uppercase">view all message</span>
                 </button>
             </div>
           ) : (

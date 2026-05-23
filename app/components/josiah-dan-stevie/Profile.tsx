@@ -35,7 +35,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/josiah-dan-stevie/img-tanaman-kanan-atas-location.png" alt="Picture of Tanaman Kanan Atas Location" width={316} height={316} className="absolute -top-[150px] right-0 w-[256px]" />
+        <Image src="/images/josiah-dan-stevie/img-tanaman-atas-profile-new.png" alt="Picture of Tanaman Kanan Atas Location" width={691} height={691} className="absolute -top-[150px] right-0 w-[256px]" />
         <Image src="/images/josiah-dan-stevie/img-bercak-kanan-location.png" alt="Picture of Bercak Kanan Location" width={761} height={761} className="absolute -bottom-[375px] right-0" />
       </section>
     </>

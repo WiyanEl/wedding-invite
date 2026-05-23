@@ -57,7 +57,7 @@ export default function Header({ isOpen }: {isOpen: boolean}) {
         {(open || isClosing) && (
           <>
             <div onClick={handleClose} className="w-screen h-screen fixed inset-0 z-40" />
-            <div className={`relative z-50 top-[12px] md:top-[24px] left-[22px] md:left-[41px] w-[255px] md:w-[424px] h-[314px] md:h-[442px] bg-[#7B7B7B]/70 flex gap-2 ps-[6px] ${isClosing ? 'animate-menu-out' : 'animate-menu-in'}`} style={{ transformOrigin: 'top left' }}>
+            <div className={`relative z-50 top-[12px] md:top-[24px] left-[22px] md:left-[41px] w-[255px] md:w-[424px] h-[304px] md:h-[442px] bg-[#7B7B7B]/70 flex gap-2 ps-[6px] ${isClosing ? 'animate-menu-out' : 'animate-menu-in'}`} style={{ transformOrigin: 'top left' }}>
               <div>
                 <button className={`font-ibm text-2xl md:text-[34px] font-light leading-none text-white uppercase opacity-0 mt-[6px] md:mt-[18px] md:ml-[13px] ${isClosing ? 'animate-close-menu-out' : 'animate-close-menu-in'}`} onClick={() => handleClose()}>x</button>
               </div>

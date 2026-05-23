@@ -26,7 +26,7 @@ export default function Location({ isOpen, isMobile }: Props) {
           </Link>
           <div className="relative w-[310px] mx-auto mt-[22px]">
             <div className="flex gap-8 w-full">
-              <div className="pt-[36px]">
+              <div className="pt-[36px] text-right w-[117px]">
                 <h6 className="text-base font-medium leading-none uppercase animate" data-animate="fade-right">16.00 wib</h6>
                 <h6 className="text-base font-medium leading-none uppercase mt-[92.75px] animate" data-animate="fade-right">17.00 wib</h6>
               </div>
@@ -53,7 +53,7 @@ export default function Location({ isOpen, isMobile }: Props) {
 
           {/* Image Absolute */}
           <Image src="/images/josiah-dan-stevie/img-tanaman-atas-location.png" alt="Picture of Tanaman Kanan Atas Location" width={371} height={180} className="absolute -top-[65px] mx-auto animate" data-animate="fade-down" />
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-bawah-location.png" alt="Picture of Tanaman Kiri Bawah Location" width={387} height={387} className="absolute -bottom-[250px] left-0 w-[256px] animate" data-animate="fade-right" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-bawah-location.png" alt="Picture of Tanaman Kiri Bawah Location" width={961} height={961} className="absolute -bottom-[250px] left-0 w-[256px] animate" data-animate="fade-right" />
           <Image src="/images/josiah-dan-stevie/img-bercak-kanan-location-2.png" alt="Picture of Bercak Kanan Location" width={800} height={800} className="absolute -bottom-[550px] right-0" />
         </div>
       </section>
