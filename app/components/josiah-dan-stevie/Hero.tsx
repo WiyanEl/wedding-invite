@@ -40,7 +40,7 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           </div>
         )}
 
-        <div className="relative text-center text-[#22352F] font-sorts pt-[120px] h-full">
+        <div className="relative text-center text-[#22352F] font-sorts pt-[130px] h-full">
           <div className="relative z-10">
             <h6 className={`text-[14px] font-medium leading-none tracking-[15%] uppercase ${isOpen ? 'zoom-in' : ''}`}>the wedding of</h6>
             <h2 className={`font-romantic text-[40px] leading-none font-normal mt-7 ${isOpen ? 'zoom-in' : ''}`}>Josiah & Stevie</h2>
@@ -54,8 +54,8 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-bercak-kiri-hero.png" alt="Picture of Bercak Kiri" width={604} height={604} className="absolute top-0 left-0" />
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-atas-hero-new.png" alt="Picture of Tanaman Kiri Atas" width={465} height={465} className={`absolute top-0 left-0 w-[305px] h-[305px] ${isOpen ? 'fade-right' : ''}`} />
+          <Image src="/images/josiah-dan-stevie/img-bercak-kiri-hero.png" alt="Picture of Bercak Kiri" width={604} height={604} className="absolute top-0 left-0 w-[404px]" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-atas-hero-new.png" alt="Picture of Tanaman Kiri Atas" width={465} height={465} className={`absolute top-0 left-0 w-[265px] ${isOpen ? 'fade-right' : ''}`} />
         </div>
       </section>
     </>
