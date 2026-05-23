@@ -53,7 +53,7 @@ export default function Location({ isOpen, isMobile }: Props) {
 
           {/* Image Absolute */}
           <Image src="/images/josiah-dan-stevie/img-tanaman-atas-location.png" alt="Picture of Tanaman Kanan Atas Location" width={371} height={180} className="absolute -top-[65px] mx-auto animate" data-animate="fade-down" />
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-bawah-location.png" alt="Picture of Tanaman Kiri Bawah Location" width={961} height={961} className="absolute -bottom-[250px] left-0 w-[256px] animate" data-animate="fade-right" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-bawah-location-new.png" alt="Picture of Tanaman Kiri Bawah Location" width={961} height={961} className="absolute -bottom-[220px] -left-[20px] w-[256px] animate" data-animate="fade-right" />
           <Image src="/images/josiah-dan-stevie/img-bercak-kanan-location-2.png" alt="Picture of Bercak Kanan Location" width={800} height={800} className="absolute -bottom-[550px] right-0" />
         </div>
       </section>

@@ -243,7 +243,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-rsvp.png" alt="Picture of Tanaman Kiri" width={402} height={402} className="absolute -top-[50px] left-0 w-[236px] animate" data-animate="fade-right" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-rsvp-new.png" alt="Picture of Tanaman Kiri" width={632} height={632} className="absolute -top-[50px] -left-[20px] w-[236px] animate" data-animate="fade-right" />
           <Image src="/images/josiah-dan-stevie/img-bercak-kanan-rsvp.png" alt="Picture of Bercak Kanan" width={604} height={604} className="absolute z-10 -bottom-[300px] right-0" />
         </section>
 
@@ -293,7 +293,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           </div>
         )}
 
-        <section id="weeding-gift" className="relative w-full min-h-min bg-cover bg-top bg-no-repeat bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
+        <section id="weeding-gift" className="relative w-full min-h-min overflow-hidden bg-cover bg-top bg-no-repeat bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
           <div className="relative z-10 text-center h-full pt-[140px] pb-[10px] font-sorts text-[#22352F] overflow-hidden">
             <h3 className="font-romantic font-normal text-[32px] leading-[22px] animate" data-animate="fade-up">Wedding Gift</h3>
             <p className="text-xs font-medium leading-[20px] mt-[40px] animate" data-animate="fade-up">Whether celebrating with us in person or from afar,</p>
@@ -324,10 +324,10 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kanan-wedding-gift.png" alt="Picture of Tanaman Kanan" width={437} height={437} className="absolute z-20 -top-[170px] right-0 w-[250px] animate" data-animate="fade-left" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-kanan-wedding-gift-new.png" alt="Picture of Tanaman Kanan" width={799} height={799} className="absolute z-20 -top-[170px] -right-[45px] w-[250px] animate" data-animate="fade-left" />
         </section>
 
-        <section id="wishes" className="relative overflow-y-hidden w-full min-h-screen bg-cover bg-top bg-no-repeat bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
+        <section id="wishes" className="relative overflow-y-hidden w-full min-h-screen overflow-hidden bg-cover bg-top bg-no-repeat bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
           {!seeAllMessages ? (
             <div className="relative z-20 text-center pt-[162px] md:pt-[150px] pb-[97px] font-sorts text-[#22352F]">
               <h3 className="font-romantic font-normal text-[32px] leading-[22px] animate fade-up" data-animate="fade-up">Share Your Wishes</h3>
@@ -431,10 +431,10 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           )}
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-wishes.png" alt="Picture of Tanaman Kiri" width={356} height={356} className="absolute -top-[80px] left-0 w-[200px] animate" data-animate="fade-right" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-wishes-new.png" alt="Picture of Tanaman Kiri" width={692} height={692} className="absolute -top-[50px] -left-[20px] w-[200px] animate" data-animate="fade-right" />
           <Image src="/images/josiah-dan-stevie/img-bercak-wishes.png" alt="Picture of Tanaman Kiri" width={713} height={713} className="absolute -top-[170px] left-0" />
-          <Image src="/images/josiah-dan-stevie/img-tanaman-bawah-kiri-wishes.png" alt="Picture of Tanaman Kiri" width={356} height={356} className="absolute -bottom-[200px] w-[156px] left-0 animate" data-animate="fade-right" />
-          <Image src="/images/josiah-dan-stevie/img-tanaman-bawah-kanan-wishes.png" alt="Picture of Tanaman Kiri" width={402} height={402} className="absolute -bottom-[130px] w-[202px] right-0 animate" data-animate="fade-left" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-bawah-kiri-wishes-new.png" alt="Picture of Tanaman Kiri" width={654} height={654} className="absolute -bottom-[120px] w-[156px] -left-[20] animate" data-animate="fade-right" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-bawah-kanan-wishes-new.png" alt="Picture of Tanaman Kiri" width={738} height={738} className="absolute -bottom-[130px] w-[202px] -right-[10px] animate" data-animate="fade-left" />
         </section>
 
       </div>
