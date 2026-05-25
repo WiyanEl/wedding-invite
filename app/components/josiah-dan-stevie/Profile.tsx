@@ -13,7 +13,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
   return (
     <>
       <section id="profile" className="profile relative z-10 -mt-[75px] md:-mt-[375px] w-full min-h-screen overflow-hidden bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
-        <div className="relative z-10 text-center h-full pt-[152px] md:pt-[320px] pb-[113px] md:pb-[187px] font-sorts text-[#22352F] overflow-hidden">
+        <div className="relative z-10 text-center h-full pt-[152px] md:pt-[340px] pb-[113px] md:pb-[187px] font-sorts text-[#22352F] overflow-hidden">
           <h6 className="text-xs md:text-lg font-medium leading-[25px] md:leading-[30px] animate" data-animate="fade-up">MR. ASHLEY MENDES and</h6>
           <h6 className="text-xs md:text-lg font-medium leading-[25px] md:leading-[30px] mt-0.5 md:mt-1 animate" data-animate="fade-up">MRS. EUNICE MENDES</h6>
           <h6 className="text-xs md:text-lg font-medium leading-[25px] md:leading-[30px] mt-[29px] md:mt-[25px] italic animate" data-animate="fade-up">together with</h6>

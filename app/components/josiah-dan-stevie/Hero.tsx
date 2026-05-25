@@ -44,8 +44,8 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           <div className="relative z-10">
             <h6 className={`text-[14px] md:text-lg font-medium leading-none tracking-[15%] uppercase ${isOpen ? 'zoom-in' : ''}`}>the wedding of</h6>
             <h2 className={`font-romantic text-[40px] md:text-[52px] leading-none font-normal mt-7 ${isOpen ? 'zoom-in' : ''}`}>Josiah & Stevie</h2>
-            <h6 className={`md:hidden text-base font-medium leading-[20px] tracking-0 mt-5 ${isOpen ? 'zoom-in' : ''}`}>Saturday, 4 July 2026</h6>
-            <div className={`w-[318px] md:w-[388px] h-[212px] md:h-[258px] mt-[47px] md:mt-[60px] mx-auto rounded-[16.91px] md:rounded-[20.66px] border-[4.51px] md:border-[5.51px] border-[#6C7852] overflow-hidden ${isOpen ? 'zoom-in' : ''}`}>
+            <h6 className={`text-base md:text-[20px] font-medium leading-[20px] tracking-0 mt-5 md:mt-8 ${isOpen ? 'zoom-in' : ''}`}>Saturday, 4 July 2026</h6>
+            <div className={`w-[318px] md:w-[388px] h-[212px] md:h-[258px] mt-[47px] md:mt-[37px] mx-auto rounded-[16.91px] md:rounded-[20.66px] border-[4.51px] md:border-[5.51px] border-[#6C7852] overflow-hidden ${isOpen ? 'zoom-in' : ''}`}>
               <Image src="/images/josiah-dan-stevie/img-hero.png" alt="Picture of Hero" width={318} height={258} className="w-full h-full" />
             </div>
             <p className={`text-xs md:text-lg font-medium leading-[22px] md:leading-[30px] mt-[47px] md:mt-[58px] ${isOpen ? 'zoom-in' : ''}`}>"Two are better than one…</p>
