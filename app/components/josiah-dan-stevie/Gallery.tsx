@@ -161,8 +161,8 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
   return (
     <> 
       <div className="relative z-10 w-full min-h-screen">
-        <section id="gallery" className="gallery -mt-[75px] bg-[url('/images/josiah-dan-stevie/bg-gallery-mobile.png')] md:bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
-          <div className="w-full h-full pt-[142px]">
+        <section id="gallery" className="gallery -mt-[75px] md:-mt-[375px] bg-cover bg-no-repeat bg-[url('/images/josiah-dan-stevie/bg-gallery-mobile.png')] md:bg-[url('/images/josiah-dan-stevie/bg-gelombang-atas.png')] pt-[142px] md:pt-[475px] md:pb-[50px]">
+          <div className="w-full h-full">
             <div className="w-[340px] md:w-[1149px] h-[460px] md:h-[875px] mx-auto shadow-[0px_7px_16.9px_0px_#0000008F] overflow-hidden">
               <Swiper
                 navigation
@@ -177,8 +177,8 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
                       <Image
                         src={img.src}
                         alt={`Gallery ${i}`}
-                        width={340}
-                        height={460}
+                        width={1149}
+                        height={875}
                         className="w-[340px] md:w-[1149px] h-[460px] md:h-[875px] object-cover object-top"
                         quality={100}
                       />
@@ -254,8 +254,9 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-2.png" alt="Picture of Tanaman Kiri" width={632} height={632} className="absolute top-0 -left-[185px] rotate-[25deg] w-[336px] md:w-[432px]" />
-          <Image src="/images/josiah-dan-stevie/img-bercak-kanan-rsvp.png" alt="Picture of Bercak Kanan" width={604} height={604} className="absolute z-10 -bottom-[300px] right-0" />
+          <Image src="/images/josiah-dan-stevie/img-2.png" alt="Picture of Tanaman Kiri" width={632} height={632} className="absolute top-0 md:-top-[100px] -left-[185px] md:-left-[325px] rotate-[25deg] w-[336px] md:w-[632px]" />
+          <Image src="/images/josiah-dan-stevie/img-bercak-kanan-rsvp.png" alt="Picture of Bercak Kanan" width={604} height={604} className="md:hidden absolute z-10 -bottom-[300px] right-0" />
+          <Image src="/images/josiah-dan-stevie/img-bercak-kanan-rsvp-dekstop.png" alt="Picture of Bercak Kanan" width={1427} height={1427} className="hidden md:block absolute z-10 -top-[300px] right-0" />
         </section>
 
         {showModal && (
@@ -327,7 +328,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
                 <span className="mt-1">Josiah Anthony Mendes</span>
               </p>
               <button onClick={() => handleCopy('3462610405')} className="w-[50px] h-[30px] border-b border-[#22352F] text-center" data-animate="fade-up">
-                <span className="text-xs md:text-base font-normal leading-[81%] uppercase">{copied ? "Copied" : "Copy"}</span>
+                <span className="text-[10px] md:text-base font-normal leading-[81%] uppercase">{copied ? "Copied" : "Copy"}</span>
               </button>
             </div>
             <div className="flex justify-between items-center w-[227] md:w-[368px] border-b border-[#22352F] pb-3 mx-auto mt-[30px] md:mt-[42px] animate" data-animate="fade-up">
@@ -337,13 +338,13 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
                 <span className="mt-1">Josiah Anthony Mendes</span>
               </p>
               <button onClick={() => handleCopy2('249483079')} className="w-[50px] h-[30px] border-b border-[#22352F] text-center" data-animate="fade-up">
-                <span className="text-xs md:text-base font-normal leading-[81%] uppercase">{copied2 ? "Copied" : "Copy"}</span>
+                <span className="text-[10px] md:text-base font-normal leading-[81%] uppercase">{copied2 ? "Copied" : "Copy"}</span>
               </button>
             </div>
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-1.png" alt="Picture of Tanaman Kanan" width={799} height={799} className="absolute z-20 -top-[65px] -right-[220px] -rotate-[25deg] w-[350px]" />
+          <Image src="/images/josiah-dan-stevie/img-1.png" alt="Picture of Tanaman Kanan" width={799} height={799} className="absolute z-20 -top-[65px] md:-top-[85px] -right-[220px] md:-right-[415px] -rotate-[25deg] w-[350px] md:w-[799px]" />
         </section>
 
         <section id="wishes" className="relative overflow-y-hidden w-full min-h-screen overflow-hidden bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
@@ -450,10 +451,11 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           )}
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-1.png" alt="Picture of Tanaman Kiri" width={692} height={692} className="absolute -top-[45px] -left-[190px] rotate-[25deg] w-[325px]" />
-          <Image src="/images/josiah-dan-stevie/img-bercak-wishes.png" alt="Picture of Tanaman Kiri" width={713} height={713} className="absolute -top-[170px] left-0" />
-          <Image src="/images/josiah-dan-stevie/img-1-left.png" alt="Picture of Tanaman Kiri" width={654} height={654} className="absolute -bottom-[195px] -left-[215px] rotate-12 w-[356px]" />
-          <Image src="/images/josiah-dan-stevie/img-2.png" alt="Picture of Tanaman Kiri" width={738} height={738} className="absolute -bottom-[135px] -right-[175px] rotate-[25deg] w-[362px]" />
+          <Image src="/images/josiah-dan-stevie/img-1.png" alt="Picture of Tanaman Kiri" width={692} height={692} className="absolute -top-[45px] -left-[190px] md:-left-[220px] rotate-[25deg] w-[325px] md:w-[525px]" />
+          <Image src="/images/josiah-dan-stevie/img-bercak-wishes.png" alt="Picture of Tanaman Kiri" width={713} height={713} className="md:hidden absolute -top-[170px] left-0" />
+          <Image src="/images/josiah-dan-stevie/img-bercak-wishes-dekstop.png" alt="Picture of Tanaman Kiri" width={1384} height={1384} className="hidden md:block absolute -top-[400px] left-0" />
+          <Image src="/images/josiah-dan-stevie/img-1-left.png" alt="Picture of Tanaman Kiri" width={654} height={654} className="absolute -bottom-[195px] md:-bottom-[310px] -left-[215px] md:-left-[315px] rotate-12 w-[356px] md:w-[654px]" />
+          <Image src="/images/josiah-dan-stevie/img-2.png" alt="Picture of Tanaman Kiri" width={738} height={738} className="absolute -bottom-[135px] md:-bottom-[350px] -right-[175px] md:-right-[305px] rotate-[25deg] w-[362px] md:w-[738px]"  />
         </section>
 
       </div>

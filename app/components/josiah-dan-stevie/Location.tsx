@@ -13,7 +13,7 @@ export default function Location({ isOpen, isMobile }: Props) {
   return (
     <>
       <section id="location" className="location relative z-10 w-full min-h-screen bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
-        <div className="relative z-10 text-center h-full pt-[164.7px] md:pt-[253px] pb-[194.63px] font-sorts text-[#22352F] overflow-hidden">
+        <div className="relative z-10 text-center h-full pt-[164.7px] md:pt-[253px] pb-[194.63px] md:pb-[358px] font-sorts text-[#22352F] overflow-hidden">
           <h6 className="text-xs md:text-lg font-medium leading-[25px] uppercase animate" data-animate="fade-up">save the date</h6>
           <h3 className="font-romantic text-[32px] md:text-[48px] font-normal leading-[111.00000000000001%] mt-[19px] md:mt-[31px] animate" data-animate="fade-up">Time & Location</h3>
           <Image src="/images/josiah-dan-stevie/img-imah-seniman.png" alt="Picture of Imah Seniman" width={552} height={368} className="mx-auto mt-[19px] md:mt-[8px] w-[311px] md:w-[552px] animate" data-animate="zoom-in" />
@@ -25,7 +25,7 @@ export default function Location({ isOpen, isMobile }: Props) {
           </Link>
           <div className="relative w-[310px] md:w-[610px] mx-auto mt-[22px]">
             <div className="flex gap-8 w-full">
-              <div className="pt-[36px] text-right w-[117px] md:w-[317px]">
+              <div className="pt-[36px] text-right w-[77px] md:w-[317px]">
                 <h6 className="text-base md:text-lg font-medium leading-none uppercase animate" data-animate="fade-right">16.00 wib</h6>
                 <h6 className="text-base md:text-lg font-medium leading-none uppercase mt-[92.75px] md:mt-[94px] animate" data-animate="fade-right">17.00 wib</h6>
               </div>
@@ -53,7 +53,7 @@ export default function Location({ isOpen, isMobile }: Props) {
 
           {/* Image Absolute */}
           <Image src="/images/josiah-dan-stevie/img-tanaman-atas-location.png" alt="Picture of Tanaman Kanan Atas Location" width={682} height={331} className="absolute -top-[65px] md:-top-[95px] left-[1%] md:left-[35%] w-[371px] md:w-[582px] animate" data-animate="fade-down" />
-          <Image src="/images/josiah-dan-stevie/img-2.png" alt="Picture of Tanaman Kiri Bawah Location" width={961} height={961} className="absolute -bottom-[150px] -left-[200px] md:left-0 rotate-45 w-[356px] md:w-[456px]" />
+          <Image src="/images/josiah-dan-stevie/img-2.png" alt="Picture of Tanaman Kiri Bawah Location" width={961} height={961} className="absolute -bottom-[150px] md:-bottom-[280px] -left-[200px] md:-left-[500px] rotate-45 w-[356px] md:w-[961px]" />
           <Image src="/images/josiah-dan-stevie/img-bercak-kanan-location-dekstop.png" alt="Picture of Bercak Kanan Location" width={2094} height={2094} className="absolute -bottom-[550px] md:-top-[200px] right-0 w-[800px] md:w-[1500px]" />
         </div>
       </section>

@@ -13,7 +13,7 @@ type HeroProps = {
 export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps) {
   return (
     <>
-      <section id="hero" className="relative z-20 hero w-full h-screen bg-bottom bg-cover bg-no-repeat bg-[url('/images/josiah-dan-stevie/bg-hero-mobile-1.png')]">
+      <section id="hero" className="relative z-20 hero w-full h-screen bg-bottom bg-cover bg-no-repeat bg-[url('/images/josiah-dan-stevie/bg-hero-mobile-1.png')] md:bg-[url('/images/josiah-dan-stevie/bg-gelombang.png')]">
         {!isOpen && (
           <div className="fixed inset-0 z-50">
             <div className="absolute inset-0 z-[1] bg-[#00000040] backdrop-blur-[11.1px]" />
@@ -54,8 +54,9 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-bercak-kiri-hero.png" alt="Picture of Bercak Kiri" width={748} height={748} className="absolute top-0 left-0 w-[354px]" />
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-atas-hero-new.png" alt="Picture of Tanaman Kiri Atas" width={857} height={857} className={`absolute top-0 left-0 w-[215px] md:w-[557px] ${isOpen ? 'fade-right' : ''}`} />
+          <Image src="/images/josiah-dan-stevie/img-bercak-kiri-hero.png" alt="Picture of Bercak Kiri" width={748} height={748} className="md:hidden absolute top-0 left-0 w-[354px]" />
+          <Image src="/images/josiah-dan-stevie/img-bercak-kiri-hero-dekstop.png" alt="Picture of Bercak Kiri" width={748} height={748} className="hidden md:block absolute top-0 left-0 md:w-[654px]" />
+          <Image src="/images/josiah-dan-stevie/img-1.png" alt="Picture of Tanaman Kiri Atas" width={857} height={857} className={`absolute -top-[190px] -left-[180px] md:-top-[195px] md:-left-[230px] rotate-[140deg] w-[365px] md:w-[657px]`} />
         </div>
       </section>
     </>
