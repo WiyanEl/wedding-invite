@@ -52,8 +52,8 @@ export default function Location({ isOpen, isMobile }: Props) {
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-tanaman-atas-location.png" alt="Picture of Tanaman Kanan Atas Location" width={682} height={331} className="absolute -top-[65px] md:-top-[95px] md:left-[35%] w-[371px] md:w-[582px] animate" data-animate="fade-down" />
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-rsvp-new.png" alt="Picture of Tanaman Kiri Bawah Location" width={961} height={961} className="absolute -bottom-[220px] -left-[20px] md:left-0 w-[256px] md:w-[456px] animate" data-animate="fade-right" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-atas-location.png" alt="Picture of Tanaman Kanan Atas Location" width={682} height={331} className="absolute -top-[65px] md:-top-[95px] left-[1%] md:left-[35%] w-[371px] md:w-[582px] animate" data-animate="fade-down" />
+          <Image src="/images/josiah-dan-stevie/img-2.png" alt="Picture of Tanaman Kiri Bawah Location" width={961} height={961} className="absolute -bottom-[150px] -left-[200px] md:left-0 rotate-45 w-[356px] md:w-[456px]" />
           <Image src="/images/josiah-dan-stevie/img-bercak-kanan-location-dekstop.png" alt="Picture of Bercak Kanan Location" width={2094} height={2094} className="absolute -bottom-[550px] md:-top-[200px] right-0 w-[800px] md:w-[1500px]" />
         </div>
       </section>

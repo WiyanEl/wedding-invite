@@ -12,7 +12,7 @@ type Props = {
 export default function Profile({ isOpen, isMobile }: Props) {
   return (
     <>
-      <section id="profile" className="profile relative z-10 -mt-[75px] md:-mt-[375px] w-full min-h-screen bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
+      <section id="profile" className="profile relative z-10 -mt-[75px] md:-mt-[375px] w-full min-h-screen overflow-hidden bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
         <div className="relative z-10 text-center h-full pt-[152px] md:pt-[320px] pb-[113px] md:pb-[187px] font-sorts text-[#22352F] overflow-hidden">
           <h6 className="text-xs md:text-lg font-medium leading-[25px] md:leading-[30px] animate" data-animate="fade-up">MR. ASHLEY MENDES and</h6>
           <h6 className="text-xs md:text-lg font-medium leading-[25px] md:leading-[30px] mt-0.5 md:mt-1 animate" data-animate="fade-up">MRS. EUNICE MENDES</h6>
@@ -36,7 +36,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/josiah-dan-stevie/img-tanaman-atas-profile-new.png" alt="Picture of Tanaman Kanan Atas Location" width={1000} height={1000} className="absolute -top-[150px] md:-top-[250px] right-0 w-[256px] md:w-[491px]" />
+        <Image src="/images/josiah-dan-stevie/img-3.png" alt="Picture of Tanaman Kanan Atas Location" width={1000} height={1000} className="absolute -top-[75px] md:-top-[250px] -right-[100px] -rotate-45 w-[256px] md:w-[491px]" />
         <Image src="/images/josiah-dan-stevie/img-bercak-kanan-location-new.png" alt="Picture of Bercak Kanan Location" width={1340} height={1340} className="absolute -bottom-[317px] md:-top-[150px] right-0" />
       </section>
     </>

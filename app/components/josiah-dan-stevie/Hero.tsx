@@ -17,9 +17,9 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
         {!isOpen && (
           <div className="fixed inset-0 z-50">
             <div className="absolute inset-0 z-[1] bg-[#00000040] backdrop-blur-[11.1px]" />
-            <div className="relative z-10 flex items-center justify-center h-full">
+            <div className="relative z-20 flex items-center justify-center h-full">
               <div className="w-[290px] md:w-[416px] min-h-min rounded-[15px] md:rounded-[22px] shadow-[0px_8px_11.6px_0px_#0000008A] zoom-in">
-                <div className="w-full h-[180px] md:h-[220px] bg-center bg-cover bg-no-repeat bg-[url('/images/josiah-dan-stevie/img-popup-hero-new.png')]"></div>
+                <div className="w-full h-[180px] md:h-[220px] rounded-tl-[15px] md:rounded-tl-[22px] rounded-tr-[15px] md:rounded-tr-[22px] bg-center bg-cover bg-no-repeat bg-[url('/images/josiah-dan-stevie/img-popup-hero-new.png')]"></div>
                 <div className="relative w-full pt-[30px] md:pt-[26px] pb-[40px] rounded-bl-[15px] md:rounded-bl-[22px] rounded-br-[15px] md:rounded-br-[22px] font-sorts text-[#22352F] text-center bg-center bg-cover bg-no-repeat bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
                   <h6 className="text-[10px] md:text-[14px] font-medium leading-none tracking-[15%] md:tracking-normal uppercase">the wedding of</h6>
                   <h2 className="font-romantic text-2xl md:text-[36px] leading-none font-normal mt-5">Josiah & Stevie</h2>

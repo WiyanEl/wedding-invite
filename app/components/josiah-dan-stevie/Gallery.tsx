@@ -199,7 +199,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
         </section>
 
         <section id="reservation" className="reservation relative w-full min-h-min bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
-          <div className="relative z-20 text-center h-full pt-[110.04px] md:pt-[113px] pb-[10px] font-sorts text-[#22352F] overflow-hidden">
+          <div className="relative z-20 text-center h-full pt-[110.04px] md:pt-[113px] font-sorts text-[#22352F] overflow-hidden">
             <h3 className="font-romantic font-normal text-[32px] md:text-[48px] leading-[22px] animate" data-animate="fade-up">Rsvp</h3>
             <h6 className="text-xs md:text-lg font-medium leading-[15px] mt-[49px] md:mt-[65px] animate" data-animate="fade-up">Dear Mr. /Mrs. / Ms.</h6>
             <h6 className="text-xs md:text-lg font-medium leading-[15px] capitalize mt-[26px] md:mt-[48px] animate" data-animate="fade-up">{params ?? '.......'}</h6>
@@ -254,7 +254,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-rsvp-new.png" alt="Picture of Tanaman Kiri" width={632} height={632} className="absolute -top-[50px] -left-[20px] w-[236px] md:w-[432px] animate" data-animate="fade-right" />
+          <Image src="/images/josiah-dan-stevie/img-2.png" alt="Picture of Tanaman Kiri" width={632} height={632} className="absolute top-0 -left-[185px] rotate-[25deg] w-[336px] md:w-[432px]" />
           <Image src="/images/josiah-dan-stevie/img-bercak-kanan-rsvp.png" alt="Picture of Bercak Kanan" width={604} height={604} className="absolute z-10 -bottom-[300px] right-0" />
         </section>
 
@@ -343,7 +343,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kanan-wedding-gift-new.png" alt="Picture of Tanaman Kanan" width={799} height={799} className="absolute z-20 -top-[170px] -right-[45px] w-[250px] animate" data-animate="fade-left" />
+          <Image src="/images/josiah-dan-stevie/img-1.png" alt="Picture of Tanaman Kanan" width={799} height={799} className="absolute z-20 -top-[65px] -right-[220px] -rotate-[25deg] w-[350px]" />
         </section>
 
         <section id="wishes" className="relative overflow-y-hidden w-full min-h-screen overflow-hidden bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
@@ -450,10 +450,10 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
           )}
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-wishes-new.png" alt="Picture of Tanaman Kiri" width={692} height={692} className="absolute -top-[50px] -left-[20px] w-[200px] animate" data-animate="fade-right" />
+          <Image src="/images/josiah-dan-stevie/img-1.png" alt="Picture of Tanaman Kiri" width={692} height={692} className="absolute -top-[45px] -left-[190px] rotate-[25deg] w-[325px]" />
           <Image src="/images/josiah-dan-stevie/img-bercak-wishes.png" alt="Picture of Tanaman Kiri" width={713} height={713} className="absolute -top-[170px] left-0" />
-          <Image src="/images/josiah-dan-stevie/img-tanaman-bawah-kiri-wishes-new.png" alt="Picture of Tanaman Kiri" width={654} height={654} className="absolute -bottom-[120px] w-[156px] -left-[20] animate" data-animate="fade-right" />
-          <Image src="/images/josiah-dan-stevie/img-tanaman-bawah-kanan-wishes-new.png" alt="Picture of Tanaman Kiri" width={738} height={738} className="absolute -bottom-[130px] w-[202px] -right-[10px] animate" data-animate="fade-left" />
+          <Image src="/images/josiah-dan-stevie/img-1-left.png" alt="Picture of Tanaman Kiri" width={654} height={654} className="absolute -bottom-[195px] -left-[215px] rotate-12 w-[356px]" />
+          <Image src="/images/josiah-dan-stevie/img-2.png" alt="Picture of Tanaman Kiri" width={738} height={738} className="absolute -bottom-[135px] -right-[175px] rotate-[25deg] w-[362px]" />
         </section>
 
       </div>
