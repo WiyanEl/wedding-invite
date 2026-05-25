@@ -18,9 +18,9 @@ export default function Location({ isOpen, isMobile }: Props) {
           <h3 className="font-romantic text-[32px] md:text-[48px] font-normal leading-[111.00000000000001%] mt-[19px] md:mt-[31px] animate" data-animate="fade-up">Time & Location</h3>
           <Image src="/images/josiah-dan-stevie/img-imah-seniman.png" alt="Picture of Imah Seniman" width={552} height={368} className="mx-auto mt-[19px] md:mt-[8px] w-[311px] md:w-[552px] animate" data-animate="zoom-in" />
           <h4 className="text-base md:text-2xl font-medium leading-none uppercase mt-[7px] animate" data-animate="fade-up">imah seniman</h4>
-          <p className="text-xs md:text-lg font-medium leading-none md:leading-[30px] mt-[13.58px] md:mt-[19px]">Jl. Kolonel Masturi No. VIII, Lembang,</p>
-          <p className="text-xs md:text-lg font-medium leading-none md:leading-[30px] mt-1">Kab. Bandung Barat, Jawa Barat, Indonesia</p>
-          <Link href="https://maps.app.goo.gl/9vjZkWzgwcpG4T777" target="_blank" className="inline-flex items-center justify-center w-[160px] md:w-[220px] h-[33px] md:h-[40px] rounded-[44px] bg-[#22352F] text-xs md:text-lg font-medium leading-[17.16px] uppercase text-[#FEF8EF] mt-[28.2px] md:mt-[52px] pt-1 animate" data-animate="fade-up">
+          <p className="text-xs md:text-lg font-medium leading-none md:leading-[30px] mt-[13.58px] md:mt-[19px] animate" data-animate="fade-up">Jl. Kolonel Masturi No. VIII, Lembang,</p>
+          <p className="text-xs md:text-lg font-medium leading-none md:leading-[30px] mt-1 animate" data-animate="fade-up">Kab. Bandung Barat, Jawa Barat, Indonesia</p>
+          <Link href="https://maps.app.goo.gl/E22iakUisA3eNeMp8" target="_blank" className="inline-flex items-center justify-center w-[160px] md:w-[220px] h-[33px] md:h-[40px] rounded-[44px] bg-[#22352F] text-xs md:text-lg font-medium leading-[17.16px] uppercase text-[#FEF8EF] mt-[28.2px] md:mt-[52px] pt-1 animate" data-animate="fade-up">
             <span className="inline-block m-auto">google maps</span>
           </Link>
           <div className="relative w-[310px] md:w-[610px] mx-auto mt-[22px]">
@@ -52,7 +52,7 @@ export default function Location({ isOpen, isMobile }: Props) {
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-tanaman-atas-location.png" alt="Picture of Tanaman Kanan Atas Location" width={682} height={331} className="absolute -top-[65px] md:-top-[95px] left-[35%] w-[371px] md:w-[582px] animate" data-animate="fade-down" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-atas-location.png" alt="Picture of Tanaman Kanan Atas Location" width={682} height={331} className="absolute -top-[65px] md:-top-[95px] md:left-[35%] w-[371px] md:w-[582px] animate" data-animate="fade-down" />
           <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-rsvp-new.png" alt="Picture of Tanaman Kiri Bawah Location" width={961} height={961} className="absolute -bottom-[220px] -left-[20px] md:left-0 w-[256px] md:w-[456px] animate" data-animate="fade-right" />
           <Image src="/images/josiah-dan-stevie/img-bercak-kanan-location-dekstop.png" alt="Picture of Bercak Kanan Location" width={2094} height={2094} className="absolute -bottom-[550px] md:-top-[200px] right-0 w-[800px] md:w-[1500px]" />
         </div>

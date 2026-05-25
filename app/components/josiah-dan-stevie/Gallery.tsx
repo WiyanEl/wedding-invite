@@ -201,7 +201,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
         <section id="reservation" className="reservation relative w-full min-h-min bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
           <div className="relative z-20 text-center h-full pt-[110.04px] md:pt-[113px] pb-[10px] font-sorts text-[#22352F] overflow-hidden">
             <h3 className="font-romantic font-normal text-[32px] md:text-[48px] leading-[22px] animate" data-animate="fade-up">Rsvp</h3>
-            <h6 className="text-xs md:text-lg font-medium leading-[15px] mt-[49px] md:mt-[25px] animate" data-animate="fade-up">Dear Mr. /Mrs. / Ms.</h6>
+            <h6 className="text-xs md:text-lg font-medium leading-[15px] mt-[49px] md:mt-[65px] animate" data-animate="fade-up">Dear Mr. /Mrs. / Ms.</h6>
             <h6 className="text-xs md:text-lg font-medium leading-[15px] capitalize mt-[26px] md:mt-[48px] animate" data-animate="fade-up">{params ?? '.......'}</h6>
             <p className="text-xs md:text-lg font-medium leading-[20px] mt-[24px] md:mt-[48px] animate" data-animate="fade-up">Kindly confirm your attendance before</p>
             <p className="text-xs md:text-lg font-medium leading-[20px] mt-1 animate" data-animate="fade-up">04 July 2026</p>
@@ -247,8 +247,8 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
             <p className="hidden md:block text-lg font-medium leading-[14.96px] mt-[96px] animate" data-animate="fade-up">Having trouble with RSVP?</p>
             <div className="mt-[24px] md:mt-[44px] animate" data-animate="fade-up">
               <Link href="https://wa.me/6289671650843" target="_blank" className="flex justify-center items-center w-[160px] md:w-[212px] h-[33px] md:h-[40px] rounded-[55px] bg-[#12877B] mx-auto">
-                <Image src="/images/josiah-dan-stevie/logo-whatsapp.png"  alt="Picture of Icon WhatsApp" width={16} height={16} className="mr-2" />
-                <span className="font-trajan text-xs md:text-lg font-semibold leading-[14.96px] md:leading-[26px] text-[#FEF8EF] mt-1 uppercase">chat support</span>
+                <Image src="/images/josiah-dan-stevie/logo-whatsapp.png"  alt="Picture of Icon WhatsApp" width={16} height={16} className="md:w-[17px] md:h-[17px] mr-2" />
+                <span className="font-trajan text-xs md:text-base font-semibold leading-[14.96px] md:leading-[26px] text-[#FEF8EF] mt-1 uppercase">chat support</span>
               </Link>
             </div>
           </div>
@@ -306,30 +306,38 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
 
         <section id="weeding-gift" className="relative w-full min-h-min overflow-hidden bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
           <div className="relative z-10 text-center h-full pt-[140px] pb-[10px] font-sorts text-[#22352F] overflow-hidden">
-            <h3 className="font-romantic font-normal text-[32px] leading-[22px] animate" data-animate="fade-up">Wedding Gift</h3>
-            <p className="text-xs font-medium leading-[20px] mt-[40px] animate" data-animate="fade-up">Whether celebrating with us in person or from afar,</p>
-            <p className="text-xs font-medium leading-[20px] mt-1 animate" data-animate="fade-up">your thoughts and and prayers are the greatest</p>
-            <p className="text-xs font-medium leading-[20px] mt-1 animate" data-animate="fade-up">blessing to us.</p>
-            <p className="text-xs font-medium leading-[20px] mt-[30px] animate" data-animate="fade-up">If you would like to kindly give us a gift as we begin</p>
-            <p className="text-xs font-medium leading-[20px] mt-1 animate" data-animate="fade-up">married life, our bank details are below.</p>
-            <div className="flex justify-between items-center w-[227] border-b border-[#22352F] pb-3 mx-auto mt-[30px] animate" data-animate="fade-up">
-              <p className="text-left text-xs font-normal leading-[14px]">
+            <h3 className="font-romantic font-normal text-[32px] md:text-[48px] leading-[22px] animate" data-animate="fade-up">Wedding Gift</h3>
+            <div className="md:hidden">
+              <p className="text-xs font-medium leading-[20px] mt-[40px] animate" data-animate="fade-up">Whether celebrating with us in person or from afar,</p>
+              <p className="text-xs font-medium leading-[20px] mt-1 animate" data-animate="fade-up">your thoughts and and prayers are the greatest</p>
+              <p className="text-xs font-medium leading-[20px] mt-1 animate" data-animate="fade-up">blessing to us.</p>
+              <p className="text-xs font-medium leading-[20px] mt-[30px] animate" data-animate="fade-up">If you would like to kindly give us a gift as we begin</p>
+              <p className="text-xs font-medium leading-[20px] mt-1 animate" data-animate="fade-up">married life, our bank details are below.</p>
+            </div>
+            <div className="hidden md:block">
+              <p className="text-lg font-medium leading-[30px] mt-[57px] animate" data-animate="fade-up">Whether celebrating with us in person or from afar, your</p>
+              <p className="text-lg font-medium leading-[30px] mt-1 animate" data-animate="fade-up">thoughts and and prayers are the greatest blessing to us.</p>
+              <p className="text-lg font-medium leading-[30px] mt-[27px] animate" data-animate="fade-up">If you would like to kindly give us a gift as we begin</p>
+              <p className="text-lg font-medium leading-[30px] mt-1 animate" data-animate="fade-up">married life, our bank details are below.</p>
+            </div>
+            <div className="flex justify-between items-center w-[227] md:w-[368px] border-b border-[#22352F] pb-3 mx-auto mt-[30px] md:mt-[90px] animate" data-animate="fade-up">
+              <p className="text-left text-xs md:text-base font-normal leading-[14px] md:leading-[20px]">
                 <span>IDR</span> <br />
                 <span className="mt-1">BCA - 3462610405</span> <br />
                 <span className="mt-1">Josiah Anthony Mendes</span>
               </p>
               <button onClick={() => handleCopy('3462610405')} className="w-[50px] h-[30px] border-b border-[#22352F] text-center" data-animate="fade-up">
-                <span className="text-xs font-normal leading-[81%] uppercase">{copied ? "Copied" : "Copy"}</span>
+                <span className="text-xs md:text-base font-normal leading-[81%] uppercase">{copied ? "Copied" : "Copy"}</span>
               </button>
             </div>
-            <div className="flex justify-between items-center w-[227] border-b border-[#22352F] pb-3 mx-auto mt-[30px] animate" data-animate="fade-up">
-              <p className="text-left text-xs font-normal leading-[14px]">
+            <div className="flex justify-between items-center w-[227] md:w-[368px] border-b border-[#22352F] pb-3 mx-auto mt-[30px] md:mt-[42px] animate" data-animate="fade-up">
+              <p className="text-left text-xs md:text-base font-normal leading-[14px] md:leading-[20px]">
                 <span>SGD</span> <br />
                 <span className="mt-1">DBS Bank (Singapore) - 249483079</span> <br />
                 <span className="mt-1">Josiah Anthony Mendes</span>
               </p>
               <button onClick={() => handleCopy2('249483079')} className="w-[50px] h-[30px] border-b border-[#22352F] text-center" data-animate="fade-up">
-                <span className="text-xs font-normal leading-[81%] uppercase">{copied2 ? "Copied" : "Copy"}</span>
+                <span className="text-xs md:text-base font-normal leading-[81%] uppercase">{copied2 ? "Copied" : "Copy"}</span>
               </button>
             </div>
           </div>
@@ -341,10 +349,10 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
         <section id="wishes" className="relative overflow-y-hidden w-full min-h-screen overflow-hidden bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
           {!seeAllMessages ? (
             <div className="relative z-20 text-center pt-[162px] md:pt-[150px] pb-[97px] font-sorts text-[#22352F]">
-              <h3 className="font-romantic font-normal text-[32px] leading-[22px] animate fade-up" data-animate="fade-up">Share Your Wishes</h3>
+              <h3 className="font-romantic font-normal text-[32px] md:text-[48px] leading-[22px] md:leading-none animate fade-up" data-animate="fade-up">Share Your Wishes</h3>
               <form onSubmit={save} className="mx-auto mt-[38px] animate fade-up" data-animate="fade-up">
-                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="relative z-10 block w-[284px] md:w-[564px] h-[30px] md:h-[40px] rounded-[33px] md:rounded-[64px] border-[0.49px] border-[#22352F80] bg-transparent px-[13px] md:px-[23px] py-1 font-sorts text-xs md:text-lg leading-[140%] text-[#22352F] placeholder:text-[#22352F80] mx-auto" placeholder="Desy (Tester)" />
-                <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="relative z-10 block w-[284px] md:w-[564px] h-[60px] md:h-[261px] rounded-[15px] md:rounded-[20px] border-[0.49px] border-[#22352F80] bg-transparent px-[13px] md:px-[23px] py-1 font-sorts text-xs md:text-lg leading-[140%] text-[#22352F] mx-auto mt-4"></textarea>
+                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="relative z-10 block w-[284px] md:w-[564px] h-[30px] md:h-[40px] rounded-[33px] md:rounded-[64px] border-[1px] border-[#22352F80] bg-transparent px-[13px] md:px-[23px] py-1 font-sorts text-xs md:text-lg leading-[140%] text-[#22352F] placeholder:text-[#22352F80] mx-auto" placeholder="Desy (Tester)" />
+                <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="relative z-10 block w-[284px] md:w-[564px] h-[60px] md:h-[261px] rounded-[15px] md:rounded-[20px] border-[1px] border-[#22352F80] bg-transparent px-[13px] md:px-[23px] py-1 font-sorts text-xs md:text-lg leading-[140%] text-[#22352F] mx-auto mt-4"></textarea>
                 <button type="submit" className="flex justify-center items-center w-[284px] md:w-[564px] h-[33px] md:h-[40px] bg-[#22352F] rounded-[37px] border-[0.49px] border-[#22352F] mx-auto mt-4">
                   <Image src="/images/josiah-dan-stevie/icon-send.png" alt="Picture of Icon Send" width={15} height={19} className="md:w-[24px] md:h-[30px] mr-2" />
                   <span className="inline-block mt-1 text-xs md:text-lg text-[#DADAD9] font-normal leading-[140%] uppercase">send</span>
@@ -380,7 +388,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
             </div>
           ) : (
             <div className="relative z-20 text-center pt-[162px] md:pt-[150px] pb-[97px] font-sorts text-[#22352F]">
-              <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className="w-[340px] md:w-[564px] h-[33px] md:h-[40px] rounded-[10px] md:rounded-[64px] border-[0.49px] border-[#22352F80] bg-transparent px-2 py-1 font-sorts text-xs md:text-lg leading-[140%] text-#22352F] placeholder:text-[#22352F80] mx-auto animate fade-up" data-animate="fade-up" placeholder="Search" />
+              <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className="w-[340px] md:w-[564px] h-[33px] md:h-[40px] rounded-[10px] md:rounded-[64px] border-[1px] border-[#22352F80] bg-transparent px-3 py-2 font-sorts text-xs md:text-lg leading-[140%] text-#22352F] placeholder:text-[#22352F80] mx-auto animate fade-up" data-animate="fade-up" placeholder="Search" />
               <div className="grid grid-cols-2 gap-5 mt-[20px] w-[340px] md:w-[564px] h-[459.87px] md:h-[638px] overflow-y-auto mx-auto">
                 {filtered.length === 0 ? (
                   <p className={`col-span-2 text-center text-sm text-[#4E4E4E] animate'}`}>

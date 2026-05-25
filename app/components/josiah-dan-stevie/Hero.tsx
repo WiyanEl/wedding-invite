@@ -40,7 +40,7 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           </div>
         )}
 
-        <div className="relative text-center text-[#22352F] font-sorts pt-[130px] md:pt-[140px] h-full">
+        <div className="relative text-center text-[#22352F] font-sorts pt-[95px] md:pt-[140px] h-full">
           <div className="relative z-10">
             <h6 className={`text-[14px] md:text-lg font-medium leading-none tracking-[15%] uppercase ${isOpen ? 'zoom-in' : ''}`}>the wedding of</h6>
             <h2 className={`font-romantic text-[40px] md:text-[52px] leading-none font-normal mt-7 ${isOpen ? 'zoom-in' : ''}`}>Josiah & Stevie</h2>
@@ -54,10 +54,8 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-bercak-kiri-hero.png" alt="Picture of Bercak Kiri" width={748} height={748} className="md:hidden absolute top-0 left-0 w-[404px]" />
-          <Image src="/images/josiah-dan-stevie/img-bercak-kiri-hero.png" alt="Picture of Bercak Kiri" width={748} height={748} className="hidden md:block absolute top-0 left-0" />
-          <Image src="/images/josiah-dan-stevie/img-bercak-kiri-hero.png" alt="Picture of Bercak Kiri" width={748} height={748} className="absolute top-0 left-0 w-[404px]" />
-          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-atas-hero-new.png" alt="Picture of Tanaman Kiri Atas" width={857} height={857} className={`absolute top-0 left-0 w-[265px] md:w-[557px] ${isOpen ? 'fade-right' : ''}`} />
+          <Image src="/images/josiah-dan-stevie/img-bercak-kiri-hero.png" alt="Picture of Bercak Kiri" width={748} height={748} className="absolute top-0 left-0 w-[354px]" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-kiri-atas-hero-new.png" alt="Picture of Tanaman Kiri Atas" width={857} height={857} className={`absolute top-0 left-0 w-[215px] md:w-[557px] ${isOpen ? 'fade-right' : ''}`} />
         </div>
       </section>
     </>

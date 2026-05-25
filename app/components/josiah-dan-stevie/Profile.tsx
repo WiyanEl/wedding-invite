@@ -32,7 +32,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
           <p className="hidden md:block text-lg font-normal leading-[30px] mt-1 animate" data-animate="fade-up">day with you!</p>
           
           {/* Image Absolute */}
-          <Image src="/images/josiah-dan-stevie/img-tanaman-bawah-location-dekstop.png" alt="Picture of Tanaman Bawah Location" width={411} height={199} className="absolute z-0 -bottom-[125px] md:-bottom-[225px] md:left-[31%] md:w-[756px] animate" data-animate="fade-up" />
+          <Image src="/images/josiah-dan-stevie/img-tanaman-bawah-location-dekstop.png" alt="Picture of Tanaman Bawah Location" width={411} height={199} className="absolute z-0 -bottom-[115px] md:-bottom-[205px] md:left-[31%] md:w-[756px] animate" data-animate="fade-up" />
         </div>
 
         {/* Image Absolute */}
