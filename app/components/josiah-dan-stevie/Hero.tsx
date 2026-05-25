@@ -13,7 +13,7 @@ type HeroProps = {
 export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps) {
   return (
     <>
-      <section id="hero" className="relative z-20 hero w-full h-screen bg-bottom bg-cover bg-no-repeat bg-[url('/images/josiah-dan-stevie/bg-hero-mobile-1.png')] md:bg-[url('/images/josiah-dan-stevie/bg-gelombang.png')]">
+      <section id="hero" className="relative z-20 hero w-full h-screen md:h-[calc(100vh+15vh)] bg-bottom bg-cover bg-no-repeat bg-[url('/images/josiah-dan-stevie/bg-hero-mobile-1.png')] md:bg-[url('/images/josiah-dan-stevie/bg-gelombang.png')]">
         {!isOpen && (
           <div className="fixed inset-0 z-50">
             <div className="absolute inset-0 z-[1] bg-[#00000040] backdrop-blur-[11.1px]" />
