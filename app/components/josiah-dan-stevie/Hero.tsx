@@ -56,7 +56,7 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           {/* Image Absolute */}
           <Image src="/images/josiah-dan-stevie/img-bercak-kiri-hero.png" alt="Picture of Bercak Kiri" width={748} height={748} className="md:hidden absolute top-0 left-0 w-[354px]" />
           <Image src="/images/josiah-dan-stevie/img-bercak-kiri-hero-dekstop.png" alt="Picture of Bercak Kiri" width={748} height={748} className="hidden md:block absolute top-0 left-0 md:w-[748px]" />
-          <Image src="/images/josiah-dan-stevie/img-1.png" alt="Picture of Tanaman Kiri Atas" width={857} height={857} className={`absolute -top-[190px] -left-[180px] md:-top-[195px] md:-left-[230px] rotate-[140deg] w-[365px] md:w-[757px]`} />
+          <Image src="/images/josiah-dan-stevie/img-1.png" alt="Picture of Tanaman Kiri Atas" width={857} height={857} className={`absolute -top-[190px] -left-[180px] md:-top-[398px] md:-left-[385px] rotate-[140deg] w-[365px] md:w-[907px]`} />
         </div>
       </section>
     </>
