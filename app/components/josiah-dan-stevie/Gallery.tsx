@@ -161,7 +161,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
   return (
     <> 
       <div className="relative z-10 w-full min-h-screen">
-        <section id="gallery" className="gallery -mt-[75px] md:-mt-[375px] bg-cover bg-no-repeat bg-[url('/images/josiah-dan-stevie/bg-gallery-mobile.png')] md:bg-[url('/images/josiah-dan-stevie/bg-gelombang-atas.png')] pt-[142px] md:pt-[475px] md:pb-[50px]">
+        <section id="gallery" className="gallery -mt-[75px] md:-mt-[395px] bg-cover bg-no-repeat bg-[url('/images/josiah-dan-stevie/bg-gallery-mobile.png')] md:bg-[url('/images/josiah-dan-stevie/bg-gelombang-atas.png')] pt-[142px] md:pt-[475px] md:pb-[50px]">
           <div className="w-full h-full">
             <div className="w-[340px] md:w-[1149px] h-[460px] md:h-[875px] mx-auto shadow-[0px_7px_16.9px_0px_#0000008F] overflow-hidden">
               <Swiper
