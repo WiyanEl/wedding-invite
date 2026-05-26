@@ -13,7 +13,7 @@ export default function Location({ isOpen, isMobile }: Props) {
   return (
     <>
       <section id="location" className="location relative z-10 w-full min-h-screen bg-[url('/images/josiah-dan-stevie/white-paper-texture.png')]">
-        <div className="relative z-10 text-center h-full pt-[164.7px] md:pt-[253px] pb-[104.63px] md:pb-[358px] font-sorts text-[#22352F] overflow-hidden">
+        <div className="relative z-10 text-center h-full pt-[164.7px] md:pt-[253px] pb-[124.63px] md:pb-[358px] font-sorts text-[#22352F] overflow-hidden">
           <h6 className="text-xs md:text-lg font-medium leading-[25px] uppercase animate" data-animate="fade-up">save the date</h6>
           <h3 className="font-romantic text-[32px] md:text-[48px] font-normal leading-[111.00000000000001%] mt-[19px] md:mt-[31px] animate" data-animate="fade-up">Time & Location</h3>
           <Image src="/images/josiah-dan-stevie/img-imah-seniman.png" alt="Picture of Imah Seniman" width={552} height={368} className="mx-auto mt-[19px] md:mt-[8px] w-[311px] md:w-[552px] animate" data-animate="zoom-in" />
@@ -53,10 +53,10 @@ export default function Location({ isOpen, isMobile }: Props) {
 
           <div>
             <h6 className="text-base md:text-2xl font-medium leading-[25px] md:leading-none uppercase mt-[96px] animate" data-animate="fade-up">shuttle</h6>
-            <p className="text-xs md:text-lg font-medium leading-none md:leading-[43px] mt-[15px] md:mt-[20px] animate" data-animate="fade-up">Shuttle service will be provided from Gaia Hotel to</p>
-            <p className="text-xs md:text-lg font-medium leading-none md:leading-[43px] mt-1 md:mt-0 animate" data-animate="fade-up">Imah Seniman at 16:30 WIB.</p>
-            <p className="text-xs md:text-lg font-medium leading-none md:leading-[43px] mt-[15px] md:mt-[20px] animate" data-animate="fade-up">Guests who require the shuttle service are kindly </p>
-            <p className="text-xs md:text-lg font-medium leading-none md:leading-[43px] mt-1 md:mt-0 animate" data-animate="fade-up">requested to gather at the lobby.</p>
+            <p className="text-xs md:text-lg font-medium leading-none md:leading-[43px] mt-[19px] md:mt-[20px] animate" data-animate="fade-up">Shuttle service will be provided from Gaia Hotel to</p>
+            <p className="text-xs md:text-lg font-medium leading-none md:leading-[43px] mt-2 md:mt-0 animate" data-animate="fade-up">Imah Seniman at 16:30 WIB.</p>
+            <p className="text-xs md:text-lg font-medium leading-none md:leading-[43px] mt-[19px] md:mt-[20px] animate" data-animate="fade-up">Guests who require the shuttle service are kindly </p>
+            <p className="text-xs md:text-lg font-medium leading-none md:leading-[43px] mt-2 md:mt-0 animate" data-animate="fade-up">requested to gather at the lobby.</p>
           </div>
 
           {/* Image Absolute */}
