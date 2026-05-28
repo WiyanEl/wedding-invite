@@ -312,7 +312,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
               <p className="text-xs font-medium leading-[20px] mt-[40px] animate" data-animate="fade-up">Whether celebrating with us in person or from afar,</p>
               <p className="text-xs font-medium leading-[20px] mt-1 animate" data-animate="fade-up">your thoughts and and prayers are the greatest</p>
               <p className="text-xs font-medium leading-[20px] mt-1 animate" data-animate="fade-up">blessing to us.</p>
-              <p className="text-xs font-medium leading-[20px] mt-[30px] animate" data-animate="fade-up">If you would like to kindly give us a gift as we begin</p>
+              <p className="text-xs font-medium leading-[20px] mt-[25px] animate" data-animate="fade-up">If you would like to kindly give us a gift as we begin</p>
               <p className="text-xs font-medium leading-[20px] mt-1 animate" data-animate="fade-up">married life, our bank details are below.</p>
             </div>
             <div className="hidden md:block">
@@ -321,7 +321,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
               <p className="text-lg font-medium leading-[30px] mt-[27px] animate" data-animate="fade-up">If you would like to kindly give us a gift as we begin</p>
               <p className="text-lg font-medium leading-[30px] mt-1 animate" data-animate="fade-up">married life, our bank details are below.</p>
             </div>
-            <div className="flex justify-between items-center w-[227] md:w-[368px] border-b border-[#22352F] pb-3 mx-auto mt-[30px] md:mt-[90px] animate" data-animate="fade-up">
+            <div className="flex justify-between items-center w-[261px] md:w-[368px] border-b border-[#22352F] pb-3 mx-auto mt-[30px] md:mt-[90px] animate" data-animate="fade-up">
               <p className="text-left text-xs md:text-base font-normal leading-[14px] md:leading-[20px]">
                 <span>IDR</span> <br />
                 <span className="mt-1">BCA - 3462610405</span> <br />
@@ -331,7 +331,7 @@ export default function Gallery({ isOpen, isMobile, params }: Props) {
                 <span className="text-[10px] md:text-base font-normal leading-[81%] uppercase">{copied ? "Copied" : "Copy"}</span>
               </button>
             </div>
-            <div className="flex justify-between items-center w-[227] md:w-[368px] border-b border-[#22352F] pb-3 mx-auto mt-[30px] md:mt-[42px] animate" data-animate="fade-up">
+            <div className="flex justify-between items-center w-[261px] md:w-[368px] border-b border-[#22352F] pb-3 mx-auto mt-[30px] md:mt-[42px] animate" data-animate="fade-up">
               <p className="text-left text-xs md:text-base font-normal leading-[14px] md:leading-[20px]">
                 <span>SGD</span> <br />
                 <span className="mt-1">DBS Bank (Singapore) - 249483079</span> <br />
