@@ -28,6 +28,10 @@ module.exports = {
         sorts: ['var(--font-sorts-mill)'],
         romantic: ['var(--font-romantic-lovely)'],
         trajan: ['var(--font-trajan-pro)'],
+        century: ['var(--font-century)'],
+        constantia: ['var(--font-constantia)'],
+        corben: ['var(--font-corben)'],
+        ovo: ['var(--font-ovo)'],
       }
     },
     keyframes: {

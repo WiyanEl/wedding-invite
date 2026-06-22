@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Upright, Figtree, IBM_Plex_Sans, Cinzel_Decorative, Outfit, Noto_Sans, Lora, Sorts_Mill_Goudy } from "next/font/google";
+import { Cormorant_Upright, Figtree, IBM_Plex_Sans, Cinzel_Decorative, Outfit, Noto_Sans, Lora, Sorts_Mill_Goudy, EB_Garamond, Corben, Ovo } from "next/font/google";
 import "./globals.css";
 import localFont from 'next/font/local'
 
@@ -160,6 +160,7 @@ export const romanticLovely = localFont({
   ],
   variable: '--font-romantic-lovely',
 })
+
 export const trajanPro = localFont({
   src: [
     {
@@ -169,6 +170,42 @@ export const trajanPro = localFont({
     },
   ],
   variable: '--font-trajan-pro',
+})
+
+export const century = localFont({
+  src: [
+    {
+      path: '../public/fonts/Century Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-century',
+})
+
+export const constantia = localFont({
+  src: [
+    {
+      path: '../public/fonts/constan.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-constantia',
+})
+
+const corben = Corben({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-corben",
+  display: "swap",
+})
+
+const ovo = Ovo({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-ovo",
+  display: "swap",
 })
 
 export const metadata: Metadata = {
@@ -202,6 +239,10 @@ export default function RootLayout({
         ${sortsMillGoudy.variable}
         ${romanticLovely.variable}
         ${trajanPro.variable}
+        ${century.variable}
+        ${constantia.variable}
+        ${corben.variable}
+        ${ovo.variable}
         `}
         >
         {children}
