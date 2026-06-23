@@ -9,6 +9,7 @@ import CountingDown from './CountingDown'
 import Location from './Location'
 import Gallery from './Gallery'
 import Dresscode from './Dresscode'
+import TravelGuard from './TravelGuard'
 import WeddingGift from './WeddingGift'
 import Wishes from './Wishes'
 import Footer from './Footer'
@@ -77,6 +78,7 @@ export default function Wrapper({ params }: { params: string }) {
       <Location isOpen={isOpen} isMobile={isMobile} />
       <Gallery isOpen={isOpen} isMobile={isMobile} />
       <Dresscode isOpen={isOpen} isMobile={isMobile} params={params} />
+      <TravelGuard isOpen={isOpen} isMobile={isMobile} />
       <WeddingGift isOpen={isOpen} isMobile={isMobile} />
       <Wishes isOpen={isOpen} isMobile={isMobile} />
       <Footer isOpen={isOpen} isMobile={isMobile} />

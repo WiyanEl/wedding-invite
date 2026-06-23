@@ -73,7 +73,7 @@ export default function Location({ isOpen, isMobile }: Props) {
         <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-location.png" alt="Picture of Tanaman Kanan Atas Location" width={176} height={164} className="absolute -top-[50px] right-0 w-[156px] animate" data-animate="fade-left" />
 
         <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-location.png" alt="Picture of Tanaman Bawah Kanan Location" width={263} height={509} className="absolute -bottom-[75px] right-0 w-[130px] animate" data-animate="fade-left" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-location.png" alt="Picture of Tanaman Bawah Kiri Location" width={263} height={509} className="absolute -bottom-[75px] left-0 w-[130px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-location.png" alt="Picture of Tanaman Bawah Kiri Location" width={263} height={509} className="absolute -bottom-[75px] left-0 w-[130px] animate" data-animate="fade-right" />
 
         {/* Gif */}
         <Image src="/images/steven-dan-bella/animasi-kupu-kupu-2.gif" alt="Animasi Kupu-kupu" width={42} height={42} className="absolute bottom-[310px] left-[33px] animate" data-animate="fade-right-butterfly" />
