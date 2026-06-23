@@ -72,12 +72,8 @@ export default function Location({ isOpen, isMobile }: Props) {
         <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-location.png" alt="Picture of Tanaman Kiri Atas Location" width={176} height={164} className="absolute -top-[50px] left-0 w-[156px] animate" data-animate="fade-right" />
         <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-location.png" alt="Picture of Tanaman Kanan Atas Location" width={176} height={164} className="absolute -top-[50px] right-0 w-[156px] animate" data-animate="fade-left" />
 
-        <Image src="/images/steven-dan-bella/img-tiang-kanan-bawah-location.png" alt="Picture of Tiang Bawah Kanan Location" width={190} height={467} className="absolute -bottom-[50px] right-0 w-[70px] animate" data-animate="fade-left" />
-        <Image src="/images/steven-dan-bella/img-teratai-kanan-bawah-location.png" alt="Picture of Teratai Bawah Kanan Location" width={210} height={154} className="absolute bottom-[85px] right-0 w-[135px] animate" data-animate="fade-left" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-location.png" alt="Picture of Tanaman Bawah Kanan Location" width={205} height={306} className="absolute -bottom-[75px] right-0 w-[130px] animate" data-animate="fade-left" />
-
-        <Image src="/images/steven-dan-bella/img-tiang-kiri-bawah-location.png" alt="Picture of Tiang Bawah kiri Location" width={190} height={467} className="absolute -bottom-[50px] left-0 w-[130px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-teratai-kiri-bawah-location.png" alt="Picture of Teratai Bawah kiri Location" width={210} height={154} className="absolute bottom-[85px] left-0 w-[135px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-location.png" alt="Picture of Tanaman Bawah Kanan Location" width={263} height={509} className="absolute -bottom-[75px] right-0 w-[130px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-location.png" alt="Picture of Tanaman Bawah Kiri Location" width={263} height={509} className="absolute -bottom-[75px] left-0 w-[130px] animate" data-animate="fade-left" />
 
         {/* Gif */}
         <Image src="/images/steven-dan-bella/animasi-kupu-kupu-2.gif" alt="Animasi Kupu-kupu" width={42} height={42} className="absolute bottom-[310px] left-[33px] animate" data-animate="fade-right-butterfly" />
