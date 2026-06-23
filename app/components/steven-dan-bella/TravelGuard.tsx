@@ -73,7 +73,7 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
                 </td>
               </tr>
               <tr>
-                <td colspan="2" className="text-left">
+                <td colSpan={2} className="text-left">
                   <p>
                     Note: Friday evening road traffic to Bandung is heavy. Whoosh avoids
                   </p>
@@ -127,7 +127,7 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
                 </td>
               </tr>
               <tr>
-                <td colspan="2" className="text-left">
+                <td colSpan={2} className="text-left">
                   <p>
                     Note: Not ideal for Friday night arrivals.
                   </p>
@@ -179,7 +179,7 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
                 </td>
               </tr>
               <tr>
-                <td colspan="2" className="text-left">
+                <td colSpan={2} className="text-left">
                   <p>
                     Note: A relaxed option — no Friday travel stress, shorter road leg than
                   </p>
