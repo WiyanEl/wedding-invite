@@ -9,7 +9,7 @@ type Props = {
   isMobile: boolean
 }
 
-export default function TravelGuard(params:type) {
+export default function TravelGuard({ isOpen, isMobile }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const travels = [
     {
