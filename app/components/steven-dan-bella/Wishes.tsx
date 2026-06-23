@@ -94,13 +94,13 @@ export default function Wishes({ isOpen, isMobile }: Props) {
     <>
       <section id="wishes" className="wishes wedding-gift relative z-10 w-full min-h-screen overflow-hidden">
         <div className="absolute inset-0 bg-[#7A86A114]" />
-        <div className="relative z-10 text-center h-full pt-[141px] pb-[173px] font-century text-[#3C475E] overflow-hidden">
+        <div className="relative z-10 text-center h-full pt-[171px] pb-[173px] font-century text-[#3C475E] overflow-hidden">
           <h2 className="font-constantia text-2xl font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">share your wishes</h2>
           <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={155} height={21} className="mx-auto mt-2 animate" data-animate="zoom-in" />
 
           {!seeAllMessages ? (
             <div className="relative text-center">
-              <form onSubmit={save} className="mx-auto mt-[47px] md:mt-[89px] animate zoom-in" data-animate="zoom-in">
+              <form onSubmit={save} className="mx-auto mt-[37px] md:mt-[89px] animate zoom-in" data-animate="zoom-in">
                 <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="block w-[284px] md:w-[564px] h-[30px] md:h-[40px] rounded-[15px] md:rounded-[64px] border-[0.49px] border-[#3C475E] bg-transparent px-[13px] md:px-[23px] py-1 text-[14px] md:text-lg leading-[140%] text-[#3C475E] placeholder:text-[#3C475E80] mx-auto" placeholder="Desy (Tester)" />
                 <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="block w-[284px] md:w-[564px] h-[106px] md:h-[261px] rounded-[15px] md:rounded-[20px] border-[0.49px] border-[#3C475E] bg-transparent px-[13px] md:px-[23px] py-1 text-[14px] md:text-lg leading-[140%] text-[#3C475E] mx-auto mt-4"></textarea>
                 <button type="submit" className="flex justify-center items-center w-[284px] md:w-[564px] h-[30px] md:h-[40px] bg-[#3C475E] rounded-[37px] border-[0.49px] border-[#3C475E] mx-auto mt-4">

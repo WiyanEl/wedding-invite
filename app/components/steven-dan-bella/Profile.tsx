@@ -18,16 +18,20 @@ export default function Profile({ isOpen, isMobile }: Props) {
           <p className="text-[14px] font-normal leading-[22px] animate" data-animate="zoom-in">We request the honour of your presence</p>
           <p className="text-[14px] font-normal leading-[22px] animate mt-0.5" data-animate="zoom-in">at the wedding of</p>
           <p className="text-[14px] font-normal leading-[22px] animate mt-0.5" data-animate="zoom-in">our beloved son and daughter</p>
-          <h3 className="font-constantia text-[30px] font-normal leading-none uppercase mt-[53px] animate" data-animate="zoom-in">steven theodorus dirjayanto</h3>
+
+          <h3 className="font-constantia text-[30px] font-normal leading-[114%] uppercase mt-[63px] animate" data-animate="zoom-in">steven theodorus dirjayanto</h3>
           <p className="font-ovo text-[13px] font-normal leading-[20px] mt-3 animate" data-animate="zoom-in">The Son of</p>
           <p className="text-[14px] font-normal leading-[24px] animate mt-2" data-animate="zoom-in">Mr. Julius Dirjayanto and</p>
           <p className="text-[14px] font-normal leading-[24px] animate mt-0.5" data-animate="zoom-in">Mrs. Jessica Efrata Gunawan Ho</p>
+
           <h3 className="font-corben text-[32px] font-normal leading-none uppercase mt-8 animate" data-animate="zoom-in">&</h3>
+
           <h3 className="font-constantia text-[30px] font-normal leading-none uppercase mt-8 animate" data-animate="zoom-in">bella anesia</h3>
           <p className="font-ovo text-[13px] font-normal leading-[20px] mt-3 animate" data-animate="zoom-in">The Daughter of</p>
           <p className="text-[14px] font-normal leading-[24px] animate mt-2" data-animate="zoom-in">Mr. Billy Ertanto and</p>
           <p className="text-[14px] font-normal leading-[24px] animate mt-0.5" data-animate="zoom-in">Mrs. Ennie Tan</p>
-          <p className="text-[14px] font-normal leading-[22px] animate mt-[48px]" data-animate="zoom-in">We would be honoured</p>
+
+          <p className="text-[14px] font-normal leading-[22px] animate mt-[58px]" data-animate="zoom-in">We would be honoured</p>
           <p className="text-[14px] font-normal leading-[22px] animate mt-0.5" data-animate="zoom-in">by your presence and blessing.</p>
         </div>
 

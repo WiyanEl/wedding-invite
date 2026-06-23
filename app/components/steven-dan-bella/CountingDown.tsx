@@ -47,7 +47,7 @@ export default function CountingDown({ isOpen, isMobile }: Props) {
 
   return (
     <>
-      <section id="counting-down" className="counting-down relative w-full min-h-min bg-[url('/images/steven-dan-bella/bg-counting-down-mobile.png')] bg-cover bg-no-repeat">
+      <section id="counting-down" className="counting-down relative w-full min-h-min bg-[url('/images/steven-dan-bella/bg-counting-down-mobile.png')] bg-[#BCAE9F] bg-blend-multiply bg-cover bg-no-repeat">
         <div className="relative h-full pt-[55px] pb-[52px] text-center font-century text-white">
           <h2 className="font-constantia text-[20px] font-medium leading-[18px] uppercase animate" data-animate="zoom-in">saturday, 17 october 2026</h2>
           <div className="flex gap-[10px] justify-center mt-[18px]">
@@ -64,7 +64,7 @@ export default function CountingDown({ isOpen, isMobile }: Props) {
 
 function TimeBox({ value, label }: { value: string; label: string }) {
   return (
-    <div className="flex flex-col gap-2 items-center w-[59px] h-[58px] rounded-[10px] bg-white shadow-[0.47px_1.89px_4.27px_0.94px_#00000026] pt-1.5 text-[#3C475E] animate" data-animate="zoom-in">
+    <div className="flex flex-col gap-1 items-center w-[59px] h-[58px] rounded-[10px] bg-white shadow-[0.47px_1.89px_4.27px_0.94px_#00000026] pt-1.5 text-[#3C475E] animate" data-animate="zoom-in">
       <p className="font-medium text-[28px] leading-[104%]">
         {value}
       </p>

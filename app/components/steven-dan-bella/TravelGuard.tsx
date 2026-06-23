@@ -205,7 +205,7 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
         <div className="relative z-10 text-center h-full pt-[90px] pb-[100px] font-century text-[#FFFFFF]">
           <h2 className="font-constantia text-2xl font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">wedding travel guard</h2>
           <h4 className="text-[14px] font-normal leading-[20px] uppercase mt-0.5 animate" data-animate="zoom-in">singapore → bandung</h4>
-          <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={155} height={21} className="mx-auto mt-[11px] animate" data-animate="zoom-in" />
+          <Image src="/images/steven-dan-bella/img-line-title-white.png" alt="Picture of Garis Bawah Judul" width={155} height={21} className="mx-auto mt-[11px] animate" data-animate="zoom-in" />
 
           <div className="grid gap-5 mt-[50px]">
             {travels.map((item, index) => (
