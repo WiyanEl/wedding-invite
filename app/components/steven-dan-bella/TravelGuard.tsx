@@ -23,7 +23,7 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
         <>
           <hr className="mt-[38px] mb-[37px] border-[#3C475E]" />
 
-          <table className="w-full text-[14px] font-normal leading-[18px]">
+          <table className="w-full text-[14px] md:text-xl font-normal leading-[18px] md:leading-[28px]">
             <tbody>
               <tr>
                 <td className="w-[5%] text-center align-top pb-5">1.</td>
@@ -99,7 +99,7 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
         <>
           <hr className="mt-[38px] mb-[37px] border-[#3C475E]" />
 
-          <table className="w-full text-[14px] font-normal leading-[18px]">
+          <table className="w-full text-[14px] md:text-xl font-normal leading-[18px] md:leading-[28px]">
             <tbody>
               <tr>
                 <td className="w-[5%] text-center align-top pb-5">1.</td>
@@ -154,7 +154,7 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
         <>
           <hr className="mt-[38px] mb-[37px] border-[#3C475E]" />
 
-          <table className="w-full text-[14px] font-normal leading-[18px]">
+          <table className="w-full text-[14px] md:text-xl font-normal leading-[18px] md:leading-[28px]">
             <tbody>
               <tr>
                 <td className="w-[5%] text-center align-top pb-5">1.</td>
@@ -202,21 +202,21 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
   return (
     <>
       <section id="travel-guard" className="travel-guard z-10 w-full min-h-min overflow-hidden bg-[#596686]">
-        <div className="relative z-10 text-center h-full pt-[90px] pb-[100px] font-century text-[#FFFFFF]">
-          <h2 className="font-constantia text-2xl font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">wedding travel guard</h2>
-          <h4 className="text-[14px] font-normal leading-[20px] uppercase mt-0.5 animate" data-animate="zoom-in">singapore → bandung</h4>
-          <Image src="/images/steven-dan-bella/img-line-title-white.png" alt="Picture of Garis Bawah Judul" width={155} height={21} className="mx-auto mt-[11px] animate" data-animate="zoom-in" />
+        <div className="relative z-10 text-center h-full pt-[90px] md:pt-[186px] pb-[100px] md:pb-[192px] font-century text-[#FFFFFF]">
+          <h2 className="font-constantia text-2xl md:text-[48px] font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">wedding travel guard</h2>
+          <h4 className="text-[14px] md:text-lg font-normal leading-[20px] uppercase mt-0.5 md:mt-1 animate" data-animate="zoom-in">singapore → bandung</h4>
+          <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={276} height={37} className="w-[155px] md:w-[276px] mx-auto mt-2 md:mt-4 animate" data-animate="zoom-in" />
 
           <div className="grid gap-5 mt-[50px]">
             {travels.map((item, index) => (
               <div
                 key={index}
-                className="w-[340px] bg-white rounded-[15px]
+                className="w-[340px] md:w-[678px] bg-white rounded-[15px]
                 shadow-[1.51px_3.01px_7.13px_1px_#00000026]
-                text-[#3C475E] py-[23px] px-6 mx-auto
+                text-[#3C475E] py-[23px] md:py-[40px] px-6 mx-auto
                 transition-all duration-300"
               >
-                <h6 className="text-lg leading-[20px]">
+                <h6 className="text-lg md:text-2xl leading-[20px]">
                   {item.title1}
                 </h6>
 
@@ -224,14 +224,14 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
                   {item.title2}
                 </h6>
 
-                <div className="mt-6 text-xs space-y-1">
+                <div className="mt-6 md:mt-8 text-xs md:text-lg space-y-1">
                   {item.summary.map((text, i) => (
                     <p key={i}>{text}</p>
                   ))}
                 </div>
 
-                <button onClick={() => toggleCard(index)} className={`${openIndex === index ? 'hidden' : 'block'} w-[94px] h-[30px] rounded-[5px] border border-[#3C475E] mx-auto mt-6 flex justify-center items-center`}>
-                  <span className="font-canela text-xs uppercase">
+                <button onClick={() => toggleCard(index)} className={`${openIndex === index ? 'hidden' : 'block'} w-[94px] md:w-[172px] h-[30px] md:h-[40px] rounded-[5px] md:rounded-[49px] border border-[#3C475E] mx-auto mt-6 md:mt-8 flex justify-center items-center`}>
+                  <span className="font-canela text-xs md:text-lg leading-[81%] uppercase">
                     Detail
                   </span>
                 </button>

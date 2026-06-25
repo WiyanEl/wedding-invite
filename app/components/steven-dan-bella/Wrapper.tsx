@@ -15,7 +15,7 @@ import Wishes from './Wishes'
 import Footer from './Footer'
 
 export default function Wrapper({ params }: { params: string }) {
-  const [isOpen, setIsOpen] = useState(true) // default true
+  const [isOpen, setIsOpen] = useState(false) // default true
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {

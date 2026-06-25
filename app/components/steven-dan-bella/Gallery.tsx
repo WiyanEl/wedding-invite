@@ -38,8 +38,8 @@ export default function Gallery({ isOpen, isMobile }: Props) {
   } else {
     images = [
       {
-        src: '/images/steven-dan-bella/img-gallery-1-mobile.png',
-        thumb: '/images/steven-dan-bella/img-gallery-1-mobile.png'
+        src: '/images/steven-dan-bella/img-gallery-1.png',
+        thumb: '/images/steven-dan-bella/img-gallery-1.png'
       }
     ]
   }
@@ -66,9 +66,9 @@ export default function Gallery({ isOpen, isMobile }: Props) {
                       <Image
                         src={img.src}
                         alt={`Gallery ${i}`}
-                        width={1512}
+                        width={1531}
                         height={945}
-                        className="w-[391px] h-[598] object-cover"
+                        className="w-[391px] md:w-full h-[598] md:h-[945px] object-cover"
                       />
                     </div>
                   </SwiperSlide>

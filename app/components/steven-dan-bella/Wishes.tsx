@@ -92,19 +92,19 @@ export default function Wishes({ isOpen, isMobile }: Props) {
 
   return (
     <>
-      <section id="wishes" className="wishes wedding-gift relative z-10 w-full min-h-screen overflow-hidden">
+      <section id="wishes" className="wishes wedding-gift relative z-10 w-full min-h-screen overflow-hidden md:bg-[#F2EFE8]">
         <div className="absolute inset-0 bg-[#7A86A114]" />
-        <div className="relative z-10 text-center h-full pt-[171px] pb-[173px] font-century text-[#3C475E] overflow-hidden">
-          <h2 className="font-constantia text-2xl font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">share your wishes</h2>
-          <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={155} height={21} className="mx-auto mt-2 animate" data-animate="zoom-in" />
+        <div className="relative z-10 text-center h-full pt-[171px] md:pt-[186px] pb-[173px] md:pb-[254px] font-century text-[#3C475E] overflow-hidden">
+          <h2 className="font-constantia text-2xl md:text-[48px] font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">share your wishes</h2>
+          <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={276} height={37} className="w-[155px] md:w-[276px] mx-auto mt-2 md:mt-4 animate" data-animate="zoom-in" />
 
           {!seeAllMessages ? (
             <div className="relative text-center">
-              <form onSubmit={save} className="mx-auto mt-[37px] md:mt-[89px] animate zoom-in" data-animate="zoom-in">
-                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="block w-[284px] md:w-[564px] h-[30px] md:h-[40px] rounded-[15px] md:rounded-[64px] border-[0.49px] border-[#3C475E] bg-transparent px-[13px] md:px-[23px] py-1 text-[14px] md:text-lg leading-[140%] text-[#3C475E] placeholder:text-[#3C475E80] mx-auto" placeholder="Desy (Tester)" />
-                <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="block w-[284px] md:w-[564px] h-[106px] md:h-[261px] rounded-[15px] md:rounded-[20px] border-[0.49px] border-[#3C475E] bg-transparent px-[13px] md:px-[23px] py-1 text-[14px] md:text-lg leading-[140%] text-[#3C475E] mx-auto mt-4"></textarea>
+              <form onSubmit={save} className="mx-auto mt-[37px] md:mt-[50px] animate zoom-in" data-animate="zoom-in">
+                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="block w-[284px] md:w-[564px] h-[30px] md:h-[40px] rounded-[15px] md:rounded-[64px] border-[1px] border-[#3C475E] bg-transparent px-[13px] md:px-[23px] py-1 text-[14px] md:text-lg leading-[140%] text-[#3C475E] placeholder:text-[#3C475E80] mx-auto" placeholder="Desy (Tester)" />
+                <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="block w-[284px] md:w-[564px] h-[106px] md:h-[261px] rounded-[15px] md:rounded-[20px] border-[1px] border-[#3C475E] bg-transparent px-[13px] md:px-[23px] py-1 text-[14px] md:text-lg leading-[140%] text-[#3C475E] mx-auto mt-4"></textarea>
                 <button type="submit" className="flex justify-center items-center w-[284px] md:w-[564px] h-[30px] md:h-[40px] bg-[#3C475E] rounded-[37px] border-[0.49px] border-[#3C475E] mx-auto mt-4">
-                  <Image src="/images/steven-dan-bella/icon-send.png" alt="Picture of Icon Send" width={15} height={19} className="mr-2" />
+                  <Image src="/images/steven-dan-bella/icon-send.png" alt="Picture of Icon Send" width={15} height={19} className="md:w-[24px] mr-2" />
                   <span className="text-[14px] md:text-lg text-white font-normal leading-[140%] uppercase">send</span>
                 </button>
               </form>
@@ -132,7 +132,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
                 </div>
               </div>
               <button type="button" onClick={() => setSeeAllMessages(true)} className="flex justify-center items-center w-[284px] md:w-[564px] h-[30px] md:h-[40px] bg-[#3C475E] rounded-[33px] border-[0.49px] border-[#3C475E] mx-auto mt-4 animate zoom-in" data-animate="zoom-in">
-                  <Image src="/images/steven-dan-bella/icon-message.png" alt="Picture of Icon Send" width={17} height={22} className="mr-2" />
+                  <Image src="/images/steven-dan-bella/icon-message.png" alt="Picture of Icon Send" width={17} height={22} className="md:w-[26px] mr-2" />
                   <span className="text-[14px] md:text-lg text-white font-normal leading-[140%] uppercase">see all message</span>
                 </button>
             </div>
@@ -201,15 +201,15 @@ export default function Wishes({ isOpen, isMobile }: Props) {
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-wishes.png" alt="Picture of Tanaman Kiri Atas Wishes" width={131} height={180} className="absolute top-0 left-0 w-[95px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-wishes.png" alt="Picture of Tanaman Kanan Atas Wishes" width={131} height={180} className="absolute top-0 right-0 w-[95px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-wishes.png" alt="Picture of Tanaman Kiri Atas Wishes" width={259} height={357} className="absolute top-0 left-0 w-[95px] md:w-[190px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-wishes.png" alt="Picture of Tanaman Kanan Atas Wishes" width={259} height={357} className="absolute top-0 right-0 w-[95px] md:w-[190px] animate" data-animate="fade-left" />
 
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-wishes.png" alt="Picture of Tanaman Kiri Bawah Wishes" width={246} height={313} className="absolute -bottom-[35px] left-0 w-[171px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-wishes.png" alt="Picture of Tanaman Kanan Bawah Wishes" width={246} height={313} className="absolute -bottom-[35px] right-0 w-[171px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-wishes.png" alt="Picture of Tanaman Kiri Bawah Wishes" width={457} height={581} className="absolute -bottom-[35px] md:-bottom-[60px] left-0 w-[171px] md:w-[271px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-wishes.png" alt="Picture of Tanaman Kanan Bawah Wishes" width={457} height={581} className="absolute -bottom-[35px] md:-bottom-[60px] right-0 w-[171px] md:w-[271px] animate" data-animate="fade-left" />
 
         {/* Gif */}
-        <Image src="/images/steven-dan-bella/animasi-kupu-kupu-1.gif" alt="Animasi Kupu-kupu" width={51} height={51} className="absolute bottom-[142px] left-[4px] animate" data-animate="fade-right-butterfly" />
-        <Image src="/images/steven-dan-bella/animasi-kupu-kupu-2.gif" alt="Animasi Kupu-kupu" width={42} height={42} className="absolute bottom-[85px] right-[64px] animate" data-animate="fade-left-butterfly" />
+        <Image src="/images/steven-dan-bella/animasi-kupu-kupu-1.gif" alt="Animasi Kupu-kupu" width={51} height={51} className="md:hidden absolute bottom-[142px] left-[4px] animate" data-animate="fade-right-butterfly" />
+        <Image src="/images/steven-dan-bella/animasi-kupu-kupu-2.gif" alt="Animasi Kupu-kupu" width={42} height={42} className="md:hidden absolute bottom-[85px] right-[64px] animate" data-animate="fade-left-butterfly" />
       </section>
     </>
   )

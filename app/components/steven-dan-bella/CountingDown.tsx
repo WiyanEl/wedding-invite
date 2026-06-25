@@ -47,10 +47,10 @@ export default function CountingDown({ isOpen, isMobile }: Props) {
 
   return (
     <>
-      <section id="counting-down" className="counting-down relative w-full min-h-min bg-[url('/images/steven-dan-bella/bg-counting-down-mobile.png')] bg-[#BCAE9F] bg-blend-multiply bg-cover bg-no-repeat">
-        <div className="relative h-full pt-[55px] pb-[52px] text-center font-century text-white">
-          <h2 className="font-constantia text-[20px] font-medium leading-[18px] uppercase animate" data-animate="zoom-in">saturday, 17 october 2026</h2>
-          <div className="flex gap-[10px] justify-center mt-[18px]">
+      <section id="counting-down" className="counting-down relative w-full min-h-min bg-[url('/images/steven-dan-bella/bg-counting-down-mobile.png')] md:bg-[url('/images/steven-dan-bella/bg-counting-down.png')] bg-[#BCAE9F] bg-blend-multiply bg-cover bg-no-repeat shadow-[0px_7.32px_23.44px_0px_#0000006E]">
+        <div className="relative h-full pt-[55px] md:pt-[49px] pb-[52px] md:pb-[53px] text-center font-century text-white">
+          <h2 className="font-constantia text-[20px] md:text-[38px] font-medium leading-[18px] md:leading-none md:tracking-[0.043em] uppercase animate" data-animate="zoom-in">saturday, 17 october 2026</h2>
+          <div className="flex gap-[10px] md:gap-[32px] justify-center mt-[18px] md:mt-[24px]">
             <TimeBox value={timeLeft.days} label="days" />
             <TimeBox value={timeLeft.hours} label="hours" />
             <TimeBox value={timeLeft.minutes} label="minutes" />
@@ -64,11 +64,11 @@ export default function CountingDown({ isOpen, isMobile }: Props) {
 
 function TimeBox({ value, label }: { value: string; label: string }) {
   return (
-    <div className="flex flex-col gap-1 items-center w-[59px] h-[58px] rounded-[10px] bg-white shadow-[0.47px_1.89px_4.27px_0.94px_#00000026] pt-1.5 text-[#3C475E] animate" data-animate="zoom-in">
-      <p className="font-medium text-[28px] leading-[104%]">
+    <div className="flex flex-col gap-1 md:gap-1.5 items-center w-[59px] md:w-[121px] h-[58px] md:h-[126px] rounded-[10px] md:rounded-[25px] bg-white shadow-[0.47px_1.89px_4.27px_0.94px_#00000026] pt-1.5 md:pt-3.5 text-[#3C475E] md:text-[#645353] animate" data-animate="zoom-in">
+      <p className="font-medium text-[28px] md:text-[62px] leading-[104%] md:leading-none md:tracking-[0.043em]">
         {value}
       </p>
-      <p className="font-medium text-[6px] leading-none capitalize">
+      <p className="font-medium text-[6px] md:text-lg leading-none md:tracking-[0.043em] capitalize">
         {label}
       </p>
     </div>

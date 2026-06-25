@@ -16,82 +16,83 @@ export default function Dresscode({ isOpen, isMobile, params }: Props) {
 
   return (
     <>
-      <section className="relative z-10 w-full min-h-screen overflow-hidden bg-[url('/images/steven-dan-bella/bg-dresscode-mobile.png')] bg-cover bg-top bg-no-repeat bg-fixed">
+      <section className="relative z-10 w-full min-h-screen overflow-hidden bg-[url('/images/steven-dan-bella/bg-dresscode-mobile.png')] md:bg-[url('/images/steven-dan-bella/bg-dresscode.png')] bg-cover bg-top bg-no-repeat bg-fixed">
         <div className="absolute inset-0 bg-[#7A86A114]" />
-        <div id="dresscode" className="relative z-10 text-center h-full pt-[148px] font-century text-[#3C475E] overflow-hidden">
-          <h2 className="font-constantia text-2xl font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">dress code</h2>
-          <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={155} height={21} className="mx-auto mt-2 animate" data-animate="zoom-in" />
+        <div id="dresscode" className="relative z-10 text-center h-full pt-[148px] md:pt-[180px] font-century text-[#3C475E] overflow-hidden">
+          <h2 className="font-constantia text-2xl md:text-[48px] font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">dress code</h2>
+          <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={276} height={37} className="w-[155px] md:w-[276px] mx-auto mt-2 md:mt-4 animate" data-animate="zoom-in" />
 
-          <p className="text-[14px] font-normal leading-[20px] mt-[49px] animate" data-animate="zoom-in">To complement our wedding theme,</p>
-          <p className="text-[14px] font-normal leading-[20px] mt-0.5 animate" data-animate="zoom-in">we kindly invite our guests</p>
-          <p className="text-[14px] font-normal leading-[20px] mt-0.5 animate" data-animate="zoom-in">to follow the attire guide below.</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[28px] mt-[49px] animate" data-animate="zoom-in">To complement our wedding theme,</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[28px] mt-0.5 animate" data-animate="zoom-in">we kindly invite our guests</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[28px] mt-0.5 animate" data-animate="zoom-in">to follow the attire guide below.</p>
 
           {/* <Image src="/images/steven-dan-bella/img-dresscode.png" alt="Picture of Dresscode" width={120} height={181} className="mx-auto mt-4 animate" data-animate="zoom-in" /> */}
 
-          <p className="text-[14px] font-normal leading-[25px] uppercase mt-5 animate" data-animate="zoom-in">formal attire</p>
-          <p className="text-[14px] font-normal leading-0.5 mt-2 animate" data-animate="zoom-in">Any Color Welcome</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[25px] md:leading-[20px] uppercase mt-14 animate" data-animate="zoom-in">formal attire</p>
+          <p className="text-[14px] md:text-xl font-normal leading-0.5 md:leading-[28px] mt-2 animate" data-animate="zoom-in">Any Color Welcome</p>
         </div>
-        <div id="reservation" className="relative z-10 text-center h-full pt-[106px] pb-[183px] font-century text-[#3C475E]">
-          <h2 className="font-constantia text-2xl font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">rsvp</h2>
-          <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={155} height={21} className="mx-auto mt-2 animate" data-animate="zoom-in" />
+        <div id="reservation" className="relative z-10 text-center h-full pt-[106px] md:pt-[205px] pb-[183px] md:pb-[239px] font-century text-[#3C475E]">
+          <h2 className="font-constantia text-2xl md:text-[48px] font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">rsvp</h2>
+          <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={276} height={37} className="w-[155px] md:w-[276px] mx-auto mt-2 md:mt-4 animate" data-animate="zoom-in" />
 
-          <p className="text-[14px] font-normal leading-[15px] mt-[49px] animate" data-animate="zoom-in">Dear,</p>
-          <p className="text-[14px] font-normal leading-[15px] mt-[26px] capitalize animate" data-animate="zoom-in">{params ?? '........'}</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[15px] mt-[49px] md:mt-[55px] animate" data-animate="zoom-in">Dear Mr. /Mrs. / Ms. md:text-xl</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[15px] mt-[26px] md:mt-[48px] capitalize animate" data-animate="zoom-in">{params ?? '........'}</p>
 
-          <p className="text-[14px] font-normal leading-[20px] mt-[24px] animate" data-animate="zoom-in">Kindly confirm your attendance before</p>
-          <p className="text-[14px] font-normal leading-[20px] mt-0.5 animate" data-animate="zoom-in">27 June 2026</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[26px] mt-[24px] md:mt-[48px] animate" data-animate="zoom-in">Kindly confirm your attendance before</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[26px] mt-0.5 animate" data-animate="zoom-in">27 June 2026</p>
 
-          <div className="flex justify-between w-[301px] mx-auto mt-[40px] animate" data-animate="zoom-in">
+          <div className="flex justify-between w-[301px] md:w-[470px] mx-auto mt-[40px] md:mt-[52px] animate" data-animate="zoom-in">
             <button type="button" onClick={() => {
               setAttendance('attend')
               setShowModal(true)
-              }} className={`w-[103px] h-[33px] rounded-[71px] flex justify-center items-center ${attendance == 'attend' ? 'bg-[#3C475E]' : 'bg-transparent border-[0.5px] border-[#3C475E]'}`}>
-                <span className={`text-[14px] font-normal leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-white' : 'text-[#3C475E]'}`}>attend</span>
+              }} className={`w-[103px] md:w-[223px] h-[33px] md:h-[40px] rounded-[71px] md:rounded-[38px] flex justify-center items-center ${attendance == 'attend' ? 'bg-[#3C475E]' : 'bg-transparent border-[0.5px] border-[#3C475E]'}`}>
+                <span className={`text-[14px] md:text-lg font-normal leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-white' : 'text-[#3C475E]'}`}>attend</span>
             </button>
             <button type="button" onClick={() => {
               setAttendance('not')
               setShowModal(true)
-              }} className={`w-[173px] h-[33px] rounded-[71px] flex justify-center items-center ${attendance == 'attend' ? 'bg-transparent border-[0.5px] border-[#3C475E]' : 'bg-[#3C475E]'}`}>
-                {isMobile ? (
-                  <span className={`text-[14px] font-normal leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[60564D]' : 'text-white'}`}>unable to attend</span>
-                ) : (
+              }} className={`w-[103px] md:w-[223px] h-[33px] md:h-[40px] rounded-[71px] md:rounded-[38px] flex justify-center items-center ${attendance == 'attend' ? 'bg-transparent border-[0.5px] border-[#3C475E]' : 'bg-[#3C475E]'}`}>
+                {/* {isMobile ? ( */}
+                  <span className={`text-[14px] md:text-lg font-normal leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[#3C475E]' : 'text-white'}`}>unable to attend</span>
+                {/* ) : (
                   <span className={`text-[14px] font-normal leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[60564D]' : 'text-white'}`}>not attend</span>
-                )}
+                )} */}
             </button>
           </div>
 
-          <p className="text-[14px] font-normal leading-[14.96px] mt-[37px] animate" data-animate="zoom-in">Confirm your selection?</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[14.96px] mt-[37px] md:mt-[42px] animate" data-animate="zoom-in">Confirm your selection?</p>
 
-          <div className="mt-[28px] animate" data-animate="zoom-in">
+          <div className="mt-[28px] md:mt-[43px] animate" data-animate="zoom-in">
             <button onClick={() => {
               setAttendance('not')
               setShowModal(true)
-            }} type="button" className="flex justify-center items-center w-[222px] h-[33px] rounded-[71px] bg-[#3C475E] mx-auto">
-              <span className="text-[14ox] font-normal leading-[14.96px] text-white uppercase">confirm not attend</span>
+            }} type="button" className="flex justify-center items-center w-[222px] md:w-[368px] h-[33px] md:h-[40px] rounded-[71px] md:rounded-[38px] bg-[#3C475E] mx-auto">
+              <span className="text-[14px] md:text-lg md font-normal leading-[14.96px] text-white uppercase">confirm not attend</span>
             </button>
           </div>
-          <p className="text-xs font-normal leading-[16px] mt-[54px] animate" data-animate="zoom-in">If you need assistance with your RSVP,</p>
-          <p className="text-xs font-normal leading-[16px] mt-0.5 animate" data-animate="zoom-in">please contact our support team.</p>
+          <p className="md:hidden text-xs font-normal leading-[16px] mt-[54px] animate" data-animate="zoom-in">If you need assistance with your RSVP,</p>
+          <p className="md:hidden text-xs font-normal leading-[16px] mt-0.5 animate" data-animate="zoom-in">please contact our support team.</p>
+          <p className="hidden md:block text-xl font-normal leading-[14.96px] mt-[80px] animate" data-animate="zoom-in">Having trouble with RSVP?</p>
 
-          <div className="mt-[33px] animate" data-animate="zoom-in">
-            <Link href="https://wa.me/6289671650843" target="_blank" className="flex justify-center items-center w-[160px] h-[33px] rounded-[55px] bg-[#12877B] mx-auto">
+          <div className="mt-[33px] md:mt-[45px] animate" data-animate="zoom-in">
+            <Link href="https://wa.me/6289671650843" target="_blank" className="flex justify-center items-center w-[160px] md:w-[212px] h-[33px] md:h-[40px] rounded-[55px] bg-[#12877B] mx-auto">
               <Image src="/images/steven-dan-bella/icon-whatsapp.png"  alt="Picture of Icon WhatsApp" width={16} height={16} className="mr-2" />
-              <span className="font-ovo text-[14px] font-normal leading-[14.96px] text-white uppercase">chat support</span>
+              <span className="font-ovo text-[14px] md:text-lg font-normal leading-[14.96px] md:leading-[26px] text-white uppercase">chat support</span>
             </Link>
           </div>
 
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-dresscode.png" alt="Picture of Tanaman Kiri Atas Dresscode" width={116} height={142} className="absolute top-0 left-0 w-[95px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-dresscode.png" alt="Picture of Tanaman Kanan Atas Dresscode" width={116} height={142} className="absolute top-0 right-0 w-[95px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-dresscode.png" alt="Picture of Tanaman Kiri Atas Dresscode" width={226} height={365} className="absolute top-0 left-0 w-[95px] md:w-[166px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-dresscode.png" alt="Picture of Tanaman Kanan Atas Dresscode" width={226} height={365} className="absolute top-0 right-0 w-[95px] md:w-[166px] animate" data-animate="fade-left" />
 
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-dresscode.png" alt="Picture of Tanaman Kiri Bawah Dresscode" width={181} height={203} className="absolute -bottom-[50px] left-0 w-[109px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-dresscode.png" alt="Picture of Tanaman Kanan Bawah Dresscode" width={181} height={203} className="absolute -bottom-[50px] right-0 w-[109px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-dresscode.png" alt="Picture of Tanaman Kiri Bawah Dresscode" width={415} height={465} className="absolute -bottom-[50px] md:-bottom-[90px] left-0 w-[109px] md:w-[240px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-dresscode.png" alt="Picture of Tanaman Kanan Bawah Dresscode" width={415} height={465} className="absolute -bottom-[50px] md:-bottom-[90px] right-0 w-[109px] md:w-[240px] animate" data-animate="fade-left" />
 
         {/* Gif */}
-        <Image src="/images/steven-dan-bella/animasi-kupu-kupu-2.gif" alt="Animasi Kupu-kupu" width={42} height={42} className="absolute bottom-[82px] left-[33px] animate" data-animate="fade-right-butterfly" />
-        <Image src="/images/steven-dan-bella/animasi-kupu-kupu-1.gif" alt="Animasi Kupu-kupu" width={51} height={51} className="absolute bottom-[39px] right-[64px] animate" data-animate="fade-left-butterfly" />
+        <Image src="/images/steven-dan-bella/animasi-kupu-kupu-2.gif" alt="Animasi Kupu-kupu" width={42} height={42} className="md:hidden absolute bottom-[82px] left-[33px] animate" data-animate="fade-right-butterfly" />
+        <Image src="/images/steven-dan-bella/animasi-kupu-kupu-1.gif" alt="Animasi Kupu-kupu" width={51} height={51} className="md:hidden absolute bottom-[39px] right-[64px] animate" data-animate="fade-left-butterfly" />
       </section>
 
 
