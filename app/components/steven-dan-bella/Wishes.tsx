@@ -208,8 +208,12 @@ export default function Wishes({ isOpen, isMobile }: Props) {
         <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-wishes.png" alt="Picture of Tanaman Kanan Bawah Wishes" width={457} height={581} className="absolute -bottom-[35px] md:-bottom-[60px] right-0 w-[171px] md:w-[271px] animate" data-animate="fade-left" />
 
         {/* Gif */}
-        <Image src="/images/steven-dan-bella/animasi-kupu-kupu-1.gif" alt="Animasi Kupu-kupu" width={51} height={51} className="md:hidden absolute bottom-[142px] left-[4px] animate" data-animate="fade-right-butterfly" />
-        <Image src="/images/steven-dan-bella/animasi-kupu-kupu-2.gif" alt="Animasi Kupu-kupu" width={42} height={42} className="md:hidden absolute bottom-[85px] right-[64px] animate" data-animate="fade-left-butterfly" />
+        <div className="md:hidden absolute bottom-[143px] left-[8px] -rotate-45">
+          <Image src="/images/steven-dan-bella/animasi-kupu-kupu-1.gif" alt="Animasi Kupu-kupu" width={51} height={51} className="animate" data-animate="fade-right-butterfly" />
+        </div>
+        <div className="md:hidden absolute bottom-[103px] right-[64px] -scale-x-100">
+          <Image src="/images/steven-dan-bella/animasi-kupu-kupu-2.gif" alt="Animasi Kupu-kupu" width={42} height={42} className="animate" data-animate="fade-left-butterfly" />
+        </div>
       </section>
     </>
   )

@@ -33,14 +33,22 @@ export default function Gallery({ isOpen, isMobile }: Props) {
       {
         src: '/images/steven-dan-bella/img-gallery-1-mobile.png',
         thumb: '/images/steven-dan-bella/img-gallery-1-mobile.png'
-      }
+      },
+      {
+        src: '/images/steven-dan-bella/img-gallery-1-mobile.png',
+        thumb: '/images/steven-dan-bella/img-gallery-1-mobile.png'
+      },
     ]
   } else {
     images = [
       {
         src: '/images/steven-dan-bella/img-gallery-1.png',
         thumb: '/images/steven-dan-bella/img-gallery-1.png'
-      }
+      },
+      {
+        src: '/images/steven-dan-bella/img-gallery-1.png',
+        thumb: '/images/steven-dan-bella/img-gallery-1.png'
+      },
     ]
   }
 

@@ -22,20 +22,20 @@ export default function Dresscode({ isOpen, isMobile, params }: Props) {
           <h2 className="font-constantia text-2xl md:text-[48px] font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">dress code</h2>
           <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={276} height={37} className="w-[155px] md:w-[276px] mx-auto mt-2 md:mt-4 animate" data-animate="zoom-in" />
 
-          <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[28px] mt-[49px] animate" data-animate="zoom-in">To complement our wedding theme,</p>
-          <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[28px] mt-0.5 animate" data-animate="zoom-in">we kindly invite our guests</p>
-          <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[28px] mt-0.5 animate" data-animate="zoom-in">to follow the attire guide below.</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[28px] mt-[49px] animate" data-animate="zoom-in">To support our wedding theme,</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[28px] mt-0.5 animate" data-animate="zoom-in">we request our guests to</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[28px] mt-0.5 animate" data-animate="zoom-in">dress as follow on our special day.</p>
 
           {/* <Image src="/images/steven-dan-bella/img-dresscode.png" alt="Picture of Dresscode" width={120} height={181} className="mx-auto mt-4 animate" data-animate="zoom-in" /> */}
 
           <p className="text-[14px] md:text-xl font-normal leading-[25px] md:leading-[20px] uppercase mt-14 animate" data-animate="zoom-in">formal attire</p>
-          <p className="text-[14px] md:text-xl font-normal leading-0.5 md:leading-[28px] mt-2 animate" data-animate="zoom-in">Any Color Welcome</p>
+          <p className="text-[14px] md:text-xl font-normal leading-0.5 md:leading-[28px] mt-2 animate" data-animate="zoom-in">Open Color Palette</p>
         </div>
         <div id="reservation" className="relative z-10 text-center h-full pt-[106px] md:pt-[205px] pb-[183px] md:pb-[239px] font-century text-[#3C475E]">
           <h2 className="font-constantia text-2xl md:text-[48px] font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">rsvp</h2>
           <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={276} height={37} className="w-[155px] md:w-[276px] mx-auto mt-2 md:mt-4 animate" data-animate="zoom-in" />
 
-          <p className="text-[14px] md:text-xl font-normal leading-[15px] mt-[49px] md:mt-[55px] animate" data-animate="zoom-in">Dear Mr. /Mrs. / Ms. md:text-xl</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[15px] mt-[49px] md:mt-[55px] animate" data-animate="zoom-in">Dear Mr. /Mrs. / Ms.</p>
           <p className="text-[14px] md:text-xl font-normal leading-[15px] mt-[26px] md:mt-[48px] capitalize animate" data-animate="zoom-in">{params ?? '........'}</p>
 
           <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[26px] mt-[24px] md:mt-[48px] animate" data-animate="zoom-in">Kindly confirm your attendance before</p>
@@ -51,7 +51,7 @@ export default function Dresscode({ isOpen, isMobile, params }: Props) {
             <button type="button" onClick={() => {
               setAttendance('not')
               setShowModal(true)
-              }} className={`w-[103px] md:w-[223px] h-[33px] md:h-[40px] rounded-[71px] md:rounded-[38px] flex justify-center items-center ${attendance == 'attend' ? 'bg-transparent border-[0.5px] border-[#3C475E]' : 'bg-[#3C475E]'}`}>
+              }} className={`w-[173px] md:w-[223px] h-[33px] md:h-[40px] rounded-[71px] md:rounded-[38px] flex justify-center items-center ${attendance == 'attend' ? 'bg-transparent border-[0.5px] border-[#3C475E]' : 'bg-[#3C475E]'}`}>
                 {/* {isMobile ? ( */}
                   <span className={`text-[14px] md:text-lg font-normal leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[#3C475E]' : 'text-white'}`}>unable to attend</span>
                 {/* ) : (
@@ -84,8 +84,8 @@ export default function Dresscode({ isOpen, isMobile, params }: Props) {
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-dresscode.png" alt="Picture of Tanaman Kiri Atas Dresscode" width={226} height={365} className="absolute top-0 left-0 w-[95px] md:w-[166px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-dresscode.png" alt="Picture of Tanaman Kanan Atas Dresscode" width={226} height={365} className="absolute top-0 right-0 w-[95px] md:w-[166px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-dresscode.png" alt="Picture of Tanaman Kiri Atas Dresscode" width={226} height={365} className="absolute top-0 left-0 md:-left-[20px] w-[95px] md:w-[166px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-dresscode.png" alt="Picture of Tanaman Kanan Atas Dresscode" width={226} height={365} className="absolute top-0 right-0 md:-right-[20px] w-[95px] md:w-[166px] animate" data-animate="fade-left" />
 
         <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-dresscode.png" alt="Picture of Tanaman Kiri Bawah Dresscode" width={415} height={465} className="absolute -bottom-[50px] md:-bottom-[90px] left-0 w-[109px] md:w-[240px] animate" data-animate="fade-right" />
         <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-dresscode.png" alt="Picture of Tanaman Kanan Bawah Dresscode" width={415} height={465} className="absolute -bottom-[50px] md:-bottom-[90px] right-0 w-[109px] md:w-[240px] animate" data-animate="fade-left" />
