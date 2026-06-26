@@ -201,11 +201,11 @@ export default function Wishes({ isOpen, isMobile }: Props) {
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-wishes.png" alt="Picture of Tanaman Kiri Atas Wishes" width={259} height={357} className="absolute top-0 left-0 w-[95px] md:w-[190px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-wishes.png" alt="Picture of Tanaman Kanan Atas Wishes" width={259} height={357} className="absolute top-0 right-0 w-[95px] md:w-[190px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-wishes-rev.png" alt="Picture of Tanaman Kiri Atas Wishes" width={259} height={357} className="absolute top-0 left-0 w-[95px] md:w-[170px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-wishes-rev.png" alt="Picture of Tanaman Kanan Atas Wishes" width={259} height={357} className="absolute top-0 right-0 w-[95px] md:w-[170px] animate" data-animate="fade-left" />
 
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-wishes.png" alt="Picture of Tanaman Kiri Bawah Wishes" width={457} height={581} className="absolute -bottom-[35px] md:-bottom-[60px] left-0 w-[171px] md:w-[271px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-wishes.png" alt="Picture of Tanaman Kanan Bawah Wishes" width={457} height={581} className="absolute -bottom-[35px] md:-bottom-[60px] right-0 w-[171px] md:w-[271px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-wishes-rev.png" alt="Picture of Tanaman Kiri Bawah Wishes" width={457} height={581} className="absolute -bottom-[35px] md:-bottom-[60px] left-0 w-[171px] md:w-[271px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-wishes-rev.png" alt="Picture of Tanaman Kanan Bawah Wishes" width={457} height={581} className="absolute -bottom-[35px] md:-bottom-[60px] right-0 w-[171px] md:w-[271px] animate" data-animate="fade-left" />
 
         {/* Gif */}
         <div className="md:hidden absolute bottom-[143px] left-[8px] -rotate-45">

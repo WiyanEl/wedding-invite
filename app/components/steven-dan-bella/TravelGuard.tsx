@@ -16,8 +16,8 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
       title1: "Flight to Jakarta (CGK) +",
       title2: "Whoosh Train",
       summary: [
-        "Best for Friday arrivals",
-        "Total ~5-6 hrs"
+        "Best for:",
+        "Friday arrivals | Total: ~5-6 hrs"
       ],
       details: (
         <>
@@ -92,8 +92,8 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
       title1: "Flight to Jakarta (CGK) +",
       title2: "Car to Bandung",
       summary: [
-        "Best for Saturday morning travel",
-        "Total ~6 hrs"
+        "Best for:",
+        "Saturday morning travel | Total: ~6 hrs"
       ],
       details: (
         <>
@@ -146,9 +146,9 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
       title1: "Flight to Kertajati (KJT) +",
       title2: "Car to Bandung",
       summary: [
-        "Best for Saturday arrivals",
-        "Prefer not to travel on Friday",
-        "Total ~4-5 hrs"
+        "Best for:",
+        "Saturday arrivals, prefer not to travel on Friday |",
+        "Total: ~4-5 hrs"
       ],
       details: (
         <>
@@ -211,7 +211,7 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
             {travels.map((item, index) => (
               <div
                 key={index}
-                className="w-[340px] md:w-[678px] bg-white rounded-[15px]
+                className="w-[340px] md:w-[572px] bg-white rounded-[15px]
                 shadow-[1.51px_3.01px_7.13px_1px_#00000026]
                 text-[#3C475E] py-[23px] md:py-[40px] px-6 mx-auto
                 transition-all duration-300"
@@ -236,9 +236,9 @@ export default function TravelGuard({ isOpen, isMobile }: Props) {
                   </span>
                 </button>
 
-                <div className={`overflow-hidden transition-all duration-500 px-[8px] md:px-[43px] ${
+                <div className={`overflow-hidden transition-all duration-500 px-[8px] md:px-[23px] text-justify ${
                     openIndex === index
-                      ? "max-h-[600px] opacity-100 mt-6"
+                      ? "max-h-min opacity-100 mt-6"
                       : "max-h-0 opacity-0"
                   }`}
                 >

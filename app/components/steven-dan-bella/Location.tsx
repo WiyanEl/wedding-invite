@@ -62,8 +62,8 @@ export default function Location({ isOpen, isMobile }: Props) {
         <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-location.png" alt="Picture of Tanaman Kiri Atas Location" width={435} height={406} className="absolute -top-[50px] md:-top-[75px] left-0 w-[156px] md:w-[306px] animate" data-animate="fade-right" />
         <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-location.png" alt="Picture of Tanaman Kanan Atas Location" width={435} height={406} className="absolute -top-[50px] md:-top-[75px] right-0 w-[156px] md:w-[306px] animate" data-animate="fade-left" />
 
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-location.png" alt="Picture of Tanaman Bawah Kanan Location" width={506} height={1041} className="absolute -bottom-[75px] md:-bottom-[150px] right-0 w-[130px] md:w-[263px] animate" data-animate="fade-left" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-location.png" alt="Picture of Tanaman Bawah Kiri Location" width={506} height={1041} className="absolute -bottom-[75px] md:-bottom-[150px] left-0 w-[130px] md:w-[263px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-location-rev-1.png" alt="Picture of Tanaman Bawah Kanan Location" width={506} height={1041} className="absolute -bottom-[75px] md:-bottom-[150px] right-0 w-[130px] md:w-[263px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-location-rev.png" alt="Picture of Tanaman Bawah Kiri Location" width={506} height={1041} className="absolute -bottom-[75px] md:-bottom-[150px] left-0 w-[130px] md:w-[263px] animate" data-animate="fade-right" />
 
         {/* Gif */}
         <Image src="/images/steven-dan-bella/animasi-kupu-kupu-2.gif" alt="Animasi Kupu-kupu" width={145} height={145} className="w-[42px] md:w-[105px] h-[42px] md:h-[105px] absolute bottom-[260px] md:bottom-[550px] left-[33px] md:left-[73px] animate" data-animate="fade-right-butterfly" />
