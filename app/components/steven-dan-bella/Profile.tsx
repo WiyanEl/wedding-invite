@@ -41,8 +41,8 @@ export default function Profile({ isOpen, isMobile }: Props) {
         <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-profile.png" alt="Picture of Tanaman Kiri Atas Profile" width={328} height={277} className="absolute top-0 left-0 w-[115px] md:w-[228px] animate" data-animate="fade-right" />
         <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-profile.png" alt="Picture of Tanaman Kanan Atas Profile" width={328} height={277} className="absolute top-0 right-0 w-[115px] md:w-[228px] animate" data-animate="fade-left" />
 
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-profile-rev-1.png" alt="Picture of Tanaman Kiri Bawah Profile" width={521} height={711} className="absolute -bottom-[75px] md:-bottom-[150px] -left-[15px] w-[150px] md:w-[281px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-profile-rev-1.png" alt="Picture of Tanaman Kanan Bawah Profile" width={521} height={711} className="absolute -bottom-[75px] md:-bottom-[150px] -right-[15px] w-[150px] md:w-[281px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-profile-rev-2.png" alt="Picture of Tanaman Kiri Bawah Profile" width={521} height={711} className="absolute -bottom-[75px] md:-bottom-[150px] -left-[15px] w-[150px] md:w-[281px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-profile-rev-2.png" alt="Picture of Tanaman Kanan Bawah Profile" width={521} height={711} className="absolute -bottom-[75px] md:-bottom-[150px] -right-[15px] w-[150px] md:w-[281px] animate" data-animate="fade-left" />
 
         {/* Gif */}
         <div className="md:hidden absolute bottom-[113px] left-[34px] -rotate-90">

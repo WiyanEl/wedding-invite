@@ -120,7 +120,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
                         key={i}
                         className="w-full pb-[13px] border-b-[0.49px] border-b-white text-left text-white mb-[7px]"
                       >
-                        <p className="font-normal md:font-bold text-[14px] md:text-lg leading-[140%]">
+                        <p className="font-normal text-[14px] md:text-lg leading-[140%]">
                           {wish.name}
                         </p>
                         <p className="font-normal text-[14px] md:text-lg leading-[140%] mt-[7px]">
@@ -201,11 +201,11 @@ export default function Wishes({ isOpen, isMobile }: Props) {
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-wishes-rev.png" alt="Picture of Tanaman Kiri Atas Wishes" width={259} height={357} className="absolute top-0 left-0 w-[95px] md:w-[170px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-wishes-rev.png" alt="Picture of Tanaman Kanan Atas Wishes" width={259} height={357} className="absolute top-0 right-0 w-[95px] md:w-[170px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-wishes-rev-1.png" alt="Picture of Tanaman Kiri Atas Wishes" width={259} height={357} className="absolute top-0 left-0 w-[95px] md:w-[170px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-wishes-rev-1.png" alt="Picture of Tanaman Kanan Atas Wishes" width={259} height={357} className="absolute top-0 right-0 w-[95px] md:w-[170px] animate" data-animate="fade-left" />
 
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-wishes-rev.png" alt="Picture of Tanaman Kiri Bawah Wishes" width={457} height={581} className="absolute -bottom-[35px] md:-bottom-[60px] left-0 w-[171px] md:w-[271px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-wishes-rev.png" alt="Picture of Tanaman Kanan Bawah Wishes" width={457} height={581} className="absolute -bottom-[35px] md:-bottom-[60px] right-0 w-[171px] md:w-[271px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-wishes-rev-1.png" alt="Picture of Tanaman Kiri Bawah Wishes" width={457} height={581} className="absolute -bottom-[35px] md:-bottom-[60px] left-0 w-[171px] md:w-[271px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-wishes-rev-1.png" alt="Picture of Tanaman Kanan Bawah Wishes" width={457} height={581} className="absolute -bottom-[35px] md:-bottom-[60px] right-0 w-[171px] md:w-[271px] animate" data-animate="fade-left" />
 
         {/* Gif */}
         <div className="md:hidden absolute bottom-[143px] left-[8px] -rotate-45">
