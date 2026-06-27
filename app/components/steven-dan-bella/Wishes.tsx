@@ -60,6 +60,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
     item.message.toLowerCase().includes(search.toLowerCase())
   )
   const [selectedWish, setSelectedWish] = useState<Wish | null>(null)
+  const [showModal, setShowModal] = useState(false)
 
   useEffect(() => {
     const saved = localStorage.getItem('wishes')
@@ -88,6 +89,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
 
     setName('')
     setMessage('')
+    setShowModal(true)
   }
 
   return (
@@ -215,6 +217,39 @@ export default function Wishes({ isOpen, isMobile }: Props) {
           <Image src="/images/steven-dan-bella/animasi-kupu-kupu-2.gif" alt="Animasi Kupu-kupu" width={42} height={42} className="animate" data-animate="fade-left-butterfly" />
         </div>
       </section>
+
+      {/* Modal Notification */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          {/* Overlay */}
+          <div
+            className="absolute inset-0 bg-[#E9E9E9A8] backdrop-blur-[6.8px]"
+            onClick={() => setShowModal(false)}
+          />
+
+          {/* Modal */}
+          <div className="relative z-10 w-[330px] rounded-2xl bg-[#FAF8F5] px-8 py-10 shadow-2xl animate-scale-in font-century">
+            <h2 className="text-center text-[14px] md:text-lg leading-none font-semibold text-[#4D3F37]">
+              Pesan Terkirim !
+            </h2>
+
+            <div className="mx-auto mt-4 h-px w-10 bg-[#DDD4CB]" />
+            <p className="mt-4 text-center text-[14px] md:text-lg leading-[16px] text-[#5E554E]">
+              Terima kasih atas doa dan ucapan baik Anda. Kami sangat menghargai
+              pesan yang telah diberikan.
+            </p>
+
+            <div className="mt-5 flex justify-center">
+              <button
+                onClick={() => setShowModal(false)}
+                className="w-[103px] md:w-[223px] h-[33px] md:h-[40px] rounded-full bg-[#E8E5E1] text-[14px] md:text-lg font-medium text-[#666] transition hover:bg-[#dcd8d4]"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   )
 }

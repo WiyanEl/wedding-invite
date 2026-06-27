@@ -24,7 +24,7 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
                 <div className="relative w-full pt-[25px] md:pt-[26px] pb-[40px] rounded-bl-[15px] md:rounded-bl-[20px] rounded-br-[15px] md:rounded-br-[20px] font-century text-[#3C475E] text-center bg-[#F6F6F4] md:bg-white">
                   <h6 className="text-xs md:text-[14px] font-normal leading-none tracking-[15%] md:tracking-normal uppercase">the wedding of</h6>
                   <h2 className="font-constantia text-[28px] md:text-[36px] leading-none font-normal mt-2">Steven & Bella</h2>
-                  <h6 className="text-[10px] md:text-[14px] font-medium leading-[25px] md:leading-[31px] mt-3">Dear Mr. /Mrs. / Ms.</h6>
+                  <h6 className="text-[10px] md:text-[14px] font-medium leading-[25px] md:leading-[31px] mt-3">Dear,</h6>
                   <h6 className="text-xs md:text-lg font-medium leading-[25px] md:leading-[31px] capitalize">{params ?? '.......'}</h6>
                   <p className="text-[8px] md:text-xs font-medium leading-[13px] md:leading-[16px] mt-[9px] md:mt-[20px]">We sincerely apologize</p>
                   <p className="text-[8px] md:text-xs font-medium leading-[13px] md:leading-[16px]">for any misspelling of names or titles.</p>
