@@ -35,7 +35,7 @@ export default function Dresscode({ isOpen, isMobile, params }: Props) {
           <h2 className="font-constantia text-2xl md:text-[48px] font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">rsvp</h2>
           <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={276} height={37} className="w-[155px] md:w-[276px] mx-auto mt-2 md:mt-4 animate" data-animate="zoom-in" />
 
-          <p className="text-[14px] md:text-xl font-normal leading-[15px] mt-[49px] md:mt-[55px] animate" data-animate="zoom-in">Dear Mr. /Mrs. / Ms.</p>
+          <p className="text-[14px] md:text-xl font-normal leading-[15px] mt-[49px] md:mt-[55px] animate" data-animate="zoom-in">Dear,</p>
           <p className="text-[14px] md:text-xl font-normal leading-[15px] mt-[26px] md:mt-[48px] capitalize animate" data-animate="zoom-in">{params ?? '........'}</p>
 
           <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[26px] mt-[24px] md:mt-[48px] animate" data-animate="zoom-in">Kindly confirm your attendance before</p>
