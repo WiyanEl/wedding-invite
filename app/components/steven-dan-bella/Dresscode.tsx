@@ -18,7 +18,7 @@ export default function Dresscode({ isOpen, isMobile, params }: Props) {
     <>
       <section className="relative z-10 w-full min-h-screen overflow-hidden bg-[url('/images/steven-dan-bella/bg-dresscode-mobile.png')] md:bg-[url('/images/steven-dan-bella/bg-dresscode.png')] bg-cover bg-top bg-no-repeat bg-fixed">
         <div className="absolute inset-0 bg-[#7A86A114]" />
-        <div id="dresscode" className="relative z-10 text-center h-full pt-[148px] md:pt-[180px] font-century text-[#3C475E] overflow-hidden">
+        {/* <div id="dresscode" className="relative z-10 text-center h-full pt-[148px] md:pt-[180px] font-century text-[#3C475E] overflow-hidden">
           <h2 className="font-constantia text-2xl md:text-[48px] font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">dress code</h2>
           <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={276} height={37} className="w-[155px] md:w-[276px] mx-auto mt-2 md:mt-4 animate" data-animate="zoom-in" />
 
@@ -26,11 +26,9 @@ export default function Dresscode({ isOpen, isMobile, params }: Props) {
           <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[28px] mt-0.5 animate" data-animate="zoom-in">we request our guests to</p>
           <p className="text-[14px] md:text-xl font-normal leading-[20px] md:leading-[28px] mt-0.5 animate" data-animate="zoom-in">dress as follow on our special day.</p>
 
-          {/* <Image src="/images/steven-dan-bella/img-dresscode.png" alt="Picture of Dresscode" width={120} height={181} className="mx-auto mt-4 animate" data-animate="zoom-in" /> */}
-
           <p className="text-[14px] md:text-xl font-normal leading-[25px] md:leading-[20px] uppercase mt-14 animate" data-animate="zoom-in">formal attire</p>
           <p className="text-[14px] md:text-xl font-normal leading-0.5 md:leading-[28px] mt-2 animate" data-animate="zoom-in">Open Color Palette</p>
-        </div>
+        </div> */}
         <div id="reservation" className="relative z-10 text-center h-full pt-[106px] md:pt-[205px] pb-[183px] md:pb-[239px] font-century text-[#3C475E]">
           <h2 className="font-constantia text-2xl md:text-[48px] font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">rsvp</h2>
           <Image src="/images/steven-dan-bella/img-line-title.png" alt="Picture of Garis Bawah Judul" width={276} height={37} className="w-[155px] md:w-[276px] mx-auto mt-2 md:mt-4 animate" data-animate="zoom-in" />
