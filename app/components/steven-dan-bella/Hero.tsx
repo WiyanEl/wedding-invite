@@ -13,7 +13,7 @@ type HeroProps = {
 export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps) {
   return (
     <>
-      <section id="hero" className="relative z-20 hero w-full h-screen bg-bottom md:bg-[center_40%] bg-cover bg-no-repeat bg-[url('/images/steven-dan-bella/bg-hero-mobile.png')] md:bg-[url('/images/steven-dan-bella/bg-hero.png')]">
+      <section id="hero" className="relative z-20 hero w-full h-screen bg-top md:bg-[center_40%] bg-cover bg-no-repeat bg-[url('/images/steven-dan-bella/bg-hero-mobile.png')] md:bg-[url('/images/steven-dan-bella/bg-hero.png')]">
 
         {!isOpen && (
           <div className="fixed inset-0 z-50">
@@ -41,8 +41,8 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           <div className="absolute top-0 left-0 w-full h-[284px] md:h-[442px] bg-[linear-gradient(180deg,_#7986A1_0%,_rgba(121,134,161,0)_100%)]" />
           <div className="relative z-10">
             <h6 className={`text-[14px] md:text-2xl font-normal leading-none tracking-[0.15em] ${isOpen ? 'zoom-in' : ''}`}>The Wedding of</h6>
-            <h2 className={`font-constantia text-[48px] md:text-[72px] leading-none font-normal mt-4 md:mt-6 ${isOpen ? 'zoom-in' : ''}`}>Steven & Bella</h2>
-            <h6 className={`text-[14px] md:text-2xl font-normal leading-none mt-5 md:mt-6 ${isOpen ? 'zoom-in' : ''}`}>17.10.26</h6>
+            <h2 className={`font-constantia text-[48px] md:text-[72px] leading-none font-normal mt-3 md:mt-6 ${isOpen ? 'zoom-in' : ''}`}>Steven & Bella</h2>
+            <h6 className={`text-[14px] md:text-2xl font-normal leading-none mt-4 md:mt-6 ${isOpen ? 'zoom-in' : ''}`}>17.10.26</h6>
           </div>
         </div>
 

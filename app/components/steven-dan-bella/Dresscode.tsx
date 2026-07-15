@@ -82,8 +82,10 @@ export default function Dresscode({ isOpen, isMobile, params }: Props) {
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-dresscode-rev.png" alt="Picture of Tanaman Kiri Atas Dresscode" width={226} height={365} className="absolute top-0 left-0 w-[95px] md:w-[166px] animate" data-animate="fade-right" />
-        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-dresscode-rev.png" alt="Picture of Tanaman Kanan Atas Dresscode" width={226} height={365} className="absolute top-0 right-0 w-[95px] md:w-[166px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-dresscode-rev.png" alt="Picture of Tanaman Kiri Atas Dresscode" width={226} height={365} className="hidden md:block absolute top-0 -left-[10px] w-[95px] md:w-[166px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-dresscode-rev.png" alt="Picture of Tanaman Kanan Atas Dresscode" width={226} height={365} className="hidden md:block absolute top-0 -right-[10px] w-[95px] md:w-[166px] animate" data-animate="fade-left" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kiri-atas-dresscode-mobile.png" alt="Picture of Tanaman Kiri Atas Dresscode" width={226} height={365} className="md:hidden absolute top-0 left-0 w-[95px] md:w-[166px] animate" data-animate="fade-right" />
+        <Image src="/images/steven-dan-bella/img-tanaman-kanan-atas-dresscode-mobile.png" alt="Picture of Tanaman Kanan Atas Dresscode" width={226} height={365} className="md:hidden absolute top-0 right-0 w-[95px] md:w-[166px] animate" data-animate="fade-left" />
 
         <Image src="/images/steven-dan-bella/img-tanaman-kiri-bawah-dresscode.png" alt="Picture of Tanaman Kiri Bawah Dresscode" width={415} height={465} className="absolute -bottom-[50px] md:-bottom-[90px] left-0 w-[109px] md:w-[240px] animate" data-animate="fade-right" />
         <Image src="/images/steven-dan-bella/img-tanaman-kanan-bawah-dresscode.png" alt="Picture of Tanaman Kanan Bawah Dresscode" width={415} height={465} className="absolute -bottom-[50px] md:-bottom-[90px] right-0 w-[109px] md:w-[240px] animate" data-animate="fade-left" />
