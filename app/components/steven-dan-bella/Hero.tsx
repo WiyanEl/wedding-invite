@@ -13,7 +13,7 @@ type HeroProps = {
 export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps) {
   return (
     <>
-      <section id="hero" className="relative z-20 hero w-full h-screen bg-bottom md:bg-[center_40%] bg-cover bg-no-repeat bg-[url('/images/steven-dan-bella/bg-hero-mobile.png')] md:bg-[url('/images/steven-dan-bella/bg-hero-mobile.png')]">
+      <section id="hero" className="relative z-20 hero w-full h-screen bg-bottom md:bg-[center_40%] bg-cover bg-no-repeat bg-[url('/images/steven-dan-bella/bg-hero-mobile.png')] md:bg-[url('/images/steven-dan-bella/bg-hero.png')]">
 
         {!isOpen && (
           <div className="fixed inset-0 z-50">
@@ -37,8 +37,8 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           </div>
         )}
 
-        <div className="relative text-center font-century text-white pt-[120px] md:pt-[134px] h-full">
-          <div className="absolute top-0 left-0 w-full h-[372px] md:h-[442px] bg-[linear-gradient(180deg,_#7986A1_0%,_rgba(121,134,161,0)_100%)]" />
+        <div className="relative text-center font-century text-white pt-[88px] md:pt-[134px] h-full">
+          <div className="absolute top-0 left-0 w-full h-[284px] md:h-[442px] bg-[linear-gradient(180deg,_#7986A1_0%,_rgba(121,134,161,0)_100%)]" />
           <div className="relative z-10">
             <h6 className={`text-[14px] md:text-2xl font-normal leading-none tracking-[0.15em] ${isOpen ? 'zoom-in' : ''}`}>The Wedding of</h6>
             <h2 className={`font-constantia text-[48px] md:text-[72px] leading-none font-normal mt-4 md:mt-6 ${isOpen ? 'zoom-in' : ''}`}>Steven & Bella</h2>

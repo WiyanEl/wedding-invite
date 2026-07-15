@@ -16,7 +16,7 @@ export default function Dresscode({ isOpen, isMobile, params }: Props) {
 
   return (
     <>
-      <section className="relative z-10 w-full min-h-screen overflow-hidden bg-[url('/images/steven-dan-bella/bg-dresscode-mobile.png')] md:bg-[url('/images/steven-dan-bella/bg-dresscode.png')] bg-cover bg-top bg-no-repeat bg-fixed">
+      <section className="relative z-10 w-full min-h-screen overflow-hidden bg-[url('/images/steven-dan-bella/bg-dresscode-mobile.png')] md:bg-[url('/images/steven-dan-bella/bg-dresscode.png')] bg-cover bg-center bg-no-repeat bg-fixed">
         <div className="absolute inset-0 bg-[#7A86A114]" />
         {/* <div id="dresscode" className="relative z-10 text-center h-full pt-[148px] md:pt-[180px] font-century text-[#3C475E] overflow-hidden">
           <h2 className="font-constantia text-2xl md:text-[48px] font-normal leading-[111.00000000000001%] uppercase animate" data-animate="zoom-in">dress code</h2>

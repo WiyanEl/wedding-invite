@@ -92,12 +92,12 @@ export default function Header({ isOpen }: {isOpen: boolean}) {
                     <span className="text-xs md:text-lg leading-none font-medium">gallery</span>
                   </Link>
                 </div>
-                <div className="overflow-hidden min-h-min mt-2.5">
+                {/* <div className="overflow-hidden min-h-min mt-2.5">
                   <Link href="#dresscode" className="flex items-center gap-1 relative left-[-18px] md:left-[-25px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.45s' }}>
                     <img src="/images/josiah-dan-stevie/arrow-right.png" className="w-[15px] md:w-[20px]" alt="" />
                     <span className="text-xs md:text-lg leading-none font-medium">dress code</span>
                   </Link>
-                </div>
+                </div> */}
                 <div className="overflow-hidden min-h-min mt-2.5">
                   <Link href="#reservation" className="flex items-center gap-1 relative left-[-18px] md:left-[-25px] hover:left-0 transition-all duration-300 uppercase opacity-0 animate-item-menu-in" onClick={handleScrollDown} style={{ animationDelay: '0.45s' }}>
                     <img src="/images/josiah-dan-stevie/arrow-right.png" className="w-[15px] md:w-[20px]" alt="" />

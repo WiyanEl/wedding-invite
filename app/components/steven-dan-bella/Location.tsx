@@ -28,33 +28,33 @@ export default function Location({ isOpen, isMobile }: Props) {
 
           <h6 className="text-base md:text-2xl font-normal leading-[18px] md:leading-[25px] mt-[17px] md:mt-[18px] animate" data-animate="zoom-in">GRII Bandung</h6>
           <h6 className="text-base md:text-2xl font-normal leading-[18px] md:leading-[25px] mt-2 md:mt-3 animate" data-animate="zoom-in">Jl. Moch. Toha No.229, Bandung</h6>
-          <Link href="https://maps.app.goo.gl/R7LDN6J6yBN5Fd6v8" target="_blank" className="inline-block font-ovo text-[13px] md:text-lg leading-[17.16px] underline underline-offset-2 mt-[11px] md:mt-[47px] animate" data-animate="zoom-in">
+          <Link href="https://maps.app.goo.gl/R7LDN6J6yBN5Fd6v8" target="_blank" className="inline-block font-ovo text-[13px] md:text-lg leading-[17.16px] underline underline-offset-2 mt-5 md:mt-[47px] animate" data-animate="zoom-in">
             Google Maps
           </Link>
 
-          <Image src="/images/steven-dan-bella/img-flower-tea-ceremony.png" alt="Picture of Holy Matrimony" width={292} height={365} className="w-[138px] h-[90px] md:w-[292px] md:h-[365px] mx-auto mt-[46px] md:mt-6 animate" data-animate="zoom-in" />
+          <Image src="/images/steven-dan-bella/img-flower-tea-ceremony.png" alt="Picture of Holy Matrimony" width={201} height={132} className="w-[138px] h-[90px] md:w-[201px] md:h-[132px] mx-auto mt-[46px] md:mt-[67px] animate" data-animate="zoom-in" />
 
           <h3 className="text-base md:text-2xl font-bold leading-[18px] md:leading-[18px] uppercase mt-[44px] md:mt-[62px] animate" data-animate="zoom-in">tea ceremony</h3>
-          <h6 className="text-base md:text-xl font-normal leading-[18px] md:leading-[18px] uppercase mt-[27px] md:mt-[36px] animate" data-animate="zoom-in">15.00 pm</h6>
+          <h6 className="text-base md:text-xl font-normal leading-[18px] md:leading-[18px] uppercase mt-[27px] md:mt-[36px] animate" data-animate="zoom-in">16.00 pm</h6>
           <h6 className="text-base md:text-2xl font-normal leading-[18px] md:leading-[18px] uppercase mt-6 md:mt-[36px] animate" data-animate="zoom-in">at Janu Chapel</h6>
 
           <Image src="/images/steven-dan-bella/img-dot.png" alt="Picture of Titik Hitam" width={15} height={15} className="w-[15px] md:w-[15px] mx-auto mt-[44px] md:mt-[63px] animate" data-animate="zoom-in" />
 
-          <h3 className="text-base md:text-2xl font-bold leading-[18px] uppercase mt-[44px] md:mt-[63px] animate" data-animate="zoom-in">afternoon tea & <br /> dinner reception</h3>
-          <h6 className="text-base md:text-xl font-normal leading-[18px] uppercase mt-[27px] md:mt-[36px] animate" data-animate="zoom-in">16.30 pm</h6>
+          <h3 className="text-base md:text-2xl font-bold leading-[18px] uppercase mt-[44px] md:mt-[63px] animate" data-animate="zoom-in">afternoon tea & <br className="md:hidden" /> dinner reception</h3>
+          <h6 className="text-base md:text-xl font-normal leading-[18px] uppercase mt-[27px] md:mt-[36px] animate" data-animate="zoom-in">17.00 pm</h6>
           <h6 className="text-base md:text-xl font-normal leading-[18px] mt-6 animate" data-animate="zoom-in">at Janu Ballroom</h6>
 
           <Image src="/images/steven-dan-bella/img-dot.png" alt="Picture of Titik Hitam" width={15} height={15} className="w-[12px] md:w-[15px] mx-auto mt-[44px] md:mt-[63px] animate" data-animate="zoom-in" />
 
-          <h3 className="text-base md:text-2xl font-normal leading-[18px] uppercase mt-[44px] md:mt-[63px] animate" data-animate="zoom-in">after party</h3>
-          <h6 className="text-base md:text-xl font-normal leading-[18px] uppercase mt-[27px] md:mt-[36px] animate" data-animate="zoom-in">22.00 pm</h6>
+          <h3 className="text-base md:text-2xl font-bold leading-[18px] uppercase mt-[44px] md:mt-[63px] animate" data-animate="zoom-in">after party</h3>
+          <h6 className="text-base md:text-xl font-normal leading-[18px] uppercase mt-[27px] md:mt-[36px] animate" data-animate="zoom-in">21.00 pm</h6>
           <h6 className="text-base md:text-xl font-normal leading-[18px] mt-6 animate" data-animate="zoom-in">at Janu Terrace</h6>
 
           <Image src="/images/steven-dan-bella/img-tea-ceremony.png" alt="Picture of Tea Ceremony" width={378} height={453} className="w-[262px] h-[327px] md:w-[378px] md:h-[453px] mx-auto -mt-10 md:mt-0 z-10 relative animate" data-animate="zoom-in" />
 
           <h6 className="text-base md:text-2xl font-normal leading-[18px] md:leading-[25px] mt-[17px] md:mt-[28px] animate" data-animate="zoom-in">Mahia Resort</h6>
           <h6 className="text-base md:text-2xl font-normal leading-[18px] md:leading-[25px] mt-2 md:mt-3 animate" data-animate="zoom-in">Jl. Ciwaruga No.30, Bandung</h6>
-          <Link href="https://maps.app.goo.gl/wH1CTg8bGano7tsa7" target="_blank" className="inline-block font-ovo text-[13px] md:text-lg leading-[17.16px] underline underline-offset-2 mt-[11px] md:mt-[47px] animate" data-animate="zoom-in">
+          <Link href="https://maps.app.goo.gl/wH1CTg8bGano7tsa7" target="_blank" className="inline-block font-ovo text-[13px] md:text-lg leading-[17.16px] underline underline-offset-2 mt-5 md:mt-[47px] animate" data-animate="zoom-in">
             Google Maps
           </Link>
         </div>
