@@ -32,6 +32,7 @@ module.exports = {
         constantia: ['var(--font-constantia)'],
         corben: ['var(--font-corben)'],
         ovo: ['var(--font-ovo)'],
+        milyuna: ['var(--font-milyuna)'],
       }
     },
     keyframes: {

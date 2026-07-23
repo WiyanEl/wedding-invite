@@ -183,6 +183,17 @@ export const century = localFont({
   variable: '--font-century',
 })
 
+export const milyuna = localFont({
+  src: [
+    {
+      path: '../public/fonts/Milyuna-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-milyuna',
+})
+
 export const constantia = localFont({
   src: [
     {
@@ -243,6 +254,7 @@ export default function RootLayout({
         ${constantia.variable}
         ${corben.variable}
         ${ovo.variable}
+        ${milyuna.variable}
         `}
         >
         {children}
