@@ -47,12 +47,6 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           <p className="text-[14px] leading-[18px] font-light mt-4 animate" data-animate="zoom-in">Matthew 19:6</p>
         </div>
 
-        {/* Img Absolute */}
-        {/* <Image src="/images/kevin-dan-michelle/img-bunga-kiri-atas-hero-mobile.png" alt="Picture of Bunga bagian kiri atas" width={593} height={394} className="absolute top-0 left-0 w-[593px]" />
-        <Image src="/images/kevin-dan-michelle/bg-hero-lapis-tengah-bagian-bawah-mobile.png" alt="Picture of background lapisan tengah" width={345} height={295} className="absolute -bottom-[30px] left-1/2 -translate-x-1/2 w-[345px]" />
-        <Image src="/images/kevin-dan-michelle/bg-hero-lapis-atas-bagian-bawah-mobile.png" alt="Picture of background lapisan atas" width={308} height={367} className="absolute -bottom-[100px] left-1/2 -translate-x-1/2 w-[308px]" />
-        <Image src="/images/kevin-dan-michelle/bg-hero-lapis-tengah-mobile.png" alt="Picture of background lapisan tengah" width={345} height={514} className="absolute top-[80px] left-1/2 -translate-x-1/2 w-[345px]" />
-        <Image src="/images/kevin-dan-michelle/bg-hero-lapis-atas-mobile.png" alt="Picture of background lapisan atas" width={308} height={500} className="absolute top-[100px] left-1/2 -translate-x-1/2 w-[308px]" /> */}
         <Image src="/images/kevin-dan-michelle/img-bintang-kiri-bawah-hero-mobile.png" alt="Picture of background lapisan atas" width={359} height={359} className="absolute bottom-0 left-0 w-[259px]" />
         <Image src="/images/kevin-dan-michelle/img-bintang-hero-mobile.png" alt="Picture of background lapisan atas" width={409} height={409} className="absolute top-0 left-0 w-[409px]" />
       </section>
