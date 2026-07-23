@@ -25,7 +25,7 @@ export default function WeddingGift({ isOpen, isMobile }: Props) {
 
   return (
     <>
-      <div className="wedding-gift" className="relative z-10 w-full">
+      <div id="wedding-gift" className="relative z-10 w-full">
         <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[109px]">
           <h2 className="font-milyuna text-2xl leading-[25px] animate" data-animate="zoom-in">Wedding Gift</h2>
           <Image src="/images/kevin-dan-michelle/img-garis-judul-mobile.png" alt="Picture of garis judul" width={109} height={10} className="mt-1 mx-auto animate" data-animate="zoom-in" />
