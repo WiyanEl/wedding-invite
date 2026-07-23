@@ -16,6 +16,7 @@ export default function JourneyLove({ isOpen, isMobile }: Props) {
         <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[138px] pb-[167px]">
           <h2 className="font-milyuna text-2xl leading-[25px] animate" data-animate="zoom-in">A Journey in Love</h2>
           <Image src="/images/kevin-dan-michelle/img-garis-judul-mobile.png" alt="Picture of garis judul" width={109} height={10} className="mt-1 mx-auto animate" data-animate="zoom-in" />
+          
           <div className="w-[259px] mt-[40px] mx-auto">
             <p className="text-[14px] leading-[20px] animate" data-animate="fade-up">
               It all began in 2016, on the very first day of medical school. We were classmates and happened to be placed in the same practical group. Like many first meetings, it started with a simple introduction—but instead of talking about the lab session, we found ourselves laughing about the challenges that medical school would bring.

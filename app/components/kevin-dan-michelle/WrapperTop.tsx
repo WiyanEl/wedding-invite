@@ -7,16 +7,16 @@ import Profile from './Profile'
 import CountingDown from './CountingDown'
 import JourneyLove from './JourneyLove'
 
-type HeroProps = {
+type WrapperProps = {
   isOpen: boolean
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
   params:string
   isMobile: boolean
 }
 
-export default function WrapperTop({ isOpen, setIsOpen, params, isMobile }: HeroProps) {
+export default function WrapperTop({ isOpen, setIsOpen, params, isMobile }: WrapperProps) {
   return (
-    <div className="relative w-full bg-top bg-cover bg-no-repeat bg-[url('/images/kevin-dan-michelle/bg-full-mobile.png')]">
+    <div className="relative w-full">
       <Hero isOpen={isOpen} setIsOpen={setIsOpen} params={params} isMobile={isMobile} />
       <Profile isOpen={isOpen} isMobile={isMobile} />
       <CountingDown isOpen={isOpen} isMobile={isMobile} />
