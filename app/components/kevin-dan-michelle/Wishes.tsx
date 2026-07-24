@@ -200,9 +200,9 @@ export default function Wishes({ isOpen, isMobile }: Props) {
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-mobile.png" alt="Picture of tanaman kanan atas" width={217} height={217} className="absolute -top-[60px] right-0 w-[127px]" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={104} height={104} className="absolute top-[75px] right-0 w-[74px]" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={210} height={210} className="absolute top-[225px] left-0 w-[150px]" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-mobile.png" alt="Picture of tanaman kanan atas" width={217} height={217} className="absolute -top-[60px] right-0 w-[127px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={104} height={104} className="absolute top-[75px] right-0 w-[74px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={210} height={210} className="absolute top-[225px] left-0 w-[150px] pointer-events-none" />
       </div>
     </>
   )

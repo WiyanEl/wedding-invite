@@ -67,15 +67,16 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-rsvp-mobile.png" alt="Picture of tanaman kanan bawah" width={283} height={283} className="absolute -bottom-[107px] right-0 w-[193px]" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-rsvp-2-mobile.png" alt="Picture of tanaman kanan bawah" width={142} height={142} className="absolute -bottom-[65px] right-[55px]" />
-          <Image src="/images/kevin-dan-michelle/img-bintang-bawah-rsvp-mobile.png" alt="Picture of bintang bawah" width={347} height={347} className="absolute -bottom-[200px] left-1/2 -translate-x-1/2" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-rsvp-mobile.png" alt="Picture of bintang bawah" width={94} height={94} className="absolute -bottom-[20px] left-[70px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-rsvp-mobile.png" alt="Picture of tanaman kanan bawah" width={283} height={283} className="absolute -bottom-[107px] right-0 w-[193px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-rsvp-2-mobile.png" alt="Picture of tanaman kanan bawah" width={142} height={142} className="absolute -bottom-[65px] right-[55px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-bintang-bawah-rsvp-mobile.png" alt="Picture of bintang bawah" width={347} height={347} className="absolute -bottom-[200px] left-1/2 -translate-x-1/2 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-rsvp-mobile.png" alt="Picture of bintang bawah" width={94} height={94} className="absolute -bottom-[20px] left-[70px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-rsvp-mobile.png" alt="Picture of tanaman kiri bawah" width={283} height={283} className="absolute -bottom-[110px] left-0 w-[183px] pointer-events-none" />
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-rsvp-mobile.png" alt="Picture of tanaman kiri atas" width={252} height={252} className="absolute -top-[75px] left-0 w-[225px]" />
-        <Image src="/images/kevin-dan-michelle/img-bintang-atas-kanan-rsvp-mobile.png" alt="Picture of bintang kanan atas" width={485} height={485} className="absolute -top-[275px] right-0 w-[315px]" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-rsvp-mobile.png" alt="Picture of tanaman kiri atas" width={252} height={252} className="absolute -top-[75px] left-0 w-[225px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-bintang-atas-kanan-rsvp-mobile.png" alt="Picture of bintang kanan atas" width={485} height={485} className="absolute -top-[275px] right-0 w-[315px] pointer-events-none" />
       </div>
 
 

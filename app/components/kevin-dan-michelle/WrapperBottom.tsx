@@ -28,8 +28,8 @@ export default function WrapperBootom({ isOpen, setIsOpen, params, isMobile }: W
 
       <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location.png" alt="Picture of Bunga kanan atas" width={382} height={382} className="absolute -top-[215px] right-0 w-[302px]" />
       <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-footer-mobile.png" alt="Picture of tanaman kanan bawah" width={501} height={448} className="absolute z-0 bottom-0 right-0 w-[301px]" />
-      <Image src="/images/kevin-dan-michelle/bg-lapisan-tengah-full-bottom-mobile.png" alt="Picture of background lapisan tengah" width={345} height={514} className="absolute top-[30px] left-1/2 -translate-x-1/2 w-[345px]" />
-      <Image src="/images/kevin-dan-michelle/bg-lapisan-atas-full-bottom-mobile.png" alt="Picture of background lapisan atas" width={308} height={500} className="absolute top-[50px] left-1/2 -translate-x-1/2 w-[308px]" />
+      <Image src="/images/kevin-dan-michelle/bg-lapisan-tengah-full-bottom-mobile.png" alt="Picture of background lapisan tengah" width={346} height={3827} className="absolute top-[60px] left-1/2 -translate-x-1/2 w-[345px]" />
+      <Image src="/images/kevin-dan-michelle/bg-lapisan-atas-full-bottom-mobile.png" alt="Picture of background lapisan atas" width={308} height={3715} className="absolute top-[80px] left-1/2 -translate-x-1/2 w-[308px]" />
     </div>
   )
 }

@@ -49,11 +49,11 @@ export default function WeddingGift({ isOpen, isMobile }: Props) {
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/kevin-dan-michelle/img-bintang-atas-wedding-gift-mobile.png" alt="Picture of bintang atas" width={347} height={347} className="absolute -top-[220px] left-1/2 -translate-x-1/2" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-1-mobile.png" alt="Picture of tanaman kiri atas" width={135} height={135} className="absolute -top-[40px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman kiri atas" width={143} height={143} className="absolute top-[70px] left-0 w-[120px]" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-1-mobile.png" alt="Picture of tanaman kanan atas" width={135} height={135} className="absolute -top-[40px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman kanan atas" width={143} height={143} className="absolute top-[70px] right-0 w-[120px]" />
+          <Image src="/images/kevin-dan-michelle/img-bintang-atas-wedding-gift-mobile.png" alt="Picture of bintang atas" width={347} height={347} className="absolute -top-[220px] left-1/2 -translate-x-1/2 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-1-mobile.png" alt="Picture of tanaman kiri atas" width={135} height={135} className="absolute -top-[40px] left-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman kiri atas" width={143} height={143} className="absolute top-[70px] left-0 w-[120px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-1-mobile.png" alt="Picture of tanaman kanan atas" width={135} height={135} className="absolute -top-[40px] right-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman kanan atas" width={143} height={143} className="absolute top-[60px] right-0 w-[120px] pointer-events-none" />
         </div>
       </div>
     </>

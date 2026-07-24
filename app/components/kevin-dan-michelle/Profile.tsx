@@ -42,14 +42,16 @@ export default function Profile({ isOpen, isMobile }: Props) {
 
           {/* Absoulte Image */}
           <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-profile-mobile.png" alt="Picture of tanaman kiri bawah" width={243} height={243} className="absolute -bottom-[100px] left-0 w-[217px]" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-profile-mobile.png" alt="Picture of tanaman kanan bawah" width={243} height={243} className="absolute -bottom-[100px] right-0 w-[177px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-profile-mobile.png" alt="Picture of tanaman kanan bawah" width={243} height={243} className="absolute -bottom-[80px] right-0 w-[177px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-profile-2-mobile.png" alt="Picture of tanaman kiri bawah" width={88} height={88} className="absolute -bottom-[40px] left-[50px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-profile-2-mobile.png" alt="Picture of tanaman kanan bawah" width={121} height={121} className="absolute -bottom-[55px] right-[45px]" />
           <Image src="/images/kevin-dan-michelle/img-bintang-bawah-profile-mobile.png" alt="Picture of bintang bawah" width={409} height={409} className="absolute -bottom-[250px] left-0" />
         </div>
 
         {/* Absolute Image */}
         <Image src="/images/kevin-dan-michelle/img-bintang-atas-profile-mobile.png" alt="Picture of bintang atas" width={359} height={359} className="absolute -top-[200px] left-0" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-profile-mobile.png" alt="Picture of tanaman atas kiri" width={318} height={390} className="absolute -top-[190px] left-0 w-[179px]" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-profile-mobile.png" alt="Picture of tanaman atas kanan" width={318} height={390} className="absolute -top-[190px] right-0 w-[179px]" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-profile-mobile.png" alt="Picture of tanaman atas kiri" width={318} height={390} className="absolute -top-[200px] left-0 w-[179px]" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-profile-mobile.png" alt="Picture of tanaman atas kanan" width={318} height={390} className="absolute -top-[200px] right-0 w-[179px]" />
         <Image src="/images/kevin-dan-michelle/img-bintang-atas-kanan-profile-mobile.png" alt="Picture of bintang atas kanan" width={359} height={359} className="absolute -top-[100px] right-0 w-[229px]" />
         <Image src="/images/kevin-dan-michelle/img-bintang-kiri-samping-pengantin-pria-mobile.png" alt="Picture of bintang samping pengantin pria" width={481} height={481} className="absolute top-[100px] left-0 w-[281px]" />
         <Image src="/images/kevin-dan-michelle/img-bintang-kanan-samping-pengantin-wanita-mobile.png" alt="Picture of bintang samping pengantin wanita" width={481} height={481} className="absolute top-[550px] right-0 w-[261px]" />

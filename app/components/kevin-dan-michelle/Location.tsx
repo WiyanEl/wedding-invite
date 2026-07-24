@@ -21,7 +21,7 @@ export default function Location({ isOpen, isMobile }: Props) {
           <p className="text-base leading-[25px] uppercase mt-4 animate" data-animate="fade-up">11.00 wib</p>
           <p className="text-[14px] leading-[20px] uppercase mt-4 animate" data-animate="fade-up">Kapel Abipraya Kota Baru <br /> Parahyangan</p>
           <p className="text-[14px] leading-[18px] mt-3 animate" data-animate="fade-up">Parahyangan St, Kertajaya, Padalarang, <br /> West Bandung Regency</p>
-          <Link href="https://maps.app.goo.gl/TJX8AgM9pxE7wVWYA" target="_blank" className="flex items-center justify-center w-[160px] h-[33px] bg-[#CDA96A] rounded-[6px] text-[14px] leading-[17.16px] text-white uppercase mt-3 mx-auto animate" data-animate="zoom-in">
+          <Link href="https://maps.app.goo.gl/TJX8AgM9pxE7wVWYA" target="_blank" className="relative z-50 flex items-center justify-center w-[160px] h-[33px] bg-[#CDA96A] rounded-[6px] text-[14px] leading-[17.16px] text-white uppercase mt-3 mx-auto animate" data-animate="zoom-in">
             Google Maps
           </Link>
 
@@ -31,7 +31,7 @@ export default function Location({ isOpen, isMobile }: Props) {
           <p className="text-base leading-[25px] uppercase mt-4 animate" data-animate="fade-up">18.00 wib</p>
           <p className="text-[14px] leading-[20px] uppercase mt-4 animate" data-animate="fade-up"> Pullman Hotel Grand ballroom</p>
           <p className="text-[14px] leading-[18px] mt-3 animate" data-animate="fade-up">Jl. Diponegoro No.27, Citarum, <br /> Kec. Bandung Wetan, Kota Bandung</p>
-          <Link href="https://maps.app.goo.gl/TVaxFoJTkMpHS7EV8" target="_blank" className="flex items-center justify-center w-[160px] h-[33px] bg-[#CDA96A] rounded-[6px] text-[14px] leading-[17.16px] text-white uppercase mt-3 mx-auto animate" data-animate="zoom-in">
+          <Link href="https://maps.app.goo.gl/TVaxFoJTkMpHS7EV8" target="_blank" className="relative z-50 flex items-center justify-center w-[160px] h-[33px] bg-[#CDA96A] rounded-[6px] text-[14px] leading-[17.16px] text-white uppercase mt-3 mx-auto animate" data-animate="zoom-in">
             Google Maps
           </Link>
         </div>
