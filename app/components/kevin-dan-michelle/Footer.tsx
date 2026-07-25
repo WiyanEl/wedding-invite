@@ -20,7 +20,7 @@ export default function Footer({ isOpen, isMobile }: Props) {
             aughter, and happily ever after with you!
           </p>
 
-          <Image src="/images/kevin-dan-michelle/logo-provite.png" alt="Picture of logo provite" width={89} height={111} className="mt-1 mx-auto animate" data-animate="zoom-in" />
+          <Image src="/images/kevin-dan-michelle/logo-provite.png" alt="Picture of logo provite" width={89} height={111} className="mt-10 mx-auto" />
 
           {/* Image Absolute */}
           <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-footer-mobile.png" alt="Picture of tanaman kiri bawah" width={329} height={329} className="absolute bottom-0 left-0 w-[229px]" />

@@ -13,7 +13,7 @@ export default function Location({ isOpen, isMobile }: Props) {
   return (
     <>
       <div id="location" className="relative z-10 w-full min-h-screen">
-        <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[150px]">
+        <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[210px]">
           <h2 className="font-milyuna text-2xl leading-[25px] animate" data-animate="zoom-in">Time & Location</h2>
           <Image src="/images/kevin-dan-michelle/img-garis-judul-mobile.png" alt="Picture of garis judul" width={109} height={10} className="mt-1 mx-auto animate" data-animate="zoom-in" />
 
@@ -38,7 +38,7 @@ export default function Location({ isOpen, isMobile }: Props) {
 
         {/* Image Absolute */}
         <Image src="/images/kevin-dan-michelle/img-bintang-atas-location-mobile.png" alt="Picture of Bintang atas" width={514} height={514} className="absolute -top-[415px] left-0" />
-        <Image src="/images/kevin-dan-michelle/img-bunga-kiri-atas-location-mobile.png" alt="Picture of Bunga kiri atas" width={234} height={234} className="absolute -top-[50px] left-0 w-[168px]" />
+        <Image src="/images/kevin-dan-michelle/img-bunga-kiri-atas-location-mobile.png" alt="Picture of Bunga kiri atas" width={234} height={234} className="absolute top-0 left-0 w-[168px]" />
         <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-location-mobile.png" alt="Picture of Tanaman kanan" width={199} height={199} className="absolute top-[400px] right-0 w-[168px]" />
       </div>
     </>
