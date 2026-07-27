@@ -20,16 +20,16 @@ export default function WrapperBootom({ isOpen, setIsOpen, params, isMobile }: W
   return (
     <div className="relative w-full">
       <Location isOpen={isOpen} isMobile={isMobile} />
-      <Reservation isOpen={isOpen} isMobile={isMobile} params={params} />
       <Gallery isOpen={isOpen} isMobile={isMobile} />
+      <Reservation isOpen={isOpen} isMobile={isMobile} params={params} />
       <WeddingGift isOpen={isOpen} isMobile={isMobile} />
       <Wishes isOpen={isOpen} isMobile={isMobile} />
       <Footer isOpen={isOpen} isMobile={isMobile} />
 
-      <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location.png" alt="Picture of Bunga kanan atas" width={382} height={382} className="absolute -top-[215px] right-0 w-[302px]" />
-      <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-footer-mobile.png" alt="Picture of tanaman kanan bawah" width={501} height={448} className="absolute z-0 bottom-0 right-0 w-[301px]" />
-      <Image src="/images/kevin-dan-michelle/bg-lapisan-tengah-full-bottom-mobile.png" alt="Picture of background lapisan tengah" width={346} height={3827} className="absolute -top-[320px] md:top-0 left-1/2 -translate-x-1/2 w-[345px]" />
-      <Image src="/images/kevin-dan-michelle/bg-lapisan-atas-full-bottom-mobile.png" alt="Picture of background lapisan atas" width={308} height={3715} className="absolute -top-[300px] md:top-0 left-1/2 -translate-x-1/2 w-[308px]" />
+      <Image src="/images/kevin-dan-michelle/bg-lapisan-tengah-full-bottom-mobile.png" alt="Picture of background lapisan tengah" width={346} height={3827} className="md:hidden absolute -top-[320px] md:top-0 left-1/2 -translate-x-1/2 w-[345px]" />
+      <Image src="/images/kevin-dan-michelle/bg-lapisan-atas-full-bottom-mobile.png" alt="Picture of background lapisan atas" width={308} height={3715} className="md:hidden absolute -top-[300px] md:top-0 left-1/2 -translate-x-1/2 w-[308px]" />
+      <Image src="/images/kevin-dan-michelle/bg-lapisan-tengah-full-bottom.png" alt="Picture of background lapisan tengah" width={1230} height={6976} className="hidden md:block absolute -top-[320px] md:top-0 left-1/2 -translate-x-1/2" />
+      <Image src="/images/kevin-dan-michelle/bg-lapisan-atas-full-bottom.png" alt="Picture of background lapisan atas" width={1108} height={6919} className="hidden md:block absolute -top-[300px] md:top-0 left-1/2 -translate-x-1/2" />
     </div>
   )
 }

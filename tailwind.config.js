@@ -33,6 +33,7 @@ module.exports = {
         corben: ['var(--font-corben)'],
         ovo: ['var(--font-ovo)'],
         milyuna: ['var(--font-milyuna)'],
+        hello: ['var(--font-hello-bride)'],
       }
     },
     keyframes: {

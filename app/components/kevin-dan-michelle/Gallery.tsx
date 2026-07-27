@@ -42,12 +42,12 @@ export default function Gallery({ isOpen, isMobile }: Props) {
   } else {
     images = [
       {
-        src: '/images/kevin-dan-michelle/img-gallery-1-mobile.png',
-        thumb: '/images/kevin-dan-michelle/img-gallery-1-mobile.png'
+        src: '/images/kevin-dan-michelle/img-gallery-1.png',
+        thumb: '/images/kevin-dan-michelle/img-gallery-1.png'
       },
       {
-        src: '/images/kevin-dan-michelle/img-gallery-1-mobile.png',
-        thumb: '/images/kevin-dan-michelle/img-gallery-1-mobile.png'
+        src: '/images/kevin-dan-michelle/img-gallery-1.png',
+        thumb: '/images/kevin-dan-michelle/img-gallery-1.png'
       },
     ]
   }
@@ -76,7 +76,7 @@ export default function Gallery({ isOpen, isMobile }: Props) {
                         alt={`Gallery ${i}`}
                         width={1531}
                         height={945}
-                        className="w-[398px] md:w-full h-[598px] md:h-[945px] object-cover"
+                        className="w-[398px] md:w-full h-[598px] md:h-[949px] object-cover"
                       />
                     </div>
                   </SwiperSlide>
