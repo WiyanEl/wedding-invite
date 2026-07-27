@@ -34,6 +34,7 @@ module.exports = {
         ovo: ['var(--font-ovo)'],
         milyuna: ['var(--font-milyuna)'],
         hello: ['var(--font-hello-bride)'],
+        cormorantgaramond: ['var(--font-cormorant-garamond)'],
       }
     },
     keyframes: {

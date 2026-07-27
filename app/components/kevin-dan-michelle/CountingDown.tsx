@@ -68,7 +68,7 @@ function TimeBox({ value, label }: { value: string; label: string }) {
       <p className="font-lora font-medium text-[41px] md:text-[62px] leading-[104%] md:leading-none md:tracking-[0.043em]">
         {value}
       </p>
-      <p className="font-lora font-medium text-[10px] md:text-lg leading-none md:tracking-[0.043em]">
+      <p className="font-lora font-medium text-[10px] md:text-lg leading-none md:tracking-[0.043em] capitalize">
         {label}
       </p>
     </div>

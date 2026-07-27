@@ -22,14 +22,14 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
               <div className="w-[290px] md:w-[416px] min-h-min rounded-[15px] md:rounded-[20px] shadow-[0px_8px_11.6px_0px_#0000008A] zoom-in">
                 <div className="w-full h-[180px] md:h-[220px] rounded-tl-[15px] md:rounded-tl-[20px] rounded-tr-[15px] md:rounded-tr-[20px] bg-center bg-cover bg-no-repeat bg-[url('/images/kevin-dan-michelle/img-popup-hero-mobile.png')]"></div>
                 <div className="relative w-full pt-[47px] md:pt-[62px] pb-[54px] rounded-bl-[15px] md:rounded-bl-[20px] rounded-br-[15px] md:rounded-br-[20px] font-cormorant text-[#DFD28F] text-center bg-[#081930]">
-                  <h6 className="text-xs md:text-lg font-normal leading-none md:uppercase">the wedding of</h6>
+                  <h6 className="text-xs md:text-lg font-normal leading-none md:uppercase">The Wedding of</h6>
                   <h2 className="font-milyuna text-[26px] md:text-[40px] leading-none font-normal mt-2">Kevin & Michelle</h2>
                   <h6 className="text-xs md:text-base font-medium leading-[25px] md:leading-[31px] mt-3">Dear Mr. /Mrs. / Ms.</h6>
                   <h6 className="text-[14px] md:text-xl font-medium leading-[25px] md:leading-[31px] capitalize">{params ?? '.......'}</h6>
                   <p className="text-[8px] md:text-[14px] font-medium leading-[13px] md:leading-[16px] mt-5">We sincerely apologize</p>
                   <p className="text-[8px] md:text-[14px] font-medium leading-[13px] md:leading-[16px]">for any misspelling of names or titles.</p>
                   <button onClick={() => setIsOpen(true)} className="mx-auto mt-4 md:mt-[23px] w-[184px] md:w-[220px] h-[33px] md:h-[40px] bg-[#CDA96A] rounded-[6px] md:rounded-[10px] flex items-center justify-center">
-                    <span className="text-xs md:text-lg leading-none font-medium text-[#F6F6F4] uppercase">view invitation</span>
+                    <span className="text-[14px] md:text-lg leading-none font-medium text-[#F6F6F4] uppercase">view invitation</span>
                   </button>
 
                   {/* Image Absolute */}
@@ -44,7 +44,7 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           </div>
         )}
 
-        <div className="relative z-10 text-center font-cormorant text-[#DFD28F] pt-[274px] md:pt-[297px] h-full">
+        <div className="relative z-10 text-center font-cormorantgaramond text-[#DFD28F] pt-[274px] md:pt-[297px] h-full">
           <h4 className={`text-[14px] md:text-[22px] tracking-wider md:tracking-[0.05em] uppercase ${isOpen ? 'zoom-in' : ''}`}>the wedding</h4>
           <h2 className={`font-milyuna text-[42px] md:text-[96px] mt-1 ${isOpen ? 'zoom-in' : ''}`}>Kevin</h2>
           <h2 className={`font-milyuna text-2xl md:text-[48px] mt-2 ${isOpen ? 'zoom-in' : ''}`}>&</h2>
