@@ -93,9 +93,9 @@ export default function Wishes({ isOpen, isMobile }: Props) {
   return (
     <>
       <div id="wishes" className="relative z-10 w-full">
-        <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[115px]">
-          <h2 className="font-milyuna text-2xl leading-[25px] animate" data-animate="zoom-in">Your Wishes</h2>
-          <Image src="/images/kevin-dan-michelle/img-garis-judul-mobile.png" alt="Picture of garis judul" width={109} height={10} className="mt-1 mx-auto animate" data-animate="zoom-in" />
+        <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[115px] md:pt-[225px]">
+          <h2 className="font-milyuna text-2xl md:text-[48px] leading-[25px] animate" data-animate="zoom-in">Your Wishes</h2>
+          <Image src="/images/kevin-dan-michelle/img-garis-judul-mobile.png" alt="Picture of garis judul" width={194} height={35} className="w-[109px] md:w-[194px] mt-1 md:mt-[25px] mx-auto animate" data-animate="zoom-in" />
 
           {!seeAllMessages ? (
             <div className="relative text-center">
@@ -200,9 +200,13 @@ export default function Wishes({ isOpen, isMobile }: Props) {
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-mobile.png" alt="Picture of tanaman kanan atas" width={217} height={217} className="absolute -top-[190px] right-0 w-[127px] pointer-events-none" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={104} height={104} className="absolute -top-[55px] right-0 w-[74px] pointer-events-none" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={210} height={210} className="absolute top-[325px] left-0 w-[180px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-mobile.png" alt="Picture of tanaman kanan atas" width={217} height={217} className="md:hidden absolute -top-[190px] right-0 w-[127px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={104} height={104} className="md:hidden absolute -top-[55px] right-0 w-[74px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={210} height={210} className="md:hidden absolute top-[325px] left-0 w-[180px] pointer-events-none" />
+
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-mobile.png" alt="Picture of tanaman kanan atas" width={623} height={623} className="hidden md:block absolute -top-[290px] right-0 pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={298} height={298} className="hidden md:block absolute top-[400px] right-0 pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={677} height={677} className="hidden md:block absolute top-[325px] left-0 pointer-events-none" />
       </div>
     </>
   )
