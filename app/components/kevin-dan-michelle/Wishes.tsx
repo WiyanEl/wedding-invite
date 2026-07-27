@@ -107,7 +107,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
                   <span className="text-[14px] md:text-lg text-white font-normal leading-[140%] uppercase">send</span>
                 </button>
               </form>
-              <div className="w-[263px] md:w-[564px] h-[332px] md:h-[526px] rounded-[6px] md:rounded-[20px] bg-[#CDA96A] border-[0.49px] border-[#CDA96A] py-[18px] md:py-[39px] px-[13px] md:px-[23px] mx-auto mt-4 md:mt-[40px] animate zoom-in" data-animate="zoom-in">
+              <div className="w-[263px] md:w-[564px] h-[332px] md:h-[526px] rounded-[6px] md:rounded-[20px] border-[0.49px] border-[#CDA96A] py-[18px] md:py-[39px] px-[13px] md:px-[23px] mx-auto mt-4 md:mt-[40px] animate zoom-in" data-animate="zoom-in">
                 <div className="w-full h-full overflow-y-auto scroll-smooth">
                   {wishes.length === 0 ? (
                     <p className="text-center text-[14px] md:text-lg text-[#CDA96A]">
@@ -117,7 +117,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
                     wishes.map((wish, i) => (
                       <div
                         key={i}
-                        className="w-full pb-[13px] border-b-[0.49px] border-b-white text-left text-white mb-[7px]"
+                        className="w-full pb-[13px] border-b-[0.49px] border-b-[#CDA96A] text-left text-[#CDA96A] mb-[7px]"
                       >
                         <p className="font-normal text-[14px] md:text-lg leading-[140%]">
                           {wish.name}
@@ -200,9 +200,9 @@ export default function Wishes({ isOpen, isMobile }: Props) {
         </div>
 
         {/* Image Absolute */}
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-mobile.png" alt="Picture of tanaman kanan atas" width={217} height={217} className="absolute -top-[60px] right-0 w-[127px] pointer-events-none" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={104} height={104} className="absolute top-[75px] right-0 w-[74px] pointer-events-none" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={210} height={210} className="absolute top-[225px] left-0 w-[150px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-mobile.png" alt="Picture of tanaman kanan atas" width={217} height={217} className="absolute -top-[190px] right-0 w-[127px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={104} height={104} className="absolute -top-[55px] right-0 w-[74px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={210} height={210} className="absolute top-[325px] left-0 w-[180px] pointer-events-none" />
       </div>
     </>
   )

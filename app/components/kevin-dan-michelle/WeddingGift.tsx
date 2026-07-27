@@ -26,11 +26,10 @@ export default function WeddingGift({ isOpen, isMobile }: Props) {
   return (
     <>
       <div id="wedding-gift" className="relative z-10 w-full">
-        <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[109px]">
+        <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[140px]">
           <h2 className="font-milyuna text-2xl leading-[25px] animate" data-animate="zoom-in">Wedding Gift</h2>
-          <Image src="/images/kevin-dan-michelle/img-garis-judul-mobile.png" alt="Picture of garis judul" width={109} height={10} className="mt-1 mx-auto animate" data-animate="zoom-in" />
 
-          <p className="text-[14px] leading-[18px] mt-[35px] animate" data-animate="fade-up">
+          <p className="text-[14px] leading-[18px] mt-[56px] animate" data-animate="fade-up">
             Your presence and prayers <br /> are the greatest blessing to us.
           </p>
           <p className="text-[14px] leading-[18px] mt-4 animate" data-animate="fade-up">
@@ -49,11 +48,10 @@ export default function WeddingGift({ isOpen, isMobile }: Props) {
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/kevin-dan-michelle/img-bintang-atas-wedding-gift-mobile.png" alt="Picture of bintang atas" width={347} height={347} className="absolute -top-[220px] left-1/2 -translate-x-1/2 pointer-events-none" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-1-mobile.png" alt="Picture of tanaman kiri atas" width={135} height={135} className="absolute -top-[40px] left-0 pointer-events-none" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman kiri atas" width={143} height={143} className="absolute top-[70px] left-0 w-[120px] pointer-events-none" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-1-mobile.png" alt="Picture of tanaman kanan atas" width={135} height={135} className="absolute -top-[40px] right-0 pointer-events-none" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman kanan atas" width={143} height={143} className="absolute top-[60px] right-0 w-[120px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-mobile.png" alt="Picture of tanaman atas kanan" width={219} height={219} className="md:hidden absolute w-[180px] -top-[85px] right-0" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-mobile.png" alt="Picture of tanaman atas kiri" width={219} height={219} className="md:hidden absolute w-[180px] -top-[85px] left-0" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman atas kanan" width={147} height={147} className="md:hidden absolute -top-[75px] right-[70px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman atas kiri" width={147} height={147} className="md:hidden absolute -top-[75px] left-[70px]" />
         </div>
       </div>
     </>
