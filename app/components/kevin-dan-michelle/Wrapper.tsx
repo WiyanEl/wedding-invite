@@ -3,9 +3,10 @@
 import { useState, useEffect } from 'react'
 import WrapperTop from './WrapperTop'
 import WrapperBottom from './WrapperBottom'
+import Header from './Header'
 
 export default function Wrapper({ params }: { params: string }) {
-  const [isOpen, setIsOpen] = useState(true) // default false
+  const [isOpen, setIsOpen] = useState(false) // default false
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -60,7 +61,8 @@ export default function Wrapper({ params }: { params: string }) {
 
   return (
     <>
-      <div className="bg-top bg-cover bg-no-repeat bg-[url('/images/kevin-dan-michelle/bg-full-mobile.png')]">
+      <div className="bg-top bg-cover bg-no-repeat bg-[url('/images/kevin-dan-michelle/bg-full-mobile.png')] md:bg-[url('/images/kevin-dan-michelle/bg-full.png')]">
+        <Header isOpen={isOpen} />
         <WrapperTop isOpen={isOpen} setIsOpen={setIsOpen} params={params} isMobile={isMobile} />
         <WrapperBottom isOpen={isOpen} setIsOpen={setIsOpen} params={params} isMobile={isMobile} />
       </div>
