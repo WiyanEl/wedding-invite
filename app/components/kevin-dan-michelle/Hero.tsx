@@ -27,8 +27,8 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
                   <h6 className="md:hidden text-xs md:text-base font-medium leading-[25px] md:leading-[31px] mt-3">Dear,</h6>
                   <h6 className="hidden md:block text-xs md:text-base font-medium leading-[25px] md:leading-[31px] mt-3">Dear Mr. /Mrs. / Ms.</h6>
                   <h6 className="text-[14px] md:text-xl font-medium leading-[25px] md:leading-[31px] capitalize">{params ?? '.......'}</h6>
-                  <p className="text-[8px] md:text-[14px] font-medium leading-[13px] md:leading-[16px] mt-5">We sincerely apologize</p>
-                  <p className="text-[8px] md:text-[14px] font-medium leading-[13px] md:leading-[16px]">for any misspelling of names or titles.</p>
+                  <p className="text-[10px] md:text-[14px] font-medium leading-[13px] md:leading-[16px] mt-5">We sincerely apologize</p>
+                  <p className="text-[10px] md:text-[14px] font-medium leading-[13px] md:leading-[16px]">for any misspelling of names or titles.</p>
                   <button onClick={() => setIsOpen(true)} className="mx-auto mt-4 md:mt-[23px] w-[184px] md:w-[220px] h-[33px] md:h-[40px] bg-[#CDA96A] rounded-[6px] md:rounded-[10px] flex items-center justify-center">
                     <span className="text-[14px] md:text-lg leading-none font-medium text-[#F6F6F4] uppercase">view invitation</span>
                   </button>
