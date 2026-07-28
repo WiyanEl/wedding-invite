@@ -24,7 +24,8 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
                 <div className="relative w-full pt-[47px] md:pt-[62px] pb-[54px] rounded-bl-[15px] md:rounded-bl-[20px] rounded-br-[15px] md:rounded-br-[20px] font-cormorantgaramond text-[#DFD28F] text-center bg-[#081930]">
                   <h6 className="text-xs md:text-lg font-normal leading-none md:uppercase">The Wedding of</h6>
                   <h2 className="font-milyuna text-[26px] md:text-[40px] leading-none font-normal mt-2">Kevin & Michelle</h2>
-                  <h6 className="text-xs md:text-base font-medium leading-[25px] md:leading-[31px] mt-3">Dear Mr. /Mrs. / Ms.</h6>
+                  <h6 className="md:hidden text-xs md:text-base font-medium leading-[25px] md:leading-[31px] mt-3">Dear,</h6>
+                  <h6 className="hidden md:block text-xs md:text-base font-medium leading-[25px] md:leading-[31px] mt-3">Dear Mr. /Mrs. / Ms.</h6>
                   <h6 className="text-[14px] md:text-xl font-medium leading-[25px] md:leading-[31px] capitalize">{params ?? '.......'}</h6>
                   <p className="text-[8px] md:text-[14px] font-medium leading-[13px] md:leading-[16px] mt-5">We sincerely apologize</p>
                   <p className="text-[8px] md:text-[14px] font-medium leading-[13px] md:leading-[16px]">for any misspelling of names or titles.</p>
@@ -44,14 +45,16 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
           </div>
         )}
 
-        <div className="relative z-10 text-center font-cormorantgaramond text-[#DFD28F] pt-[274px] md:pt-[297px] h-full">
+        <div className="h-full relative z-10 text-center font-cormorantgaramond text-[#DFD28F] pt-[274px] md:pt-[297px]">
           <h4 className={`text-[14px] md:text-[22px] tracking-wider md:tracking-[0.05em] uppercase ${isOpen ? 'zoom-in' : ''}`}>the wedding</h4>
           <h2 className={`font-milyuna text-[42px] md:text-[96px] mt-1 ${isOpen ? 'zoom-in' : ''}`}>Kevin</h2>
           <h2 className={`font-milyuna text-2xl md:text-[48px] mt-2 ${isOpen ? 'zoom-in' : ''}`}>&</h2>
           <h2 className={`font-milyuna text-[42px] md:text-[96px] mt-2 ${isOpen ? 'zoom-in' : ''}`}>Michelle</h2>
           <h4 className={`text-base md:text-[26px] tracking-[0.09em] mt-2 md:mt-0 ${isOpen ? 'zoom-in' : ''}`}>12  .  09  .  26</h4>
-          <p className={`text-[14px] md:text-[22px] leading-[16px] md:leading-[25px] font-light mt-[142px] md:mt-[106px] ${isOpen ? 'zoom-in' : ''}`}>“So they are no longer two, but one flesh. <br /> Therefore what God has joined together, let no <br /> one separate.”</p>
-          <p className={`text-[14px]  md:text-[22px] leading-[18px] md:leading-[30px] font-light mt-4 ${isOpen ? 'zoom-in' : ''}`}>Matthew 19:6</p>
+          <div className="w-full absolute bottom-[100px] text-center">
+            <p className={`text-[14px] md:text-[22px] leading-[16px] md:leading-[25px] font-light ${isOpen ? 'zoom-in' : ''}`}>“So they are no longer two, but one flesh. <br /> Therefore what God has joined together, let no <br /> one separate.”</p>
+            <p className={`text-[14px]  md:text-[22px] leading-[18px] md:leading-[30px] font-light mt-4 ${isOpen ? 'zoom-in' : ''}`}>Matthew 19:6</p>
+          </div>
         </div>
 
         <Image src="/images/kevin-dan-michelle/img-bintang-kiri-bawah-hero-mobile.png" alt="Picture of background lapisan atas" width={359} height={359} className="md:hidden absolute bottom-0 left-0 w-[259px] pointer-events-none" />
