@@ -204,9 +204,9 @@ export default function Wishes({ isOpen, isMobile }: Props) {
         <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={104} height={104} className="md:hidden absolute -top-[55px] right-0 w-[74px] pointer-events-none" />
         <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={210} height={210} className="md:hidden absolute top-[325px] left-0 w-[180px] pointer-events-none" />
 
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-mobile.png" alt="Picture of tanaman kanan atas" width={623} height={623} className="hidden md:block absolute w-[500px] -top-[180px] right-0 pointer-events-none" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={298} height={298} className="hidden md:block absolute w-[250px] top-[380px] right-0 pointer-events-none" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={677} height={677} className="hidden md:block absolute top-[285px] w-[600px] left-0 pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-mobile.png" alt="Picture of tanaman kanan atas" width={623} height={623} className="hidden md:block absolute w-[450px] -top-[180px] right-0 pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={298} height={298} className="hidden md:block absolute w-[200px] top-[350px] right-0 pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={677} height={677} className="hidden md:block absolute top-[285px] w-[550px] left-0 pointer-events-none" />
       </div>
     </>
   )

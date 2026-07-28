@@ -16,7 +16,7 @@ type WrapperProps = {
 
 export default function WrapperTop({ isOpen, setIsOpen, params, isMobile }: WrapperProps) {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full overflow-y-hidden">
       <Hero isOpen={isOpen} setIsOpen={setIsOpen} params={params} isMobile={isMobile} />
       <Profile isOpen={isOpen} isMobile={isMobile} />
       <JourneyLove isOpen={isOpen} isMobile={isMobile} />
