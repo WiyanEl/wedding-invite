@@ -40,7 +40,7 @@ export default function WrapperBootom({ isOpen, setIsOpen, params, isMobile }: W
       <Image src="/images/kevin-dan-michelle/bg-lapisan-atas-bottom-1-mobile.png" alt="Picture of background lapisan atas" width={308} height={600} className="md:hidden absolute bottom-[435px] left-1/2 -translate-x-1/2" /> */}
 
       <Image src="/images/kevin-dan-michelle/bg-lapisan-tengah-full-bottom.png" alt="Picture of background lapisan tengah" width={1530} height={6939} className="hidden md:block absolute -top-[80px] left-1/2 -translate-x-1/2" />
-      <Image src="/images/kevin-dan-michelle/bg-lapisan-atas-full-bottom.png" alt="Picture of background lapisan atas" width={1308} height={6919} className="hidden md:block absolute -top-[200px] left-1/2 -translate-x-1/2" />
+      <Image src="/images/kevin-dan-michelle/bg-lapisan-atas-full-bottom.png" alt="Picture of background lapisan atas" width={1338} height={6919} className="hidden md:block absolute -top-[330px] left-1/2 -translate-x-1/2" />
     </div>
   )
 }
