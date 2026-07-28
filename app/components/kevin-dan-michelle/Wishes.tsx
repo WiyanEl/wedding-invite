@@ -119,10 +119,10 @@ export default function Wishes({ isOpen, isMobile }: Props) {
                         key={i}
                         className="w-full pb-[13px] border-b-[0.49px] border-b-[#CDA96A] text-left text-[#CDA96A] mb-[7px]"
                       >
-                        <p className="font-normal text-[14px] md:text-lg leading-[140%]">
+                        <p className="font-normal text-[14px] md:text-[22px] leading-[140%]">
                           {wish.name}
                         </p>
-                        <p className="font-normal text-[14px] md:text-lg leading-[140%] mt-[7px]">
+                        <p className="font-normal text-[14px] md:text-[22px] leading-[140%] mt-[7px]">
                           {wish.message}
                         </p>
                       </div>

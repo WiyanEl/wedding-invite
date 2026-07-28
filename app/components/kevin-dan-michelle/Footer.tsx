@@ -32,7 +32,7 @@ export default function Footer({ isOpen, isMobile }: Props) {
           <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-footer-mobile.png" alt="Picture of tanaman kiri bawah" width={329} height={329} className="md:hidden absolute bottom-0 left-0 w-[229px]" />
           <Image src="/images/kevin-dan-michelle/img-bintang-bawah-footer-mobile.png" alt="Picture of tanaman kiri bawah" width={553} height={553} className="md:hidden absolute bottom-0 right-0" />
 
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-footer-mobile.png" alt="Picture of tanaman kiri bawah" width={1086} height={1086} className="hidden md:block absolute w-[800px] bottom-0 left-0" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-footer.png" alt="Picture of tanaman kiri bawah" width={1086} height={1086} className="hidden md:block absolute bottom-0 left-0" />
           <Image src="/images/kevin-dan-michelle/img-bintang-bawah-footer-mobile.png" alt="Picture of tanaman kiri bawah" width={1110} height={1110} className="hidden md:block absolute bottom-0 left-1/2 -translate-x-1/2" />
         </div>
       </div>

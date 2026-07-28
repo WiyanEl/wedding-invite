@@ -32,15 +32,15 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
               setAttendance('attend')
               setShowModal(true)
               }} className={`w-[121px] md:w-[229px] h-[40px] md:h-[47px] rounded-[6px] md:rounded-[10px] flex justify-center items-center ${attendance == 'attend' ? 'bg-[#081930]' : 'bg-transparent border-[0.5px] border-[#081930]'}`}>
-                <span className={`text-[14px] md:text-[22px] font-normal leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-white' : 'text-white'}`}>attend</span>
+                <span className={`text-[14px] md:text-[22px] font-light leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-white' : 'text-white'}`}>attend</span>
             </button>
             <button type="button" onClick={() => {
               setAttendance('not')
               setShowModal(true)
               }} className={`w-[121px] md:w-[229px] h-[40px] md:h-[47px] rounded-[6px] md:rounded-[10px] flex justify-center items-center ${attendance == 'attend' ? 'bg-transparent border-[0.5px] border-[#081930]' : 'bg-[#081930]'}`}>
                 {/* {isMobile ? ( */}
-                  <span className={`md:hidden text-[14px] md:text-[22px] font-normal leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-white' : 'text-white'}`}>unable to <br /> attend</span>
-                  <span className={`hidden md:block text-[14px] md:text-[22px] font-normal leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-white' : 'text-white'}`}>not attend</span>
+                  <span className={`md:hidden text-[14px] md:text-[22px] font-light leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-white' : 'text-white'}`}>unable to <br /> attend</span>
+                  <span className={`hidden md:block text-[14px] md:text-[22px] font-light leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-white' : 'text-white'}`}>not attend</span>
                 {/* ) : (
                   <span className={`text-[14px] font-normal leading-[14.96px] uppercase ${attendance == 'attend' ? 'text-[60564D]' : 'text-white'}`}>not attend</span>
                 )} */}
@@ -55,7 +55,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
               setAttendance('not')
               setShowModal(true)
             }} type="button" className="flex justify-center items-center w-[198px] md:w-[388px] h-[33px] md:h-[47px] rounded-[6px] md:rounded-[10px] bg-[#081930] mx-auto">
-              <span className="text-[14px] md:text-[22px] md font-normal leading-[14.96px] text-white uppercase">confirm not attend</span>
+              <span className="text-[14px] md:text-[22px] md font-light leading-[14.96px] text-white uppercase">confirm not attend</span>
             </button>
           </div>
           <p className="md:hidden text-xs font-normal leading-[16px] mt-[54px] animate" data-animate="zoom-in">If you need assistance with your RSVP,</p>
@@ -65,7 +65,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
           <div className="mt-[33px] md:mt-[40px] animate" data-animate="zoom-in">
             <Link href="https://wa.me/6289671650843" target="_blank" className="flex justify-center items-center w-[198px] md:w-[310px] h-[33px] md:h-[47px] rounded-[6px] md:rounded-[10px] bg-[#12877B] mx-auto">
               <Image src="/images/kevin-dan-michelle/icon-whatsapp.png"  alt="Picture of Icon WhatsApp" width={16} height={16} className="mr-2 md:w-[27px]" />
-              <span className="font-ovo text-[14px] md:text-[22px] font-normal leading-[14.96px] md:leading-[26px] text-white uppercase">chat support</span>
+              <span className="font-ovo text-[14px] md:text-[22px] font-light leading-[14.96px] md:leading-[26px] text-white uppercase">chat support</span>
             </Link>
           </div>
         </div>

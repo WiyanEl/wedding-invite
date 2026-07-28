@@ -14,7 +14,7 @@ export default function JourneyLove({ isOpen, isMobile }: Props) {
     <>
       <div id="journey-love" className="journey-love relative z-10 w-full min-h-screen">
         <div className="relative overflow-hidden z-10 h-full font-cormorantgaramond text-[#DFD28F] pt-[148px] pb-[187px]">
-          <div className="w-[259px] md:w-[638px] mx-auto">
+          <div className="w-[259px] md:w-[783px] mx-auto">
             <h2 className="font-milyuna text-2xl md:text-[48px] leading-[25px] md:leading-[48px] animate" data-animate="fade-up">Kevin & <br /> Michelle</h2>
             <p className="text-[14px] md:text-[22px] leading-[20px] md:leading-[30px] text-justify mt-[37px] md:mt-[61px] animate" data-animate="fade-up">
               It all began in 2016, on the very first day of medical school. We were classmates and happened to be placed in the same practical group. Like many first meetings, it started with a simple introduction—but instead of talking about the lab session, we found ourselves laughing about the challenges that medical school would bring.
@@ -47,9 +47,9 @@ export default function JourneyLove({ isOpen, isMobile }: Props) {
           <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey-2-mobile.png" alt="Picture of bintang atas" width={252} height={252} className="md:hidden absolute -bottom-[230px] left-[5px]" />
           <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-journey-2-mobile.png" alt="Picture of bintang atas" width={252} height={252} className="md:hidden absolute -bottom-[230px] right-[5px]" />
 
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey.png" alt="Picture of bintang atas" width={844} height={690} className="hidden md:block w-[500px] absolute -bottom-[270px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-journey.png" alt="Picture of bintang atas" width={571} height={513} className="hidden md:block w-[600px] absolute  -bottom-[250px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey-2.png" alt="Picture of bintang atas" width={622} height={360} className="hidden md:block absolute -bottom-[300px] left-[20px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey.png" alt="Picture of bintang atas" width={844} height={690} className="hidden md:block w-[570px] absolute -bottom-[270px] left-0" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-journey.png" alt="Picture of bintang atas" width={571} height={513} className="hidden md:block w-[670px] absolute  -bottom-[250px] right-0" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey-2.png" alt="Picture of bintang atas" width={622} height={360} className="hidden md:block absolute -bottom-[300px] left-[30px]" />
         </div>
 
         {/* Absoulte Image */}
