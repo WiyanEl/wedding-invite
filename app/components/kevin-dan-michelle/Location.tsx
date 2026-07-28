@@ -21,7 +21,7 @@ export default function Location({ isOpen, isMobile }: Props) {
           <h4 className="font-hello text-[32px] md:text-[64px] leading-[18px] md:leading-[84px] mt-[51px] md:mt-[48px] animate" data-animate="fade-up">Holy Matrimony</h4>
           <p className="text-base md:text-[22px] leading-[25px] md:leading-[30px] uppercase mt-[13px] md:mt-[19px] animate" data-animate="fade-up">11.00 wib</p>
           <p className="text-[14px] md:text-[22px] leading-[20px] md:leading-[30px] uppercase mt-[13px] md:mt-[50px] animate" data-animate="fade-up">Kapel Abipraya Kota Baru <br className="md:hidden" /> Parahyangan</p>
-          <p className="text-[14px] md:text-[22px] leading-[18px] md:leading-[30px] mt-3 md:mt-[35px] animate" data-animate="fade-up">Parahyangan St, Kertajaya, Padalarang, <br /> West Bandung Regency</p>
+          <p className="text-[14px] md:text-[22px] leading-[18px] md:leading-[30px] mt-3 md:mt-5 animate" data-animate="fade-up">Parahyangan St, Kertajaya, Padalarang, <br /> West Bandung Regency</p>
           <Link href="https://maps.app.goo.gl/TJX8AgM9pxE7wVWYA" target="_blank" className="relative z-50 flex items-center justify-center w-[160px] md:w-[294px] h-[33px] md:h-[47px] bg-[#CDA96A] rounded-[6px] text-[14px] md:text-[22px] leading-[17.16px] text-white uppercase mt-3 md:mt-[35px] mx-auto animate" data-animate="zoom-in">
             Google Maps
           </Link>
@@ -31,7 +31,7 @@ export default function Location({ isOpen, isMobile }: Props) {
           <h4 className="font-hello text-[32px] md:text-[64px] leading-[18px] md:leading-[84px] mt-[54px] md:mt-[94px] animate" data-animate="fade-up">Dinner Reception</h4>
           <p className="text-base md:text-[22px] leading-[25px] md:leading-[30px] uppercase mt-[13px] md:mt-[19px] animate" data-animate="fade-up">18.00 wib</p>
           <p className="text-[14px] md:text-[22px] leading-[20px] md:leading-[30px] uppercase mt-[13px] md:mt-[50px] animate" data-animate="fade-up"> Pullman Hotel Grand ballroom</p>
-          <p className="text-[14px] md:text-[22px] leading-[18px] md:leading-[30px] mt-3 md:mt-[35px] animate" data-animate="fade-up">Jl. Diponegoro No.27, Citarum, <br /> Kec. Bandung Wetan, Kota Bandung</p>
+          <p className="text-[14px] md:text-[22px] leading-[18px] md:leading-[30px] mt-3 md:mt-5 animate" data-animate="fade-up">Jl. Diponegoro No.27, Citarum, <br /> Kec. Bandung Wetan, Kota Bandung</p>
           <Link href="https://maps.app.goo.gl/TVaxFoJTkMpHS7EV8" target="_blank" className="relative z-50 flex items-center justify-center w-[160px] md:w-[294px] h-[33px] md:h-[47px] bg-[#CDA96A] rounded-[6px] text-[14px] md:text-[22px] leading-[17.16px] text-white uppercase mt-3 md:mt-[35px] mx-auto animate" data-animate="zoom-in">
             Google Maps
           </Link>
