@@ -47,8 +47,8 @@ export default function Profile({ isOpen, isMobile }: Props) {
         <Image src="/images/kevin-dan-michelle/img-bintang-atas-profile-mobile.png" alt="Picture of bintang atas" width={359} height={359} className="md:hidden absolute -top-[200px] left-0 pointer-events-none" />
         <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-profile-mobile.png" alt="Picture of tanaman atas kiri" width={318} height={390} className="md:hidden absolute -top-[170px] left-0 w-[179px] pointer-events-none" />
         <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-profile-mobile.png" alt="Picture of tanaman atas kanan" width={318} height={390} className="md:hidden absolute -top-[170px] right-0 w-[179px] pointer-events-none" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-profile.png" alt="Picture of tanaman atas kiri" width={932} height={1142} className="hidden md:block absolute -top-[800px] left-0 pointer-events-none w-[772px]" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-profile.png" alt="Picture of tanaman atas kanan" width={932} height={1142} className="hidden md:block absolute -top-[800px] right-0 pointer-events-none w-[772px]" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-profile.png" alt="Picture of tanaman atas kiri" width={932} height={1142} className="hidden md:block absolute -top-[550px] left-0 pointer-events-none w-[600px]" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-profile.png" alt="Picture of tanaman atas kanan" width={932} height={1142} className="hidden md:block absolute -top-[550px] right-0 pointer-events-none w-[600px]" />
 
         <Image src="/images/kevin-dan-michelle/img-bintang-atas-kanan-profile-mobile.png" alt="Picture of bintang atas kanan" width={359} height={359} className="absolute -top-[100px] right-0 w-[229px]" />
         <Image src="/images/kevin-dan-michelle/img-bintang-kiri-samping-pengantin-pria-mobile.png" alt="Picture of bintang samping pengantin pria" width={481} height={481} className="md:hidden absolute top-[100px] left-0 w-[281px] " />

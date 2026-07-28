@@ -100,14 +100,14 @@ export default function Wishes({ isOpen, isMobile }: Props) {
           {!seeAllMessages ? (
             <div className="relative text-center">
               <form onSubmit={save} className="mx-auto mt-[32px] md:mt-[50px] animate zoom-in" data-animate="zoom-in">
-                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="block w-[263px] md:w-[564px] h-[33px] md:h-[40px] rounded-[6px] md:rounded-[64px] border-[1px] border-[#CDA96A] bg-transparent px-[13px] md:px-[23px] py-1 text-[14px] md:text-lg leading-[140%] text-[#CDA96A] placeholder:text-[#CDA96A80] mx-auto" placeholder="Desy (Tester)" />
-                <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="block w-[263px] md:w-[564px] h-[60px] md:h-[261px] rounded-[6px] md:rounded-[20px] border-[1px] border-[#CDA96A] bg-transparent px-[13px] md:px-[23px] py-1 text-[14px] md:text-lg leading-[140%] text-[#CDA96A] mx-auto mt-4"></textarea>
-                <button type="submit" className="flex justify-center items-center w-[263px] md:w-[564px] h-[33px] md:h-[40px] bg-[#CDA96A] rounded-[6px] border-[0.49px] border-[#CDA96A] mx-auto mt-4">
+                <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="block w-[263px] md:w-[691px] h-[33px] md:h-[40px] rounded-[6px] md:rounded-[64px] border-[1px] border-[#CDA96A] bg-transparent px-[13px] md:px-[23px] py-1 text-[14px] md:text-lg leading-[140%] text-[#CDA96A] placeholder:text-[#CDA96A80] mx-auto" placeholder="Desy (Tester)" />
+                <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="block w-[263px] md:w-[691px] h-[60px] md:h-[261px] rounded-[6px] md:rounded-[20px] border-[1px] border-[#CDA96A] bg-transparent px-[13px] md:px-[23px] py-1 text-[14px] md:text-lg leading-[140%] text-[#CDA96A] mx-auto mt-4"></textarea>
+                <button type="submit" className="flex justify-center items-center w-[263px] md:w-[691px] h-[33px] md:h-[40px] bg-[#CDA96A] rounded-[6px] border-[0.49px] border-[#CDA96A] mx-auto mt-4">
                   <Image src="/images/steven-dan-bella/icon-send.png" alt="Picture of Icon Send" width={15} height={19} className="md:w-[24px] mr-2" />
                   <span className="text-[14px] md:text-lg text-white font-normal leading-[140%] uppercase">send</span>
                 </button>
               </form>
-              <div className="w-[263px] md:w-[564px] h-[332px] md:h-[526px] rounded-[6px] md:rounded-[20px] border-[0.49px] border-[#CDA96A] py-[18px] md:py-[39px] px-[13px] md:px-[23px] mx-auto mt-4 md:mt-[40px] animate zoom-in" data-animate="zoom-in">
+              <div className="w-[263px] md:w-[691px] h-[332px] md:h-[526px] rounded-[6px] md:rounded-[20px] border-[0.49px] border-[#CDA96A] py-[18px] md:py-[39px] px-[13px] md:px-[23px] mx-auto mt-4 md:mt-[40px] animate zoom-in" data-animate="zoom-in">
                 <div className="w-full h-full overflow-y-auto scroll-smooth">
                   {wishes.length === 0 ? (
                     <p className="text-center text-[14px] md:text-lg text-[#CDA96A]">
@@ -130,15 +130,15 @@ export default function Wishes({ isOpen, isMobile }: Props) {
                   )}
                 </div>
               </div>
-              <button type="button" onClick={() => setSeeAllMessages(true)} className="flex justify-center items-center w-[263px] md:w-[564px] h-[33px] md:h-[40px] bg-[#CDA96A] rounded-[6px] border-[0.49px] border-[#CDA96A] mx-auto mt-4 animate zoom-in" data-animate="zoom-in">
+              <button type="button" onClick={() => setSeeAllMessages(true)} className="flex justify-center items-center w-[263px] md:w-[691px] h-[33px] md:h-[40px] bg-[#CDA96A] rounded-[6px] border-[0.49px] border-[#CDA96A] mx-auto mt-4 animate zoom-in" data-animate="zoom-in">
                   <Image src="/images/steven-dan-bella/icon-message.png" alt="Picture of Icon Send" width={17} height={22} className="md:w-[26px] mr-2" />
                   <span className="text-[14px] md:text-lg text-white font-normal leading-[140%] uppercase">see all message</span>
                 </button>
             </div>
           ) : (
             <div className="relative text-center text-[#3B3B3B] mt-[47px] md:mt-[89px]">
-              <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className="w-[340px] md:w-[564px] h-[33px] md:h-[40px] rounded-[6px] md:rounded-[64px] border-[0.49px] border-[#CDA96A] bg-transparent px-2 py-1 text-[14px] md:text-lg leading-[140%] text-[#CDA96A] placeholder:text-[#CDA96A80] mx-auto animate zoom-in" data-animate="zoom-in" placeholder="Search" />
-              <div className="grid grid-cols-2 gap-5 mt-[20px] w-[340px] md:w-[564px] h-[459.87px] md:h-[638px] overflow-y-auto mx-auto">
+              <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className="w-[340px] md:w-[691px] h-[33px] md:h-[40px] rounded-[6px] md:rounded-[64px] border-[0.49px] border-[#CDA96A] bg-transparent px-2 py-1 text-[14px] md:text-lg leading-[140%] text-[#CDA96A] placeholder:text-[#CDA96A80] mx-auto animate zoom-in" data-animate="zoom-in" placeholder="Search" />
+              <div className="grid grid-cols-2 gap-5 mt-[20px] w-[340px] md:w-[691px] h-[459.87px] md:h-[638px] overflow-y-auto mx-auto">
                 {filtered.length === 0 ? (
                   <p className={`col-span-2 text-center text-sm text-white animate'}`}>
                     No message found
@@ -169,7 +169,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
                 )}
               </div>
               <span data-animate="zoom-in">
-                <button onClick={() => setSeeAllMessages(false)} className="flex justify-center items-center w-[340px] md:w-[564px] h-[33px] md:h-[40px] bg-[#CDA96A] rounded-[10px] md:rounded-[20px] border-[0.49px] border-[#CDA96A] mx-auto mt-5 animate zoom-in" data-animate="zoom-in">
+                <button onClick={() => setSeeAllMessages(false)} className="flex justify-center items-center w-[340px] md:w-[691px] h-[33px] md:h-[40px] bg-[#CDA96A] rounded-[10px] md:rounded-[20px] border-[0.49px] border-[#CDA96A] mx-auto mt-5 animate zoom-in" data-animate="zoom-in">
                   <span className="text-[14px] md:text-lg text-white font-normal leading-[140%] uppercase">back</span>
                 </button>
               </span>
@@ -177,7 +177,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
           )}
           {selectedWish && (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-              <div className="relative w-[340px] md:w-[564px] scale-in">
+              <div className="relative w-[340px] md:w-[691px] scale-in">
                 <div className="relative py-8 px-5 bg-[#CDA96A] rounded-[16px] border border-[#CDA96A] shadow-[0_10px_33px_rgba(0,0,0,0.08)] text-center">
                   <h3 className="font-medium text-[24px] md:text-[32px] text-white uppercase tracking-wide">
                     {selectedWish.name}
@@ -189,7 +189,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
                 </div>
                 <button
                   onClick={() => setSelectedWish(null)}
-                  className="flex justify-center items-center w-[340px] md:w-[564px] h-[33px] md:h-[40px] bg-[#CDA96A] rounded-[10px] md:rounded-[20px] border-[0.49px] border-[#CDA96A] mx-auto mt-5"
+                  className="flex justify-center items-center w-[340px] md:w-[691px] h-[33px] md:h-[40px] bg-[#CDA96A] rounded-[10px] md:rounded-[20px] border-[0.49px] border-[#CDA96A] mx-auto mt-5"
                 >
                   <span className="text-[14px] md:text-lg text-white font-normal leading-[140%] uppercase">back</span>
                 </button>
@@ -204,9 +204,9 @@ export default function Wishes({ isOpen, isMobile }: Props) {
         <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={104} height={104} className="md:hidden absolute -top-[55px] right-0 w-[74px] pointer-events-none" />
         <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={210} height={210} className="md:hidden absolute top-[325px] left-0 w-[180px] pointer-events-none" />
 
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-mobile.png" alt="Picture of tanaman kanan atas" width={623} height={623} className="hidden md:block absolute -top-[290px] right-0 pointer-events-none" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={298} height={298} className="hidden md:block absolute top-[400px] right-0 pointer-events-none" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={677} height={677} className="hidden md:block absolute top-[325px] left-0 pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-mobile.png" alt="Picture of tanaman kanan atas" width={623} height={623} className="hidden md:block absolute w-[500px] -top-[180px] right-0 pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wishes-2-mobile.png" alt="Picture of tanaman kanan atas" width={298} height={298} className="hidden md:block absolute w-[250px] top-[380px] right-0 pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-wishes-mobile.png" alt="Picture of tanaman kiri" width={677} height={677} className="hidden md:block absolute top-[285px] w-[600px] left-0 pointer-events-none" />
       </div>
     </>
   )

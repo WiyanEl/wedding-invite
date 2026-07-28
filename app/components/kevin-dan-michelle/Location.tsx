@@ -48,10 +48,10 @@ export default function Location({ isOpen, isMobile }: Props) {
           <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kiri-location-2-mobile.png" alt="Picture of tanaman bawah kiri" width={147} height={147} className="md:hidden absolute w-[200px] -bottom-[120px] left-[50px]" />
 
           {/* Desktop */}
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-mobile.png" alt="Picture of tanaman atas kanan" width={844} height={690} className="hidden md:block absolute w-[700px] -top-[500px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-mobile.png" alt="Picture of tanaman atas kiri" width={844} height={690} className="hidden md:block absolute w-[700px] -top-[500px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-2.png" alt="Picture of tanaman atas kanan" width={622} height={360} className="hidden md:block absolute -top-[280px] right-[120px]" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-2.png" alt="Picture of tanaman atas kiri" width={622} height={360} className="hidden md:block absolute -top-[280px] left-[120px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-mobile.png" alt="Picture of tanaman atas kanan" width={844} height={690} className="hidden md:block absolute w-[500px] -top-[350px] right-0" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-mobile.png" alt="Picture of tanaman atas kiri" width={844} height={690} className="hidden md:block absolute w-[500px] -top-[350px] left-0" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-2.png" alt="Picture of tanaman atas kanan" width={622} height={360} className="hidden md:block absolute -top-[280px] right-[20px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-2.png" alt="Picture of tanaman atas kiri" width={622} height={360} className="hidden md:block absolute -top-[280px] left-[20px]" />
 
           <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kanan-location.png" alt="Picture of tanaman bawah kanan" width={557} height={557} className="hidden md:block absolute -bottom-[280px] right-0" />
           <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kiri-location.png" alt="Picture of tanaman bawah kiri" width={557} height={557} className="hidden md:block absolute -bottom-[280px] left-0" />
