@@ -11,7 +11,7 @@ export default function Footer({ isOpen, isMobile }: Props) {
   return (
     <>
       <div id="footer" className="relative z-10 w-full h-1/2">
-        <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[72px] pb-[160px] md:pt-[223px] md:pb-[500px]">
+        <div className="relative overflow-hidden z-10 text-center h-full font-cormorantgaramond text-[#DFD28F] pt-[72px] pb-[160px] md:pt-[223px] md:pb-[500px]">
           <h2 className="font-milyuna text-[40px] md:text-[68px] leading-[22px] md:leading-[44px] animate" data-animate="zoom-in">Thank You</h2>
 
           <p className="md:hidden text-[14px] leading-[20px] mt-[25px] animate" data-animate="fade-up">
