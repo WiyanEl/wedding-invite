@@ -13,7 +13,7 @@ export default function JourneyLove({ isOpen, isMobile }: Props) {
   return (
     <>
       <div id="journey-love" className="journey-love relative z-10 w-full min-h-screen">
-        <div className="relative overflow-hidden z-10 h-full font-cormorant text-[#DFD28F] pt-[148px] pb-[187px]">
+        <div className="relative overflow-hidden z-10 h-full font-cormorantgaramond text-[#DFD28F] pt-[148px] pb-[187px]">
           <div className="w-[259px] md:w-[638px] mx-auto">
             <h2 className="font-milyuna text-2xl md:text-[48px] leading-[25px] md:leading-[48px] animate" data-animate="fade-up">Kevin & <br /> Michelle</h2>
             <p className="text-[14px] md:text-[22px] leading-[20px] md:leading-[30px] text-justify mt-[37px] md:mt-[61px] animate" data-animate="fade-up">

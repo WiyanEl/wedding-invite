@@ -21,7 +21,7 @@ export default function Hero({ isOpen, setIsOpen, params, isMobile }: HeroProps)
             <div className="relative z-20 flex items-center justify-center h-full">
               <div className="w-[290px] md:w-[416px] min-h-min rounded-[15px] md:rounded-[20px] shadow-[0px_8px_11.6px_0px_#0000008A] zoom-in">
                 <div className="w-full h-[180px] md:h-[220px] rounded-tl-[15px] md:rounded-tl-[20px] rounded-tr-[15px] md:rounded-tr-[20px] bg-center bg-cover bg-no-repeat bg-[url('/images/kevin-dan-michelle/img-popup-hero-mobile.png')]"></div>
-                <div className="relative w-full pt-[47px] md:pt-[62px] pb-[54px] rounded-bl-[15px] md:rounded-bl-[20px] rounded-br-[15px] md:rounded-br-[20px] font-cormorant text-[#DFD28F] text-center bg-[#081930]">
+                <div className="relative w-full pt-[47px] md:pt-[62px] pb-[54px] rounded-bl-[15px] md:rounded-bl-[20px] rounded-br-[15px] md:rounded-br-[20px] font-cormorantgaramond text-[#DFD28F] text-center bg-[#081930]">
                   <h6 className="text-xs md:text-lg font-normal leading-none md:uppercase">The Wedding of</h6>
                   <h2 className="font-milyuna text-[26px] md:text-[40px] leading-none font-normal mt-2">Kevin & Michelle</h2>
                   <h6 className="text-xs md:text-base font-medium leading-[25px] md:leading-[31px] mt-3">Dear Mr. /Mrs. / Ms.</h6>

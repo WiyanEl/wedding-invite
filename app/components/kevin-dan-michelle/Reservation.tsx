@@ -17,7 +17,7 @@ export default function Reservation({ isOpen, isMobile, params }: Props) {
   return (
     <>
       <div id="reservation" className="relative z-10 w-full bg-[#CDA96A]">
-        <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-white pt-[115px] md:pt-[211px] pb-[132px] md:pb-[201px]">
+        <div className="relative overflow-hidden z-10 text-center h-full font-cormorantgaramond text-white pt-[115px] md:pt-[211px] pb-[132px] md:pb-[201px]">
           <h2 className="font-milyuna text-2xl md:text-[48px] leading-[25px] uppercase animate" data-animate="zoom-in">rsvp</h2>
           <Image src="/images/kevin-dan-michelle/img-garis-judul-putih-mobile.png" alt="Picture of garis judul" width={194} height={35} className="mt-1 md:mt-[25px] w-[194px] mx-auto animate" data-animate="zoom-in" />
 

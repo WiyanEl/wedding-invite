@@ -13,7 +13,7 @@ export default function Location({ isOpen, isMobile }: Props) {
   return (
     <>
       <div id="location" className="relative z-10 w-full min-h-screen">
-        <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[145px] md:pt-[210px] pb-[141px] md:pb-[200px]">
+        <div className="relative overflow-hidden z-10 text-center h-full font-cormorantgaramond text-[#DFD28F] pt-[145px] md:pt-[210px] pb-[141px] md:pb-[200px]">
           <h2 className="md:hidden font-milyuna text-2xl leading-[25px] animate" data-animate="zoom-in">Time & Location</h2>
           <h2 className="hidden md:block font-milyuna text-[48px] leading-[25px] uppercase animate" data-animate="zoom-in">Location</h2>
           <Image src="/images/kevin-dan-michelle/img-garis-judul-mobile.png" alt="Picture of garis judul" width={185} height={10} className="mt-1 md:mt-[24px] w-[109px] md:w-[185px] mx-auto animate" data-animate="zoom-in" />

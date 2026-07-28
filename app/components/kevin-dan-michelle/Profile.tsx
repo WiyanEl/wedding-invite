@@ -13,7 +13,7 @@ export default function Profile({ isOpen, isMobile }: Props) {
   return (
     <>
       <div id="profile" className="profile relative z-10 w-full min-h-screen">
-        <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[159px]">
+        <div className="relative overflow-hidden z-10 text-center h-full font-cormorantgaramond text-[#DFD28F] pt-[159px]">
           <p className="text-[14px] md:text-[22px] leading-[20px] md:leading-[30px] animate" data-animate="fade-up">
             We request the honour of your presence <br /> at the wedding of <br className="md:hidden" /> our beloved son and daughter
           </p>

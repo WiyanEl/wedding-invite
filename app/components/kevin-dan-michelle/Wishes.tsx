@@ -93,7 +93,7 @@ export default function Wishes({ isOpen, isMobile }: Props) {
   return (
     <>
       <div id="wishes" className="relative z-10 w-full">
-        <div className="relative overflow-hidden z-10 text-center h-full font-cormorant text-[#DFD28F] pt-[115px] md:pt-[225px]">
+        <div className="relative overflow-hidden z-10 text-center h-full font-cormorantgaramond text-[#DFD28F] pt-[115px] md:pt-[225px]">
           <h2 className="font-milyuna text-2xl md:text-[48px] leading-[25px] animate" data-animate="zoom-in">Your Wishes</h2>
           <Image src="/images/kevin-dan-michelle/img-garis-judul-mobile.png" alt="Picture of garis judul" width={194} height={35} className="w-[109px] md:w-[194px] mt-1 md:mt-[25px] mx-auto animate" data-animate="zoom-in" />
 
