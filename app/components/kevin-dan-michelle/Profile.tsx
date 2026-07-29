@@ -18,8 +18,8 @@ export default function Profile({ isOpen, isMobile }: Props) {
             We request the honour of your presence <br /> at the wedding of <br className="md:hidden" /> our beloved son and daughter
           </p>
 
-          <Image src="/images/kevin-dan-michelle/img-pengantin-pria-mobile.png" alt="Picture of Pengantin pria" width={200} height={262} className="md:hidden w-[200px] mt-[60px] mx-auto animate" data-animate="zoom-in" />
-          <Image src="/images/kevin-dan-michelle/img-pengantin-pria.png" alt="Picture of Pengantin pria" width={261} height={338} className="hidden md:block mt-[71px] mx-auto animate" data-animate="zoom-in" />
+          <Image src="/images/kevin-dan-michelle/img-pengantin-pria-mobile.png" alt="Picture of Pengantin pria" width={200} height={262} className="md:hidden w-[200px] mt-[60px] mx-auto pointer-events-none animate" data-animate="zoom-in" />
+          <Image src="/images/kevin-dan-michelle/img-pengantin-pria.png" alt="Picture of Pengantin pria" width={261} height={338} className="hidden md:block mt-[71px] mx-auto pointer-events-none animate" data-animate="zoom-in" />
           <h2 className="font-milyuna text-[26px] md:text-[64px] leading-[30px] md:leading-[63px] mt-[36px] md:mt-[50px] animate" data-animate="zoom-in">dr. Kevin Axel Laurent <br /> Susanto</h2>
           <p className="text-[14px] md:text-[22px] leading-[20px] font-light mt-5 md:mt-[25px] animate" data-animate="fade-up">
             The Son of
@@ -28,8 +28,8 @@ export default function Profile({ isOpen, isMobile }: Props) {
             Mr. Agus Susanto, SE and <br className="md:hidden" /> Mrs. Cin Mei
           </p>
 
-          <Image src="/images/kevin-dan-michelle/img-pengantin-wanita-mobile.png" alt="Picture of Pengantin wanita" width={200} height={262} className="md:hidden w-[200px] mt-[55px] mx-auto animate" data-animate="zoom-in" />
-          <Image src="/images/kevin-dan-michelle/img-pengantin-wanita.png" alt="Picture of Pengantin wanita" width={261} height={338} className="hidden md:block mt-[98px] mx-auto animate" data-animate="zoom-in" />
+          <Image src="/images/kevin-dan-michelle/img-pengantin-wanita-mobile.png" alt="Picture of Pengantin wanita" width={200} height={262} className="md:hidden w-[200px] mt-[55px] mx-auto pointer-events-none animate" data-animate="zoom-in" />
+          <Image src="/images/kevin-dan-michelle/img-pengantin-wanita.png" alt="Picture of Pengantin wanita" width={261} height={338} className="hidden md:block mt-[98px] mx-auto pointer-events-none animate" data-animate="zoom-in" />
           <h2 className="font-milyuna text-[26px] md:text-[64px] leading-[30px] md:leading-[63px] mt-[36px] md:mt-[50px] animate" data-animate="zoom-in">dr. Michelle Cannissa <br /> Hendrawan</h2>
           <p className="text-[14px] md:text-[22px] leading-[20px] font-light mt-5 md:mt-[25px] animate" data-animate="fade-up">
             The Daughter of

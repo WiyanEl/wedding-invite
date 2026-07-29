@@ -64,7 +64,7 @@ export default function CountingDown({ isOpen, isMobile }: Props) {
 
 function TimeBox({ value, label }: { value: string; label: string }) {
   return (
-    <div className="flex flex-col gap-1 md:gap-1.5 items-center w-[73px] md:w-[121px] h-[71px] md:h-[126px] rounded-[6px] md:rounded-[25px] bg-white shadow-[0.71px_2.82px_6.39px_1.41px_#00000026] pt-1.5 md:pt-3.5 text-[#000000] animate" data-animate="zoom-in">
+    <div className="flex flex-col gap-1 md:gap-1.5 items-center w-[73px] md:w-[121px] h-[71px] md:h-[126px] rounded-[6px] md:rounded-[25px] bg-white shadow-[0.71px_2.82px_6.39px_1.41px_#00000026] pt-2 md:pt-3.5 text-[#000000] animate" data-animate="zoom-in">
       <p className="font-lora font-medium text-[41px] md:text-[62px] leading-[104%] md:leading-none md:tracking-[0.043em]">
         {value}
       </p>

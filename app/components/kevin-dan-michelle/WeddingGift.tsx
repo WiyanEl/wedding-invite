@@ -28,7 +28,7 @@ export default function WeddingGift({ isOpen, isMobile }: Props) {
       <div id="wedding-gift" className="relative z-10 w-full">
         <div className="relative overflow-hidden z-10 text-center h-full font-cormorantgaramond text-[#DFD28F] pt-[140px] md:pt-[209px]">
           <h2 className="font-milyuna text-2xl md:text-[48px] leading-[25px] animate" data-animate="zoom-in">Wedding Gift</h2>
-          <Image src="/images/kevin-dan-michelle/img-garis-judul-mobile.png" alt="Picture of garis judul" width={211} height={38} className="mt-[23px] mx-auto animate" data-animate="zoom-in" />
+          <Image src="/images/kevin-dan-michelle/img-garis-judul-mobile.png" alt="Picture of garis judul" width={211} height={38} className="w-[109px] md:w-[194px] mt-1 md:mt-[25px] mx-auto animate" data-animate="zoom-in" />
 
           <p className="md:hidden text-[14px] leading-[18px] mt-[56px] animate" data-animate="fade-up">
             Your presence and prayers <br /> are the greatest blessing to us.
