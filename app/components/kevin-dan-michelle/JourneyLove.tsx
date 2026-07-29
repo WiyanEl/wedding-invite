@@ -40,22 +40,22 @@ export default function JourneyLove({ isOpen, isMobile }: Props) {
           </div>
 
           {/* Absoulte Image */}
-          <Image src="/images/kevin-dan-michelle/img-bintang-kanan-journey-mobile.png" alt="Picture of bintang atas" width={514} height={514} className="md:hidden absolute top-[650px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-bintang-kiri-bawah-journey-mobile.png" alt="Picture of bintang bawah kiri" width={514} height={514} className="absolute -bottom-[100px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey-mobile.png" alt="Picture of bintang atas" width={232} height={232} className="md:hidden absolute w-[200px] -bottom-[130px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-journey-mobile.png" alt="Picture of bintang atas" width={232} height={232} className="md:hidden absolute w-[200px] -bottom-[130px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey-2-mobile.png" alt="Picture of bintang atas" width={252} height={252} className="md:hidden absolute -bottom-[230px] left-[5px]" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-journey-2-mobile.png" alt="Picture of bintang atas" width={252} height={252} className="md:hidden absolute -bottom-[230px] right-[5px]" />
+          <Image src="/images/kevin-dan-michelle/img-bintang-kanan-journey-mobile.png" alt="Picture of bintang atas" width={514} height={514} className="md:hidden absolute top-[650px] right-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-bintang-kiri-bawah-journey-mobile.png" alt="Picture of bintang bawah kiri" width={514} height={514} className="absolute -bottom-[100px] left-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey-mobile.png" alt="Picture of bintang atas" width={232} height={232} className="md:hidden absolute w-[200px] -bottom-[130px] left-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-journey-mobile.png" alt="Picture of bintang atas" width={232} height={232} className="md:hidden absolute w-[200px] -bottom-[130px] right-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey-2-mobile.png" alt="Picture of bintang atas" width={252} height={252} className="md:hidden absolute -bottom-[230px] left-[5px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-journey-2-mobile.png" alt="Picture of bintang atas" width={252} height={252} className="md:hidden absolute -bottom-[230px] right-[5px] pointer-events-none" />
 
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey.png" alt="Picture of bintang atas" width={844} height={690} className="hidden md:block w-[570px] absolute -bottom-[270px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-journey.png" alt="Picture of bintang atas" width={571} height={513} className="hidden md:block w-[700px] absolute -bottom-[250px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey-2.png" alt="Picture of bintang atas" width={622} height={360} className="hidden md:block absolute -bottom-[300px] left-[30px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey.png" alt="Picture of bintang atas" width={844} height={690} className="hidden md:block w-[570px] absolute -bottom-[270px] left-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-bawah-journey.png" alt="Picture of bintang atas" width={571} height={513} className="hidden md:block w-[700px] absolute -bottom-[250px] right-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-bawah-journey-2.png" alt="Picture of bintang atas" width={622} height={360} className="hidden md:block absolute -bottom-[300px] left-[30px] pointer-events-none" />
         </div>
 
         {/* Absoulte Image */}
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-journey-mobile.png" alt="Picture of tanaman atas" width={237} height={237} className="md:hidden absolute -top-[100px] left-0 w-[200px]" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-journey-mobile.png" alt="Picture of tanaman atas" width={237} height={237} className="md:hidden absolute -top-[100px] left-0 w-[200px] pointer-events-none" />
         <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-journey-mobile.png" alt="Picture of tanaman atas" width={237} height={237} className="md:hidden absolute -top-[100px] right-0 w-[200px]" />
-        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-journey.png" alt="Picture of tanaman atas" width={774} height={771} className="hidden md:block absolute -top-[400px] right-0" />
+        <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-journey.png" alt="Picture of tanaman atas" width={774} height={771} className="hidden md:block absolute -top-[400px] right-0 pointer-events-none" />
       </div>
     </>
   )

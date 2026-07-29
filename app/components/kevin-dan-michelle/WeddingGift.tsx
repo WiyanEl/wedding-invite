@@ -56,16 +56,16 @@ export default function WeddingGift({ isOpen, isMobile }: Props) {
           </div>
 
           {/* Image Absolute */}
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-mobile.png" alt="Picture of tanaman atas kanan" width={219} height={219} className="md:hidden absolute w-[180px] -top-[85px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-mobile.png" alt="Picture of tanaman atas kiri" width={219} height={219} className="md:hidden absolute w-[180px] -top-[85px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman atas kanan" width={147} height={147} className="md:hidden absolute -top-[75px] right-[70px]" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman atas kiri" width={147} height={147} className="md:hidden absolute -top-[75px] left-[70px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-mobile.png" alt="Picture of tanaman atas kanan" width={219} height={219} className="md:hidden absolute w-[180px] -top-[85px] right-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-mobile.png" alt="Picture of tanaman atas kiri" width={219} height={219} className="md:hidden absolute w-[180px] -top-[85px] left-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman atas kanan" width={147} height={147} className="md:hidden absolute -top-[75px] right-[70px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman atas kiri" width={147} height={147} className="md:hidden absolute -top-[75px] left-[70px] pointer-events-none" />
 
-          <Image src="/images/kevin-dan-michelle/img-bintang-atas-location.png" alt="Picture of bintang atas" width={1488} height={1488} className="hidden md:block absolute -top-[1000px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-mobile.png" alt="Picture of tanaman atas kanan" width={557} height={557} className="hidden md:block absolute w-[500px] -top-[250px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-mobile.png" alt="Picture of tanaman atas kiri" width={557} height={557} className="hidden md:block absolute w-[500px] -top-[250px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman atas kanan" width={374} height={374} className="hidden md:block absolute -top-[200px] right-[200px]" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman atas kiri" width={374} height={374} className="hidden md:block absolute -top-[200px] left-[200px]" />
+          <Image src="/images/kevin-dan-michelle/img-bintang-atas-location.png" alt="Picture of bintang atas" width={1488} height={1488} className="hidden md:block absolute -top-[1000px] left-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-mobile.png" alt="Picture of tanaman atas kanan" width={557} height={557} className="hidden md:block absolute w-[500px] -top-[250px] right-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-mobile.png" alt="Picture of tanaman atas kiri" width={557} height={557} className="hidden md:block absolute w-[500px] -top-[250px] left-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman atas kanan" width={374} height={374} className="hidden md:block absolute -top-[200px] right-[200px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-wedding-gift-2-mobile.png" alt="Picture of tanaman atas kiri" width={374} height={374} className="hidden md:block absolute -top-[200px] left-[200px] pointer-events-none" />
         </div>
       </div>
     </>

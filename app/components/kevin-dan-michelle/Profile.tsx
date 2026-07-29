@@ -50,12 +50,12 @@ export default function Profile({ isOpen, isMobile }: Props) {
         <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-profile.png" alt="Picture of tanaman atas kiri" width={932} height={1142} className="hidden md:block absolute -top-[550px] left-0 pointer-events-none w-[600px]" />
         <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-profile.png" alt="Picture of tanaman atas kanan" width={932} height={1142} className="hidden md:block absolute -top-[550px] right-0 pointer-events-none w-[600px]" />
 
-        <Image src="/images/kevin-dan-michelle/img-bintang-atas-kanan-profile-mobile.png" alt="Picture of bintang atas kanan" width={359} height={359} className="absolute -top-[100px] right-0 w-[229px]" />
-        <Image src="/images/kevin-dan-michelle/img-bintang-kiri-samping-pengantin-pria-mobile.png" alt="Picture of bintang samping pengantin pria" width={481} height={481} className="md:hidden absolute top-[100px] left-0 w-[281px] " />
-        <Image src="/images/kevin-dan-michelle/img-bintang-kanan-samping-pengantin-wanita-mobile.png" alt="Picture of bintang samping pengantin wanita" width={481} height={481} className="md:hidden absolute top-[550px] right-0 w-[261px]" />
-        <Image src="/images/kevin-dan-michelle/img-bintang-kiri-bawah-profile-mobile.png" alt="Picture of bintang bawah profile" width={583} height={680} className="md:hidden absolute -bottom-[350px] left-0" />
+        <Image src="/images/kevin-dan-michelle/img-bintang-atas-kanan-profile-mobile.png" alt="Picture of bintang atas kanan" width={359} height={359} className="absolute -top-[100px] right-0 w-[229px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-bintang-kiri-samping-pengantin-pria-mobile.png" alt="Picture of bintang samping pengantin pria" width={481} height={481} className="md:hidden absolute top-[100px] left-0 w-[281px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-bintang-kanan-samping-pengantin-wanita-mobile.png" alt="Picture of bintang samping pengantin wanita" width={481} height={481} className="md:hidden absolute top-[550px] right-0 w-[261px] pointer-events-none" />
+        <Image src="/images/kevin-dan-michelle/img-bintang-kiri-bawah-profile-mobile.png" alt="Picture of bintang bawah profile" width={583} height={680} className="md:hidden absolute -bottom-[350px] left-0 pointer-events-none" />
 
-        <Image src="/images/kevin-dan-michelle/img-bintang-atas-kanan-profile.png" alt="Picture of bintang atas kanan" width={1343} height={1343} className="hidden md:block w-[900px] absolute -top-[75px] right-0" />
+        <Image src="/images/kevin-dan-michelle/img-bintang-atas-kanan-profile.png" alt="Picture of bintang atas kanan" width={1343} height={1343} className="hidden md:block w-[900px] absolute -top-[75px] right-0 pointer-events-none" />
       </div>
     </>
   )

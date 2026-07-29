@@ -37,26 +37,26 @@ export default function Location({ isOpen, isMobile }: Props) {
           </Link>
 
           {/* Image Absolute */}
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-mobile.png" alt="Picture of tanaman atas kanan" width={232} height={232} className="md:hidden absolute w-[200px] -top-[140px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-mobile.png" alt="Picture of tanaman atas kiri" width={232} height={232} className="md:hidden absolute w-[200px] -top-[140px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-2-mobile.png" alt="Picture of tanaman atas kanan" width={252} height={252} className="md:hidden absolute w-[200px] -top-[180px] right-[25px]" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-2-mobile.png" alt="Picture of tanaman atas kiri" width={252} height={252} className="md:hidden absolute w-[200px] -top-[180px] left-[25px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-mobile.png" alt="Picture of tanaman atas kanan" width={232} height={232} className="md:hidden absolute w-[200px] -top-[140px] right-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-mobile.png" alt="Picture of tanaman atas kiri" width={232} height={232} className="md:hidden absolute w-[200px] -top-[140px] left-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-2-mobile.png" alt="Picture of tanaman atas kanan" width={252} height={252} className="md:hidden absolute w-[200px] -top-[180px] right-[25px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-2-mobile.png" alt="Picture of tanaman atas kiri" width={252} height={252} className="md:hidden absolute w-[200px] -top-[180px] left-[25px] pointer-events-none" />
 
-          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kanan-location-mobile.png" alt="Picture of tanaman bawah kanan" width={219} height={219} className="md:hidden absolute w-[180px] -bottom-[90px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kiri-location-mobile.png" alt="Picture of tanaman bawah kiri" width={219} height={219} className="md:hidden absolute w-[180px] -bottom-[90px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kanan-location-2-mobile.png" alt="Picture of tanaman bawah kanan" width={147} height={147} className="md:hidden absolute w-[200px] -bottom-[120px] right-[50px]" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kiri-location-2-mobile.png" alt="Picture of tanaman bawah kiri" width={147} height={147} className="md:hidden absolute w-[200px] -bottom-[120px] left-[50px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kanan-location-mobile.png" alt="Picture of tanaman bawah kanan" width={219} height={219} className="md:hidden absolute w-[180px] -bottom-[90px] right-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kiri-location-mobile.png" alt="Picture of tanaman bawah kiri" width={219} height={219} className="md:hidden absolute w-[180px] -bottom-[90px] left-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kanan-location-2-mobile.png" alt="Picture of tanaman bawah kanan" width={147} height={147} className="md:hidden absolute w-[200px] -bottom-[120px] right-[50px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kiri-location-2-mobile.png" alt="Picture of tanaman bawah kiri" width={147} height={147} className="md:hidden absolute w-[200px] -bottom-[120px] left-[50px] pointer-events-none" />
 
           {/* Desktop */}
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-mobile.png" alt="Picture of tanaman atas kanan" width={844} height={690} className="hidden md:block absolute w-[555px] -top-[350px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-mobile.png" alt="Picture of tanaman atas kiri" width={844} height={690} className="hidden md:block absolute w-[555px] -top-[350px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-2.png" alt="Picture of tanaman atas kanan" width={622} height={360} className="hidden md:block absolute -top-[280px] right-[20px]" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-2.png" alt="Picture of tanaman atas kiri" width={622} height={360} className="hidden md:block absolute -top-[280px] left-[20px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-mobile.png" alt="Picture of tanaman atas kanan" width={844} height={690} className="hidden md:block absolute w-[555px] -top-[350px] right-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-mobile.png" alt="Picture of tanaman atas kiri" width={844} height={690} className="hidden md:block absolute w-[555px] -top-[350px] left-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kanan-atas-location-2.png" alt="Picture of tanaman atas kanan" width={622} height={360} className="hidden md:block absolute -top-[280px] right-[20px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-kiri-atas-location-2.png" alt="Picture of tanaman atas kiri" width={622} height={360} className="hidden md:block absolute -top-[280px] left-[20px] pointer-events-none" />
 
-          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kanan-location.png" alt="Picture of tanaman bawah kanan" width={557} height={557} className="hidden md:block absolute -bottom-[280px] right-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kiri-location.png" alt="Picture of tanaman bawah kiri" width={557} height={557} className="hidden md:block absolute -bottom-[280px] left-0" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kanan-location-2.png" alt="Picture of tanaman bawah kanan" width={374} height={374} className="hidden md:block absolute -bottom-[200px] right-[250px]" />
-          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kiri-location-2.png" alt="Picture of tanaman bawah kiri" width={374} height={374} className="hidden md:block absolute -bottom-[200px] left-[250px]" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kanan-location.png" alt="Picture of tanaman bawah kanan" width={557} height={557} className="hidden md:block absolute -bottom-[280px] right-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kiri-location.png" alt="Picture of tanaman bawah kiri" width={557} height={557} className="hidden md:block absolute -bottom-[280px] left-0 pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kanan-location-2.png" alt="Picture of tanaman bawah kanan" width={374} height={374} className="hidden md:block absolute -bottom-[200px] right-[250px] pointer-events-none" />
+          <Image src="/images/kevin-dan-michelle/img-tanaman-bawah-kiri-location-2.png" alt="Picture of tanaman bawah kiri" width={374} height={374} className="hidden md:block absolute -bottom-[200px] left-[250px] pointer-events-none" />
         </div>
       </div>
     </>
